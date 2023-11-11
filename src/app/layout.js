@@ -1,5 +1,6 @@
 import './globals.css'
 import './reset.css'
+import Link from "next/link";
 
 export const metadata = {
   title: "도이 포트폴리오",
@@ -12,10 +13,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <>
-      <div className="intro">
-        <h1>여긴 주로 header와 관련된 페이지를 많이 사용합니다</h1>
-      </div>
-      {children}
+      <html>
+        <body>
+          <main className="intro">
+            <header></header>
+            <h1 className='intro_front'>FRONT-END</h1>
+          </main>
+          {children}
+        </body>
+      </html>
     </>
   );
 }
+
+
