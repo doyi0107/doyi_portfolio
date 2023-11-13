@@ -1,33 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto:wght@500&display=swap');
 
-.intro{
+body {
+  overflow: hidden;
+}
+
+.intro {
   background-color: #B39C7A;
   width: 100vw;
   height: 100vh;
 }
+
 .intro_front {
   font: 15rem 'Roboto',
     sans-serif;
   color: #CDBCA3;
   position: relative;
   text-align: end;
-  top: 20%; left: -100%;
+  top: 20%;
+  right: 0%;
   -webkit-text-stroke: 0.1rem rgb(255, 255, 255);
-  animation: fadeInLeft 2.5s;
+  animation: slideLeft 3s cubic-bezier(0.39, 0.58, 0.57, 1);
+  opacity: 0;
 }
 
-@keyframes fadeInLeft {
+@keyframes slideLeft {
   0% {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
+    opacity: 1;
+    right: 100%;
+  }
 
+  60% {
+    opacity: 1;
+    right: 0%;
   }
 
   to {
     opacity: 1;
-    transform: translateX(100%);   
+    right: 0%;
+  }
+}
+
+.intro_developer {
+  font: 15rem 'Roboto', sans-serif;
+  color: #CDBCA3;
+  position: relative;
+  text-align: end;
+  top: 20%;
+  left: -15%;
+  -webkit-text-stroke: 0.1rem rgb(255, 255, 255);
+  animation: silderight 3s cubic-bezier(0.39, 0.58, 0.57, 1);
+  opacity: 0;
+
+}
+
+
+@keyframes silderight {
+  0% {
+    opacity: 1;
+    left: 85%;
+  }
+
+  60% {
+    left: -15%;
+    opacity: 1;
+  }
+
+  to {
+    left: -15%;
+    opacity: 1;
+  }
+}
+
+
+.test {
+  opacity: 0;
+  font-size: 5rem;
+  animation: fadeIn 3s 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
 
 
+/* animation - fill - mode  +  */

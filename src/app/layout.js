@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
         <body>
           <main className="intro">
             <header></header>
-            <h1 className='intro_front'>FRONT-END</h1>
+            <h1 className="intro_front">FRONT-END</h1>
+            <h1 className="intro_developer">DEVELOPER</h1>
+            <p className='test'>프론트엔드 개발자 이도이입니다.</p>
           </main>
           {children}
         </body>
@@ -25,5 +27,10 @@ export default function RootLayout({ children }) {
     </>
   );
 }
+
+
+
+
+
 
 
