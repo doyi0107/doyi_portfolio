@@ -17,9 +17,49 @@ export default function RootLayout({ children }) {
         <body>
           <main className="intro">
             <header></header>
-            <h1 className="intro_front">FRONT-END</h1>
-            <h1 className="intro_developer">DEVELOPER</h1>
-            <p className='test'>프론트엔드 개발자 이도이입니다.</p>
+
+            <div className=''>
+              <h1 className="intro_front">FRONT-END</h1>
+              <h1 className="intro_developer">DEVELOPER</h1>
+            </div>
+
+            {/* master */}
+            <div class="masthead-image" id="master-container">
+              <div class="content center">
+                {/* h2 */}
+                <h2 id="master">
+                  <div>안녕하세요.</div>
+
+                  <div id="master-container-scroller">
+                    <div class="master-container-scroller_item">
+                      <a class="cta-link" href="#">
+                        꾸준한 사람
+                      </a>
+                      .
+                    </div>
+                    <div class="master-container-scroller_item">
+                      <a class="cta-link" href="#">
+                        성장하는 사람
+                      </a>
+                      .
+                    </div>
+                    <div class="master-container-scroller_item">
+                      <a class="cta-link" href="#">
+                        단단한 사람
+                      </a>
+                      .
+                    </div>
+                    <div class="master-container-scroller_item">
+                      <a class="cta-link" href="#">
+                        나무같은 사람
+                      </a>
+                      .
+                    </div>
+                  </div>
+                  <div>이도이입니다.</div>
+                </h2>
+              </div>
+            </div>
           </main>
           {children}
         </body>
