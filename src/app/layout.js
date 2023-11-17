@@ -1,6 +1,8 @@
 import './globals.css'
 import './reset.css'
 import Link from "next/link";
+import Image from "next/image";
+import me from "/public/me.png"
 
 export const metadata = {
   title: "DOYI WORLD",
@@ -18,10 +20,10 @@ export default function RootLayout({ children }) {
           <main className="intro">
             <header></header>
 
-
-            <div className='intro_text'>
+            <div className="intro_text">
               <h1 className="intro_front">FRONT-END</h1>
               <h1 className="intro_developer">DEVELOPER</h1>
+              <h1 className="intro_leedoyi">LEEDOYI</h1>
             </div>
 
             {/* master */}
@@ -34,22 +36,22 @@ export default function RootLayout({ children }) {
                   <div id="master-container-scroller">
                     <div className="master-container-scroller_item">
                       <a className="cta-link" href="#">
-                        소통하는 
+                        소통하는
                       </a>
                     </div>
                     <div className="master-container-scroller_item">
                       <a className="cta-link" href="#">
-                        성장하는 
+                        성장하는
                       </a>
                     </div>
                     <div className="master-container-scroller_item">
                       <a className="cta-link" href="#">
-                        한계를 뛰어넘는 
+                        한계를 뛰어넘는
                       </a>
                     </div>
                     <div className="master-container-scroller_item">
                       <a className="cta-link" href="#">
-                        프론트엔드 개발자 
+                        프론트엔드 개발자
                       </a>
                     </div>
                   </div>
@@ -57,6 +59,8 @@ export default function RootLayout({ children }) {
                 </h2>
               </div>
             </div>
+
+            <Image className="doyi" src={me} />
           </main>
           {children}
         </body>
