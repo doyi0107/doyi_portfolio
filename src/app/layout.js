@@ -1,5 +1,6 @@
 import './globals.css'
 import './reset.css'
+import './globals.scss'
 import Link from "next/link";
 import Image from "next/image";
 import me from "/public/me.png"
@@ -18,12 +19,23 @@ export default function RootLayout({ children }) {
       <html>
         <body>
           <main className="intro">
-            <header></header>
+            <header className='header_wrap'>
+              <Link href="/">Home</Link>
+              <Link href="/Archiving">Archiving</Link>
+              <Link href="/Projects">Projects</Link>
+              <Link href="/Contact">Contact</Link>
+            </header>
 
-            <div className="intro_text">
-              <h1 className="intro_front">FRONT-END</h1>
-              <h1 className="intro_developer">DEVELOPER</h1>
-              <h1 className="intro_leedoyi">LEEDOYI</h1>
+            <div className="intro_wrapper">
+              <h1 className="intro_front" data-heading="FRONT-END">
+                {/* FRONT-END */}
+              </h1>
+              <h1 className="intro_developer" data-heading="DEVELOPER">
+                {/* DEVELOPER */}
+              </h1>
+              <h1 className="intro_leedoyi" data-heading="LEEDOYI">
+                {/* LEEDOYI */}
+              </h1>
             </div>
 
             {/* master */}
@@ -41,7 +53,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="master-container-scroller_item">
                       <a className="cta-link" href="#">
-                        성장하는
+                        감각있는
                       </a>
                     </div>
                     <div className="master-container-scroller_item">
@@ -51,7 +63,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="master-container-scroller_item">
                       <a className="cta-link" href="#">
-                        프론트엔드 개발자
+                        성장하는 개발자
                       </a>
                     </div>
                   </div>
