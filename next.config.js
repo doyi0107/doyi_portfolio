@@ -2,6 +2,9 @@
 const path = require("path");
 
 const nextConfig = {
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
