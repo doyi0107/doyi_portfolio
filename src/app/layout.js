@@ -4,7 +4,7 @@ import './globals.scss'
 import Link from "next/link";
 import Image from "next/image";
 import me from "/public/me.png";
-
+import Modal_rel from "./modal_rel.js";
 
 export const metadata = {
   title: "DOYI WORLD",
@@ -15,11 +15,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+
   return (
     <>
       <html>
         <body>
           <main id="intro">
+            <Modal_rel />
             <header className="header_wrap">
               <Link href="#intro" className="link">
                 <div>Home</div>
@@ -34,12 +37,11 @@ export default function RootLayout({ children }) {
               </Link>
 
               <Link href="#contact" className="link">
-                {/* <img src="arrow.png" className="arrow" /> */}
                 <div>Contact</div>
               </Link>
             </header>
 
-            <div className='intro_wrap'>
+            <div className="intro_wrap">
               <div class="animation01">
                 <div></div>
                 <div></div>
@@ -184,6 +186,9 @@ export default function RootLayout({ children }) {
     </>
   );
 }
+
+
+
 
 
 
