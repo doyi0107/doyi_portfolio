@@ -4,7 +4,7 @@ import './globals.scss'
 import Link from "next/link";
 import Image from "next/image";
 import me from "/public/me.png";
-import Modal_rel from "./modal_rel.js";
+import Modal_join from "./modal_join.js";
 
 export const metadata = {
   title: "DOYI WORLD",
@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
     <>
       <html>
         <body>
+          <Modal_join />
           <main id="intro">
-            <Modal_rel />
             <header className="header_wrap">
               <Link href="#intro" className="link">
                 <div>Home</div>
