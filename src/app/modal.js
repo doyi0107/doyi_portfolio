@@ -1,20 +1,40 @@
 "use client";
-import { useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import Link from "next/link";
 import "./modal.modul.css";
-import "./globals.scss";
 
 export default function Modal() {
-  useEffect(() => {
-    const nav = document.querySelector(".nav");
-    const extraBackground = document.querySelector(".nav__extra-background");
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelectorAll(".modal_link");
-    const navLocations = document.querySelector(".nav__locations");
-    
+  const [burgerClass, setBurgerClass] = useState("burger-bar unclicked");
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
 
-    //Setting the initial states
+  const extraBackgroundRef = useRef(null);
+  const navRef = useRef(null);
+  const navLinksRef = useRef([]);
+  const navLocationsRef = useRef(null);
+  const masterRef = useRef(null);
+
+  const updateMenu = () => {
+    if (!isMenuClicked) {
+      setBurgerClass("burger-bar clicked");
+      masterRef.current.reversed()
+        ? masterRef.current.play()
+        : masterRef.current.reverse();
+    } else {
+      setBurgerClass("burger-bar unclicked");
+      masterRef.current.reversed()
+        ? masterRef.current.play()
+        : masterRef.current.reverse();
+    }
+    setIsMenuClicked(!isMenuClicked);
+  };
+
+  useEffect(() => {
+    const nav = navRef.current;
+    const extraBackground = extraBackgroundRef.current;
+    const navLinks = navLinksRef.current;
+    const navLocations = navLocationsRef.current;
+
     gsap.set([extraBackground, nav], { height: "0%", skewY: 2 });
     gsap.set([navLinks, navLocations], { y: -20, autoAlpha: 0 });
 
@@ -56,44 +76,56 @@ export default function Modal() {
       .add(staggerReveal([extraBackground, nav]))
       .add(revealMenuItems([navLinks, navLocations]), "-=0.5");
 
-    for (var i = 0; i < navLinks.length; i++) {
-      navLinks[i].addEventListener("click", () => {
-        master.reverse();
-      });
-    }
+    masterRef.current = master;
+  }, []); // Empty dependency array to run the effect only once on mount
 
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      master.reversed() ? master.play() : master.reverse();
-    });
-  });
+  const handleNavLinkClick = () => {
+    setBurgerClass("burger-bar unclicked");
+    setIsMenuClicked(!isMenuClicked);
+    masterRef.current.reverse();
+  };
 
   return (
     <>
-      <button className="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+      <button className="burger-menu" onClick={updateMenu}>
+        <span className={burgerClass}></span>
+        <span className={burgerClass}></span>
+        <span className={burgerClass}></span>
       </button>
 
-      <div class="nav__extra-background"></div>
-      <nav class="nav">
-        <div class="nav__content">
+      <div className="nav__extra-background" ref={extraBackgroundRef}></div>
+      <nav className="nav" ref={navRef}>
+        <div className="nav__content">
           <div className="nav__links">
-            <Link href="#intro" className="modal_link" >
+            <Link
+              href="#intro"
+              className="modal_link"
+              onClick={handleNavLinkClick}
+            >
               <div>Home</div>
             </Link>
 
-            <Link href="#archiving" className="modal_link">
+            <Link
+              href="#archiving"
+              className="modal_link"
+              onClick={handleNavLinkClick}
+            >
               <div>Archiving</div>
             </Link>
 
-            <Link href="#projects" className="modal_link">
+            <Link
+              href="#projects"
+              className="modal_link"
+              onClick={handleNavLinkClick}
+            >
               <div>Projects</div>
             </Link>
 
-            <Link href="#contact" className="modal_link">
+            <Link
+              href="#contact"
+              className="modal_link"
+              onClick={handleNavLinkClick}
+            >
               <div>Contact</div>
             </Link>
           </div>

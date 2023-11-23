@@ -1,39 +1,4 @@
-/* .modal_wrap {
-    z-index: 99999;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background-color: rgb(207, 151, 79);
-    -webkit-animation: modal_ani 2s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
-    animation: modal_ani 2s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
-    animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes modal_ani {
-    0% {
-        transform: scale3d(0, 0, 1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale3d(10, 10, 1);
-        opacity: 1;
-    }
-}
-
-@keyframes modal_ani {
-    0% {
-        transform: scale3d(0, 0, 1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale3d(10, 10, 1);
-        opacity: 1;
-    }
-} */
-
-.hamburger {
+.burger-menu {
     position: fixed;
     background-color: transparent;
     border: none;
@@ -49,53 +14,59 @@
     animation-fill-mode: backwards;
 }
 
-.hamburger span {
+.burger-menu span {
     position: absolute;
     z-index: 9999;
     display: inline-block;
-    height: 3px;
+    height: 0.4em;
     width: 50px;
-    background-color: #000;
+    background-color: #5f6f52;
+    ;
     margin-top: 10px;
     transition: 0.3s ease transform;
-    border-radius: 20%;
+    border-radius: 20px;
 }
 
-.hamburger>span:nth-child(1) {
-        top: 0px;
+.burger-menu>span:nth-child(1) {
+    top: 0px;
 }
 
-.hamburger>span:nth-child(2),
-.hamburger>span:nth-child(3) {
-top: 18px;
+.burger-menu>span:nth-child(2) {
+    top: 18px;
 }
 
-.hamburger>span:nth-child(4) {
+.burger-menu>span:nth-child(3) {
     top: 36px;
 }
 
-.hamburger:hover {
+.burger-menu:hover {
     cursor: pointer;
 }
 
-.hamburger.active span:nth-child(1) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
+
+.burger-bar.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transition: ease-out 0.5s;
+    border-radius: 20px;
+    background-color: #CDBCA3;
 }
 
-.hamburger.active span:nth-child(2) {
-    transform: rotate(45deg);
+.burger-bar.clicked:nth-child(2) {
+    transform: scale(0.005);
+    transition: ease-out 0.5s;
 }
 
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg);
+.burger-bar.clicked:nth-child(3) {
+    transform: rotate(135deg) translate(-0.6em, 1.1em);
+    transition: ease-out 0.5s;
+    border-radius: 20px;
+    background-color: #CDBCA3;
 }
 
-.hamburger.active span:nth-child(4) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
+/* unclicked */
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 
 
@@ -131,7 +102,7 @@ top: 18px;
 .nav__content {
     display: flex;
     align-items: center;
-   text-align: center;
+    text-align: center;
     height: 100%;
     min-height: 100vh;
     margin: 0 auto;
@@ -143,7 +114,7 @@ top: 18px;
     z-index: 9999;
 }
 
-.modal_link{
+.modal_link {
 
     display: block;
 }
@@ -170,12 +141,10 @@ top: 18px;
 
 .modal_link:nth-child(3)>div:hover {
     color: #2d82a7;
-        transition: 1s;
+    transition: 1s;
 }
 
 .modal_link:nth-child(4)>div:hover {
-    color:rgb(171, 130, 186);
-        transition: 1s;
+    color: rgb(171, 130, 186);
+    transition: 1s;
 }
-
-
