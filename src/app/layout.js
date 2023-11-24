@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <>
       <html>
         <body>
-          <Modal/>
+          <Modal />
           <main id="intro">
             <header className="header_wrap">
               <Link href="#intro" className="link">
@@ -166,10 +166,11 @@ export default function RootLayout({ children }) {
             </div>
 
             <Image className="doyi" src={me} />
+            <div className="main_bottom_box"></div>
           </main>
 
           <section id="archiving">
-            <p>이또한지나가리</p>
+            <div className="box01"></div>
           </section>
 
           <section id="projects">

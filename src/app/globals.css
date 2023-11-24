@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
 
 body {
   /* overflow: hidden; */
@@ -14,28 +15,111 @@ a {
   text-decoration: none;
 }
 
+/* header */
+
+.header_wrap {
+  margin-top: 35px;
+  position: fixed;
+  width: 70vw;
+  z-index: 99;
+  margin-left: 30vw;
+  height: 100px;
+  display: flex;
+  -webkit-animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
+  animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
+  animation-fill-mode: backwards;
+}
+
+/* Link 스타일 적용 알아보기  */
+
+
+.link {
+  width: 13vw;
+  margin-right: 5vw;
+  height: 50px;
+  display: block;
+}
+
+.link>div {
+  color: #CDBCA3;
+  font: 550 3.3rem 'Smooch Sans',
+    sans-serif;
+  display: block;
+  width: 20px;
+  /* text-shadow: 3px 3px 5px rgba(103, 103, 103, 0.8); */
+}
+
+.link>div:before {
+  top: 0;
+  position: absolute;
+  width: 0%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+
+.link:nth-child(1)>div:before {
+  content: "Home";
+  color: #5f6f52;
+
+  transition: 1.5s;
+  left: 0;
+
+}
+
+.link:nth-child(2)>div:before {
+  content: "Archiving";
+  color: #c95845;
+  transition: 1.5s;
+  left: 17.5vw;
+}
+
+.link:nth-child(3)>div:before {
+  content: "Projects";
+  color: #2d82a7;
+  transition: 1.5s;
+  left: 35vw;
+}
+
+.link:nth-child(4)>div:before {
+  content: "Contact";
+  color: #e0b537;
+  transition: 1.5s;
+  left: 52.5vw;
+}
+
+.link>div:hover:before {
+  width: 18vw;
+}
+
+
+/* bottom */
+
+
+.main_bottom_box{
+  width: 100vw;
+  height: 100px;
+  bottom: 0; left:0;
+  position: absolute;
+  background-color:#5f6f52;
+  -webkit-animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
+    animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
+    animation-fill-mode: backwards;
+}
+
 /* #B39C7A */
 
 #intro {
   background-color: #B39C7A;
   width: 100vw;
   height: 100vh;
-  /* position: relative; */
 }
-
-/* .menu_wrap{
-  height: 100vh;
-  width: 20vw;
-  background-color:#6d7f5e; 
-} */
-
-
-
 
 
 /* image */
 
 .doyi {
+  z-index: 2;
   width: 30vw;
   height: 700px;
   position: absolute;
@@ -78,95 +162,17 @@ a {
 
 }
 
-/* header */
-
-section {
-  width: 100%;
-  background-color: #7c9369;
-  height: 100vw;
-}
-
-.header_wrap {
-  margin-top: 35px;
-  position: fixed;
-  width: 70vw;
-  z-index: 99;
-  margin-left: 30vw;
-  height: 100px;
-  display: flex;
-  -webkit-animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
-  animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
-  animation-fill-mode: backwards;
-}
 
 
-/* Link 스타일 적용 알아보기  */
 
 
-.link {
-  width: 13vw;
-  margin-right: 5vw;
-  height: 50px;
-  display: block;
-}
-
-.link>div {
-  color: #CDBCA3;
-  font: 2.3rem 'Black Han Sans',
-    sans-serif;
-  display: block;
-  width: 20px;
-  /* text-shadow: 3px 3px 5px rgba(103, 103, 103, 0.8); */
-}
-
-.link>div:before {
-  top: 0;
-  position: absolute;
-  width: 0%;
-  overflow: hidden;
-  transition: all 0.5s;
-}
-
-
-.link:nth-child(1)>div:before {
-  content: "Home";
-  color: #e0b537;
-      transition: 1.5s;
-  left: 0;
-
-}
-
-.link:nth-child(2)>div:before {
-  content: "Archiving";
-  color: #c95845;
-      transition:1.5s;
-  left: 17.5vw;
-}
-
-.link:nth-child(3)>div:before {
-  content: "Projects";
-  color: #2d82a7;
-      transition: 1.5s;
-  left: 35vw;
-}
-
-.link:nth-child(4)>div:before {
-  content: "Contact";
-  color: #5f6f52;
-      transition: 1.5s;
-  left: 52.5vw;
-}
-
-.link>div:hover:before {
-  width: 18vw;
-}
 
 
 /* master */
 
 #master {
   z-index: 999;
-  font: 60px/1.5 'Black Han Sans',
+  font: 100 60px/1.5 'Black Han Sans',
     sans-serif;
   letter-spacing: 0;
   -webkit-font-smoothing: inherit;
@@ -175,8 +181,6 @@ section {
 
 #master>div {
   color: #CDBCA3;
-  font-family: 'Black Han Sans',
-    sans-serif;
 }
 
 #master-container {
@@ -1459,10 +1463,13 @@ animation06
 }
 
 .rhombus04 {
+  /* background-image: linear-gradient(to bottom, #B39C7A 55%, #5f6f52 45%); */
   background-color:#B39C7A ;
   width: 100vw;
   height: 100vh;
 }
+
+/* #B39C7A */
 
 
 
@@ -1483,4 +1490,27 @@ animation06
   position: relative;
   width: 100vw;
   height: 100vh;
+}
+
+
+/* section */
+section {
+    position: relative;
+  width: 100%;
+  background-color: #B39C7A;
+  height: 100vw;
+  z-index: 1;
+}
+
+
+#archiving {
+
+}
+
+.box01{
+  width: 200px;
+  height: 200px;
+  background-color:#c95845;
+  position: absolute;
+  top:0px; left: 0;
 }
