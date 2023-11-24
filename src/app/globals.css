@@ -46,7 +46,6 @@ a {
     sans-serif;
   display: block;
   width: 20px;
-  /* text-shadow: 3px 3px 5px rgba(103, 103, 103, 0.8); */
 }
 
 .link>div:before {
@@ -96,15 +95,16 @@ a {
 /* bottom */
 
 
-.main_bottom_box{
+.main_bottom_box {
   width: 100vw;
   height: 100px;
-  bottom: 0; left:0;
+  bottom: 0;
+  left: 0;
   position: absolute;
-  background-color:#5f6f52;
+  background-color: #5f6f52;
   -webkit-animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
-    animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
-    animation-fill-mode: backwards;
+  animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
+  animation-fill-mode: backwards;
 }
 
 /* #B39C7A */
@@ -120,10 +120,10 @@ a {
 
 .doyi {
   z-index: 2;
-  width: 30vw;
+  width: 460px;
   height: 700px;
   position: absolute;
-  right: 15%;
+  right: 13%;
   bottom: 0%;
   -webkit-animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 3.2s 1;
   animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 3.2s 1;
@@ -252,32 +252,6 @@ a {
 
 /* #B39C7A */
 
-
-
-@media screen and (max-width: 615px) {
-  #master {
-    font-size: 40px;
-  }
-
-  #master-container-scroller .master-container-scroller_item {
-    -webkit-animation: scroll_mobile 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 2.8s 1;
-    animation: scroll_mobile 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 2.8s 1;
-  }
-
-
-  #master-container-scroller {
-    height: 48px;
-    line-height: 1.2;
-    margin-bottom: 0
-  }
-
-
-  #master-container-scroller .master-container-scroller_item {
-    padding-bottom: 0;
-    -webkit-animation: scroll-mobile 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 2.8s 1;
-    animation: scroll-mobile 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 2.8s 1;
-  }
-}
 
 
 
@@ -1464,7 +1438,7 @@ animation06
 
 .rhombus04 {
   /* background-image: linear-gradient(to bottom, #B39C7A 55%, #5f6f52 45%); */
-  background-color:#B39C7A ;
+  background-color: #B39C7A;
   width: 100vw;
   height: 100vh;
 }
@@ -1495,7 +1469,7 @@ animation06
 
 /* section */
 section {
-    position: relative;
+  position: relative;
   width: 100%;
   background-color: #B39C7A;
   height: 100vw;
@@ -1503,14 +1477,17 @@ section {
 }
 
 
-#archiving {
+#archiving {}
 
-}
-
-.box01{
+.box01 {
   width: 200px;
   height: 200px;
-  background-color:#c95845;
+  background-color: #c95845;
   position: absolute;
-  top:0px; left: 0;
+  top: 0px;
+  left: 0;
 }
+
+
+
+
