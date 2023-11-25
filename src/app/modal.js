@@ -11,7 +11,6 @@ export default function Modal() {
   const extraBackgroundRef = useRef(null);
   const navRef = useRef(null);
   const navLinksRef = useRef([]);
-  const navLocationsRef = useRef(null);
   const masterRef = useRef(null);
 
   const updateMenu = () => {
@@ -33,10 +32,9 @@ export default function Modal() {
     const nav = navRef.current;
     const extraBackground = extraBackgroundRef.current;
     const navLinks = navLinksRef.current;
-    const navLocations = navLocationsRef.current;
 
     gsap.set([extraBackground, nav], { height: "0%", skewY: 2 });
-    gsap.set([navLinks, navLocations], { y: -20, autoAlpha: 0 });
+    gsap.set([navLinks], { y: -20, autoAlpha: 0 });
 
     const staggerReveal = (nodes) => {
       const tl = gsap.timeline();
@@ -74,7 +72,7 @@ export default function Modal() {
     const master = gsap.timeline({ paused: true, reversed: true });
     master
       .add(staggerReveal([extraBackground, nav]))
-      .add(revealMenuItems([navLinks, navLocations]), "-=0.5");
+      .add(revealMenuItems([navLinks]), "-=0.5");
 
     masterRef.current = master;
   }, []); // Empty dependency array to run the effect only once on mount
@@ -96,7 +94,7 @@ export default function Modal() {
       <div className="nav__extra-background" ref={extraBackgroundRef}></div>
       <nav className="nav" ref={navRef}>
         <div className="nav__content">
-          <div className="nav__links">
+          <div className="nav__links" ref={navLinksRef}>
             <Link
               href="#intro"
               className="modal_link"

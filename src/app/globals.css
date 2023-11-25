@@ -3,7 +3,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
 
 body {
-  /* overflow: hidden; */
+    -webkit-animation: body_bg 7s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
+      animation: body_bg 7s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
+      animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes body_bg {
+  0% {
+      overflow: hidden;
+  }
+
+  99%{
+    overflow: hidden;
+  }
+
+  100% {
+          overflow:none;
+  }
+}
+
+
+
+@keyframes body_bg {
+  0% {
+      overflow: hidden;
+    }
+  
+    99% {
+      overflow: hidden;
+    }
+  
+    100% {
+      overflow: none;
+    }
+
 }
 
 a {
@@ -13,6 +46,15 @@ a {
   vertical-align: baseline;
   background: transparent;
   text-decoration: none;
+}
+
+/* #B39C7A */
+/* main */
+
+#intro {
+  background-color: #5f6f52;
+  width: 100vw;
+  height: 200vh;
 }
 
 /* header */
@@ -107,13 +149,6 @@ a {
   animation-fill-mode: backwards;
 }
 
-/* #B39C7A */
-
-#intro {
-  background-color: #B39C7A;
-  width: 100vw;
-  height: 100vh;
-}
 
 
 /* image */
@@ -1467,26 +1502,6 @@ animation06
 }
 
 
-/* section */
-section {
-  position: relative;
-  width: 100%;
-  background-color: #B39C7A;
-  height: 100vw;
-  z-index: 1;
-}
-
-
-#archiving {}
-
-.box01 {
-  width: 200px;
-  height: 200px;
-  background-color: #c95845;
-  position: absolute;
-  top: 0px;
-  left: 0;
-}
 
 
 

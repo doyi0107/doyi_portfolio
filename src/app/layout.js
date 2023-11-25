@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
       <html>
         <body>
           <Modal />
+
           <main id="intro">
             <header className="header_wrap">
               <Link href="#intro" className="link">
@@ -169,17 +170,6 @@ export default function RootLayout({ children }) {
             <div className="main_bottom_box"></div>
           </main>
 
-          <section id="archiving">
-            <div className="box01"></div>
-          </section>
-
-          <section id="projects">
-            <p>이22또한지나가리</p>
-          </section>
-
-          <section id="contact">
-            <p>이2222또한지나가리</p>
-          </section>
 
           {children}
         </body>
