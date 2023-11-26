@@ -166,7 +166,7 @@ export default function RootLayout({ children }) {
               </div>
             </div>
 
-            <Image className="doyi" src={me} />
+            <Image className="doyi" src={me} alt="intro_doyi"/>
             <div className="main_bottom_box"></div>
           </main>
 

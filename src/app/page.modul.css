@@ -1,43 +1,3 @@
-/* .children{
-    display: none;
-    -webkit-animation: children_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
-        animation: children_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
-        animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes children_bg {
-    0% {
-        opacity: 0;
-    }
-
-    60% {
-        opacity: 0;
-    }
-
-    70% {
-        opacity: 1;
-            display: block;
-    }
-}
-
-
-
-@keyframes children_bg{
-    0% {
-        opacity: 0;
-    }
-
-    60% {
-        opacity: 0;
-    }
-
-    70% {
-        opacity: 1;
-            display: block;
-    }
-
-} */
-
 
 /* section */
 section {
@@ -49,14 +9,8 @@ section {
 }
 
 
-#archiving {}
 
-.box01 {
-    width: 200px;
-    height: 200px;
-    background-color: #c95845;
-    position: absolute;
-    top: 0px;
-    left: 0;
-}
+
+
+
 

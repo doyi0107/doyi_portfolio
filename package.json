@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "gsap": "^3.12.2",
+    "locomotive-scroll": "^4.1.4",
     "next": "14.0.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-gsap-enhancer": "^0.3.0"
   },
   "devDependencies": {
     "@types/node": "20.9.2",
