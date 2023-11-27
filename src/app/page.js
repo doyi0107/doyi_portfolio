@@ -1,96 +1,87 @@
 "use client";
 import "./page.modul.css";
-// import gsap from "gsap";
-// import ScrollTrigger from "gsap/ScrollTrigger";
-// import LocomotiveScroll from "locomotive-scroll";
-// import { useEffect,useRef} from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import LocomotiveScroll from "locomotive-scroll";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
-  // gsap.registerPlugin(ScrollTrigger);
+  const sectionsRef = useRef([]);
+  const imagesRef = useRef([]);
 
-  // const SmoothScrollComponent = () => {
-  //   const containerRef = useRef(null);
+  useEffect(() => {
+    // Initialize LocomotiveScroll or any other scroll library here
 
-  //   useEffect(() => {
-  //     const scroller = new LocomotiveScroll({
-  //       el: containerRef.current,
-  //       smooth: true,
-  //     });
+    // Define observer configuration
+    let config = {
+      rootMargin: "0px",
+      threshold: 0,
+    };
 
-  //     scroller.on("scroll", ScrollTrigger.update);
+    // Create IntersectionObserver for sections
+    let observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          intersectionHandler(entry);
+        }
+      });
+    }, config);
 
-  //     ScrollTrigger.scrollerProxy(containerRef.current, {
-  //       scrollTop(value) {
-  //         return arguments.length
-  //           ? scroller.scrollTo(value, 0, 0)
-  //           : scroller.scroll.instance.scroll.y;
-  //       },
-  //       getBoundingClientRect() {
-  //         return {
-  //           left: 0,
-  //           top: 0,
-  //           width: window.innerWidth,
-  //           height: window.innerHeight,
-  //         };
-  //       },
-  //     });
+    // Observe sections
+    sectionsRef.current.forEach((section) => {
+      observer.observe(section);
+    });
 
-  //     ScrollTrigger.addEventListener("refresh", () => scroller.update());
-  //     ScrollTrigger.refresh();
+    // Observe images (if images array is defined)
+    imagesRef.current.forEach((image) => {
+      observer.observe(image);
+    });
 
-  //   }, []); // Only run once on mount
+    return () => {
+      // Cleanup: Disconnect observer when component unmounts
+      observer.disconnect();
+    };
+  }, []); // Empty dependency array ensures useEffect runs once on mount
 
-  //   useEffect(() => {
+  function intersectionHandler(entry) {
+    const current = document.querySelector(".section.active");
+    const next = entry.target;
+    const header = next.querySelector(".section--header");
 
-  //     const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
-
-  //     const handleScrollColor = (colorSection, i) => {
-  //       const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
-  //       const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
-
-  //       ScrollTrigger.create({
-  //         trigger: colorSection,
-  //         scroller: containerRef.current,
-  //         start: "top 50%",
-  //         onEnter: () =>
-  //           gsap.to("body", {
-  //             backgroundColor: colorSection.dataset.bgcolor,
-  //             color: colorSection.dataset.textcolor,
-  //             overwrite: "auto",
-  //           }),
-  //         onLeaveBack: () =>
-  //           gsap.to("body", {
-  //             backgroundColor: prevBg,
-  //             color: prevText,
-  //             overwrite: "auto",
-  //           }),
-  //       });
-  //     };
-
-  //     scrollColorElems.forEach(handleScrollColor);
-
-  //   }, []);
-  // }; ref={SmoothScrollComponent.containerRef}
+    if (current) {
+      current.classList.remove("active");
+    }
+    if (next) {
+      next.classList.add("active");
+      document.body.style.setProperty("--color-bg", next.dataset.bgcolor);
+    }
+  }
 
   return (
     <>
-      <div className="container">
-        <section id="archiving" data-bgcolor="#bcb8ad" data-textcolor="#032f35">
-          <h2 data-scroll data-scroll-speed="1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </h2>
+      <div className="sections">
+        <section
+          ref={(el) => (sectionsRef.current[1] = el)}
+          id="archiving"
+          data-bgcolor="#c96958"
+        >
+          <h2>Archiving</h2>
         </section>
 
-        <section id="projects" data-bgcolor="#536fae" data-textcolor="#eacbd1">
-          <h2 data-scroll data-scroll-speed="1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </h2>
+        <section
+          ref={(el) => (sectionsRef.current[2] = el)}
+          id="projects"
+          data-bgcolor="#408fb0"
+        >
+          <h2>Projects</h2>
         </section>
 
-        <section id="contact" data-bgcolor="#e3857a" data-textcolor="#f1dba7">
-          <h2 data-scroll data-scroll-speed="1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </h2>
+        <section
+          ref={(el) => (sectionsRef.current[3] = el)}
+          id="contact"
+          data-bgcolor="#ceb15a"
+        >
+          <h2>Contact</h2>
         </section>
       </div>
     </>
