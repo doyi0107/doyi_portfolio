@@ -149,46 +149,7 @@ a {
   animation-fill-mode: backwards;
 }
 
-.main_sub{
-    background-color: #5f6f52;
-      width: 100vw;
-        height: 100vh;
-        -webkit-animation: container_bg 7s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
-          animation: container_bg 7s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
-          animation-fill-mode: forwards;
-}
 
-
-@-webkit-keyframes container_bg {
-  0% {
-    display: none;
-  }
-
-  99% {
-    display: block;
-  }
-
-  100% {
-    display: block;
-  }
-}
-
-
-
-@keyframes container_bg {
-  0% {
-    display: none;
-  }
-
-  99% {
-    display: block;
-  }
-
-  100% {
-    display: block;
-  }
-
-}
 
 
 

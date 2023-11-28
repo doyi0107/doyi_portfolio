@@ -1,10 +1,10 @@
-.sections {
-    -webkit-animation: sections_bg 7s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
-    animation: sections_bg 7s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
+.container {
+    -webkit-animation: container_bg 7s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
+    animation: container_bg 7s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
     animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes sections_bg {
+@-webkit-keyframes container_bg {
     0% {
         display: none;
     }
@@ -18,9 +18,7 @@
     }
 }
 
-
-
-@keyframes sections_bg {
+@keyframes container_bg {
     0% {
         display: none;
     }
@@ -34,17 +32,6 @@
     }
 
 }
-
-/* #5f6f52;
- content: "Archiving";
- color: #c95845
-  content: "Projects";
-  color: #2d82a7; */
-/* 
-   content: "Contact";
-   color: #e0b537; */
-
-
 
 /* section */
 section {
@@ -52,34 +39,97 @@ section {
     height: 100vh;
     z-index: 1;
     position: relative;
+    background-color: #B39C7A;
 }
 
 
-#archiving{
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    animation: fromleft 0.1s both;
+    animation-timeline: view();
+}
+
+@-webkit-keyframes fromleft {
+    0% {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(200px);
+    }
+}
+
+@keyframes fromleft {
+    0% {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translate(500px);
+    }
+
+}
+
+#main_sub {
+    background-color: #5f6f52;
+}
+
+
+
+
+#archiving {
     background-color: #c96958;
+    animation: arch_bg_change 1.5s both ;
+    animation-timeline: view();
 }
 
-#projects{
+@keyframes arch_bg_change {
+    0% {
+        background-color: #5f6f52;
+    }
+
+    60% {
+        background-color: #c96958;
+    }
+}
+
+#projects {
     background-color: #408fb0;
+    animation: pro_bg_change 1.5s both ;
+    animation-timeline: view();
 }
 
 
-#contact{
-    background-color:#ceb15a;
+@keyframes pro_bg_change {
+    0% {
+        background-color: #c96958;
+    }
+
+                 60%{
+        background-color: #408fb0;
+    }
 }
 
 
-body {
-    color: var(--color-text);
-    background: var(--color-bg);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transition: background 1s;
+#contact {
+    background-color: #ceb15a;
+    animation: con_bg_change 1.5s both ;
+    animation-timeline: view();
 }
 
-.sections {
-    position: relative;
-    display: block;
-    padding: 0 6vmax;
-}
+@keyframes con_bg_change {
+    0% {
+        background-color: #408fb0;
+    }
 
+ 60% {
+        background-color: #ceb15a;
+    }
+}
