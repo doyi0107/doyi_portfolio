@@ -41,7 +41,6 @@ export default function RootLayout({ children }) {
                 <div>Contact</div>
               </Link>
             </header>
-
             <div className="intro_wrap">
               <div class="animation01">
                 <div></div>
@@ -132,7 +131,6 @@ export default function RootLayout({ children }) {
                 </div>
               </div>
             </div>
-
             <div className="masthead-image" id="master-container">
               <div className="content center">
                 {/* h2 */}
@@ -165,11 +163,21 @@ export default function RootLayout({ children }) {
                 </h2>
               </div>
             </div>
-
             <Image className="doyi" src={me} alt="intro_doyi" />
-            <div className="main_bottom_box"></div>
-          </main>
+            {/* <div className="main_bottom_box"></div> */}
 
+            <svg
+              className="main_bottom_box"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 320"
+            >
+              <path
+                fill="#5f6f52"
+                fill-opacity="1"
+                d="M0,256L26.7,245.3C53.3,235,107,213,160,176C213.3,139,267,85,320,90.7C373.3,96,427,160,480,192C533.3,224,587,224,640,240C693.3,256,747,288,800,261.3C853.3,235,907,149,960,133.3C1013.3,117,1067,171,1120,202.7C1173.3,235,1227,245,1280,234.7C1333.3,224,1387,192,1413,176L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+              ></path>
+            </svg>
+          </main>
 
           {children}
         </body>

@@ -78,15 +78,23 @@ section {
 }
 
 #main_sub {
+    overflow: hidden;
     background-color: #5f6f52;
 }
 
+.sub_svg{
+    position: absolute;
+    left: -1000px;
+    bottom: -100px;
+    transform: rotate(90deg);
+    z-index: 1;
+}
 
 
 
 #archiving {
     background-color: #c96958;
-    animation: arch_bg_change 1.5s both ;
+    animation: arch_bg_change 1s both 0.3s;
     animation-timeline: view();
 }
 
@@ -95,14 +103,14 @@ section {
         background-color: #5f6f52;
     }
 
-    60% {
+    50% {
         background-color: #c96958;
     }
 }
 
 #projects {
     background-color: #408fb0;
-    animation: pro_bg_change 1.5s both ;
+    animation: pro_bg_change 1s both 0.3s;
     animation-timeline: view();
 }
 
@@ -112,7 +120,7 @@ section {
         background-color: #c96958;
     }
 
-                 60%{
+                 50%{
         background-color: #408fb0;
     }
 }
@@ -120,7 +128,7 @@ section {
 
 #contact {
     background-color: #ceb15a;
-    animation: con_bg_change 1.5s both ;
+    animation: con_bg_change 1s both 0.3s;
     animation-timeline: view();
 }
 
@@ -129,7 +137,7 @@ section {
         background-color: #408fb0;
     }
 
- 60% {
+ 50% {
         background-color: #ceb15a;
     }
 }

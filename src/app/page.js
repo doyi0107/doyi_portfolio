@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <>
       <div className="container">
-
         <section id="main_sub">
           <h2>main_Sub</h2>
-          <div className="box">박스</div>
+          {/* <div className="box">박스</div> */}
+
         </section>
 
         <section id="archiving">
