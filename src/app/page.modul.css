@@ -39,56 +39,109 @@ section {
     height: 100vh;
     z-index: 1;
     position: relative;
-    background-color: #B39C7A;
+    /* background-color: #B39C7A; */
 }
 
 
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: blueviolet;
-    animation: fromleft 0.1s both;
+#main_sub {
+
+    background-color: #B39C7A;
+    position: relative;
+}
+
+.sub_box {
+    width:600px;
+    height: 100vh;
+    background-color: #829472;
+    border-radius: 0px 300px 300px 0px;
+    position: absolute;
+    top: 0; left: -10px;
+    animation:fromleft 1s both ;
     animation-timeline: view();
 }
 
-@-webkit-keyframes fromleft {
-    0% {
-        opacity: 0;
-        transform: translateX(0px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(200px);
-    }
-}
 
 @keyframes fromleft {
     0% {
         opacity: 0;
-        transform: translateX(0px);
+        transform: translateX(-100px);
+
     }
 
+
+    30% {
+        opacity: 1;
+            transform: translateX(100px);
+
+    }
 
     100% {
         opacity: 1;
-        transform: translate(500px);
+                transform: translateX(100px);
     }
 
 }
-
-#main_sub {
-    overflow: hidden;
-    background-color: #5f6f52;
+.explain_me{
+   position: absolute;
+   top: 200px;
+   left: 0;
+   display: flex;
 }
 
-.sub_svg{
-    position: absolute;
-    left: -1000px;
-    bottom: -100px;
-    transform: rotate(90deg);
-    z-index: 1;
+.explain_me>div{
+    opacity: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #c96958;
+    display: inline-block;
 }
+
+:is(.one, .two, .three) {
+    font-size: 2rem;
+    margin: 1rem;
+    animation: bubble 1s ease;
+    animation-timeline: view();
+}
+
+.one {
+    animation-delay: 0.5s;
+}
+
+.two {
+    animation-delay: 1s;
+}
+
+.three {
+    animation-delay: 1.5s;
+}
+
+
+
+@keyframes bubble {
+    0% {
+            opacity: 0;
+            transform: translateX(-100px);
+    
+        }
+    
+    
+        20% {
+            opacity: 1;
+            transform: translateX(100px);
+    
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateX(100px);
+        }
+}
+
+
+
+
+
 
 
 
