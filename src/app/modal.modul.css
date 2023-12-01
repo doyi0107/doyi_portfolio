@@ -4,7 +4,7 @@
     border: none;
     top: 40%;
     left: 0;
-    margin: 20px 0px 0px 17px;
+    margin: 20px 0px 0px 10px;
     z-index: 999;
     -webkit-animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
     animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
@@ -15,7 +15,7 @@
     position: absolute;
     z-index: 999;
     display: inline-block;
-    height: 0.35em;
+    height: 0.25em;
     width: 45px;
     background-color: #B39C7A;
     ;
@@ -26,18 +26,15 @@
 
 
 .burger-menu>span:nth-child(1) {
-    height: 0.3em;
     top: 0px;
 }
 
 .burger-menu>span:nth-child(2) {
-    height: 0.3em;
-    top: 18px;
+    top: 15px;
 }
 
 .burger-menu>span:nth-child(3) {
-    height: 0.3em;
-    top: 36px;
+    top: 30px;
 }
 
 .burger-menu:hover {
@@ -46,7 +43,7 @@
 
 
 .burger-bar.clicked:nth-child(1) {
-    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transform: rotate(45deg) translate(0.45em, 1.25em);
     transition: ease-out 0.5s;
     border-radius: 20px;
     background-color: #CDBCA3;
@@ -58,7 +55,7 @@
 }
 
 .burger-bar.clicked:nth-child(3) {
-    transform: rotate(135deg) translate(-0.6em, 1.1em);
+    transform: rotate(135deg) translate(-0.3em, 1.1em);
     transition: ease-out 0.5s;
     border-radius: 20px;
     background-color: #CDBCA3;
