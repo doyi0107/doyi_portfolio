@@ -3,8 +3,7 @@
     background-color: transparent;
     border: none;
     top: 40%;
-    left: 0;
-    margin: 20px 0px 0px 10px;
+    left: 10px;
     z-index: 999;
     -webkit-animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
     animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
@@ -122,6 +121,8 @@
     color: #CDBCA3;
 }
 
+
+
 .modal_link:not(:last-child) {
     margin-bottom: 5vh;
 }
@@ -144,4 +145,39 @@
 .modal_link:nth-child(4)>div:hover {
     color: #e0b537;
     transition: 1s;
+}
+
+@media screen and (max-width : 600px) {
+
+    .nav_left_box {
+        width: 60px;
+    }
+
+    .nav_tree {
+        width: 30px;
+        height: 30px;
+        left: 15px;
+    }
+
+    .nav_name {
+        width: 40px;
+        height: 40px;
+        left: 5px;
+        font: 1.3rem sans-serif;
+    }
+
+    /* burger_menu */
+
+    .burger-menu {
+        left: 5px;
+    }
+
+    .burger-menu span {
+        width: 35px;
+    }
+
+    .modal_link>div {
+        font: bold 4rem 'Smooch Sans', sans-serif;
+    }
+
 }

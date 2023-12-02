@@ -28,7 +28,7 @@ export default function Home() {
               />
               <h3>#소통하는</h3>
               <p className="net_exp sub_text">
-                사람들과 하나의 목표를 향해 의견을 공유하며 나아가는 활동을
+                사람들과 의견을 공유하며 하나의 목표를 향해 나아가는 활동을
                 좋아합니다.
               </p>
             </div>
@@ -36,7 +36,7 @@ export default function Home() {
               <Image className="design sub_img" src={design} alt="design" />
               <h3>#감각있는</h3>
               <p className="design_exp sub_text">
-                상상한 그림을 디자인하고 제작하는 작업에 큰 성취감을 느낍니다. 
+                상상한 그림을 디자인하고 제작하는 작업에 큰 성취감을 느낍니다.
               </p>
             </div>
             <div className="three img_wrap">
@@ -47,23 +47,20 @@ export default function Home() {
               />
               <h3>#성장하는</h3>
               <p className="watering_exp sub_text">
-                나를 알고 부족한 부분을 채워가기 위해 반복과 복습을 습관처럼
-                하고 있습니다.
+                부족한 부분을 채워가기 위해 반복과 복습을 습관처럼 하고
+                있습니다.
               </p>
             </div>
           </div>
         </section>
 
         <section id="archiving">
-          <h2>Archiving</h2>
         </section>
 
         <section id="projects">
-          <h2>Projects</h2>
         </section>
 
         <section id="contact">
-          <h2>Contact</h2>
         </section>
       </div>
     </>

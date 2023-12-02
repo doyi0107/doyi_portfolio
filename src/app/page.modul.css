@@ -44,7 +44,6 @@ section {
 
 
 #main_sub {
-
     background-color: #B39C7A;
     position: relative;
 }
@@ -100,7 +99,7 @@ section {
 .explain_me {
     position: absolute;
     top: 35%;
-    left: 15vw;
+    justify-content: center;
     display: flex;
 }
 
@@ -113,14 +112,13 @@ section {
     display: inline-block;
 }
 
-:is(.img_wrap, .two, .three) {
-    font-size: 2rem;
+:is(.one, .two, .three) {
     margin: 1rem;
     animation: bubble 1s ease;
     animation-timeline: view();
 }
 
-.img_wrap {
+.one {
     animation-delay: 0s;
 }
 
@@ -137,20 +135,20 @@ section {
 @keyframes bubble {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(0px);
 
     }
 
 
     10% {
         opacity: 1;
-        transform: translateX(100px);
+        transform: translateX(300px);
 
     }
 
     100% {
         opacity: 1;
-        transform: translateX(100px);
+        transform: translateX(300px);
     }
 }
 
@@ -201,10 +199,10 @@ section {
 
 .img_wrap:hover .sub_img {
     transform: scale(1.2);
-    transition: 1s;
 }
 
 .sub_img {
+    transition: 0.7s;
     margin: 40px auto;
     display: block;
     width: 150px;
@@ -213,7 +211,7 @@ section {
 
 .sub_text {
     text-align: center;
-    margin:0 10px;
+    margin: 0 10px;
     color: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 100px;
@@ -275,4 +273,140 @@ section {
     50% {
         background-color: #ceb15a;
     }
+}
+
+@media screen and (max-width : 1300px) {
+    /* 
+     main_sub  */
+
+    .sub_name {
+        top: 15%;
+        font: bold 7rem sans-serif;
+    }
+
+    /* #소통하는 #감각있는 #성장하는 */
+    .explain_me {
+        width: 80vw;
+    }
+
+    .explain_me>div {
+        width: 270px;
+        height: 270px;
+    }
+
+    :is(.img_wrap, .two, .three) {
+        animation: bubble_desktop 1s ease;
+        animation-timeline: view();
+    }
+
+    .one {
+        animation-delay: 0s;
+    }
+
+    .two {
+        animation-delay: 0.3s;
+    }
+
+    .three {
+        animation-delay: 0.6s;
+    }
+
+
+    @keyframes bubble_desktop {
+        0% {
+            opacity: 0;
+            transform: translateX(0px);
+        }
+
+        10% {
+            opacity: 1;
+            transform: translateX(150px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(150px);
+        }
+    }
+
+    .explain_me h3 {
+        font: 300 1.8rem 'Black Han Sans',
+            sans-serif;
+        margin-top: -15px;
+    }
+}
+
+
+@media screen and (max-width : 1000px) {
+    #main_sub {
+        height: 150vh;
+    }
+
+    .sub_box {
+        width: 500px;
+        height: 150vh;
+        top: 5%;
+        left: -10px;
+    }
+
+    /*main_sub */
+    .sub_name {
+        top: 0%;
+        font: bold 5rem sans-serif;
+    }
+
+    /* #소통하는 #감각있는 #성장하는 */
+    .explain_me {
+        left: 0px;
+        top: 10%;
+        width: 70vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .explain_me h3 {
+        font: 300 1.8rem 'Black Han Sans',
+            sans-serif;
+        margin-top: -15px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    #main_sub {
+            height: 150vh;
+        }
+    
+        .sub_box {
+            width: 350px;
+            height: 150vh;
+            top: 0%;
+            left: -10px;
+        }
+    
+        /*main_sub */
+        .sub_name {
+                left: 10%;
+            top: 0%;
+            font: bold 3.5rem sans-serif;
+        }
+    
+        /* #소통하는 #감각있는 #성장하는 */
+        .explain_me {
+            left: 0px;
+            top: 10%;
+            width: 50vw;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .explain_me>div {
+            width: 270px;
+            height: 270px;
+        }
+    
+        .explain_me h3 {
+            font: 300 1.8rem 'Black Han Sans',
+                sans-serif;
+            margin-top: -15px;
+        }
 }

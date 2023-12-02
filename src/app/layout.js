@@ -1,6 +1,6 @@
+import "./globals.scss";
 import "./globals.css";
 import "./reset.css";
-import "./globals.scss";
 import Link from "next/link";
 import Image from "next/image";
 import me from "/public/me.png";
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <html>
         <body>
           <Modal />
-
+          <div className="scroll_top"></div>
           <main id="intro">
             {/* <header className="header_wrap">
               <Link href="#intro" className="link">
@@ -174,11 +174,17 @@ export default function RootLayout({ children }) {
               <Link href="#intro">
                 <Image className="nav_tree" src={nav_tree} alt="nav_tree" />
               </Link>
-              <p className="nav_name">DOY.</p>
+              <Link href="#main_sub">
+                <p className="nav_name">DOY.</p>
+              </Link>
             </div>
           </main>
 
           {children}
+
+          <footer>
+            {/* 나중에 작성 하삼 */}
+          </footer>
         </body>
       </html>
     </>
