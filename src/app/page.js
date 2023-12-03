@@ -62,7 +62,11 @@ export default function Home() {
         <section id="archiving">
           <h2 className="archiving_name">Archiving</h2>
           <div className="arch_left_box">
-            <Link href="https://github.com/doyi0107" className="github_img_wrap">
+            <Link
+              href="https://github.com/doyi0107"
+              className="github_img_wrap"
+              target="blank"
+            >
               <Image className="github_img" src={github} alt="github" />
             </Link>
             <div className="github_text">
@@ -75,6 +79,7 @@ export default function Home() {
           <div className="arch_right_box">
             <Link
               href="https://2-doooo-2.tistory.com/"
+              target="blank"
               className="t_story_img_wrap"
             >
               <Image className="t_story_img" src={t_story} alt="t_story" />
