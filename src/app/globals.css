@@ -52,11 +52,13 @@ a {
 
 /* #B39C7A */
 /* main */
+ /* rgb(229, 194, 67); */
+ /* rgb(164, 211, 63) */
 
 .scroll_top {
   z-index: 99;
-  background-color: rgb(164, 211, 63);
-  /* rgb(229, 194, 67); */
+  background-color:rgb(229, 194, 67); 
+ overflow: hidden;
   position: fixed;
   transform-origin: 0;
   width: 100vw;
@@ -89,7 +91,7 @@ a {
 
 
 #intro {
-  background-color: #5f6f52;
+  background-color: #B39C7A;
   width: 100vw;
   height: 100vh;
 }
@@ -348,7 +350,6 @@ a {
   position: absolute;
   top: 80px;
   height: 80vmin;
-  left: 2vw;
   width: 100vw;
   margin: 0 auto;
   -webkit-animation: master-container-bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 2.8s 1;

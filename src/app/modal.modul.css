@@ -78,7 +78,7 @@
     height: 100%;
     overflow: hidden;
     height: 0%;
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     background-color: #5f6f52;
     z-index: 100;
@@ -138,12 +138,12 @@
 }
 
 .modal_link:nth-child(3)>div:hover {
-    color: #2d82a7;
+    color: #e0b537;
     transition: 1s;
 }
 
 .modal_link:nth-child(4)>div:hover {
-    color: #e0b537;
+    color: #2d82a7;
     transition: 1s;
 }
 
@@ -166,7 +166,7 @@
         font: 1.3rem sans-serif;
     }
 
-    /* burger_menu */
+
 
     .burger-menu {
         left: 5px;

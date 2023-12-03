@@ -1,5 +1,5 @@
-import "./globals.scss";
 import "./globals.css";
+import "./globals.scss";
 import "./reset.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -181,10 +181,6 @@ export default function RootLayout({ children }) {
           </main>
 
           {children}
-
-          <footer>
-            {/* 나중에 작성 하삼 */}
-          </footer>
         </body>
       </html>
     </>

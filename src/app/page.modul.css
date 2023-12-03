@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap');
+
 .container {
     -webkit-animation: container_bg 7s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
     animation: container_bg 7s cubic-bezier(0.645, 0.045, 0.355, 1) 1;
@@ -49,13 +51,13 @@ section {
 }
 
 .sub_box {
-    width: 600px;
+    width: 500px;
     height: 100vh;
     background-color: #829472;
     border-radius: 0px 300px 300px 0px;
     position: absolute;
     top: 0;
-    left: -10px;
+    /* left: -10px; */
     animation: fromleft 1s both;
     animation-timeline: view();
 }
@@ -112,8 +114,12 @@ section {
     display: inline-block;
 }
 
+
+
+
+
 :is(.one, .two, .three) {
-    margin: 1rem;
+    margin: 1rem 1.5rem;
     animation: bubble 1s ease;
     animation-timeline: view();
 }
@@ -216,30 +222,168 @@ section {
     position: absolute;
     top: 100px;
     z-index: 20;
-    font: 300 1.5rem/1.5 'Black Han Sans',
+    font: bold 1.5rem/1.5 'IBM Plex Sans KR',
         sans-serif;
 }
 
 
 /* archiving section */
 
-
+/* #c96958; */
 
 #archiving {
-    background-color: #c96958;
-    animation: arch_bg_change 1s both 0.3s;
+    position: relative;
+    background-color: #B39C7A;
+}
+
+.archiving_name {
+    z-index: 9;
+    position: absolute;
+    top: -20px;
+    left: 15%;
+    animation: fromleft 1s both;
     animation-timeline: view();
+    color: rgba(255, 255, 255, 0.7);
+    font: bold 8rem sans-serif;
 }
 
-@keyframes arch_bg_change {
+.github_img_wrap {
+    /* width: 100vw;
+    display: block;
+    justify-content: center; */
+}
+
+.github_img {
+    float: right;
+    margin: 3% 4%;
+    width: 200px;
+    height: 200px;
+    transition: all 0.5s;
+}
+
+.github_img:hover{
+    width: 220px;
+        height: 220px;
+}
+
+.github_text {
+    width: 800px;
+    margin: 60px 0px 0px 20%;
+}
+
+.github_text>h4 {
+    color: rgba(231, 221, 205, 0.8);
+    font: 300 2rem/1.5 'Black Han Sans',
+        sans-serif;
+}
+
+.github_text>p {
+    color: rgba(231, 221, 205, 0.8);
+    font: 400 1.3rem/1.5 'IBM Plex Sans KR',
+        sans-serif;
+}
+
+.arch_left_box {
+    width: 61vw;
+    height: 38vh;
+    left: 0px;
+    background-color: rgba(201, 105, 88, 0.7);
+    border-radius: 0px 300px 300px 0px;
+    position: absolute;
+    top: 15%;
+    animation: arch_left_box_ani 1s both;
+    animation-timeline: view();
+    transform-origin: left;
+
+}
+
+
+@keyframes arch_left_box_ani {
     0% {
-        background-color: #5f6f52;
+        opacity: 0;
+        transform: translateX(-400px);
+
     }
 
-    50% {
-        background-color: #c96958;
+
+    30% {
+        opacity: 1;
+        transform: translateX(0px);
+
     }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
 }
+
+.t_story_img_wrap {}
+
+.t_story_img {
+    margin: 1% 2%;
+    float: left;
+    width: 250px;
+    height: 250px;
+    transition: all 0.5s;
+}
+
+.t_story_img:hover {
+    width: 270px;
+    height: 270px;
+}
+
+.t_story_text {
+    width: 800px;
+    margin-top: 20px;
+}
+
+.t_story_text>h4 {
+    color: rgba(231, 221, 205, 0.8);
+    font: 300 2rem/1.5 'Black Han Sans',
+        sans-serif;
+}
+
+.t_story_text>p {
+    color: rgba(231, 221, 205, 0.8);
+    font: 400 1.3rem/1.5 'IBM Plex Sans KR',
+        sans-serif;
+}
+
+.arch_right_box {
+    position: absolute;
+    width: 54vw;
+    height: 38vh;
+    right: 0px;
+    background-color: rgba(201, 105, 88, 0.7);
+    border-radius: 300px 0px 0px 300px;
+    bottom: 5%;
+    animation: arch_right_box_ani 1s both;
+    animation-timeline: view();
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+
+@keyframes arch_right_box_ani {
+    0% {
+        opacity: 0;
+        right: -300px;
+    }
+
+    30% {
+        opacity: 1;
+        right: 0px;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0px;
+    }
+
+}
+
 
 #projects {
     background-color: #408fb0;
@@ -254,24 +398,23 @@ section {
     }
 
     50% {
-        background-color: #408fb0;
+        background-color: #ceb15a;
     }
 }
 
 
 #contact {
-    background-color: #ceb15a;
     animation: con_bg_change 1s both 0.3s;
     animation-timeline: view();
 }
 
 @keyframes con_bg_change {
     0% {
-        background-color: #408fb0;
+        background-color: #ceb15a;
     }
 
     50% {
-        background-color: #ceb15a;
+        background-color: #408fb0;
     }
 }
 
@@ -373,40 +516,40 @@ section {
 
 @media screen and (max-width : 600px) {
     #main_sub {
-            height: 150vh;
-        }
-    
-        .sub_box {
-            width: 350px;
-            height: 150vh;
-            top: 0%;
-            left: -10px;
-        }
-    
-        /*main_sub */
-        .sub_name {
-                left: 10%;
-            top: 0%;
-            font: bold 3.5rem sans-serif;
-        }
-    
-        /* #소통하는 #감각있는 #성장하는 */
-        .explain_me {
-            left: 0px;
-            top: 10%;
-            width: 50vw;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .explain_me>div {
-            width: 270px;
-            height: 270px;
-        }
-    
-        .explain_me h3 {
-            font: 300 1.8rem 'Black Han Sans',
-                sans-serif;
-            margin-top: -15px;
-        }
+        height: 150vh;
+    }
+
+    .sub_box {
+        width: 350px;
+        height: 150vh;
+        top: 0%;
+        left: -10px;
+    }
+
+    /*main_sub */
+    .sub_name {
+        left: 10%;
+        top: 0%;
+        font: bold 3.5rem sans-serif;
+    }
+
+    /* #소통하는 #감각있는 #성장하는 */
+    .explain_me {
+        left: 0px;
+        top: 10%;
+        width: 50vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .explain_me>div {
+        width: 270px;
+        height: 270px;
+    }
+
+    .explain_me h3 {
+        font: 300 1.8rem 'Black Han Sans',
+            sans-serif;
+        margin-top: -15px;
+    }
 }

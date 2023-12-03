@@ -7,10 +7,7 @@ $desktop: "screen and (max-width : 1300px)";
 
 .intro_wrapper {
 
-
     h1 {
-        // text-transform: uppercase;
-        // text-align: center;
         text-shadow: -1px -1px 0 $yellow-green, 1px -1px 0 $yellow-green, -1px 1px 0 $yellow-green, 1px 1px 0 $yellow-green;
 
         &:after {
@@ -28,14 +25,14 @@ $desktop: "screen and (max-width : 1300px)";
 
 @media #{$desktop} {
 
-    // master ani
+
     #master {
         font: 90 9rem/1.2 'Black Han Sans',
             sans-serif;
     }
 
     #master-container {
-        left: 5vw;
+        width: 100vw;
     }
 
     #master-container-scroller {
@@ -143,8 +140,6 @@ $desktop: "screen and (max-width : 1300px)";
         }
     }
 
-
-
 }
 
 @media #{$tablet} {
@@ -163,7 +158,8 @@ $desktop: "screen and (max-width : 1300px)";
     #master-container {
         top: 80px;
         height: 80vmin;
-        left: 5vw;
+        width: 90vw;
+        left: 10vw;
     }
 
 
@@ -294,9 +290,10 @@ $desktop: "screen and (max-width : 1300px)";
     }
 
     #master-container {
+        width: 85vw;
         top: 150px;
         height: 80vmin;
-        left: 7vw;
+        left: 15vw;
     }
 
     #master-container-scroller .master-container-scroller_item {
