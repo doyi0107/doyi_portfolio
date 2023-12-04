@@ -116,6 +116,8 @@
 }
 
 .modal_link>div {
+margin: 0 auto;
+    width: 300px;
     font: bold 6rem 'Smooch Sans',
         sans-serif;
     color: #CDBCA3;

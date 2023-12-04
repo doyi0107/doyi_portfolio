@@ -6,13 +6,63 @@ import design from "/public/design.png";
 import watering from "/public/watering.png";
 import github from "/public/github.png";
 import t_story from "/public/t-story.png";
+import one from "/public/1.jpeg";
 import Link from "next/link";
-// import gsap from "gsap";
+import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import LocomotiveScroll from "locomotive-scroll";
 import { useEffect, useRef } from "react";
+import ScrollMagic from "scrollmagic";
 
 export default function Home() {
+
+    const scrollSectionRef = useRef(null);
+    const scrollContentRef = useRef(null);
+
+    useEffect(() => {
+      const scrollSection = scrollSectionRef.current;
+      const scrollContent = scrollContentRef.current;
+
+      const handleScroll = () => {
+        const scrolled = window.pageYOffset;
+        const sectionOffset = Math.abs(scrollSection.offsetTop - scrolled);
+        const notReachedBottom = parseInt(
+          Math.max(
+            0,
+            scrollSection.getBoundingClientRect().bottom - window.innerHeight
+          )
+        );
+
+        if (scrollSection.offsetTop <= scrolled && notReachedBottom) {
+          gsap.to(scrollContent, {
+            x: -sectionOffset,
+          });
+        }
+      };
+
+      document.addEventListener("scroll", handleScroll);
+
+      // Clean up the event listener on component unmount
+      return () => {
+        document.removeEventListener("scroll", handleScroll);
+      };
+    }, []); // Empty dependency array to run the effect only once on mount
+
+    useEffect(() => {
+
+      const heroScene = new ScrollMagic.Scene({
+        triggerElement: ".hero",
+        triggerHook: 0,
+        duration: "40%",
+      });
+
+      // Clean up the ScrollMagic scene on component unmount
+      return () => {
+        heroScene.destroy();
+      };
+    }, []);
+
+
   return (
     <>
       <div className="container">
@@ -97,7 +147,52 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects"></section>
+        <section
+          id="projects"
+          className="about horizontal-scroll__section"
+          ref={scrollSectionRef}
+        >
+          <div class="horizontal-scroll__wrapper">
+            <div class="horizontal-scroll__content" ref={scrollContentRef}>
+              <div class="about__item">
+                <Image className="img" src={one} alt="github" />
+                <div class="content">
+                  <div>
+                    <h3>What attained our violin</h3>
+                    <p>Been is in merely immune makes back peacefully.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="about__item">
+                <Image className="img" src={one} alt="github" />
+                <div class="content">
+                  <div>
+                    <h3>What attained our violin</h3>
+                    <p>Been is in merely immune makes back peacefully.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="about__item">
+                <Image className="img" src={one} alt="github" />
+                <div class="content">
+                  <div>
+                    <h3>What attained our violin</h3>
+                    <p>Been is in merely immune makes back peacefully.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="about__item">
+                <Image className="img" src={one} alt="github" />
+                <div class="content">
+                  <div>
+                    <h3>What attained our violin</h3>
+                    <p>Been is in merely immune makes back peacefully.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section id="contact"></section>
       </div>
