@@ -147,7 +147,7 @@
     transition: 1s;
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 650px) {
 
     .nav_left_box {
         width: 60px;

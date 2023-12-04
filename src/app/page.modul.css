@@ -551,7 +551,7 @@ section {
         width: 60vw;
         height: 38vh;
         right: 0px;
-        ;
+        overflow: hidden;
     }
 }
 
@@ -584,37 +584,31 @@ section {
         align-items: center;
     }
 
-    .explain_me h3 {
-        font: 300 1.8rem 'Black Han Sans',
-            sans-serif;
-        margin-top: -15px;
-    }
 
     .sub_text {
         font: bold 1.3rem/1.5 'IBM Plex Sans KR',
             sans-serif;
     }
 
-    /* 여기서 부터 다시 시작하기  */
 
     /* archiving */
     #archiving {
-        height: 160vh;
-        position: relative;
-        background-color: #B39C7A;
+        height: 165vh;
     }
 
     .archiving_name {
-        font: bold 6rem sans-serif;
+        top: -10px;
+        left: 10vw;
+        font: bold 5rem sans-serif;
     }
 
     /* github */
     .github_img {
+        display: block;
         float: none;
-        margin: 3% 4%;
-        width: 200px;
-        height: 200px;
-        transition: all 0.5s;
+        margin: 6vh auto;
+        width: 210px;
+        height: 210px;
     }
 
     .github_img:hover {
@@ -623,28 +617,25 @@ section {
     }
 
     .github_text {
-        width: 800px;
-        margin: 60px 0px 0px 15%;
+        display: block;
+        width: 400px;
+        height: 20vh;
+        margin: 0 auto;
     }
 
     .github_text>h4 {
-        color: rgba(231, 221, 205, 0.8);
-        font: 300 2rem/1.5 'Black Han Sans',
+        font: 300 1.7rem/1.5 'Black Han Sans',
             sans-serif;
     }
 
     .github_text>p {
-        color: rgba(231, 221, 205, 0.8);
-        font: 400 1.3rem/1.6 'IBM Plex Sans KR',
+        font: 400 1.1rem/1.7 'IBM Plex Sans KR',
             sans-serif;
     }
 
     .arch_left_box {
-        width: 61vw;
-        height: 70vh;
-        left: 0px;
-        border-radius: 0px 300px 300px 0px;
-        position: absolute;
+        width: 80vw;
+        height: 80vh;
         top: 5%;
         animation: arch_left_box_ani 1s both;
         animation-timeline: view();
@@ -655,26 +646,66 @@ section {
     @keyframes arch_left_box_ani {
         0% {
             opacity: 0;
-            transform: translateX(-400px);
+            transform: translateX(-300px);
 
         }
 
 
         30% {
             opacity: 1;
-            transform: translateX(0px);
+            transform: translateX(70px);
 
         }
 
         100% {
             opacity: 1;
-            transform: translateX(0px);
+            transform: translateX(70px);
         }
 
     }
+
+    .t_story_img {
+        margin: 4vh auto;
+        display: block;
+        float: none;
+        width: 250px;
+        height: 250px;
+        transition: all 0.5s;
+    }
+
+    .t_story_img:hover {
+        width: 260px;
+        height: 260px;
+    }
+
+    .t_story_text {
+        display: block;
+        float: none;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .t_story_text>h4 {
+        font: 300 1.7rem/1.5 'Black Han Sans',
+            sans-serif;
+    }
+
+    .t_story_text>p {
+        font: 400 1.1rem/1.7 'IBM Plex Sans KR',
+            sans-serif;
+    }
+
+
+    .arch_right_box {
+        width: 80vw;
+        height: 80vh;
+        bottom: 5%;
+    }
+
+
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 650px) {
     #main_sub {
         height: 150vh;
     }
@@ -712,4 +743,86 @@ section {
             sans-serif;
         margin-top: -15px;
     }
+
+    /* archiving */
+    .archiving_name {
+        top: 10px;
+        font: bold 3.5rem sans-serif;
+    }
+
+    /* github */
+    .github_img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .github_img:hover {
+        width: 210px;
+        height: 210px;
+    }
+
+    .github_text {
+        width: 270px;
+        height: 20vh;
+        margin-left: 7vw;
+    }
+
+    .github_text>h4 {
+        font: 300 1.5rem/1.5 'Black Han Sans',
+            sans-serif;
+    }
+
+    .github_text>p {
+        font: 400 1rem/1.5 'IBM Plex Sans KR',
+            sans-serif;
+    }
+
+    .arch_left_box {
+        animation: arch_left_box_ani 1s both;
+        animation-timeline: view();
+        transform-origin: left;
+
+    }
+
+    @keyframes arch_left_box_ani {
+        0% {
+            opacity: 0;
+            transform: translateX(-300px);
+
+        }
+
+
+        30% {
+            opacity: 1;
+            transform: translateX(50px);
+
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(50px);
+        }
+
+    }
+
+    .t_story_img {
+        margin: 2vh 0px -2vh 20vw;
+    }
+
+    .t_story_text {
+        width: 300px;
+        margin: 0 auto;
+        padding-left: 10vw;
+    }
+
+    .t_story_text>h4 {
+        font: 300 1.5rem/1.5 'Black Han Sans',
+            sans-serif;
+    }
+
+    .t_story_text>p {
+        font: 400 1rem/1.5 'IBM Plex Sans KR',
+            sans-serif;
+    }
+
 }
