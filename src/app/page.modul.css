@@ -389,12 +389,16 @@ section {
 
 /* projects 시작!!! */
 
+/* height값이 scroll전체 width 값이 된다.  */
+/* about-project개수따라 height값 늘리기 */
+
 #projects {
-    /* background-color: #B39C7A;
-    animation: pro_bg_change 1s both 0.3s;
+    background-color: #B39C7A;
+    position: relative;
+    height:1000vh;
+    /* animation: pro_bg_change 1s both 0.3s;
     animation-timeline: view(); */
 }
-
 
 @keyframes pro_bg_change {
     /* 0% {
@@ -406,6 +410,80 @@ section {
     } */
 }
 
+.projects_name {
+    position: absolute;
+    top: -20px;
+    left: 13vw;
+    color: rgba(255, 255, 255, 0.7);
+    font: bold 8rem sans-serif;
+}
+
+/* 여기에 width값 설정하면 제한이 생김  */
+/* 다음 section으로 안넘어가게 해줌 */
+
+.horizontal_scroll_wrap {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* scroll_width값 설정 - about-project개수따라 width값 늘리기 */ 
+
+.horizontal_scroll_content {
+    display: flex;
+    height: 100vh;
+    width: 500vw;
+    will-change: transform;
+    margin-left: 3vw;
+    scroll-snap-type: x proximity;
+}
+
+/* projects배경 */
+
+.about_project {
+    scroll-snap-align: start;
+    display: inline-block;
+    width: 75vw;
+    margin: 5vw auto;
+    background-color: rgba(224, 181, 55, 0.7);
+    border-radius: 200px;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about_project .content {
+    /* height: 50%; */
+    width: 70vw;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.about_project .content img{
+    width: 40vw;
+    height: 40vh;
+}
+
+.about_project .content h3 {
+    font-size: 32px;
+    max-width: 250px;
+    line-height: 1.2;
+}
+
+.about_project .content p {
+    color: rgba(0, 0, 0, 0.6);
+    max-width: 350px;
+    margin-top: 8px;
+}
+
+
+/* contact */
 
 #contact {
     animation: con_bg_change 1s both 0.3s;
@@ -421,6 +499,8 @@ section {
         background-color: #408fb0;
     }
 }
+
+
 
 @media screen and (max-width : 1300px) {
     /* 
@@ -826,74 +906,6 @@ section {
             sans-serif;
     }
 
-}
-
-.about {
-    background-color: #fff;
-}
-
-.about__item {
-    display: inline-block;
-    width: 700px;
-    padding: 0px 40px;
-    display: flex;
-    flex-direction: column;
-}
-
-.about__item:nth-child(odd) img {
-    margin-bottom: 64px;
-}
-
-.about__item:nth-child(even) {
-    flex-direction: column-reverse;
-}
-
-.about__item img {
-    object-fit: cover;
-    height: 500px;
-    width: 500px;
-}
-
-.about__item .content {
-    height: 50%;
-    max-width: 500px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-.about__item .content h3 {
-    font-size: 32px;
-    max-width: 250px;
-    line-height: 1.2;
-}
-
-.about__item .content p {
-    color: rgba(0, 0, 0, 0.6);
-    max-width: 350px;
-    margin-top: 8px;
-}
-
-.horizontal-scroll__section {
-    position: relative;
-    height: 350vh;
-}
-
-.horizontal-scroll__wrapper {
-    position: sticky;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-}
-
-.horizontal-scroll__content {
-    display: flex;
-    padding: 80px;
-    height: 100vh;
-    width: 350vh;
-    will-change: transform;
 }
 
 

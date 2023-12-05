@@ -14,9 +14,7 @@
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18",
-    "react-gsap-enhancer": "^0.3.0",
-    "scrollmagic": "^2.0.8",
-    "scrollmagic-plugin-gsap": "^1.0.4"
+    "react-gsap-enhancer": "^0.3.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",

@@ -164,11 +164,7 @@ export default function RootLayout({ children }) {
             </div>
             <Image className="doyi" src={me} alt="intro_doyi" />
 
-            <div className="scroll_guide">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+      
 
             <div className="nav_left_box">
               <Link href="#intro">
@@ -181,9 +177,7 @@ export default function RootLayout({ children }) {
           </main>
 
           {children}
-          <footer>
-             {/* 나중에 할거임 */}
-          </footer>
+          <footer>{/* 나중에 할거임 */}</footer>
         </body>
       </html>
     </>

@@ -52,13 +52,13 @@ a {
 
 /* #B39C7A */
 /* main */
- /* rgb(229, 194, 67); */
- /* rgb(164, 211, 63) */
+/* rgb(229, 194, 67); */
+/* rgb(164, 211, 63) */
 
 .scroll_top {
   z-index: 99;
-  background-color:rgb(229, 194, 67); 
- overflow: hidden;
+  background-color: rgb(229, 194, 67);
+  overflow: hidden;
   position: fixed;
   transform-origin: 0;
   width: 100vw;
@@ -260,14 +260,14 @@ a {
 
 /* 스크롤 유도 표시 */
 .scroll_guide {
-
   -webkit-animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
   animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
   animation-fill-mode: backwards;
 }
 
 .scroll_guide span {
-  position: absolute;
+  z-index: 99;
+  position: fixed;
   bottom: 100px;
   right: 10%;
   width: 30px;
@@ -328,6 +328,49 @@ a {
   }
 }
 
+.scroll_guide_up {
+  -webkit-animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
+  animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
+  animation-fill-mode: backwards;
+}
+
+.scroll_guide_up span {
+  z-index: 99;
+  position: fixed;
+  bottom: 100px;
+  right: 10%;
+  width: 30px;
+  height: 30px;
+  /* margin-left: -12px; */
+  border-top: 2.5px solid #d7cbb9;
+  border-right: 2.5px solid #d7cbb9;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+
+}
+
+.scroll_guide_up span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.scroll_guide_up span:nth-of-type(2) {
+  bottom: 85px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+
+.scroll_guide_up span:nth-of-type(3) {
+  bottom: 70px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+
 
 
 
@@ -384,7 +427,7 @@ a {
   padding-bottom: 6px;
   -webkit-animation: scroll 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 2.8s 1;
   animation: scroll 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 2.8s 1;
-    animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
 }
 

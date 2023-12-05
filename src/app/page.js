@@ -6,65 +6,68 @@ import design from "/public/design.png";
 import watering from "/public/watering.png";
 import github from "/public/github.png";
 import t_story from "/public/t-story.png";
-import one from "/public/1.jpeg";
+import APMA from "/public/APMA_img.png";
 import Link from "next/link";
 import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import LocomotiveScroll from "locomotive-scroll";
-import { useEffect, useRef } from "react";
-import ScrollMagic from "scrollmagic";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
+  const [isSpecialCase, setIsSpecialCase] = useState(false);
+  const scrollSectionRef = useRef(null);
+  const scrollContentRef = useRef(null);
 
-    const scrollSectionRef = useRef(null);
-    const scrollContentRef = useRef(null);
+  useEffect(() => {
+    const scrollSection = scrollSectionRef.current;
+    const scrollContent = scrollContentRef.current;
 
-    useEffect(() => {
-      const scrollSection = scrollSectionRef.current;
-      const scrollContent = scrollContentRef.current;
+    const handleScroll = () => {
+      const isScrollAtBottom =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      const scrollTop = window.scrollY;
 
-      const handleScroll = () => {
-        const scrolled = window.pageYOffset;
-        const sectionOffset = Math.abs(scrollSection.offsetTop - scrolled);
-        const notReachedBottom = parseInt(
-          Math.max(
-            0,
-            scrollSection.getBoundingClientRect().bottom - window.innerHeight
-          )
-        );
+      // 상단으로 스크롤될 때의 조건을 설정 (예: 0 또는 원하는 값)
+      const isTop = scrollTop === 0;
 
-        if (scrollSection.offsetTop <= scrolled && notReachedBottom) {
-          gsap.to(scrollContent, {
-            x: -sectionOffset,
-          });
-        }
-      };
+      if (isScrollAtBottom) {
+        setIsSpecialCase(!isSpecialCase);
+      } else if (isTop) {
+        setIsSpecialCase(isSpecialCase);
+      }
 
-      document.addEventListener("scroll", handleScroll);
+      const scrolled = window.pageYOffset;
+      const sectionOffset = Math.abs(scrollSection.offsetTop - scrolled);
+      const notReachedBottom = parseInt(
+        Math.max(
+          0,
+          scrollSection.getBoundingClientRect().bottom - window.innerHeight
+        )
+      );
 
-      // Clean up the event listener on component unmount
-      return () => {
-        document.removeEventListener("scroll", handleScroll);
-      };
-    }, []); // Empty dependency array to run the effect only once on mount
+      if (scrollSection.offsetTop <= scrolled && notReachedBottom) {
+        gsap.to(scrollContent, {
+          x: -sectionOffset,
+        });
+      }
+    };
 
-    useEffect(() => {
+    document.addEventListener("scroll", handleScroll);
 
-      const heroScene = new ScrollMagic.Scene({
-        triggerElement: ".hero",
-        triggerHook: 0,
-        duration: "40%",
-      });
-
-      // Clean up the ScrollMagic scene on component unmount
-      return () => {
-        heroScene.destroy();
-      };
-    }, []);
-
+    // Clean up the event listener on component unmount
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Empty dependency array to run the effect only once on mount
 
   return (
     <>
+      <div className={`${isSpecialCase ? "scroll_guide_up" : "scroll_guide"}`}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <div className="container">
         <section id="main_sub">
           {/*  */}
@@ -147,15 +150,44 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="projects"
-          className="about horizontal-scroll__section"
-          ref={scrollSectionRef}
-        >
-          <div class="horizontal-scroll__wrapper">
-            <div class="horizontal-scroll__content" ref={scrollContentRef}>
-              <div class="about__item">
-                <Image className="img" src={one} alt="github" />
+        <section id="projects" ref={scrollSectionRef}>
+          <div className="horizontal_scroll_wrap">
+            <div className="horizontal_scroll_content" ref={scrollContentRef}>
+              <h2 className="projects_name">projects</h2>
+              {/* 프로젝트들 */}
+              <div className="about_project">
+                <div className="content">
+                  <div className="project_img">
+                    <Image className="APMA_img" src={APMA} alt="APMA_img" />
+                  </div>
+
+                  <div className="project_text">
+                    <h3>APMA 프로젝트</h3>
+                    <p>Been is in merely immune makes back peacefully.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="about_project">
+                <div className="content">
+                  <div>
+                    <h3>What attained our violin</h3>
+                    <p>Been is in merely immune makes back peacefully.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="about_project">
+                <div className="content">
+                  <div>
+                    <h3>What attained our violin</h3>
+                    <p>Been is in merely immune makes back peacefully.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="about_project">
+                {/* <Image className="img" src={one} alt="github" /> */}
                 <div class="content">
                   <div>
                     <h3>What attained our violin</h3>
@@ -163,26 +195,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div class="about__item">
-                <Image className="img" src={one} alt="github" />
-                <div class="content">
-                  <div>
-                    <h3>What attained our violin</h3>
-                    <p>Been is in merely immune makes back peacefully.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="about__item">
-                <Image className="img" src={one} alt="github" />
-                <div class="content">
-                  <div>
-                    <h3>What attained our violin</h3>
-                    <p>Been is in merely immune makes back peacefully.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="about__item">
-                <Image className="img" src={one} alt="github" />
+              <div className="about_project">
+                {/* <Image className="img" src={one} alt="github" /> */}
                 <div class="content">
                   <div>
                     <h3>What attained our violin</h3>
