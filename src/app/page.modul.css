@@ -174,8 +174,6 @@ section {
 }
 
 .img_wrap:hover:after,
-.img_wrap:hover>.sub_text,
-.img_wrap:hover:after,
 .img_wrap:hover>.sub_text {
     display: block;
 }
@@ -395,7 +393,7 @@ section {
 #projects {
     background-color: #B39C7A;
     position: relative;
-    height:1000vh;
+    height: 1000vh;
     /* animation: pro_bg_change 1s both 0.3s;
     animation-timeline: view(); */
 }
@@ -430,29 +428,33 @@ section {
 }
 
 
-/* scroll_width값 설정 - about-project개수따라 width값 늘리기 */ 
+/* scroll_width값 설정 - about-project개수따라 width값 늘리기 */
 
 .horizontal_scroll_content {
     display: flex;
     height: 100vh;
     width: 500vw;
     will-change: transform;
-    margin-left: 3vw;
-    scroll-snap-type: x proximity;
+    margin: 2vh 0 0 3vw;
 }
 
 /* projects배경 */
 
 .about_project {
-    scroll-snap-align: start;
     display: inline-block;
     width: 75vw;
     margin: 5vw auto;
-    background-color: rgba(224, 181, 55, 0.7);
+    background-color: rgba(224, 181, 55, 0.6);
     border-radius: 200px;
     padding: 0px 40px;
     display: flex;
     flex-direction: column;
+}
+
+.project_line {
+    width: 2px;
+    height: 96.5vh;
+    background-color: rgba(255, 227, 142, 0.6);
 }
 
 
@@ -465,22 +467,184 @@ section {
     align-items: center;
 }
 
-.about_project .content img{
-    width: 40vw;
+
+/* project_img 효과 */
+
+
+/* project_img  크기 hover시 영향 */
+.project_img_wrap {
+    display: inline-block;
+    position: relative;
+    /* width: 33vw; */
+    /* height: 40vh; */
+    margin: 0 3.5vw;
+}
+
+.project_img_wrap:hover:after,
+.project_img_wrap:hover>.project_link {
+    display: block;
+}
+
+.project_img_wrap:after,
+.project_link {
+    display: none;
+}
+
+.project_img_wrap:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.project_img_wrap {
+    overflow: hidden;
+    display: flex;
+}
+
+
+.project_img_wrap:hover .APMA_img {
+    transform: scale(1.2);
+}
+
+/* project_img 실제 크기 */
+.APMA_img {
+    transition: 0.7s;
+    display: block;
+    width: 30vw;
     height: 40vh;
 }
 
-.about_project .content h3 {
-    font-size: 32px;
-    max-width: 250px;
-    line-height: 1.2;
+.project_link {
+    margin: 9vh 3.5vw;
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    z-index: 20;
+    font: bold 1.5rem/1.5 'IBM Plex Sans KR',
+        sans-serif;
 }
 
-.about_project .content p {
-    color: rgba(0, 0, 0, 0.6);
-    max-width: 350px;
-    margin-top: 8px;
+.source_code_link {}
+
+.demo_code_link {
+    top: -12px;
+    left: 200px;
 }
+
+.source_code_link>img {
+    width: 10vw;
+    height: 18vh;
+}
+
+.demo_code_link>img {
+    width: 10vw;
+    height: 20vh;
+}
+
+.project_link>p {
+    text-align: center;
+    color: white !important;
+    font: 100 1.4rem 'Black Han Sans',
+            sans-serif;
+}
+
+
+
+/* project explain */
+
+.about_project .content h3 {
+    max-width: 30vw;
+    margin-top: 0px;
+    line-height: 1.2;
+    color: rgba(231, 221, 205,1);
+    font: 300 3rem 'Black Han Sans',
+        sans-serif;
+}
+
+.about_project .content h4 {
+   
+    color: rgba(231, 221, 205, 1);
+    font: bold 1.5rem/1.6 'IBM Plex Sans KR',
+        sans-serif;
+    max-width: 30vw;
+    margin-top: 8px;
+
+}
+.project_text_wrap h4::before{
+    content: "✓";
+    color: #2d82a7;
+    font: 400 2rem/1 'IBM Plex Sans KR',
+            sans-serif;
+    /* font-size: 50px; */
+
+}
+
+.project_text_wrap p{
+        color: rgba(231, 221, 205, 1);
+font: 400 1rem 'IBM Plex Sans KR',
+        sans-serif;
+}
+
+.project_text_wrap button{
+    height: 6vh;
+    margin-top: 20px;
+    background-color: transparent;
+    color: rgba(231, 221, 205, 1);
+    border: 3px solid #2d82a7;
+    border-radius: 30px;
+    font: 500 1.2rem 'IBM Plex Sans KR',
+            sans-serif;
+}
+
+.project_text_wrap button:hover{
+    cursor: pointer;
+}
+
+/* :active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+::before,
+::after {
+    position: absolute;
+    content: "";
+} */
+
+/* .btn.hover-opacity::before {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.btn.hover-opacity:hover::before {
+    opacity: 1;
+} */
+
+/* .btn-2::before {
+    background-color: rgb(28, 31, 30);
+    transition: 0.3s ease-out;
+}
+
+.btn-2 span {
+    color: rgb(28, 31, 30);
+    border: 1px solid rgb(28, 31, 30);
+    transition: 0.2s;
+}
+
+.btn-2 span:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.2s 0.1s;
+} */
 
 
 /* contact */
@@ -907,6 +1071,3 @@ section {
     }
 
 }
-
-
-

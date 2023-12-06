@@ -7,6 +7,8 @@ import watering from "/public/watering.png";
 import github from "/public/github.png";
 import t_story from "/public/t-story.png";
 import APMA from "/public/APMA_img.png";
+import source_code from "/public/source-code.png";
+import demo from "/public/demo.png";
 import Link from "next/link";
 import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -157,16 +159,64 @@ export default function Home() {
               {/* 프로젝트들 */}
               <div className="about_project">
                 <div className="content">
-                  <div className="project_img">
+                  <div className="project_img_wrap">
                     <Image className="APMA_img" src={APMA} alt="APMA_img" />
+
+                    <Link
+                      className="source_code_link project_link"
+                      href="https://github.com/APMA-project/APMA-Frontend.git"
+                      target="_blank"
+                    >
+                      <Image
+                        className="source_code"
+                        src={source_code}
+                        alt="source_code_img"
+                      />
+                      <p>#source code</p>
+                    </Link>
+                    <Link
+                      className="demo_code_link project_link"
+                      href="https://apma-project.netlify.app/"
+                      target="_blank"
+                    >
+                      <Image className="demo" src={demo} alt="demo_img" />
+                      <p>#demo</p>
+                    </Link>
                   </div>
 
-                  <div className="project_text">
+                  <div className="project_text_wrap">
                     <h3>APMA 프로젝트</h3>
-                    <p>Been is in merely immune makes back peacefully.</p>
+                    <h4>프로젝트기간</h4>
+                    <p>2021.08(1명) / 2023.08(3명)</p>
+                    <h4>프론트엔드</h4>
+                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
+                    <h4>백엔드</h4>
+                    <p>JAVA, SPRING, LOCALSTORAGE </p>
+                    <h4>주요기능</h4>
+                    <p>
+                      미술관 전시 소개에 맞는 UI/UX로 디자인
+                      <br />
+                      CSS 반응형웹으로 제작
+                      <br />
+                      AJAX를 활용해 비동기처리 방식을 이용한 로그인, 회원가입
+                      기능
+                    </p>
+
+                    <Link
+                      href="https://statuesque-pincushion-161.notion.site/0a029e7757a446e6bc4c4faa8a72d5be?pvs=4"
+                      target="_blank"
+                    >
+                      <button>자세히보기 ➤ README</button>
+                    </Link>
                   </div>
+
+                  {/* <button class="btn btn-2 hover-opacity">
+                    <span>hover me</span>
+                  </button> */}
                 </div>
               </div>
+
+              <span className="project_line"></span>
 
               <div className="about_project">
                 <div className="content">
@@ -176,7 +226,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
+              <span className="project_line"></span>
               <div className="about_project">
                 <div className="content">
                   <div>
@@ -185,7 +235,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
+              <span className="project_line"></span>
               <div className="about_project">
                 {/* <Image className="img" src={one} alt="github" /> */}
                 <div class="content">
@@ -195,6 +245,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              <span className="project_line"></span>
               <div className="about_project">
                 {/* <Image className="img" src={one} alt="github" /> */}
                 <div class="content">
