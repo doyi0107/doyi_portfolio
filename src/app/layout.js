@@ -177,7 +177,7 @@ export default function RootLayout({ children }) {
           </main>
 
           {children}
-          <footer>{/* 나중에 할거임 */}</footer>
+
         </body>
       </html>
     </>

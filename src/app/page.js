@@ -9,6 +9,7 @@ import t_story from "/public/t-story.png";
 import APMA from "/public/APMA_img.png";
 import source_code from "/public/source-code.png";
 import demo from "/public/demo.png";
+import contact_doyi from "/public/contact_doyi.jpg";
 import Link from "next/link";
 import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -157,8 +158,10 @@ export default function Home() {
             <div className="horizontal_scroll_content" ref={scrollContentRef}>
               <h2 className="projects_name">projects</h2>
               {/* 프로젝트들 */}
+              {/* apma */}
               <div className="about_project">
                 <div className="content">
+                  {/* img_wrap */}
                   <div className="project_img_wrap">
                     <Image className="APMA_img" src={APMA} alt="APMA_img" />
 
@@ -183,7 +186,7 @@ export default function Home() {
                       <p>#demo</p>
                     </Link>
                   </div>
-
+                  {/* text_wrap */}
                   <div className="project_text_wrap">
                     <h3>APMA 프로젝트</h3>
                     <h4>프로젝트기간</h4>
@@ -206,13 +209,11 @@ export default function Home() {
                       href="https://statuesque-pincushion-161.notion.site/0a029e7757a446e6bc4c4faa8a72d5be?pvs=4"
                       target="_blank"
                     >
-                      <button>자세히보기 ➤ README</button>
+                      <button className="readme_button">
+                        <span>자세히보기 ➤ README</span>
+                      </button>
                     </Link>
                   </div>
-
-                  {/* <button class="btn btn-2 hover-opacity">
-                    <span>hover me</span>
-                  </button> */}
                 </div>
               </div>
 
@@ -226,7 +227,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
               <span className="project_line"></span>
+
               <div className="about_project">
                 <div className="content">
                   <div>
@@ -235,7 +238,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
               <span className="project_line"></span>
+
               <div className="about_project">
                 {/* <Image className="img" src={one} alt="github" /> */}
                 <div class="content">
@@ -245,7 +250,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
               <span className="project_line"></span>
+
               <div className="about_project">
                 {/* <Image className="img" src={one} alt="github" /> */}
                 <div class="content">
@@ -259,7 +266,55 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact"></section>
+        <section id="contact">
+          {/* contact 이름 */}
+          <h2 className="contact_name">Contact</h2>
+
+          <div className="contact_wrap">
+            <div className="contact_img_wrap">
+              <Image
+                className="contact_doyi_img"
+                src={contact_doyi}
+                alt="contact_doyi"
+              />
+              <div className="contact_info_doyi">
+                <dl>
+                  <dt>이름:</dt>
+                  <dd>이도이</dd>
+                </dl>
+                <dl>
+                  <dt>생년월일:</dt>
+                  <dd>1999.01.07</dd>
+                </dl>
+                <dl>
+                  <dt>주소지:</dt>
+                  <dd>인천광역시 미추홀구</dd>
+                </dl>
+                <dl>
+                  <dt>학력:</dt>
+                  <dd>
+                    국민대(국어국문학과(주)/소프트웨어미디어융합전공(부))
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div className="contact_text_wrap">
+              <div className="contact_text_box">
+                <h3>전화번호</h3>
+                <p>010-7277-7361</p>
+                <h3>이메일</h3>
+                <p>doyi9917@naver.com</p>
+                <h3>카카오톡</h3>
+                <p>doyi9917@naver.com</p>
+                <h3>인스타그램</h3>
+                <p>doyi9917@naver.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <p>꽃을 피울 개발자로 성장할 도이가 궁금하다면 연라주세요</p>
+        </footer>
       </div>
     </>
   );
