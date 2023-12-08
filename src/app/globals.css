@@ -334,6 +334,10 @@ a {
   animation-fill-mode: backwards;
 }
 
+.scroll_guide_up:hover{
+  cursor: pointer;
+}
+
 .scroll_guide_up span {
   z-index: 99;
   position: fixed;
@@ -350,7 +354,6 @@ a {
   animation: sdb 2s infinite;
   opacity: 0;
   box-sizing: border-box;
-
 }
 
 .scroll_guide_up span:nth-of-type(1) {
