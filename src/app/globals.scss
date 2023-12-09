@@ -38,7 +38,8 @@ $desktop: "screen and (max-width : 1300px)";
 
     #master-container-scroller {
         height: 140px;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
+        margin-top: 0px;
     }
 
     #master-container-scroller .master-container-scroller_item {

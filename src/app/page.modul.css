@@ -1537,26 +1537,27 @@ footer img {
     /* contact_img hover시 영향, img left 이거 */
     .contact_img_wrap {
         left: 10vw;
+            width: 200px;
         border-radius: 80px;
     }
 
     /* contact_doyi_img 실제 크기 */
     .contact_doyi_img {
-        width: 250px;
+        width: 200px;
         height: 50vh;
         border-radius: 80px;
     }
 
     .contact_text_wrap {
-        width: 60vw;
+        width: 65vw;
     }
 
     .contact_info_wrap {
-        width: 60vw;
+        width: 65vw;
     }
 
     .contact_text_box {
-        margin: 22vh 0 0 18vw;
+        margin: 22vh 0 0 19vw;
     }
 
     .contact_text_box h3 {

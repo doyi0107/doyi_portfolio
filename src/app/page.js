@@ -255,9 +255,33 @@ export default function Home() {
 
               <div className="about_project">
                 <div className="content">
-                  <div>
-                    <h3>What attained our violin</h3>
-                    <p>Been is in merely immune makes back peacefully.</p>
+                  {/* text_wrap */}
+                  <div className="project_text_wrap">
+                    <h3>APMA 프로젝트</h3>
+                    <h4>프로젝트기간</h4>
+                    <p>2021.08(1명) / 2023.08(3명)</p>
+                    <h4>프론트엔드</h4>
+                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
+                    <h4>백엔드</h4>
+                    <p>JAVA, SPRING, LOCALSTORAGE </p>
+                    <h4>주요기능</h4>
+                    <p>
+                      미술관 전시 소개에 맞는 UI/UX로 디자인
+                      <br />
+                      CSS 반응형웹으로 제작
+                      <br />
+                      AJAX를 활용해 비동기처리 방식을 이용한 로그인, 회원가입
+                      기능
+                    </p>
+
+                    <Link
+                      href="https://statuesque-pincushion-161.notion.site/0a029e7757a446e6bc4c4faa8a72d5be?pvs=4"
+                      target="_blank"
+                    >
+                      <button className="readme_button">
+                        <span>자세히보기 ➤ README</span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -266,9 +290,33 @@ export default function Home() {
 
               <div className="about_project">
                 <div className="content">
-                  <div>
-                    <h3>What attained our violin</h3>
-                    <p>Been is in merely immune makes back peacefully.</p>
+                  {/* text_wrap */}
+                  <div className="project_text_wrap">
+                    <h3>APMA 프로젝트</h3>
+                    <h4>프로젝트기간</h4>
+                    <p>2021.08(1명) / 2023.08(3명)</p>
+                    <h4>프론트엔드</h4>
+                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
+                    <h4>백엔드</h4>
+                    <p>JAVA, SPRING, LOCALSTORAGE </p>
+                    <h4>주요기능</h4>
+                    <p>
+                      미술관 전시 소개에 맞는 UI/UX로 디자인
+                      <br />
+                      CSS 반응형웹으로 제작
+                      <br />
+                      AJAX를 활용해 비동기처리 방식을 이용한 로그인, 회원가입
+                      기능
+                    </p>
+
+                    <Link
+                      href="https://statuesque-pincushion-161.notion.site/0a029e7757a446e6bc4c4faa8a72d5be?pvs=4"
+                      target="_blank"
+                    >
+                      <button className="readme_button">
+                        <span>자세히보기 ➤ README</span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -278,9 +326,33 @@ export default function Home() {
               <div className="about_project">
                 {/* <Image className="img" src={one} alt="github" /> */}
                 <div class="content">
-                  <div>
-                    <h3>What attained our violin</h3>
-                    <p>Been is in merely immune makes back peacefully.</p>
+                  {/* text_wrap */}
+                  <div className="project_text_wrap">
+                    <h3>APMA 프로젝트</h3>
+                    <h4>프로젝트기간</h4>
+                    <p>2021.08(1명) / 2023.08(3명)</p>
+                    <h4>프론트엔드</h4>
+                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
+                    <h4>백엔드</h4>
+                    <p>JAVA, SPRING, LOCALSTORAGE </p>
+                    <h4>주요기능</h4>
+                    <p>
+                      미술관 전시 소개에 맞는 UI/UX로 디자인
+                      <br />
+                      CSS 반응형웹으로 제작
+                      <br />
+                      AJAX를 활용해 비동기처리 방식을 이용한 로그인, 회원가입
+                      기능
+                    </p>
+
+                    <Link
+                      href="https://statuesque-pincushion-161.notion.site/0a029e7757a446e6bc4c4faa8a72d5be?pvs=4"
+                      target="_blank"
+                    >
+                      <button className="readme_button">
+                        <span>자세히보기 ➤ README</span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -290,12 +362,38 @@ export default function Home() {
               <div className="about_project">
                 {/* <Image className="img" src={one} alt="github" /> */}
                 <div class="content">
-                  <div>
-                    <h3>What attained our violin</h3>
-                    <p>Been is in merely immune makes back peacefully.</p>
+                  {/* text_wrap */}
+                  <div className="project_text_wrap">
+                    <h3>APMA 프로젝트</h3>
+                    <h4>프로젝트기간</h4>
+                    <p>2021.08(1명) / 2023.08(3명)</p>
+                    <h4>프론트엔드</h4>
+                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
+                    <h4>백엔드</h4>
+                    <p>JAVA, SPRING, LOCALSTORAGE </p>
+                    <h4>주요기능</h4>
+                    <p>
+                      미술관 전시 소개에 맞는 UI/UX로 디자인
+                      <br />
+                      CSS 반응형웹으로 제작
+                      <br />
+                      AJAX를 활용해 비동기처리 방식을 이용한 로그인, 회원가입
+                      기능
+                    </p>
+
+                    <Link
+                      href="https://statuesque-pincushion-161.notion.site/0a029e7757a446e6bc4c4faa8a72d5be?pvs=4"
+                      target="_blank"
+                    >
+                      <button className="readme_button">
+                        <span>자세히보기 ➤ README</span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
+
+              
             </div>
           </div>
         </section>

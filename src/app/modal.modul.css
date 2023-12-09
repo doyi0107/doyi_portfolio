@@ -155,7 +155,7 @@
 
     .nav_left_box {
         width: 100vw;
-        height: 10vh;
+        height: 65px;
         top: 0;
     }
 
@@ -176,6 +176,7 @@
     }
 
     .burger-menu span {
+            margin-top: 15px;
         width: 35px;
     }
 
