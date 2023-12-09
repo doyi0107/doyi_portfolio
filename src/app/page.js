@@ -20,6 +20,7 @@ import name from "/public/name.png";
 import footer_github from "/public/footer_github.png";
 import footer_t_story from "/public/footer_t_story.png";
 import contact_doyi from "/public/contact_doyi.jpg";
+import for_your_skin_type from "/public/for_your_skin_type.jpg";
 import Link from "next/link";
 import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -30,7 +31,6 @@ export default function Home() {
   const [isSpecialCase, setIsSpecialCase] = useState(false);
   const scrollSectionRef = useRef(null);
   const scrollContentRef = useRef(null);
-
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -197,7 +197,11 @@ export default function Home() {
                 <div className="content">
                   {/* img_wrap */}
                   <div className="project_img_wrap">
-                    <Image className="APMA_img" src={APMA} alt="APMA_img" />
+                    <Image
+                      className="project_main_img "
+                      src={APMA}
+                      alt="APMA_img"
+                    />
 
                     <Link
                       className="source_code_link project_link"
@@ -231,16 +235,15 @@ export default function Home() {
                     <p>JAVA, SPRING, LOCALSTORAGE </p>
                     <h4>주요기능</h4>
                     <p>
-                      미술관 전시 소개에 맞는 UI/UX로 디자인
+                      → 미술관 전시 소개에 맞는 UI/UX로 디자인
                       <br />
-                      CSS 반응형웹으로 제작
-                      <br />
-                      AJAX를 활용해 비동기처리 방식을 이용한 로그인, 회원가입
-                      기능
+                      → CSS 반응형웹으로 제작
+                      <br />→ AJAX를 활용해 비동기처리 방식을 이용한 로그인,
+                      회원가입 기능
                     </p>
 
                     <Link
-                      href="https://statuesque-pincushion-161.notion.site/0a029e7757a446e6bc4c4faa8a72d5be?pvs=4"
+                      href="https://2-doooo-2.tistory.com/118"
                       target="_blank"
                     >
                       <button className="readme_button">
@@ -253,25 +256,53 @@ export default function Home() {
 
               <span className="project_line"></span>
 
+              {/* 화장품 추천 웹 */}
               <div className="about_project">
                 <div className="content">
+                  {/* img_wrap */}
+                  <div className="project_img_wrap">
+                    <Image
+                      className="project_main_img skin_type_img"
+                      src={for_your_skin_type}
+                      alt="for_your_skin_type"
+                    />
+
+                    <Link
+                      className="source_code_link project_link"
+                      href="https://github.com/doyi0107/for_your_skin_type_frontend.git"
+                      target="_blank"
+                    >
+                      <Image
+                        className="source_code"
+                        src={source_code}
+                        alt="source_code_img"
+                      />
+                      <p>#source code</p>
+                    </Link>
+                    <Link
+                      className="demo_code_link project_link"
+                      href="https://elated-edison-5e9fe5.netlify.app"
+                      target="_blank"
+                    >
+                      <Image className="demo" src={demo} alt="demo_img" />
+                      <p>#demo</p>
+                    </Link>
+                  </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
-                    <h3>APMA 프로젝트</h3>
+                    <h3>for_your_skin_type</h3>
                     <h4>프로젝트기간</h4>
-                    <p>2021.08(1명) / 2023.08(3명)</p>
+                    <p>2022.01~ 02(4명)</p>
                     <h4>프론트엔드</h4>
-                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
+                    <p>FIGMA,REACT,SCSS</p>
                     <h4>백엔드</h4>
-                    <p>JAVA, SPRING, LOCALSTORAGE </p>
+                    <p>JAVA, SPRING</p>
                     <h4>주요기능</h4>
                     <p>
-                      미술관 전시 소개에 맞는 UI/UX로 디자인
-                      <br />
-                      CSS 반응형웹으로 제작
-                      <br />
-                      AJAX를 활용해 비동기처리 방식을 이용한 로그인, 회원가입
-                      기능
+                      → 피그마를 통해 사전 디자인
+                      <br /> → 피부 유형을 분석하고 자신에 타입에 맞는 화장품을
+                      추천해 주는 웹사이트
+                      <br />→ SCSS 통해 반응형웹으로 제작
                     </p>
 
                     <Link
@@ -392,8 +423,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
-              
             </div>
           </div>
         </section>
