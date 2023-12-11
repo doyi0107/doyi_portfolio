@@ -334,7 +334,7 @@ a {
   animation-fill-mode: backwards;
 }
 
-.scroll_guide_up:hover{
+.scroll_guide_up:hover {
   cursor: pointer;
 }
 
@@ -422,7 +422,7 @@ a {
   height: 200px;
   overflow: hidden;
   position: relative;
-  margin-top:-30px;
+  margin-top: -30px;
 }
 
 /* 마지막 문구로 고정하기 */
@@ -520,13 +520,13 @@ a {
   }
 
   25% {
-    -webkit-transform: translateY(-260px);
-    transform: translateY(-260px)
+    -webkit-transform: translateY(-270px);
+    transform: translateY(-270px)
   }
 
   35% {
-    -webkit-transform: translateY(-260px);
-    transform: translateY(-260px)
+    -webkit-transform: translateY(-270px);
+    transform: translateY(-270px)
   }
 
   50% {

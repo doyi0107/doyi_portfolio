@@ -28,6 +28,7 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
+  
   const [isSpecialCase, setIsSpecialCase] = useState(false);
   const scrollSectionRef = useRef(null);
   const scrollContentRef = useRef(null);
@@ -296,7 +297,7 @@ export default function Home() {
                     <h4>프론트엔드</h4>
                     <p>FIGMA,REACT,SCSS</p>
                     <h4>백엔드</h4>
-                    <p>JAVA, SPRING</p>
+                    <p>JAVA,SPRING,MYSQL</p>
                     <h4>주요기능</h4>
                     <p>
                       → 피그마를 통해 사전 디자인
@@ -306,7 +307,7 @@ export default function Home() {
                     </p>
 
                     <Link
-                      href="https://statuesque-pincushion-161.notion.site/0a029e7757a446e6bc4c4faa8a72d5be?pvs=4"
+                      href="https://2-doooo-2.tistory.com/122"
                       target="_blank"
                     >
                       <button className="readme_button">
