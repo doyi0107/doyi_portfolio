@@ -20,6 +20,9 @@ import name from "/public/name.png";
 import footer_github from "/public/footer_github.png";
 import footer_t_story from "/public/footer_t_story.png";
 import contact_doyi from "/public/contact_doyi.jpg";
+import javascript_zip from "/public/javascript_zip_img.png";
+import spakling_story from "/public/your_spakling_story.JPG";
+import Doyi_portfolio_img from "/public/Doyi_portfolio_img.JPG";
 import for_your_skin_type from "/public/for_your_skin_type.jpg";
 import Link from "next/link";
 import gsap from "gsap";
@@ -97,6 +100,7 @@ export default function Home() {
 
   return (
     <>
+      {/* 스크롤 유도 가이드 */}
       <div
         className={`${isSpecialCase ? "scroll_guide_up" : "scroll_guide"}`}
         onClick={handleScrollGuideClick}
@@ -254,9 +258,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
               <span className="project_line"></span>
-
               {/* 화장품 추천 웹 */}
               <div className="about_project">
                 <div className="content">
@@ -317,20 +319,170 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
               <span className="project_line"></span>
-
+              {/* javascipt_zip */}
               <div className="about_project">
                 <div className="content">
+                  {/* img_wrap */}
+                  <div className="project_img_wrap">
+                    <Image
+                      className="project_main_img Javascipt_zip_img"
+                      src={javascript_zip}
+                      alt="javascript_zip"
+                    />
+
+                    <Link
+                      className="source_code_link project_link"
+                      href="https://github.com/doyi0107/Javascript_zip.git"
+                      target="_blank"
+                    >
+                      <Image
+                        className="source_code"
+                        src={source_code}
+                        alt="source_code_img"
+                      />
+                      <p>#source code</p>
+                    </Link>
+                    <Link
+                      className="demo_code_link project_link"
+                      href="https://javascript-zip.netlify.app/"
+                      target="_blank"
+                    >
+                      <Image className="demo" src={demo} alt="demo_img" />
+                      <p>#demo</p>
+                    </Link>
+                  </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
-                    <h3>APMA 프로젝트</h3>
+                    <h3>Javascipt_zip</h3>
                     <h4>프로젝트기간</h4>
-                    <p>2021.08(1명) / 2023.08(3명)</p>
+                    <p>2023.09 / 2023.12 (1명)</p>
                     <h4>프론트엔드</h4>
-                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
+                    <p>HTML, CSS, JAVASCRIPT, SVG, GSAP</p>
                     <h4>백엔드</h4>
-                    <p>JAVA, SPRING, LOCALSTORAGE </p>
+                    <p>API</p>
+                    <h4>주요기능</h4>
+                    <p>
+                      API를 통해 현재 날씨와 온도 가져오기
+                      <br />
+                      다크 모드 기능
+                      <br />
+                      카드 매치 게임등
+                    </p>
+
+                    <Link
+                      href="https://2-doooo-2.tistory.com/125"
+                      target="_blank"
+                    >
+                      <button className="readme_button">
+                        <span>자세히보기 ➤ README</span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <span className="project_line"></span>
+              {/* spakling_story */}
+              <div className="about_project">
+                <div class="content">
+                  {/* img_wrap */}
+                  <div className="project_img_wrap">
+                    <Image
+                      className="project_main_img spakling_story_img"
+                      src={spakling_story}
+                      alt="spakling_story"
+                    />
+
+                    <Link
+                      className="source_code_link project_link"
+                      href="https://github.com/doyi0107/your_sparkling_story.git"
+                      target="_blank"
+                    >
+                      <Image
+                        className="source_code"
+                        src={source_code}
+                        alt="source_code_img"
+                      />
+                      <p>#source code</p>
+                    </Link>
+                    <Link
+                      className="demo_code_link project_link"
+                      href="https://your-sparkling-story.vercel.app/"
+                      target="_blank"
+                    >
+                      <Image className="demo" src={demo} alt="demo_img" />
+                      <p>#demo</p>
+                    </Link>
+                  </div>
+                  {/* text_wrap */}
+                  <div className="project_text_wrap">
+                    <h3>sparkling_story</h3>
+                    <h4>프로젝트기간</h4>
+                    <p>2023.03(1명)</p>
+                    <h4>프론트엔드</h4>
+                    <p>REACT,GSAP,VERCEL</p>
+                    <h4>주요기능</h4>
+                    <p>
+                      REACT로 CRUD기능을 제작
+                      <br />
+                      canvas의 드로잉 컨텍스트를 이용한 반짝이는 별 배경
+                      <br />
+                      VERCEL를 통한 배포
+                    </p>
+
+                    <Link
+                      href="https://2-doooo-2.tistory.com/132"
+                      target="_blank"
+                    >
+                      <button className="readme_button">
+                        <span>자세히보기 ➤ README</span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <span className="project_line"></span>
+
+              {/* Doyi_portfolio */}
+              <div className="about_project">
+                <div class="content">
+                  {/* img_wrap */}
+                  <div className="project_img_wrap">
+                    <Image
+                      className="project_main_img Doyi_portfolio_img"
+                      src={Doyi_portfolio_img}
+                      alt="Doyi_portfolio_img"
+                    />
+
+                    <Link
+                      className="source_code_link project_link"
+                      href="https://github.com/doyi0107/your_sparkling_story.git"
+                      target="_blank"
+                    >
+                      <Image
+                        className="source_code"
+                        src={source_code}
+                        alt="source_code_img"
+                      />
+                      <p>#source code</p>
+                    </Link>
+                    <Link
+                      className="demo_code_link project_link"
+                      href="https://your-sparkling-story.vercel.app/"
+                      target="_blank"
+                    >
+                      <Image className="demo" src={demo} alt="demo_img" />
+                      <p>#demo</p>
+                    </Link>
+                  </div>
+                  {/* text_wrap */}
+                  <div className="project_text_wrap">
+                    <h3>Doyi_portfolio</h3>
+                    <h4>프로젝트기간</h4>
+                    <p>2023.12(1명)</p>
+                    <h4>프론트엔드</h4>
+                    <p>NEXT.JS, SCSS, GSAP, VERCEL</p>
                     <h4>주요기능</h4>
                     <p>
                       미술관 전시 소개에 맞는 UI/UX로 디자인
@@ -355,66 +507,58 @@ export default function Home() {
 
               <span className="project_line"></span>
 
+              {/* 그외 포트폴리오 (shallender) */}
               <div className="about_project">
-                {/* <Image className="img" src={one} alt="github" /> */}
-                <div class="content">
-                  {/* text_wrap */}
-                  <div className="project_text_wrap">
-                    <h3>APMA 프로젝트</h3>
-                    <h4>프로젝트기간</h4>
-                    <p>2021.08(1명) / 2023.08(3명)</p>
-                    <h4>프론트엔드</h4>
-                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
-                    <h4>백엔드</h4>
-                    <p>JAVA, SPRING, LOCALSTORAGE </p>
-                    <h4>주요기능</h4>
-                    <p>
-                      미술관 전시 소개에 맞는 UI/UX로 디자인
-                      <br />
-                      CSS 반응형웹으로 제작
-                      <br />
-                      AJAX를 활용해 비동기처리 방식을 이용한 로그인, 회원가입
-                      기능
-                    </p>
+                <div className="content">
+                  {/* img_wrap */}
+                  <div className="project_img_wrap">
+                    <Image
+                      className="project_main_img Javascipt_zip_img"
+                      src={javascript_zip}
+                      alt="javascript_zip"
+                    />
 
                     <Link
-                      href="https://statuesque-pincushion-161.notion.site/0a029e7757a446e6bc4c4faa8a72d5be?pvs=4"
+                      className="source_code_link project_link"
+                      href="https://github.com/doyi0107/Javascript_zip.git"
                       target="_blank"
                     >
-                      <button className="readme_button">
-                        <span>자세히보기 ➤ README</span>
-                      </button>
+                      <Image
+                        className="source_code"
+                        src={source_code}
+                        alt="source_code_img"
+                      />
+                      <p>#source code</p>
+                    </Link>
+                    <Link
+                      className="demo_code_link project_link"
+                      href="https://javascript-zip.netlify.app/"
+                      target="_blank"
+                    >
+                      <Image className="demo" src={demo} alt="demo_img" />
+                      <p>#demo</p>
                     </Link>
                   </div>
-                </div>
-              </div>
-
-              <span className="project_line"></span>
-
-              <div className="about_project">
-                {/* <Image className="img" src={one} alt="github" /> */}
-                <div class="content">
                   {/* text_wrap */}
                   <div className="project_text_wrap">
-                    <h3>APMA 프로젝트</h3>
+                    <h3>그 외 프로젝트</h3>
                     <h4>프로젝트기간</h4>
-                    <p>2021.08(1명) / 2023.08(3명)</p>
+                    <p>2023.09 / 2023.12 (1명)</p>
                     <h4>프론트엔드</h4>
-                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
+                    <p>HTML, CSS, JAVASCRIPT, SVG, GSAP</p>
                     <h4>백엔드</h4>
-                    <p>JAVA, SPRING, LOCALSTORAGE </p>
+                    <p>API</p>
                     <h4>주요기능</h4>
                     <p>
-                      미술관 전시 소개에 맞는 UI/UX로 디자인
+                      API를 통해 현재 날씨와 온도 가져오기
                       <br />
-                      CSS 반응형웹으로 제작
+                      다크 모드 기능
                       <br />
-                      AJAX를 활용해 비동기처리 방식을 이용한 로그인, 회원가입
-                      기능
+                      카드 매치 게임등
                     </p>
 
                     <Link
-                      href="https://statuesque-pincushion-161.notion.site/0a029e7757a446e6bc4c4faa8a72d5be?pvs=4"
+                      href="https://2-doooo-2.tistory.com/125"
                       target="_blank"
                     >
                       <button className="readme_button">

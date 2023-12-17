@@ -40,6 +40,9 @@ export default function RootLayout({ children }) {
                 <div>Contact</div>
               </Link>
             </header> */}
+
+
+            {/* 초기 애니메이션 */}
             <div className="intro_wrap">
               <div class="animation01">
                 <div></div>
@@ -154,7 +157,7 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="master-container-scroller_item">
                       <a className="cta-link" href="#">
-                        성장하는 개발자
+                        피어나는 개발자
                       </a>
                     </div>
                   </div>
