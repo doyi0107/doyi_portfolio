@@ -485,12 +485,11 @@ export default function Home() {
                     <p>NEXT.JS, SCSS, GSAP, VERCEL</p>
                     <h4>주요기능</h4>
                     <p>
-                      미술관 전시 소개에 맞는 UI/UX로 디자인
+                      SEO를 위한 SSR을 가능하게 하는 NEXT.JS로 제작
                       <br />
-                      CSS 반응형웹으로 제작
+                      GSAP를 통한 부드러운 전환효과 
                       <br />
-                      AJAX를 활용해 비동기처리 방식을 이용한 로그인, 회원가입
-                      기능
+                      SCSS와CSS 통해 반응형웹으로 제작
                     </p>
 
                     <Link
