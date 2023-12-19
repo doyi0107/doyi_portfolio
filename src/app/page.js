@@ -74,6 +74,9 @@ export default function Home() {
         setIsSpecialCase(isSpecialCase);
       }
 
+
+      // scrollSection.offsetTop는 스크롤 섹션의 상단 위치를 나타내는 고정된 값이며, 
+      //scrolled는 현재 사용자가 스크롤한 위치를 동적으로 나타내는 값입니다
       const scrolled = window.pageYOffset;
       const sectionOffset = Math.abs(scrollSection.offsetTop - scrolled);
       const notReachedBottom = parseInt(
@@ -457,7 +460,7 @@ export default function Home() {
 
                     <Link
                       className="source_code_link project_link"
-                      href="https://github.com/doyi0107/your_sparkling_story.git"
+                      href="https://github.com/doyi0107/doyi_portfolio.git"
                       target="_blank"
                     >
                       <Image
@@ -487,13 +490,13 @@ export default function Home() {
                     <p>
                       SEO를 위한 SSR을 가능하게 하는 NEXT.JS로 제작
                       <br />
-                      GSAP를 통한 부드러운 전환효과 
+                      GSAP를 통한 부드러운 전환 효과
                       <br />
-                      SCSS와CSS 통해 반응형웹으로 제작
+                      SCSS와 CSS통해 반응형웹으로 제작
                     </p>
 
                     <Link
-                      href="https://statuesque-pincushion-161.notion.site/0a029e7757a446e6bc4c4faa8a72d5be?pvs=4"
+                      href="https://2-doooo-2.tistory.com/135"
                       target="_blank"
                     >
                       <button className="readme_button">
