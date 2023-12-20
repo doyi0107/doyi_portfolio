@@ -170,7 +170,7 @@ export default function Home() {
             </Link>
             <div className="github_text">
               <h4>Github</h4>
-              <p>💡 그동안 진행된 프로젝트 소스 코드를 저장했습니다.</p>
+              <p>💡 그동안 진행했던 프로젝트 소스 코드를 저장했습니다.</p>
               <p>💡 1일 1커밋을 유지하기 위해 노력했습니다.</p>
               <p>💡 자주 쓰는 명령어를 따로 기록해두었습니다.</p>
             </div>
@@ -242,11 +242,11 @@ export default function Home() {
                     <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
                     <h4>백엔드</h4>
                     <p>JAVA, SPRING, LOCALSTORAGE </p>
-                    <h4>주요기능</h4>
+                    <h4>주요 기능</h4>
                     <p>
                       → 미술관 전시 소개에 맞는 UI/UX로 디자인
                       <br />
-                      → CSS 반응형웹으로 제작
+                      → CSS를 통해 반응형 웹으로 제작
                       <br />→ AJAX를 활용해 비동기처리 방식을 이용한 로그인,
                       회원가입 기능
                     </p>
@@ -304,12 +304,12 @@ export default function Home() {
                     <p>FIGMA,REACT,SCSS</p>
                     <h4>백엔드</h4>
                     <p>JAVA,SPRING,MYSQL</p>
-                    <h4>주요기능</h4>
+                    <h4>주요 기능</h4>
                     <p>
                       → 피그마를 통해 사전 디자인
                       <br /> → 피부 유형을 분석하고 자신에 타입에 맞는 화장품을
                       추천해 주는 웹사이트
-                      <br />→ SCSS 통해 반응형웹으로 제작
+                      <br />→ SCSS를 통해 반응형 웹으로 제작
                     </p>
 
                     <Link
@@ -365,13 +365,12 @@ export default function Home() {
                     <p>HTML, CSS, JAVASCRIPT, SVG, GSAP</p>
                     <h4>백엔드</h4>
                     <p>API</p>
-                    <h4>주요기능</h4>
+                    <h4>주요 기능</h4>
                     <p>
-                      API를 통해 현재 날씨와 온도 가져오기
+                      → API를 통해 현재 날씨와 온도 가져오기
                       <br />
-                      다크 모드 기능
-                      <br />
-                      카드 매치 게임등
+                      → 다크 모드 기능
+                      <br />→ 카드 매치 게임등
                     </p>
 
                     <Link
@@ -425,13 +424,12 @@ export default function Home() {
                     <p>2023.03(1명)</p>
                     <h4>프론트엔드</h4>
                     <p>REACT,GSAP,VERCEL</p>
-                    <h4>주요기능</h4>
+                    <h4>주요 기능</h4>
                     <p>
-                      REACT로 CRUD기능을 제작
+                      → REACT로 CRUD기능을 제작
                       <br />
-                      canvas의 드로잉 컨텍스트를 이용한 반짝이는 별 배경
-                      <br />
-                      VERCEL를 통한 배포
+                      → canvas의 드로잉 컨텍스트를 이용한 반짝이는 별 배경
+                      <br />→ VERCEL를 통한 배포
                     </p>
 
                     <Link
@@ -486,13 +484,12 @@ export default function Home() {
                     <p>2023.12(1명)</p>
                     <h4>프론트엔드</h4>
                     <p>NEXT.JS, SCSS, GSAP, VERCEL</p>
-                    <h4>주요기능</h4>
+                    <h4>주요 기능</h4>
                     <p>
-                      SEO를 위한 SSR을 가능하게 하는 NEXT.JS로 제작
+                      → SEO를 위한 SSR을 가능하게 하는 NEXT.JS로 제작
                       <br />
-                      GSAP를 통한 부드러운 전환 효과
-                      <br />
-                      SCSS와 CSS통해 반응형웹으로 제작
+                      → GSAP를 통한 부드러운 전환 효과
+                      <br />→ SCSS와 CSS를 통해 반응형 웹으로 제작
                     </p>
 
                     <Link
@@ -539,16 +536,15 @@ export default function Home() {
                     <h4>프로젝트기간</h4>
                     <p>2022.09 ~ 2022.12 (5명)</p>
                     <h4>프론트엔드</h4>
-                    <p>kotiln</p>
+                    <p>KOTLIN</p>
                     <h4>백엔드</h4>
-                    <p>javascript, firebase</p>
-                    <h4>주요기능</h4>
+                    <p>JAVASCRIPT, FIREBASE</p>
+                    <h4>주요 기능</h4>
                     <p>
-                      android studio을 활용한 안드로이드 앱
+                      → Android Studio을 활용한 안드로이드 앱
                       <br />
-                      firebase를 이용한 로그인과 회원가입 기능
-                      <br />
-                      지인들과 일정을 공유하고 약속을 잡는 기능
+                      → Firebase를 이용한 로그인과 회원가입 기능
+                      <br />→ 지인들과 일정을 공유하고 약속을 잡는 기능
                     </p>
 
                     <Link
