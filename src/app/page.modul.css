@@ -484,7 +484,7 @@ section {
     height: 40vh;
 }
 
-.project_link {
+.project_link:not(.shallendar_source_code) {
     margin: 9vh 3.5vw;
     color: rgba(255, 255, 255, 0.8);
     position: absolute;
@@ -492,6 +492,14 @@ section {
 }
 
 .source_code_link {}
+
+.shallendar_source_code {
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    z-index: 20;
+    margin: 9vh 10vw;
+}
+
 
 .demo_code_link {
     top: -12px;
@@ -898,10 +906,10 @@ footer img {
     }
 
     /* projects_section_1300px */
-    
-           #projects {
-               height:975vh;
-           }
+
+    #projects {
+        height: 975vh;
+    }
 
     .projects_name {
         top: -50px;
@@ -948,8 +956,12 @@ footer img {
     }
 
     /* project_link_img */
-    .project_link {
+    .project_link:not(.shallendar_source_code) {
         margin: 4vh 30px;
+    }
+
+    .shallendar_source_code {
+        margin: 4vh 100px;
     }
 
 
@@ -1230,10 +1242,14 @@ footer img {
     }
 
     /* project_link_img */
-    .project_link {
+    .project_link:not(.shallendar_source_code) {
         margin: 6vh 6vw;
         font: bold 1.5rem/1.5 'IBM Plex Sans KR',
             sans-serif;
+    }
+
+    .shallendar_source_code {
+        margin: 6vh 15vw;
     }
 
     .source_code_link {
@@ -1560,8 +1576,12 @@ footer img {
     }
 
     /* project_link_img */
-    .project_link {
+    .project_link:not(.shallendar_source_code) {
         margin: 4vh 30px;
+    }
+
+    .shallendar_source_code {
+        margin: 4vh 80px;
     }
 
     .source_code_link {

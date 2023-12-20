@@ -24,6 +24,7 @@ import javascript_zip from "/public/javascript_zip_img.png";
 import spakling_story from "/public/your_spakling_story.JPG";
 import Doyi_portfolio_img from "/public/Doyi_portfolio_img.JPG";
 import for_your_skin_type from "/public/for_your_skin_type.jpg";
+import shallender_img from "/public/shallender_img.jpg";
 import Link from "next/link";
 import gsap from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -31,11 +32,11 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
-  
   const [isSpecialCase, setIsSpecialCase] = useState(false);
   const scrollSectionRef = useRef(null);
   const scrollContentRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
+
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -255,7 +256,7 @@ export default function Home() {
                       target="_blank"
                     >
                       <button className="readme_button">
-                        <span>자세히보기 ➤ README</span>
+                        <span>📘README</span>
                       </button>
                     </Link>
                   </div>
@@ -316,7 +317,7 @@ export default function Home() {
                       target="_blank"
                     >
                       <button className="readme_button">
-                        <span>자세히보기 ➤ README</span>
+                        <span>📘README</span>
                       </button>
                     </Link>
                   </div>
@@ -378,7 +379,7 @@ export default function Home() {
                       target="_blank"
                     >
                       <button className="readme_button">
-                        <span>자세히보기 ➤ README</span>
+                        <span>📘README</span>
                       </button>
                     </Link>
                   </div>
@@ -438,7 +439,7 @@ export default function Home() {
                       target="_blank"
                     >
                       <button className="readme_button">
-                        <span>자세히보기 ➤ README</span>
+                        <span>📘README</span>
                       </button>
                     </Link>
                   </div>
@@ -500,7 +501,7 @@ export default function Home() {
                       target="_blank"
                     >
                       <button className="readme_button">
-                        <span>자세히보기 ➤ README</span>
+                        <span>📘README</span>
                       </button>
                     </Link>
                   </div>
@@ -509,20 +510,20 @@ export default function Home() {
 
               <span className="project_line"></span>
 
-              {/* 그외 포트폴리오 (shallender) */}
+              {/* shallender */}
               <div className="about_project">
                 <div className="content">
                   {/* img_wrap */}
                   <div className="project_img_wrap">
                     <Image
-                      className="project_main_img Javascipt_zip_img"
-                      src={javascript_zip}
-                      alt="javascript_zip"
+                      className="project_main_img shallender_img"
+                      src={shallender_img}
+                      alt="shallender_img"
                     />
 
                     <Link
-                      className="source_code_link project_link"
-                      href="https://github.com/doyi0107/Javascript_zip.git"
+                      className="source_code_link project_link shallendar_source_code"
+                      href="https://github.com/doyi0107/mobileprogramming.git"
                       target="_blank"
                     >
                       <Image
@@ -532,39 +533,31 @@ export default function Home() {
                       />
                       <p>#source code</p>
                     </Link>
-                    <Link
-                      className="demo_code_link project_link"
-                      href="https://javascript-zip.netlify.app/"
-                      target="_blank"
-                    >
-                      <Image className="demo" src={demo} alt="demo_img" />
-                      <p>#demo</p>
-                    </Link>
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
-                    <h3>그 외 프로젝트</h3>
+                    <h3>shallender</h3>
                     <h4>프로젝트기간</h4>
-                    <p>2023.09 / 2023.12 (1명)</p>
+                    <p>2022.09 ~ 2022.12 (5명)</p>
                     <h4>프론트엔드</h4>
-                    <p>HTML, CSS, JAVASCRIPT, SVG, GSAP</p>
+                    <p>kotiln</p>
                     <h4>백엔드</h4>
-                    <p>API</p>
+                    <p>javascript, firebase</p>
                     <h4>주요기능</h4>
                     <p>
-                      API를 통해 현재 날씨와 온도 가져오기
+                      android studio을 활용한 안드로이드 앱
                       <br />
-                      다크 모드 기능
+                      firebase를 이용한 로그인과 회원가입 기능
                       <br />
-                      카드 매치 게임등
+                      지인들과 일정을 공유하고 약속을 잡는 기능
                     </p>
 
                     <Link
-                      href="https://2-doooo-2.tistory.com/125"
+                      href="https://drive.google.com/file/d/1DXae0notDrYSHBCdLTAWfFC0tsur-W-u/view?usp=drive_link"
                       target="_blank"
                     >
                       <button className="readme_button">
-                        <span>자세히보기 ➤ README</span>
+                        <span>📂Open_File</span>
                       </button>
                     </Link>
                   </div>
