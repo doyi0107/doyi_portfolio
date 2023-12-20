@@ -471,7 +471,7 @@ export default function Home() {
                     </Link>
                     <Link
                       className="demo_code_link project_link"
-                      href="https://doyi-portfolio-4io52krpg-leedoyis-projects.vercel.app/"
+                      href="https://doyi-portfolio-f56rxjct3-leedoyis-projects.vercel.app/"
                     >
                       <Image className="demo" src={demo} alt="demo_img" />
                       <p>#demo</p>
