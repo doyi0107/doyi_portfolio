@@ -471,7 +471,8 @@ export default function Home() {
                     </Link>
                     <Link
                       className="demo_code_link project_link"
-                      href="https://doyi-portfolio-f56rxjct3-leedoyis-projects.vercel.app/"
+                      onClick="top.location='javascript:location.reload()'"
+                      href="#"
                     >
                       <Image className="demo" src={demo} alt="demo_img" />
                       <p>#demo</p>
