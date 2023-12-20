@@ -23,7 +23,7 @@ import contact_doyi from "/public/contact_doyi.jpg";
 import javascript_zip from "/public/javascript_zip_img.png";
 import spakling_story from "/public/your_spakling_story.JPG";
 import Doyi_portfolio_img from "/public/Doyi_portfolio_img.JPG";
-import for_your_skin_type from "/public/for_your_skin_type.jpg";
+import for_your_skin_type from "/public/for_your_skin_type.JPG";
 import shallender_img from "/public/shallender_img.jpg";
 import Link from "next/link";
 import gsap from "gsap";
