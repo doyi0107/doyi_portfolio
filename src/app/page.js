@@ -36,7 +36,10 @@ export default function Home() {
   const scrollSectionRef = useRef(null);
   const scrollContentRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
-
+ const handleLinkClick = () => {
+   // 특정 링크를 클릭하면 페이지를 새로 고침
+   window.location.reload();
+ };
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -471,7 +474,7 @@ export default function Home() {
                     </Link>
                     <Link
                       className="demo_code_link project_link"
-                      onClick="top.location='javascript:location.reload()'"
+                      onClick={handleLinkClick}
                       href="#"
                     >
                       <Image className="demo" src={demo} alt="demo_img" />
