@@ -492,8 +492,10 @@ export default function Home() {
                     <p>
                       → SEO를 위한 SSR을 가능하게 하는 NEXT.JS로 제작
                       <br />
-                      → GSAP를 통한 부드러운 전환 효과
-                      <br />→ SCSS와 CSS를 통해 반응형 웹으로 제작
+                      → 처음 만든 프로젝트 대비 로딩 속도 (Load:537ms → Load:
+                      127ms) 310ms차이로 개선 
+                      <br />→ GSAP를 통한 부드러운 전환 효과, SCSS와 CSS를 통해
+                      반응형 웹으로 제작
                     </p>
 
                     <Link
