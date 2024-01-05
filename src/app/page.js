@@ -204,6 +204,132 @@ export default function Home() {
             <div className="horizontal_scroll_content" ref={scrollContentRef}>
               <h2 className="projects_name">projects</h2>
               {/* 프로젝트들 */}
+
+              {/* Doyi_portfolio */}
+              <div className="about_project">
+                <div class="content">
+                  {/* img_wrap */}
+                  <div className="project_img_wrap">
+                    <Image
+                      className="project_main_img Doyi_portfolio_img"
+                      src={Doyi_portfolio_img}
+                      alt="Doyi_portfolio_img"
+                    />
+
+                    <Link
+                      className="source_code_link project_link"
+                      href="https://github.com/doyi0107/doyi_portfolio.git"
+                      target="_blank"
+                    >
+                      <Image
+                        className="source_code"
+                        src={source_code}
+                        alt="source_code_img"
+                      />
+                      <p>#source code</p>
+                    </Link>
+                    <Link
+                      className="demo_code_link project_link"
+                      onClick={handleLinkClick}
+                      href="#"
+                    >
+                      <Image className="demo" src={demo} alt="demo_img" />
+                      <p>#demo</p>
+                    </Link>
+                  </div>
+                  {/* text_wrap */}
+                  <div className="project_text_wrap">
+                    <h3>Doyi_portfolio</h3>
+                    <h4>프로젝트기간</h4>
+                    <p>2023.12(1명)</p>
+                    <h4>프론트엔드</h4>
+                    <p>NEXT.JS, SCSS, GSAP, VERCEL</p>
+                    <h4>주요 기능</h4>
+                    <p>
+                      → SEO를 위한 SSR을 가능하게 하는 NEXT.JS로 제작
+                      <br />
+                      → 처음 만든 프로젝트 대비 로딩 속도 (Load:537ms → Load:
+                      127ms) 310ms차이로 개선
+                      <br />→ GSAP를 통한 부드러운 전환 효과, SCSS와 CSS를 통해
+                      반응형 웹으로 제작
+                    </p>
+
+                    <Link
+                      href="https://2-doooo-2.tistory.com/135"
+                      target="_blank"
+                    >
+                      <button className="readme_button">
+                        <span>📘README</span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <span className="project_line"></span>
+
+              {/* javascipt_zip */}
+              <div className="about_project">
+                <div className="content">
+                  {/* img_wrap */}
+                  <div className="project_img_wrap">
+                    <Image
+                      className="project_main_img Javascipt_zip_img"
+                      src={javascript_zip}
+                      alt="javascript_zip"
+                    />
+
+                    <Link
+                      className="source_code_link project_link"
+                      href="https://github.com/doyi0107/Javascript_zip.git"
+                      target="_blank"
+                    >
+                      <Image
+                        className="source_code"
+                        src={source_code}
+                        alt="source_code_img"
+                      />
+                      <p>#source code</p>
+                    </Link>
+                    <Link
+                      className="demo_code_link project_link"
+                      href="https://javascript-zip.netlify.app/"
+                      target="_blank"
+                    >
+                      <Image className="demo" src={demo} alt="demo_img" />
+                      <p>#demo</p>
+                    </Link>
+                  </div>
+                  {/* text_wrap */}
+                  <div className="project_text_wrap">
+                    <h3>Javascipt_zip</h3>
+                    <h4>프로젝트기간</h4>
+                    <p>2023.09 / 2023.12 (1명)</p>
+                    <h4>프론트엔드</h4>
+                    <p>HTML, CSS, JAVASCRIPT, SVG, GSAP</p>
+                    <h4>백엔드</h4>
+                    <p>API</p>
+                    <h4>주요 기능</h4>
+                    <p>
+                      → API를 통해 현재 날씨와 온도 가져오기
+                      <br />
+                      → 다크 모드 기능
+                      <br />→ 카드 매치 게임등
+                    </p>
+
+                    <Link
+                      href="https://2-doooo-2.tistory.com/125"
+                      target="_blank"
+                    >
+                      <button className="readme_button">
+                        <span>📘README</span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <span className="project_line"></span>
+
               {/* apma */}
               <div className="about_project">
                 <div className="content">
@@ -266,128 +392,7 @@ export default function Home() {
                 </div>
               </div>
               <span className="project_line"></span>
-              {/* 화장품 추천 웹 */}
-              <div className="about_project">
-                <div className="content">
-                  {/* img_wrap */}
-                  <div className="project_img_wrap">
-                    <Image
-                      className="project_main_img skin_type_img"
-                      src={for_your_skin_type}
-                      alt="for_your_skin_type"
-                    />
 
-                    <Link
-                      className="source_code_link project_link"
-                      href="https://github.com/doyi0107/for_your_skin_type_frontend.git"
-                      target="_blank"
-                    >
-                      <Image
-                        className="source_code"
-                        src={source_code}
-                        alt="source_code_img"
-                      />
-                      <p>#source code</p>
-                    </Link>
-                    <Link
-                      className="demo_code_link project_link"
-                      href="https://elated-edison-5e9fe5.netlify.app"
-                      target="_blank"
-                    >
-                      <Image className="demo" src={demo} alt="demo_img" />
-                      <p>#demo</p>
-                    </Link>
-                  </div>
-                  {/* text_wrap */}
-                  <div className="project_text_wrap">
-                    <h3>for_your_skin_type</h3>
-                    <h4>프로젝트기간</h4>
-                    <p>2022.01~ 02(4명)</p>
-                    <h4>프론트엔드</h4>
-                    <p>FIGMA,REACT,SCSS</p>
-                    <h4>백엔드</h4>
-                    <p>JAVA,SPRING,MYSQL</p>
-                    <h4>주요 기능</h4>
-                    <p>
-                      → 피그마를 통해 사전 디자인
-                      <br /> → 피부 유형을 분석하고 자신에 타입에 맞는 화장품을
-                      추천해 주는 웹사이트
-                      <br />→ SCSS를 통해 반응형 웹으로 제작
-                    </p>
-
-                    <Link
-                      href="https://2-doooo-2.tistory.com/122"
-                      target="_blank"
-                    >
-                      <button className="readme_button">
-                        <span>📘README</span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <span className="project_line"></span>
-              {/* javascipt_zip */}
-              <div className="about_project">
-                <div className="content">
-                  {/* img_wrap */}
-                  <div className="project_img_wrap">
-                    <Image
-                      className="project_main_img Javascipt_zip_img"
-                      src={javascript_zip}
-                      alt="javascript_zip"
-                    />
-
-                    <Link
-                      className="source_code_link project_link"
-                      href="https://github.com/doyi0107/Javascript_zip.git"
-                      target="_blank"
-                    >
-                      <Image
-                        className="source_code"
-                        src={source_code}
-                        alt="source_code_img"
-                      />
-                      <p>#source code</p>
-                    </Link>
-                    <Link
-                      className="demo_code_link project_link"
-                      href="https://javascript-zip.netlify.app/"
-                      target="_blank"
-                    >
-                      <Image className="demo" src={demo} alt="demo_img" />
-                      <p>#demo</p>
-                    </Link>
-                  </div>
-                  {/* text_wrap */}
-                  <div className="project_text_wrap">
-                    <h3>Javascipt_zip</h3>
-                    <h4>프로젝트기간</h4>
-                    <p>2023.09 / 2023.12 (1명)</p>
-                    <h4>프론트엔드</h4>
-                    <p>HTML, CSS, JAVASCRIPT, SVG, GSAP</p>
-                    <h4>백엔드</h4>
-                    <p>API</p>
-                    <h4>주요 기능</h4>
-                    <p>
-                      → API를 통해 현재 날씨와 온도 가져오기
-                      <br />
-                      → 다크 모드 기능
-                      <br />→ 카드 매치 게임등
-                    </p>
-
-                    <Link
-                      href="https://2-doooo-2.tistory.com/125"
-                      target="_blank"
-                    >
-                      <button className="readme_button">
-                        <span>📘README</span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <span className="project_line"></span>
               {/* spakling_story */}
               <div className="about_project">
                 <div class="content">
@@ -448,21 +453,20 @@ export default function Home() {
               </div>
 
               <span className="project_line"></span>
-
-              {/* Doyi_portfolio */}
+              {/* 화장품 추천 웹 */}
               <div className="about_project">
-                <div class="content">
+                <div className="content">
                   {/* img_wrap */}
                   <div className="project_img_wrap">
                     <Image
-                      className="project_main_img Doyi_portfolio_img"
-                      src={Doyi_portfolio_img}
-                      alt="Doyi_portfolio_img"
+                      className="project_main_img skin_type_img"
+                      src={for_your_skin_type}
+                      alt="for_your_skin_type"
                     />
 
                     <Link
                       className="source_code_link project_link"
-                      href="https://github.com/doyi0107/doyi_portfolio.git"
+                      href="https://github.com/doyi0107/for_your_skin_type_frontend.git"
                       target="_blank"
                     >
                       <Image
@@ -474,8 +478,8 @@ export default function Home() {
                     </Link>
                     <Link
                       className="demo_code_link project_link"
-                      onClick={handleLinkClick}
-                      href="#"
+                      href="https://elated-edison-5e9fe5.netlify.app"
+                      target="_blank"
                     >
                       <Image className="demo" src={demo} alt="demo_img" />
                       <p>#demo</p>
@@ -483,23 +487,23 @@ export default function Home() {
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
-                    <h3>Doyi_portfolio</h3>
+                    <h3>for_your_skin_type</h3>
                     <h4>프로젝트기간</h4>
-                    <p>2023.12(1명)</p>
+                    <p>2022.01~ 02(4명)</p>
                     <h4>프론트엔드</h4>
-                    <p>NEXT.JS, SCSS, GSAP, VERCEL</p>
+                    <p>FIGMA,REACT,SCSS</p>
+                    <h4>백엔드</h4>
+                    <p>JAVA,SPRING,MYSQL</p>
                     <h4>주요 기능</h4>
                     <p>
-                      → SEO를 위한 SSR을 가능하게 하는 NEXT.JS로 제작
-                      <br />
-                      → 처음 만든 프로젝트 대비 로딩 속도 (Load:537ms → Load:
-                      127ms) 310ms차이로 개선 
-                      <br />→ GSAP를 통한 부드러운 전환 효과, SCSS와 CSS를 통해
-                      반응형 웹으로 제작
+                      → 피그마를 통해 사전 디자인
+                      <br /> → 피부 유형을 분석하고 자신에 타입에 맞는 화장품을
+                      추천해 주는 웹사이트
+                      <br />→ SCSS를 통해 반응형 웹으로 제작
                     </p>
 
                     <Link
-                      href="https://2-doooo-2.tistory.com/135"
+                      href="https://2-doooo-2.tistory.com/122"
                       target="_blank"
                     >
                       <button className="readme_button">
@@ -509,7 +513,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
               <span className="project_line"></span>
 
               {/* shallender */}
