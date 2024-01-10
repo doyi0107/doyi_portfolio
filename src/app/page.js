@@ -209,9 +209,9 @@ export default function Home() {
               <div className="about_project">
                 <div class="content">
                   {/* img_wrap */}
-                  <div className="project_img_wrap">
+                  <div className="project_img_wrap Doyi_portfolio_wrap">
                     <Image
-                      className="project_main_img Doyi_portfolio_img"
+                      className="project_main_img "
                       src={Doyi_portfolio_img}
                       alt="Doyi_portfolio_img"
                     />
