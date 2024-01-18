@@ -75,7 +75,7 @@ export default function Home() {
 
 
       // scrollSection.offsetTop는 스크롤 섹션의 상단 위치를 나타내는 고정된 값이며, 
-      //scrolled는 현재 사용자가 스크롤한 위치를 동적으로 나타내는 값입니다
+      //scrolled는 현재 사용자가 스크롤한 위치를 동적으로 나타내는 값입니다.
       const scrolled = window.pageYOffset;
       const sectionOffset = Math.abs(scrollSection.offsetTop - scrolled);
       const notReachedBottom = parseInt(
