@@ -1,6 +1,6 @@
-import "./globals.css";
-import "./globals.scss";
-import "./reset.css";
+import "./styled/globals.css";
+import "./styled/globals.scss";
+import "./styled/reset.css";
 import Link from "next/link";
 import Image from "next/image";
 import me from "/public/me.png";
@@ -23,24 +23,6 @@ export default function RootLayout({ children }) {
           <Modal />
           <div className="scroll_top"></div>
           <main id="intro">
-            {/* <header className="header_wrap">
-              <Link href="#intro" className="link">
-                <div>Home</div>
-              </Link>
-
-              <Link href="#archiving" className="link">
-                <div>Archiving</div>
-              </Link>
-
-              <Link href="#projects" className="link">
-                <div>Projects</div>
-              </Link>
-
-              <Link href="#contact" className="link">
-                <div>Contact</div>
-              </Link>
-            </header> */}
-
 
             {/* 초기 애니메이션 */}
             <div className="intro_wrap">

@@ -444,8 +444,6 @@ section {
 .project_img_wrap:not(.Doyi_portfolio_wrap) {
     display: inline-block;
     position: relative;
-    width: 30vw;
-    height: 40vh;
     margin: 0 3.5vw;
     overflow: hidden;
     display: flex;

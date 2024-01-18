@@ -34,3 +34,195 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+```
+doyi_portfolio
+├─ .git
+│  ├─ COMMIT_EDITMSG
+│  ├─ config
+│  ├─ description
+│  ├─ HEAD
+│  ├─ hooks
+│  │  ├─ applypatch-msg.sample
+│  │  ├─ commit-msg.sample
+│  │  ├─ fsmonitor-watchman.sample
+│  │  ├─ post-update.sample
+│  │  ├─ pre-applypatch.sample
+│  │  ├─ pre-commit.sample
+│  │  ├─ pre-merge-commit.sample
+│  │  ├─ pre-push.sample
+│  │  ├─ pre-rebase.sample
+│  │  ├─ pre-receive.sample
+│  │  ├─ prepare-commit-msg.sample
+│  │  ├─ push-to-checkout.sample
+│  │  └─ update.sample
+│  ├─ index
+│  ├─ info
+│  │  └─ exclude
+│  ├─ logs
+│  │  ├─ HEAD
+│  │  └─ refs
+│  │     ├─ heads
+│  │     │  └─ master
+│  │     └─ remotes
+│  │        └─ origin
+│  │           └─ master
+│  ├─ objects
+│  │  ├─ info
+│  │  └─ pack
+│  └─ refs
+│     ├─ heads
+│     │  └─ master
+│     ├─ remotes
+│     │  └─ origin
+│     │     └─ master
+│     └─ tags
+├─ .gitignore
+├─ jsconfig.json
+├─ next.config.js
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ 1.jpeg
+│  ├─ 2.jpeg
+│  ├─ 3.jpeg
+│  ├─ academic.png
+│  ├─ APMA_img.png
+│  ├─ birth.png
+│  ├─ contact_doyi.jpg
+│  ├─ demo.png
+│  ├─ design.png
+│  ├─ Doyi_portfolio_img.JPG
+│  ├─ email.png
+│  ├─ footer_github.png
+│  ├─ footer_t_story.png
+│  ├─ for_your_skin_type.JPG
+│  ├─ github.png
+│  ├─ home.png
+│  ├─ instagram.png
+│  ├─ javascript_zip_img.png
+│  ├─ me.png
+│  ├─ name.png
+│  ├─ nav_sprout.png
+│  ├─ nav_tree.png
+│  ├─ networking.png
+│  ├─ next.svg
+│  ├─ phone.png
+│  ├─ shallender_img.jpg
+│  ├─ source-code.png
+│  ├─ t-story.png
+│  ├─ talk.png
+│  ├─ vercel.svg
+│  ├─ watering.png
+│  └─ your_spakling_story.JPG
+├─ README.md
+├─ src
+│  └─ app
+│     ├─ globals.css
+│     ├─ globals.scss
+│     ├─ layout.js
+│     ├─ modal.js
+│     ├─ modal.modul.css
+│     ├─ page.js
+│     ├─ page.modul.css
+│     └─ reset.css
+└─ tsconfig.json
+
+```
+```
+doyi_portfolio
+├─ .git
+│  ├─ COMMIT_EDITMSG
+│  ├─ config
+│  ├─ description
+│  ├─ HEAD
+│  ├─ hooks
+│  │  ├─ applypatch-msg.sample
+│  │  ├─ commit-msg.sample
+│  │  ├─ fsmonitor-watchman.sample
+│  │  ├─ post-update.sample
+│  │  ├─ pre-applypatch.sample
+│  │  ├─ pre-commit.sample
+│  │  ├─ pre-merge-commit.sample
+│  │  ├─ pre-push.sample
+│  │  ├─ pre-rebase.sample
+│  │  ├─ pre-receive.sample
+│  │  ├─ prepare-commit-msg.sample
+│  │  ├─ push-to-checkout.sample
+│  │  └─ update.sample
+│  ├─ index
+│  ├─ info
+│  │  └─ exclude
+│  ├─ logs
+│  │  ├─ HEAD
+│  │  └─ refs
+│  │     ├─ heads
+│  │     │  └─ master
+│  │     └─ remotes
+│  │        └─ origin
+│  │           └─ master
+│  ├─ objects
+│  │  ├─ info
+│  │  └─ pack
+│  └─ refs
+│     ├─ heads
+│     │  └─ master
+│     ├─ remotes
+│     │  └─ origin
+│     │     └─ master
+│     └─ tags
+├─ .gitignore
+├─ jsconfig.json
+├─ next.config.js
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ 1.jpeg
+│  ├─ 2.jpeg
+│  ├─ 3.jpeg
+│  ├─ academic.png
+│  ├─ APMA_img.png
+│  ├─ birth.png
+│  ├─ contact_doyi.jpg
+│  ├─ demo.png
+│  ├─ design.png
+│  ├─ Doyi_portfolio_img.JPG
+│  ├─ email.png
+│  ├─ footer_github.png
+│  ├─ footer_t_story.png
+│  ├─ for_your_skin_type.JPG
+│  ├─ github.png
+│  ├─ home.png
+│  ├─ instagram.png
+│  ├─ javascript_zip_img.png
+│  ├─ me.png
+│  ├─ name.png
+│  ├─ nav_sprout.png
+│  ├─ nav_tree.png
+│  ├─ networking.png
+│  ├─ next.svg
+│  ├─ phone.png
+│  ├─ shallender_img.jpg
+│  ├─ source-code.png
+│  ├─ t-story.png
+│  ├─ talk.png
+│  ├─ vercel.svg
+│  ├─ watering.png
+│  └─ your_spakling_story.JPG
+├─ README.md
+├─ src
+│  └─ app
+│     ├─ archiving.js
+│     ├─ layout.js
+│     ├─ main_sub.js
+│     ├─ modal.js
+│     ├─ page.js
+│     └─ styles
+│        ├─ globals.css
+│        ├─ globals.scss
+│        ├─ modal.modul.css
+│        ├─ page.modul.css
+│        └─ reset.css
+└─ tsconfig.json
+
+```
