@@ -1,6 +1,6 @@
-import "./styled/globals.css";
-import "./styled/globals.scss";
-import "./styled/reset.css";
+import "./styles/globals.css";
+import "./styles/globals.scss";
+import "./styles/reset.css";
 import Link from "next/link";
 import Image from "next/image";
 import me from "/public/me.png";

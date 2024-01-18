@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import Link from "next/link";
-import "./styled/modal.modul.css";
+import "./styles/modal.modul.css";
 
 export default function Modal() {
   const [burgerClass, setBurgerClass] = useState("burger-bar unclicked");
