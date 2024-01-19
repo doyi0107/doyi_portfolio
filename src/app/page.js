@@ -18,6 +18,7 @@ import spakling_story from "/public/your_spakling_story.webp";
 import Doyi_portfolio_img from "/public/Doyi_portfolio_img.webp";
 import for_your_skin_type from "/public/for_your_skin_type.webp";
 import shallender_img from "/public/shallender_img.webp";
+import nav_tree from "/public/nav_tree.png";
 import Link from "next/link";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
@@ -101,6 +102,14 @@ export default function Home() {
 
   return (
     <>
+      <div className="nav_left_box">
+        <Link href="#intro">
+          <Image className="nav_tree" src={nav_tree} alt="nav_tree" />
+        </Link>
+        <Link href="#main_sub">
+          <p className="nav_name">DOY.</p>
+        </Link>
+      </div>
       {/* 스크롤 유도 가이드 */}
       <div
         className={`${isSpecialCase ? "scroll_guide_up" : "scroll_guide"}`}

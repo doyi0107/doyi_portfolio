@@ -1353,6 +1353,19 @@ footer img {
 }
 
 @media screen and (max-width : 650px) {
+    .nav_left_box {
+        width: 100vw;
+        height: 65px;
+        top: 0;
+    }
+
+    .nav_tree {
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        left: 15px;
+    }
+
     #main_sub {
         height: 1100px;
     }

@@ -1,10 +1,11 @@
 import "./styles/globals.css";
 import "./styles/globals.scss";
 import "./styles/reset.css";
-import Link from "next/link";
+import "./styles/modal.modul.css"
+import "./styles/page.modul.css"
 import Image from "next/image";
 import me from "/public/me.webp";
-import nav_tree from "/public/nav_tree.png";
+
 import Modal from "./modal.js";
 
 export const metadata = {
@@ -151,14 +152,6 @@ export default function RootLayout({ children }) {
 
       
 
-            <div className="nav_left_box">
-              <Link href="#intro">
-                <Image className="nav_tree" src={nav_tree} alt="nav_tree" />
-              </Link>
-              <Link href="#main_sub">
-                <p className="nav_name">DOY.</p>
-              </Link>
-            </div>
           </main>
 
           {children}

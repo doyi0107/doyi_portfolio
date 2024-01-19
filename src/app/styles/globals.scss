@@ -283,7 +283,7 @@ $desktop: "screen and (max-width : 1300px)";
 }
 
 @media #{$phone} {
-
+   
 
     // master
 
@@ -410,5 +410,7 @@ $desktop: "screen and (max-width : 1300px)";
             -webkit-transform: translateY(-170px);
             transform: translateY(-170px);
         }
+
+        
     }
 }
