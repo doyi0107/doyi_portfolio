@@ -3,7 +3,7 @@ import "./styles/globals.scss";
 import "./styles/reset.css";
 import Link from "next/link";
 import Image from "next/image";
-import me from "/public/me.png";
+import me from "/public/me.webp";
 import nav_tree from "/public/nav_tree.png";
 import Modal from "./modal.js";
 

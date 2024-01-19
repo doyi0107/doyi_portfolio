@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import github from "/public/github.png";
-import t_story from "/public/t-story.png";
+import github from "/public/github.webp";
+import t_story from "/public/t-story.webp";
 import "./styles/page.modul.css";
 
 export default function Archiving() {

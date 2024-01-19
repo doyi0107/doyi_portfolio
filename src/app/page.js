@@ -1,30 +1,29 @@
 "use client";
 import "./styles/page.modul.css";
 import Image from "next/image";
-import APMA from "/public/APMA_img.png";
-import source_code from "/public/source-code.png";
-import demo from "/public/demo.png";
-import talk from "/public/talk.png";
-import mail from "/public/email.png";
-import phone from "/public/phone.png";
-import instagram from "/public/instagram.png";
-import home from "/public/home.png";
-import birth from "/public/birth.png";
-import academic from "/public/academic.png";
-import name from "/public/name.png";
-import footer_github from "/public/footer_github.png";
-import footer_t_story from "/public/footer_t_story.png";
-import contact_doyi from "/public/contact_doyi.jpg";
-import javascript_zip from "/public/javascript_zip_img.png";
-import spakling_story from "/public/your_spakling_story.JPG";
-import Doyi_portfolio_img from "/public/Doyi_portfolio_img.JPG";
-import for_your_skin_type from "/public/for_your_skin_type.JPG";
-import shallender_img from "/public/shallender_img.jpg";
+import APMA from "/public/APMA_img.webp";
+import source_code from "/public/source-code.webp";
+import demo from "/public/demo.webp";
+import talk from "/public/talk.webp";
+import mail from "/public/email.webp";
+import phone from "/public/phone.webp";
+import instagram from "/public/instagram.webp";
+import home from "/public/home.webp";
+import birth from "/public/birth.webp";
+import academic from "/public/academic.webp";
+import name from "/public/name.webp";  
+import contact_doyi from "/public/contact_doyi.webp";
+import javascript_zip from "/public/javascript_zip_img.webp";
+import spakling_story from "/public/your_spakling_story.webp";
+import Doyi_portfolio_img from "/public/Doyi_portfolio_img.webp";
+import for_your_skin_type from "/public/for_your_skin_type.webp";
+import shallender_img from "/public/shallender_img.webp";
 import Link from "next/link";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import Archiving from "./archiving";
 import Main_sub from "./main_sub";
+import Footer from "./footer";
 
 export default function Home() {
   const [isSpecialCase, setIsSpecialCase] = useState(false);
@@ -569,52 +568,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer>
-          <p className="footer_Copyright">Copyright © 2024 Leedoyi</p>
-          <p className="footer_mail">
-            꽃을 피울 개발자 이도이가 궁금하다면 메일을 보내주세요 →
-            doyi9917@naver.com
-          </p>
-
-          <div className="footer_link_wrap">
-            <Link
-              href="https://github.com/doyi0107"
-              className="footer_link_github footer_link"
-              target="blank"
-            >
-              <Image
-                className="footer_github"
-                src={footer_github}
-                alt="footer_github"
-              />
-            </Link>
-            <Link
-              href="https://2-doooo-2.tistory.com/"
-              target="blank"
-              className="footer_link_tstory footer_link"
-            >
-              <Image
-                className="footer_t_story"
-                src={footer_t_story}
-                alt="footer_t_story"
-              />
-            </Link>
-            <Link
-              href="https://open.kakao.com/o/sevgyHWf"
-              target="blank"
-              className="footer_link_kakao footer_link"
-            >
-              <Image className="talk" src={talk} alt="talk" />
-            </Link>
-            <Link
-              href="https://instagram.com/2_doooo_2?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr"
-              target="blank"
-              className="footer_link_kakao footer_link"
-            >
-              <Image className="instagram" src={instagram} alt="instagram" />
-            </Link>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   );
