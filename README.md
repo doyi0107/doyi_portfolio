@@ -35,7 +35,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
 ```
 doyi_portfolio
 ├─ .git
@@ -84,38 +83,6 @@ doyi_portfolio
 ├─ package-lock.json
 ├─ package.json
 ├─ public
-│  ├─ 1.jpeg
-│  ├─ 2.jpeg
-│  ├─ 3.jpeg
-│  ├─ academic.png
-│  ├─ APMA_img.png
-│  ├─ birth.png
-│  ├─ contact_doyi.jpg
-│  ├─ demo.png
-│  ├─ design.png
-│  ├─ Doyi_portfolio_img.JPG
-│  ├─ email.png
-│  ├─ footer_github.png
-│  ├─ footer_t_story.png
-│  ├─ for_your_skin_type.JPG
-│  ├─ github.png
-│  ├─ home.png
-│  ├─ instagram.png
-│  ├─ javascript_zip_img.png
-│  ├─ me.png
-│  ├─ name.png
-│  ├─ nav_sprout.png
-│  ├─ nav_tree.png
-│  ├─ networking.png
-│  ├─ next.svg
-│  ├─ phone.png
-│  ├─ shallender_img.jpg
-│  ├─ source-code.png
-│  ├─ t-story.png
-│  ├─ talk.png
-│  ├─ vercel.svg
-│  ├─ watering.png
-│  └─ your_spakling_story.JPG
 ├─ README.md
 ├─ src
 │  └─ app
@@ -128,8 +95,8 @@ doyi_portfolio
 │     └─ styles
 │        ├─ globals.css
 │        ├─ globals.scss
-│        ├─ modal.modul.css
-│        ├─ page.modul.css
+│        ├─ modal.css
+│        ├─ page.css
 │        └─ reset.css
 └─ tsconfig.json
 
