@@ -21,7 +21,7 @@ const nextConfig = {
     // CSS and SCSS loader configuration
     if (!isServer) {
       config.module.rules.push({
-        test: /\.(css|scss)$/,
+        test: /.s?css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       });
 

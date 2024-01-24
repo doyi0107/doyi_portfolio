@@ -1,0 +1,1422 @@
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap);
+
+#main_sub,
+section {
+    position: relative
+}
+
+.explain_me,
+.img_wrap:after,
+.sub_box,
+.sub_name {
+    position: absolute
+}
+
+.arch_left_box,
+.sub_box {
+    border-radius: 0 300px 300px 0
+}
+
+#archiving,
+#contact,
+#main_sub,
+#projects {
+    background-color: #b39c7a
+}
+
+.container {
+    -webkit-animation: 7s cubic-bezier(.645, .045, .355, 1) container_bg;
+    animation: 7s cubic-bezier(.645, .045, .355, 1) container_bg;
+    animation-fill-mode: forwards
+}
+
+@-webkit-keyframes container_bg {
+    0% {
+        opacity: 0
+    }
+
+    100%,
+    99% {
+        opacity: 1
+    }
+}
+
+@keyframes container_bg {
+    0% {
+        opacity: 0
+    }
+
+    100%,
+    99% {
+        opacity: 1
+    }
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    z-index: 1
+}
+
+.sub_box {
+    width: 500px;
+    height: 100vh;
+    background-color: #829472;
+    top: 0;
+    animation: 1s both fromleft;
+    animation-timeline: view()
+}
+
+.arch_left_box,
+.arch_right_box,
+.explain_me>div {
+    background-color: rgba(201, 105, 88, .7)
+}
+
+@keyframes fromleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px)
+    }
+
+    100%,
+    30% {
+        opacity: 1;
+        transform: translateX(30px)
+    }
+}
+
+.sub_name {
+    top: 10%;
+    left: 15%;
+    animation: 1s both fromleft;
+    animation-timeline: view();
+    color: rgba(255, 255, 255, .7);
+    font: bold 8rem sans-serif
+}
+
+.explain_me {
+    top: 35%;
+    justify-content: center;
+    display: flex
+}
+
+#archiving,
+#projects,
+.img_wrap {
+    position: relative
+}
+
+.explain_me>div {
+    opacity: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: inline-block
+}
+
+:is(.one, .two, .three) {
+    margin: 1rem 1.5rem;
+    animation: 2s bubble;
+    animation-timeline: view()
+}
+
+.one {
+    animation-delay: 0s
+}
+
+.two {
+    animation-delay: .3s
+}
+
+.three {
+    animation-delay: .6s
+}
+
+@keyframes bubble {
+    0% {
+        opacity: 0;
+        transform: translateX(0)
+    }
+
+    100%,
+    30% {
+        opacity: 1;
+        transform: translateX(300px)
+    }
+}
+
+.explain_me h3 {
+    text-align: center;
+    color: rgba(205, 188, 163, .8);
+    font: 300 2rem 'Black Han Sans', sans-serif
+}
+
+.img_wrap {
+    display: inline-block;
+    overflow: hidden
+}
+
+.img_wrap:hover:after,
+.img_wrap:hover>.sub_text,
+.project_img_wrap:hover:after,
+.project_img_wrap:hover>.project_link {
+    display: block
+}
+
+.display_none,
+.img_wrap:after,
+.img_wrap:hover h3,
+.project_img_wrap:after,
+.project_link,
+.sub_text {
+    display: none
+}
+
+.img_wrap:after {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 10
+}
+
+.img_wrap:hover .sub_img,
+.project_img_wrap:hover .project_main_img {
+    transform: scale(1.2)
+}
+
+.sub_img {
+    transition: .7s;
+    margin: 40px auto;
+    display: block;
+    width: 150px;
+    height: 150px
+}
+
+.sub_text {
+    text-align: center;
+    margin: 0 10px;
+    color: rgba(255, 255, 255, .8);
+    position: absolute;
+    top: 100px;
+    z-index: 20;
+    font: bold 1.5rem/1.5 'IBM Plex Sans KR', sans-serif
+}
+
+.archiving_name,
+.projects_name {
+    position: absolute;
+    color: rgba(255, 255, 255, .7)
+}
+
+.archiving_name {
+    z-index: 9;
+    top: -20px;
+    left: 15%;
+    animation: 1s both fromleft;
+    animation-timeline: view();
+    font: bold 8rem sans-serif
+}
+
+.github_img {
+    float: right;
+    margin: 3% 4%;
+    width: 200px;
+    height: 200px;
+    transition: .5s
+}
+
+.github_img:hover {
+    width: 220px;
+    height: 220px
+}
+
+.github_text {
+    width: 800px;
+    margin: 60px 0 0 15%
+}
+
+.github_text>h4,
+.t_story_text>h4 {
+    color: rgba(231, 221, 205, .8);
+    font: 300 2rem/1.5 'Black Han Sans', sans-serif
+}
+
+.github_text>p {
+    color: rgba(231, 221, 205, .8);
+    font: 400 1.3rem/1.6 'IBM Plex Sans KR', sans-serif
+}
+
+.arch_left_box {
+    width: 61vw;
+    height: 38vh;
+    left: 0;
+    position: absolute;
+    top: 15%;
+    animation: 1s both arch_left_box_ani;
+    animation-timeline: view();
+    transform-origin: left
+}
+
+@keyframes arch_left_box_ani {
+    0% {
+        opacity: 0;
+        transform: translateX(-400px)
+    }
+
+    100%,
+    30% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.t_story_img_wrap {
+    width: 250px
+}
+
+.t_story_img {
+    margin: 1% 2%;
+    float: left;
+    width: 250px;
+    height: 250px;
+    transition: .5s
+}
+
+.t_story_img:hover {
+    width: 270px;
+    height: 270px
+}
+
+.t_story_text {
+    float: right;
+    width: 510px;
+    margin-top: 27px
+}
+
+.t_story_text>p {
+    color: rgba(231, 221, 205, .8);
+    font: 400 1.3rem/1.5 'IBM Plex Sans KR', sans-serif
+}
+
+.arch_right_box {
+    position: absolute;
+    width: 54vw;
+    height: 38vh;
+    right: 0;
+    border-radius: 300px 0 0 300px;
+    bottom: 5%;
+    animation: 1s forwards arch_right_box_ani;
+    animation-timeline: view();
+    overflow: hidden
+}
+
+@keyframes arch_right_box_ani {
+    0% {
+        opacity: 0;
+        right: -300px
+    }
+
+    100%,
+    30% {
+        opacity: 1;
+        right: 0
+    }
+}
+
+#projects {
+    height: 1180vh
+}
+
+.projects_name {
+    top: -50px;
+    left: 14vw;
+    font: bold 9rem sans-serif
+}
+
+.horizontal_scroll_wrap {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: hidden
+}
+
+.horizontal_scroll_content {
+    display: flex;
+    height: 100vh;
+    width: 600vw;
+    will-change: transform;
+    margin: 1.5vh 0 0 3vw
+}
+
+.about_project {
+    display: inline-block;
+    width: 75vw;
+    margin: 5vw auto;
+    background-color: rgba(224, 181, 55, .6);
+    border-radius: 200px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column
+}
+
+.project_line {
+    width: 2px;
+    height: 96.5vh;
+    background-color: rgba(255, 227, 142, .6)
+}
+
+.about_project .content {
+    width: 70vw;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    align-items: center
+}
+
+.project_img_wrap:not(.Doyi_portfolio_wrap) {
+    display: inline-block;
+    position: relative;
+    margin: 0 3.5vw;
+    overflow: hidden;
+    display: flex
+}
+
+.Doyi_portfolio_wrap {
+    display: inline-block;
+    position: relative;
+    width: 33vw;
+    height: 40vh;
+    margin: 0 3.5vw;
+    overflow: hidden;
+    display: flex
+}
+
+.project_img_wrap:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 10
+}
+
+.project_main_img {
+    transition: .7s;
+    display: block;
+    width: 30vw;
+    height: 40vh
+}
+
+.project_link:not(.shallendar_source_code) {
+    margin: 9vh 3.5vw;
+    color: rgba(255, 255, 255, .8);
+    position: absolute;
+    z-index: 20
+}
+
+.shallendar_source_code {
+    color: rgba(255, 255, 255, .8);
+    position: absolute;
+    z-index: 20;
+    margin: 9vh 10vw
+}
+
+.demo_code_link {
+    top: -12px;
+    left: 200px
+}
+
+.source_code_link>img {
+    width: 10vw;
+    height: 18vh
+}
+
+.demo_code_link>img {
+    width: 10vw;
+    height: 20vh
+}
+
+.project_link>p {
+    text-align: center;
+    color: #fff !important;
+    font: 100 1.4rem 'Black Han Sans', sans-serif
+}
+
+.project_text_wrap>h3 {
+    max-width: 50vw;
+    margin-top: 0;
+    line-height: 1.2;
+    color: #545454;
+    font: 300 3rem 'Black Han Sans', sans-serif
+}
+
+.project_text_wrap>h4 {
+    color: #545454;
+    font: bold 1.5rem/1.6 'IBM Plex Sans KR', sans-serif;
+    max-width: 30vw;
+    margin-top: 8px
+}
+
+.project_text_wrap h4::before {
+    content: "✓";
+    color: #2d82a7;
+    font: 400 2rem/1 'IBM Plex Sans KR', sans-serif
+}
+
+.project_text_wrap p {
+    color: #545454;
+    font: 400 1rem 'IBM Plex Sans KR', sans-serif
+}
+
+.readme_button {
+    position: relative;
+    height: 6vh;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #545454;
+    border: 3px solid #2d82a7;
+    border-radius: 30px;
+    font: 500 1.2rem 'IBM Plex Sans KR', sans-serif
+}
+
+#contact,
+.contact_wrap {
+    height: 100vh;
+    width: 100vw
+}
+
+.readme_button:hover {
+    cursor: pointer
+}
+
+.readme_button::before {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    content: "";
+    border-radius: 30px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .7);
+    transition: .3s ease-out
+}
+
+.readme_button:hover::before {
+    opacity: 1
+}
+
+.readme_button>span {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+    transition: .2s;
+    color: #545454
+}
+
+#contact {
+    position: relative;
+    overflow: hidden
+}
+
+.contact_name {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 15vw;
+    color: rgba(255, 255, 255, .7);
+    font: bold 8rem sans-serif
+}
+
+.contact_wrap {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.contact_img_wrap,
+footer {
+    overflow: hidden;
+    position: relative
+}
+
+.contact_img_wrap {
+    z-index: 1;
+    display: block;
+    left: 25vw;
+    border-radius: 100px
+}
+
+.contact_img_wrap:hover .contact_doyi_img {
+    transform: scale(1.2);
+    cursor: pointer
+}
+
+.contact_doyi_img {
+    width: 270px;
+    height: 55vh;
+    border-radius: 100px;
+    transition: .7s
+}
+
+.contact_info_doyi {
+    text-align: center;
+    margin: 0 10px;
+    color: rgba(255, 255, 255, .8);
+    position: absolute;
+    top: 100px;
+    height: 100px;
+    z-index: 20;
+    font: bold 1.5rem/1.5 'IBM Plex Sans KR', sans-serif
+}
+
+.contact_info_wrap,
+.contact_text_wrap {
+    margin-left: auto;
+    width: 65vw;
+    height: 100vh;
+    border-radius: 300px 0 0 300px;
+    display: block
+}
+
+.footer_Copyright,
+.footer_mail {
+    text-align: center;
+    font: 500 1rem/65px 'IBM Plex Sans KR', sans-serif
+}
+
+.contact_text_wrap {
+    background-color: rgba(45, 130, 167, .7)
+}
+
+.contact_info_wrap {
+    background-color: #909b57
+}
+
+.contact_text_box {
+    margin: 20vh auto;
+    width: 300px
+}
+
+.contact_text_box h3 {
+    display: block;
+    color: rgba(231, 221, 205, .9);
+    font: 300 2rem/1.5 'Black Han Sans', sans-serif;
+    align-items: center
+}
+
+.contact_text_box p,
+.contact_text_title>img,
+.footer_Copyright,
+.footer_mail {
+    color: rgba(231, 221, 205, .8)
+}
+
+.contact_text_box p {
+    font: 400 1.3rem/1.2 '나눔고딕', sans-serif;
+    margin-bottom: 30px
+}
+
+.contact_text_title {
+    width: 200px;
+    display: flex;
+    height: 50px
+}
+
+.contact_text_title>img {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 5px 10px 0 0
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: #806044
+}
+
+.footer_Copyright {
+    float: left;
+    padding-left: 100px
+}
+
+.footer_mail {
+    padding-right: 180px;
+    height: 10px
+}
+
+.footer_link_wrap {
+    float: right;
+    margin-right: 30px
+}
+
+footer img {
+    padding: 8px 5px;
+    width: 30px;
+    height: 30px
+}
+
+@media screen and (max-width :1300px) {
+    .sub_name {
+        top: 10%;
+        font: bold 7rem sans-serif
+    }
+
+    .explain_me {
+        width: 80vw
+    }
+
+    .explain_me>div {
+        width: 270px;
+        height: 270px
+    }
+
+    :is(.img_wrap, .two, .three) {
+        animation: 1s bubble_desktop;
+        animation-timeline: view()
+    }
+
+    .one {
+        animation-delay: 0s
+    }
+
+    .two {
+        animation-delay: .3s
+    }
+
+    .three {
+        animation-delay: .6s
+    }
+
+    @keyframes bubble_desktop {
+        0% {
+            opacity: 0;
+            transform: translateX(0)
+        }
+
+        10%,
+        100% {
+            opacity: 1;
+            transform: translateX(150px)
+        }
+    }
+
+    .explain_me h3 {
+        font: 300 1.8rem 'Black Han Sans', sans-serif;
+        margin-top: -15px
+    }
+
+    .github_img {
+        margin: 5% 4% 0 0;
+        width: 180px;
+        height: 180px
+    }
+
+    .github_img:hover {
+        width: 190px;
+        height: 190px
+    }
+
+    .github_text {
+        width: 34vw;
+        margin: 60px 0 0 14%
+    }
+
+    .github_text>h4,
+    .t_story_text>h4 {
+        font: 300 1.7rem/1.5 'Black Han Sans', sans-serif
+    }
+
+    .github_text>p,
+    .t_story_text>p {
+        font: 400 1rem/2 'IBM Plex Sans KR', sans-serif
+    }
+
+    .arch_left_box {
+        width: 68vw;
+        height: 38vh;
+        left: 0;
+        top: 15%
+    }
+
+    .t_story_img {
+        margin: 3% 2% 0 1%;
+        width: 230px;
+        height: 230px;
+        transition: .5s
+    }
+
+    .t_story_img:hover {
+        width: 240px;
+        height: 240px
+    }
+
+    .t_story_text {
+        width: 34vw
+    }
+
+    .arch_right_box {
+        width: 60vw;
+        height: 38vh;
+        right: 0;
+        overflow: hidden
+    }
+
+    .project_img_wrap,
+    .project_main_img {
+        width: 280px;
+        height: 25vh
+    }
+
+    #projects {
+        height: 975vh
+    }
+
+    .projects_name {
+        top: -50px;
+        left: 15vw;
+        font: bold 8rem sans-serif
+    }
+
+    .horizontal_scroll_content {
+        margin: 2vh 0 0 4.5vw
+    }
+
+    .project_img_wrap {
+        margin: 0 2vw
+    }
+
+    .project_text_wrap>h3 {
+        max-width: 50vw;
+        font: 300 2.5rem 'Black Han Sans', sans-serif
+    }
+
+    .project_text_wrap>h4 {
+        font: bold 1.3rem/1.6 'IBM Plex Sans KR', sans-serif;
+        max-width: 30vw
+    }
+
+    .about_project {
+        width: 70vw;
+        margin: 7vw auto
+    }
+
+    .project_link:not(.shallendar_source_code) {
+        margin: 4vh 30px
+    }
+
+    .shallendar_source_code {
+        margin: 4vh 100px
+    }
+
+    .demo_code_link {
+        top: -12px;
+        left: 11vw
+    }
+
+    .source_code_link>img {
+        width: 80px;
+        height: 100px
+    }
+
+    .demo_code_link>img {
+        width: 80px;
+        height: 112px
+    }
+
+    .project_link>p {
+        font: 100 1rem 'Black Han Sans', sans-serif
+    }
+
+    .contact_name {
+        left: 15vw;
+        font: bold 8rem sans-serif
+    }
+
+    .footer_Copyright,
+    .footer_mail {
+        font: 500 0.9rem/65px 'IBM Plex Sans KR', sans-serif
+    }
+
+    .contact_text_box {
+        margin: 22vh 0 0 27vw;
+        width: 300px
+    }
+
+    .footer_mail {
+        padding-right: 150px
+    }
+
+    .footer_link_wrap {
+        margin-right: 20px
+    }
+
+    footer img {
+        padding: 8px 4px;
+        width: 27px;
+        height: 27px
+    }
+}
+
+@media screen and (max-width :1000px) {
+
+    .github_img,
+    .t_story_img,
+    .t_story_text {
+        float: none;
+        display: block
+    }
+
+    .github_img,
+    .github_text,
+    .project_text_wrap,
+    .t_story_img,
+    .t_story_text {
+        display: block
+    }
+
+    #main_sub {
+        height: 1050px
+    }
+
+    .sub_box {
+        width: 500px;
+        height: 120vh;
+        top: 5%;
+        left: -10px
+    }
+
+    .sub_name {
+        left: 10%;
+        top: 0;
+        font: bold 5rem sans-serif
+    }
+
+    .explain_me {
+        left: 0;
+        top: 10%;
+        width: 70vw;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .sub_text {
+        font: bold 1.3rem/1.5 'IBM Plex Sans KR', sans-serif
+    }
+
+    #archiving {
+        height: 165vh
+    }
+
+    .archiving_name {
+        top: -10px;
+        left: 10vw;
+        font: bold 5rem sans-serif
+    }
+
+    .github_img {
+        margin: 6vh auto;
+        width: 210px;
+        height: 210px
+    }
+
+    .github_img:hover {
+        width: 220px;
+        height: 220px
+    }
+
+    .github_text {
+        width: 400px;
+        height: 20vh;
+        margin: 0 auto
+    }
+
+    .github_text>h4,
+    .t_story_text>h4 {
+        font: 300 1.7rem/1.5 'Black Han Sans', sans-serif
+    }
+
+    .github_text>p,
+    .t_story_text>p {
+        font: 400 1.1rem/1.7 'IBM Plex Sans KR', sans-serif
+    }
+
+    .arch_left_box {
+        width: 80vw;
+        height: 80vh;
+        top: 5%;
+        animation: 1s both arch_left_box_ani;
+        animation-timeline: view();
+        transform-origin: left
+    }
+
+    @keyframes arch_left_box_ani {
+        0% {
+            opacity: 0;
+            transform: translateX(-300px)
+        }
+
+        100%,
+        30% {
+            opacity: 1;
+            transform: translateX(70px)
+        }
+    }
+
+    .t_story_img {
+        margin: 4vh auto;
+        width: 250px;
+        height: 250px;
+        transition: .5s
+    }
+
+    .t_story_img:hover {
+        width: 260px;
+        height: 260px
+    }
+
+    .t_story_text {
+        width: 400px;
+        margin: 0 auto
+    }
+
+    .arch_right_box {
+        width: 80vw;
+        height: 80vh;
+        bottom: 5%
+    }
+
+    #projects {
+        height: 780vh
+    }
+
+    .projects_name {
+        top: -15px;
+        left: 12vw;
+        font: bold 5rem sans-serif
+    }
+
+    .horizontal_scroll_content {
+        margin: 20px 0 0 8vw
+    }
+
+    .about_project {
+        height: 85vh
+    }
+
+    .project_img_wrap,
+    .project_main_img {
+        border-radius: 10px;
+        width: 320px;
+        height: 28vh
+    }
+
+    .about_project .content {
+        margin: 6vh auto;
+        flex-direction: column
+    }
+
+    .project_main_img {
+        transition: .7s
+    }
+
+    .project_text_wrap>h3 {
+        margin-top: 20px;
+        font: 300 2rem/1.2 'Black Han Sans', sans-serif
+    }
+
+    .project_text_wrap>h4 {
+        font: bold 1rem/1.3 'IBM Plex Sans KR', sans-serif
+    }
+
+    .project_text_wrap h4::before {
+        font: 400 1rem/1 'IBM Plex Sans KR', sans-serif
+    }
+
+    .project_text_wrap p {
+        font: 400 0.8rem 'IBM Plex Sans KR', sans-serif
+    }
+
+    .project_link:not(.shallendar_source_code) {
+        margin: 6vh 6vw;
+        font: bold 1.5rem/1.5 'IBM Plex Sans KR', sans-serif
+    }
+
+    .shallendar_source_code {
+        margin: 6vh 15vw
+    }
+
+    .source_code_link {
+        left: 5px
+    }
+
+    .demo_code_link {
+        top: -10px;
+        left: 140px
+    }
+
+    .source_code_link>img {
+        width: 90px;
+        height: 90px
+    }
+
+    .demo_code_link>img {
+        width: 90px;
+        height: 100px
+    }
+
+    .readme_button {
+        height: 5vh;
+        margin-top: 10px;
+        font: 500 1rem 'IBM Plex Sans KR', sans-serif
+    }
+
+    .contact_name {
+        left: 17vw;
+        font: bold 5rem sans-serif
+    }
+
+    .contact_img_wrap {
+        left: 20vw;
+        border-radius: 100px
+    }
+
+    .contact_doyi_img {
+        width: 230px;
+        height: 50vh
+    }
+
+    .contact_text_box {
+        margin: 22vh 0 0 27vw
+    }
+
+    .contact_text_box h3 {
+        font: 300 1.6rem/1.5 'Black Han Sans', sans-serif
+    }
+
+    .contact_text_box p {
+        font: 400 1.1rem/1.5 '나눔고딕', sans-serif;
+        margin-bottom: 40px
+    }
+
+    .contact_text_title {
+        margin-bottom: -10px
+    }
+
+    .contact_text_title>img {
+        width: 25px;
+        height: 25px
+    }
+
+    .footer_Copyright {
+        font: 500 1rem/65px 'IBM Plex Sans KR', sans-serif
+    }
+
+    .footer_mail {
+        opacity: 0
+    }
+
+    .footer_link_wrap {
+        margin-right: 20px
+    }
+
+    footer img {
+        padding: 20px 4px;
+        width: 27px;
+        height: 27px
+    }
+}
+
+@media screen and (max-width :650px) {
+
+    .archiving_name,
+    .sub_name {
+        position: static;
+        text-align: center
+    }
+
+    .nav_left_box {
+        width: 100vw;
+        height: 65px;
+        top: 0
+    }
+
+    .nav_tree {
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        left: 15px
+    }
+
+    #main_sub {
+        height: 1100px
+    }
+
+    .sub_box {
+        width: 250px;
+        height: 1000px;
+        top: 0;
+        left: 0
+    }
+
+    @keyframes fromleft {
+        0% {
+            opacity: 0;
+            transform: translateX(-300px)
+        }
+
+        100%,
+        30% {
+            opacity: 1;
+            transform: translateX(0)
+        }
+    }
+
+    .sub_name {
+        font: bold 3.2rem sans-serif
+    }
+
+    .explain_me {
+        left: 0;
+        top: 10%;
+        display: flex;
+        justify-content: center
+    }
+
+    .explain_me>div {
+        width: 270px;
+        height: 270px
+    }
+
+    :is(.img_wrap, .two, .three) {
+        animation: 1s bubble_mobile;
+        animation-timeline: view()
+    }
+
+    .one {
+        animation-delay: 0s
+    }
+
+    .two {
+        animation-delay: .3s
+    }
+
+    .three {
+        animation-delay: .6s
+    }
+
+    @keyframes bubble_mobile {
+        0% {
+            opacity: 0;
+            transform: translateX(0)
+        }
+
+        10%,
+        100% {
+            opacity: 1;
+            transform: translateX(70px)
+        }
+    }
+
+    .explain_me h3 {
+        font: 300 1.8rem 'Black Han Sans', sans-serif;
+        margin-top: -15px
+    }
+
+    .archiving_name {
+        top: 10px;
+        font: bold 3.5rem sans-serif
+    }
+
+    .github_img {
+        width: 200px;
+        height: 200px
+    }
+
+    .github_img:hover {
+        width: 210px;
+        height: 210px
+    }
+
+    .github_text {
+        width: 270px;
+        height: 20vh;
+        margin-left: 7vw
+    }
+
+    .contact_text_box h3,
+    .github_text>h4,
+    .t_story_text>h4 {
+        font: 300 1.5rem/1.5 'Black Han Sans', sans-serif
+    }
+
+    .github_text>p,
+    .t_story_text>p {
+        font: 400 1rem/1.5 'IBM Plex Sans KR', sans-serif
+    }
+
+    .arch_left_box {
+        animation: 1s both arch_left_box_ani;
+        animation-timeline: view();
+        transform-origin: left
+    }
+
+    @keyframes arch_left_box_ani {
+        0% {
+            opacity: 0;
+            transform: translateX(-300px)
+        }
+
+        100%,
+        30% {
+            opacity: 1;
+            transform: translateX(0)
+        }
+    }
+
+    .t_story_img {
+        margin: 2vh 0 -2vh 20vw
+    }
+
+    .t_story_text {
+        width: 280px;
+        margin: 0 auto;
+        padding-left: 10vw
+    }
+
+    #projects {
+        height: 430vh
+    }
+
+    .projects_name {
+        top: -70px;
+        left: 10%;
+        transform: translate(-50%, 0);
+        font: bold 3.8rem sans-serif
+    }
+
+    .horizontal_scroll_content {
+        margin: 12vw auto
+    }
+
+    .about_project .content {
+        margin: 5vh auto
+    }
+
+    .project_main_img {
+        width: 230px;
+        height: 150px
+    }
+
+    .project_img_wrap {
+        margin: 0 3.5vw;
+        width: 220px;
+        height: 130px
+    }
+
+    .project_text_wrap>h3 {
+        margin-top: 18px;
+        font: 300 1.7rem 'Black Han Sans', sans-serif
+    }
+
+    .project_text_wrap>h4 {
+        font: bold 0.9rem/1.3 'IBM Plex Sans KR', sans-serif
+    }
+
+    .project_link:not(.shallendar_source_code) {
+        margin: 4vh 30px
+    }
+
+    .shallendar_source_code {
+        margin: 4vh 80px
+    }
+
+    .source_code_link {
+        left: 0
+    }
+
+    .demo_code_link {
+        top: -6px;
+        left: 100px
+    }
+
+    .source_code_link>img {
+        width: 55px;
+        height: 60px
+    }
+
+    .demo_code_link>img {
+        width: 55px;
+        height: 65px
+    }
+
+    .project_link>p {
+        font: 100 0.7rem 'Black Han Sans', sans-serif
+    }
+
+    .readme_button {
+        height: 4vh;
+        font: 500 0.9rem 'IBM Plex Sans KR', sans-serif
+    }
+
+    .contact_name {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font: bold 3.8rem sans-serif
+    }
+
+    .contact_img_wrap {
+        left: 10vw;
+        width: 200px;
+        border-radius: 80px
+    }
+
+    .contact_doyi_img {
+        width: 200px;
+        height: 50vh;
+        border-radius: 80px
+    }
+
+    .contact_info_wrap,
+    .contact_text_wrap {
+        width: 65vw
+    }
+
+    .contact_text_box {
+        margin: 22vh 0 0 19vw;
+        width: 190px
+    }
+
+    .contact_text_box p {
+        font: 400 1rem/1.5 '나눔고딕', sans-serif
+    }
+
+    .contact_text_title>img {
+        width: 20px;
+        height: 20px
+    }
+
+    .footer_Copyright {
+        padding-left: 15px
+    }
+
+    .scroll_guide span,
+    .scroll_guide_up span {
+        width: 25px;
+        height: 25px
+    }
+}

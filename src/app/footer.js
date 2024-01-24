@@ -4,7 +4,7 @@ import footer_github from "/public/footer_github.webp";
 import footer_t_story from "/public/footer_t_story.webp";
 import talk from "/public/talk.webp";
 import instagram from "/public/instagram.webp";
-import "./styles/page.modul.css";
+import "./styles/page.css";
 
 export default function Archiving() {
   return (

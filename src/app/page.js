@@ -1,5 +1,5 @@
 "use client";
-import "./styles/page.modul.css";
+import "./styles/page.css";
 import Image from "next/image";
 import APMA from "/public/APMA_img.webp";
 import source_code from "/public/source-code.webp";

@@ -1,8 +1,7 @@
 import "./styles/globals.css";
 import "./styles/globals.scss";
 import "./styles/reset.css";
-import "./styles/modal.modul.css"
-import "./styles/page.modul.css"
+import "./styles/page.css"
 import Image from "next/image";
 import me from "/public/me.webp";
 

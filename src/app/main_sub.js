@@ -2,7 +2,7 @@ import Image from "next/image";
 import networking from "/public/networking.webp";
 import design from "/public/design.webp";
 import watering from "/public/watering.webp";
-import "./styles/page.modul.css";
+import "./styles/page.css";
 
 export default function Main_sub() {
   return (
