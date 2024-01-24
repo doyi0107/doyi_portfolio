@@ -175,9 +175,11 @@ export default function Home() {
                       → SEO를 위한 SSR을 가능하게 하는 NEXT.JS로 제작
                       <br />
                       → 처음 만든 프로젝트 대비 로딩 속도 (Load:537ms → Load:
-                      127ms) 310ms차이로 개선
-                      <br />→ GSAP를 통한 부드러운 전환 효과, SCSS와 CSS를 통해
-                      반응형 웹으로 제작
+                      127ms) 410ms차이로 개선
+                      <br />→ Light house Perfomance 100% 향상 <br />: Webpack을
+                      사용한 css축소 (mini-css- extract-plugin 패키지 설치)
+                      <br />
+                      : CSS Minifier 이용해 css 중복 코드 개선
                     </p>
 
                     <Link
