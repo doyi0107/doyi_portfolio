@@ -45,12 +45,11 @@ export default function Home() {
   };
 
   const handleScrollGuideClick = () => {
-    // Check if the className is "scroll_guide_up" before applying the function
+    
     if (isSpecialCase) {
-      // Your function here
       window.scrollTo({
         top: 0,
-        behavior: "smooth", // You can change this to 'auto' for instant scrolling
+        behavior: "smooth",
       });
     }
   };
@@ -169,7 +168,7 @@ export default function Home() {
                     <h4>프로젝트기간</h4>
                     <p>2023.12(1명)</p>
                     <h4>프론트엔드</h4>
-                    <p>NEXT.JS, SCSS, GSAP, VERCEL</p>
+                    <p>NEXT.JS, SASS, GSAP, VERCEL</p>
                     <h4>주요 기능</h4>
                     <p>
                       → SEO를 위한 SSR을 가능하게 하는 NEXT.JS로 제작
@@ -422,7 +421,7 @@ export default function Home() {
                     <h4>프로젝트기간</h4>
                     <p>2022.01~ 02(4명)</p>
                     <h4>프론트엔드</h4>
-                    <p>FIGMA,REACT,SCSS</p>
+                    <p>FIGMA,REACT,SASS</p>
                     <h4>백엔드</h4>
                     <p>JAVA,SPRING,MYSQL</p>
                     <h4>주요 기능</h4>
@@ -430,7 +429,7 @@ export default function Home() {
                       → 피그마를 통해 사전 디자인
                       <br /> → 피부 유형을 분석하고 자신에 타입에 맞는 화장품을
                       추천해 주는 웹사이트
-                      <br />→ SCSS를 통해 반응형 웹으로 제작
+                      <br />→ SASS를 통해 반응형 웹으로 제작
                     </p>
 
                     <Link

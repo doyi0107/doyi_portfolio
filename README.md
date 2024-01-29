@@ -1,89 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🌱도이스토리 
+신입 프론트엔드 개발자 이도이를 소개하는 웹입니다 :smile:
 
-## Getting Started
+## ⏳프로젝트 기간 
+2023.12 ~ 
 
-First, run the development server:
+## 🛠️스킬 스택 
+<div style="display:flex; flex-direction:column; align-items:flex-start;">
+    <p><strong>Frontend</strong></p>
+    <div>
+        <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white">
+        <img src="https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=Sass&logoColor=white"> 
+        <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=Vercel&logoColor=white"> 
+    </div><br/>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💡기능 구현
+<div style="display:flex; flex-direction:column; align-items:flex-start;">
+    <p>✅SEO를 위한 SSR을 가능하게 하는 Next.js로 제작</p>
+    <p>✅Sass와 CSS를 통해 반응형 웹으로 제작</p>
+    <p>✅사용자를 위한 스크롤 유도 가이드 구현 - 사용자의 스크롤 위치에 따라 동적으로 상태 업데이트 </p>
+    <p>✅브라우저 사이즈를 이용한 가로 scorll바 구현 </p>
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💡담당 역할 및 성능 개선 
+<div style="display:flex; flex-direction:column; align-items:flex-start;">
+    <p>✔️디자인부터 배포하는 과정까지 100% 본인이 기여한 웹</p>
+    <p>✔️처음 만든 프로젝트 대비 로딩 속도 (Load:537ms → Load:127ms) 410ms차이로 개선 </p>
+    <p>✔️Light house Perfomance 100% 향상  </p>
+    <p>&nbsp&nbsp&nbsp&nbsp Webpack을 사용한 css축소 (mini-css-extract-plugin 패키지 설치)</p>
+    <p>&nbsp&nbsp&nbsp&nbsp Coverage이용해 사용하지 않는 css 코드 삭제</p>
+    <p>&nbsp&nbsp&nbsp&nbsp CSS Minifier 이용해 css 중복 코드 개선</p>
+    <p>&nbsp&nbsp&nbsp&nbsp 이미지 파일 AVIF 및 WebP로 교체하기</p>
+</div>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
+## 📘파일구조
 ```
 doyi_portfolio
-├─ .git
-│  ├─ COMMIT_EDITMSG
-│  ├─ config
-│  ├─ description
-│  ├─ HEAD
-│  ├─ hooks
-│  │  ├─ applypatch-msg.sample
-│  │  ├─ commit-msg.sample
-│  │  ├─ fsmonitor-watchman.sample
-│  │  ├─ post-update.sample
-│  │  ├─ pre-applypatch.sample
-│  │  ├─ pre-commit.sample
-│  │  ├─ pre-merge-commit.sample
-│  │  ├─ pre-push.sample
-│  │  ├─ pre-rebase.sample
-│  │  ├─ pre-receive.sample
-│  │  ├─ prepare-commit-msg.sample
-│  │  ├─ push-to-checkout.sample
-│  │  └─ update.sample
-│  ├─ index
-│  ├─ info
-│  │  └─ exclude
-│  ├─ logs
-│  │  ├─ HEAD
-│  │  └─ refs
-│  │     ├─ heads
-│  │     │  └─ master
-│  │     └─ remotes
-│  │        └─ origin
-│  │           └─ master
-│  ├─ objects
-│  │  ├─ info
-│  │  └─ pack
-│  └─ refs
-│     ├─ heads
-│     │  └─ master
-│     ├─ remotes
-│     │  └─ origin
-│     │     └─ master
-│     └─ tags
-├─ .gitignore
-├─ jsconfig.json
-├─ next.config.js
-├─ package-lock.json
-├─ package.json
-├─ public
-├─ README.md
 ├─ src
 │  └─ app
 │     ├─ archiving.js
