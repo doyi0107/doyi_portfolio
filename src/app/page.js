@@ -162,7 +162,7 @@ export default function Home() {
                       <p>#demo</p>
                     </Link>
                   </div>
-                  {/* text_wrap */}
+                  {/* text_wrap */} 
                   <div className="project_text_wrap">
                     <h3>Doyi_portfolio</h3>
                     <h4>프로젝트기간</h4>
