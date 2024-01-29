@@ -178,8 +178,7 @@ export default function Home() {
                       127ms) 410ms차이로 개선
                       <br />→ Light house Perfomance 100% 향상 <br />: Webpack을
                       사용한 css축소 (mini-css- extract-plugin 패키지 설치)
-                      <br />
-                      : CSS Minifier 이용해 css 중복 코드 개선
+                      <br />: CSS Minifier 이용해 css 중복 코드 개선
                     </p>
 
                     <Link
@@ -239,10 +238,13 @@ export default function Home() {
                     <p>API</p>
                     <h4>주요 기능</h4>
                     <p>
-                      → API를 통해 현재 날씨와 온도 가져오기
+                      → OpenWeatherMap API와 fetch()를 이용해 현재 온도와 날씨
+                      데이터 불러오기
                       <br />
-                      → 다크 모드 기능
-                      <br />→ 카드 매치 게임등
+                      → 다크 모드 기능 <br />: localStorage를 사용하여 사용자의
+                      모드 선택을 저장 <br />
+                      : DOMContentLoaded 이벤트 사용
+                      <br />→ Fisher-Yates 알고리즘을 사용한 카드 매치 게임등
                     </p>
 
                     <Link
@@ -304,8 +306,8 @@ export default function Home() {
                       → 미술관 전시 소개에 맞는 UI/UX로 디자인
                       <br />
                       → CSS를 통해 반응형 웹으로 제작
-                      <br />→ AJAX를 활용해 비동기처리 방식을 이용한 로그인,
-                      회원가입 기능
+                      <br /> → 비동기 처리 방식 jQuery AJAX를 활용해 REST API
+                      호출 → 로그인, 회원 가입 기능
                     </p>
 
                     <Link
@@ -362,9 +364,10 @@ export default function Home() {
                     <p>REACT,GSAP,VERCEL</p>
                     <h4>주요 기능</h4>
                     <p>
-                      → REACT로 CRUD기능을 제작
+                      → React 이벤트 헨들러를 통해 CRUD기능을 제작
                       <br />
-                      → canvas의 드로잉 컨텍스트를 이용한 반짝이는 별 배경
+                      → useEffect훅을 사용해 DOM요소에 접근, 마우스 좌표를
+                      기반으로 커서 위치 업데이트
                       <br />→ VERCEL를 통한 배포
                     </p>
 
@@ -478,10 +481,12 @@ export default function Home() {
                     <p>JAVASCRIPT, FIREBASE</p>
                     <h4>주요 기능</h4>
                     <p>
-                      → Android Studio을 활용한 안드로이드 앱
+                      → Kotlin을 활용한 지인들과 일정을 공유하고 약속을 잡는
+                      안드로이드 앱
                       <br />
-                      → Firebase를 이용한 로그인과 회원가입 기능
-                      <br />→ 지인들과 일정을 공유하고 약속을 잡는 기능
+                      → Firebase Authentication을 사용하여 사용자 계정을 생성
+                      <br /> → AlertDialog를 사용하여 사용자에게 일정 추가를
+                      위한 입력 폼을 제공
                     </p>
 
                     <Link
