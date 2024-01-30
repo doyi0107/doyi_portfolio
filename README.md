@@ -34,7 +34,7 @@
 </div>
 
 
-## 📘파일구조
+## 📂파일구조
 ```
 doyi_portfolio
 ├─ src
@@ -54,3 +54,8 @@ doyi_portfolio
 └─ tsconfig.json
 
 ```
+
+## 회고록 보러가기 
+ <a href="https://2-doooo-2.tistory.com/135">
+          <img src="https://img.shields.io/badge/Tistory-E74C3C?style=flat-square&logo=tistory&logoColor=white"> 
+ </a>
