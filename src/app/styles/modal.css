@@ -60,20 +60,24 @@
 }
 
 .burger-bar.clicked:first-child {
+    -webkit-transform:rotate(45deg) translate(.45em, 1.25em);
     transform: rotate(45deg) translate(.45em, 1.25em)
 }
 
 .burger-bar.clicked:nth-child(2) {
     transform: scale(.005);
+    -webkit-transform: scale(.005);
     transition: .5s ease-out
 }
 
 .burger-bar.clicked:nth-child(3) {
-    transform: rotate(135deg) translate(-.3em, 1.1em)
+    transform: rotate(135deg) translate(-.3em, 1.1em);
+    -webkit-transform: rotate(135deg) translate(-.3em, 1.1em);
 }
 
 .burger-bar.unclicked {
     transform: rotate(0) translate(0);
+    -webkit-transform:rotate(0) translate(0);
     transition: .5s cubic-bezier(.175, .885, .32, 1.275)
 }
 

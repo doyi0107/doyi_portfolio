@@ -1,7 +1,7 @@
 import "./styles/globals.css";
 import "./styles/globals.scss";
 import "./styles/reset.css";
-import "./styles/page.css"
+import "./styles/page.css";
 import Image from "next/image";
 import me from "/public/me.webp";
 
@@ -23,7 +23,6 @@ export default function RootLayout({ children }) {
           <Modal />
           <div className="scroll_top"></div>
           <main id="intro">
-
             {/* 초기 애니메이션 */}
             <div className="intro_wrap">
               <div class="animation01">
@@ -148,13 +147,9 @@ export default function RootLayout({ children }) {
               </div>
             </div>
             <Image className="doyi" src={me} alt="intro_doyi" />
-
-      
-
           </main>
 
           {children}
-
         </body>
       </html>
     </>

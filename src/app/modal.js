@@ -85,7 +85,7 @@ export default function Modal() {
 
   return (
     <>
-      <button className="burger-menu" onClick={updateMenu}>
+      <button className="burger-menu" onClick={updateMenu} aria-label="Name">
         <span className={burgerClass}></span>
         <span className={burgerClass}></span>
         <span className={burgerClass}></span>

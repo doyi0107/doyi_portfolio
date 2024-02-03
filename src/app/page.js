@@ -101,6 +101,7 @@ export default function Home() {
 
   return (
     <>
+    
       <div className="nav_left_box">
         <Link href="#intro">
           <Image className="nav_tree" src={nav_tree} alt="nav_tree" />
@@ -136,6 +137,7 @@ export default function Home() {
                   {/* img_wrap */}
                   <div className="project_img_wrap Doyi_portfolio_wrap">
                     <Image
+                      placeholder="blur"
                       className="project_main_img "
                       src={Doyi_portfolio_img}
                       alt="Doyi_portfolio_img"
@@ -162,7 +164,7 @@ export default function Home() {
                       <p>#demo</p>
                     </Link>
                   </div>
-                  {/* text_wrap */} 
+                  {/* text_wrap */}
                   <div className="project_text_wrap">
                     <h3>Doyi_portfolio</h3>
                     <h4>프로젝트기간</h4>
@@ -200,6 +202,7 @@ export default function Home() {
                   {/* img_wrap */}
                   <div className="project_img_wrap">
                     <Image
+                      placeholder="blur"
                       className="project_main_img Javascipt_zip_img"
                       src={javascript_zip}
                       alt="javascript_zip"
@@ -265,6 +268,7 @@ export default function Home() {
                   {/* img_wrap */}
                   <div className="project_img_wrap">
                     <Image
+                      placeholder="blur"
                       className="project_main_img "
                       src={APMA}
                       alt="APMA_img"
@@ -328,6 +332,7 @@ export default function Home() {
                   {/* img_wrap */}
                   <div className="project_img_wrap">
                     <Image
+                      placeholder="blur"
                       className="project_main_img spakling_story_img"
                       src={spakling_story}
                       alt="spakling_story"
@@ -451,6 +456,7 @@ export default function Home() {
                   {/* img_wrap */}
                   <div className="project_img_wrap">
                     <Image
+                      placeholder="blur"
                       className="project_main_img shallender_img"
                       src={shallender_img}
                       alt="shallender_img"
