@@ -4,6 +4,7 @@ import "./styles/reset.css";
 import "./styles/page.css";
 import Image from "next/image";
 import me from "/public/me.webp";
+import Footer from "./footer";
 
 import Modal from "./modal.js";
 
@@ -150,6 +151,7 @@ export default function RootLayout({ children }) {
           </main>
 
           {children}
+          <Footer />
         </body>
       </html>
     </>

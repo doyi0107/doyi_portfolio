@@ -38,14 +38,14 @@ $desktop: "screen and (max-width : 1300px)";
 
     #master-container-scroller {
         height: 140px;
-        margin-bottom:5px;
+        margin-bottom: 5px;
         // margin-top: 10px;
     }
 
     #master-container-scroller .master-container-scroller_item {
         -webkit-animation: scroll-desktop 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 2.8s 1;
         animation: scroll-desktop 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 2.8s 1;
-        animation-fill-mode:forwards;
+        animation-fill-mode: forwards;
     }
 
     @-webkit-keyframes scroll-desktop {
@@ -148,7 +148,7 @@ $desktop: "screen and (max-width : 1300px)";
 
 
     .doyi {
-       display: none;
+        display: none;
 
     }
 
@@ -175,7 +175,7 @@ $desktop: "screen and (max-width : 1300px)";
     #master-container-scroller {
         height: 100px;
         // margin-bottom: -0.5px;
-        margin-top:5px;
+        margin-top: 5px;
     }
 
 
@@ -283,7 +283,7 @@ $desktop: "screen and (max-width : 1300px)";
 }
 
 @media #{$phone} {
-   
+
 
     // master
 
@@ -411,6 +411,6 @@ $desktop: "screen and (max-width : 1300px)";
             transform: translateY(-170px);
         }
 
-        
+
     }
 }

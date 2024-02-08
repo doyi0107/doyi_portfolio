@@ -11,7 +11,7 @@ import instagram from "/public/instagram.webp";
 import home from "/public/home.webp";
 import birth from "/public/birth.webp";
 import academic from "/public/academic.webp";
-import name from "/public/name.webp";  
+import name from "/public/name.webp";
 import contact_doyi from "/public/contact_doyi.webp";
 import javascript_zip from "/public/javascript_zip_img.webp";
 import spakling_story from "/public/your_spakling_story.webp";
@@ -24,17 +24,16 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import Archiving from "./archiving";
 import Main_sub from "./main_sub";
-import Footer from "./footer";
 
 export default function Home() {
   const [isSpecialCase, setIsSpecialCase] = useState(false);
   const scrollSectionRef = useRef(null);
   const scrollContentRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
- const handleLinkClick = () => {
-   // 특정 링크를 클릭하면 페이지를 새로 고침
-   window.location.reload();
- };
+  const handleLinkClick = () => {
+    // 특정 링크를 클릭하면 페이지를 새로 고침
+    window.location.reload();
+  };
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -45,7 +44,6 @@ export default function Home() {
   };
 
   const handleScrollGuideClick = () => {
-    
     if (isSpecialCase) {
       window.scrollTo({
         top: 0,
@@ -72,8 +70,7 @@ export default function Home() {
         setIsSpecialCase(isSpecialCase);
       }
 
-
-      // scrollSection.offsetTop는 스크롤 섹션의 상단 위치를 나타내는 고정된 값이며, 
+      // scrollSection.offsetTop는 스크롤 섹션의 상단 위치를 나타내는 고정된 값이며,
       //scrolled는 현재 사용자가 스크롤한 위치를 동적으로 나타내는 값입니다.
       const scrolled = window.pageYOffset;
       const sectionOffset = Math.abs(scrollSection.offsetTop - scrolled);
@@ -101,7 +98,6 @@ export default function Home() {
 
   return (
     <>
-    
       <div className="nav_left_box">
         <Link href="#intro">
           <Image className="nav_tree" src={nav_tree} alt="nav_tree" />
@@ -588,8 +584,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <Footer />
       </div>
     </>
   );
