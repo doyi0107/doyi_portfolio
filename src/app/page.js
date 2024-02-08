@@ -24,6 +24,7 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import Archiving from "./archiving";
 import Main_sub from "./main_sub";
+import Footer from "./footer";
 
 export default function Home() {
   const [isSpecialCase, setIsSpecialCase] = useState(false);
@@ -584,6 +585,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     </>
   );
