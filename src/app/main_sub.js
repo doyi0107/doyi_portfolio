@@ -3,6 +3,7 @@ import networking from "/public/networking.webp";
 import design from "/public/design.webp";
 import watering from "/public/watering.webp";
 import "./styles/page.css";
+import "./styles/media.css";
 
 export default function Main_sub() {
   return (

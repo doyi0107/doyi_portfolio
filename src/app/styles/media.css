@@ -1,0 +1,691 @@
+@media screen and (max-width :1600px) {
+    @keyframes bubble {
+        0% {
+            opacity: 0;
+            transform: translateX(0)
+        }
+
+        100%,
+        30% {
+            opacity: 1;
+            transform: translateX(300px)
+        }
+    }
+
+    .explain_me>div {
+        width: 300px;
+        height: 300px
+    }
+
+    .sub_text {
+        top: 100px;
+    }
+
+    .sub_name {
+        font: bold 8rem sans-serif
+    }
+
+    .explain_me h3 {
+        font: 300 2rem 'Black Han Sans', sans-serif
+    }
+
+    /* archiving */
+    .github_text {
+        margin-left: 100px;
+    }
+
+    .projects_name,
+    .contact_name {
+        font: bold 9rem sans-serif
+    }
+
+    /* contact */
+    .contact_doyi_img {
+        width: 270px;
+        height: 55vh;
+    }
+}
+
+
+@media screen and (max-width :1300px) {
+    .sub_name {
+        top: 10%;
+        font: bold 7rem sans-serif
+    }
+
+    .explain_me {
+        width: 80vw
+    }
+
+    .explain_me>div {
+        width: 270px;
+        height: 270px
+    }
+
+    :is(.img_wrap, .two, .three) {
+        animation: 1s bubble_desktop;
+        animation-timeline: view()
+    }
+
+    .one {
+        animation-delay: 0s
+    }
+
+    .two {
+        animation-delay: .3s
+    }
+
+    .three {
+        animation-delay: .6s
+    }
+
+    @keyframes bubble_desktop {
+        0% {
+            opacity: 0;
+            transform: translateX(0)
+        }
+
+        10%,
+        100% {
+            opacity: 1;
+            transform: translateX(150px)
+        }
+    }
+
+    .explain_me h3 {
+        font: 300 1.8rem 'Black Han Sans', sans-serif;
+        margin-top: -15px
+    }
+
+    .github_img {
+        width: 180px;
+        height: 180px
+    }
+
+
+    .github_text>h4,
+    .t_story_text>h4 {
+        font: 300 1.7rem/1.5 'Black Han Sans', sans-serif
+    }
+
+    .github_text>p,
+    .t_story_text>p {
+        font: 400 1rem/2 'IBM Plex Sans KR', sans-serif
+    }
+
+    .arch_left_box {
+        width: 68vw;
+    }
+
+    .t_story_img {
+        width: 230px;
+        height: 230px;
+        transition: .5s
+    }
+
+    .arch_right_box {
+        width: 60vw;
+        right: 0;
+        overflow: hidden
+    }
+
+    /* 프로젝트 */
+    .project_img_wrap,
+    .project_main_img {
+        width: 280px;
+        height: 25vh
+    }
+
+    #projects {
+        height: 975vh
+    }
+
+    .projects_name {
+        top: -50px;
+        left: 15vw;
+        font: bold 8rem sans-serif
+    }
+
+    .horizontal_scroll_content {
+        margin: 2vh 0 0 4.5vw
+    }
+
+    .project_img_wrap {
+        margin: 0 2vw
+    }
+
+    .project_text_wrap>h3 {
+        max-width: 50vw;
+        font: 300 2.5rem 'Black Han Sans', sans-serif
+    }
+
+    .project_text_wrap>h4 {
+        font: bold 1.3rem/1.6 'IBM Plex Sans KR', sans-serif;
+        max-width: 30vw
+    }
+
+    .about_project {
+        width: 70vw;
+        margin: 7vw auto
+    }
+
+    .project_link>p {
+        font: 100 1rem 'Black Han Sans', sans-serif
+    }
+
+    .contact_name {
+        left: 15vw;
+        font: bold 8rem sans-serif
+    }
+
+    .contact_text_box {
+        width: 300px
+    }
+
+    /* footer */
+
+
+    .footer_mail {
+        display: none;
+    }
+
+    .footer_Copyright {
+        text-align: center;
+        font: 500 1.4rem 'IBM Plex Sans KR', sans-serif
+    }
+
+}
+
+@media screen and (max-width :1000px) {
+
+
+
+    .project_text_wrap {
+        display: block
+    }
+
+    #main_sub {
+        height: 1200px;
+    }
+
+    .sub_box {
+        width: 500px;
+        height: 120vh;
+        top: 5%;
+        left: -10px
+    }
+
+    .sub_name {
+        left: 10%;
+        top: 0;
+        font: bold 5rem sans-serif
+    }
+
+    .explain_me {
+        left: 0;
+        top: 10%;
+        width: 70vw;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .sub_text {
+        font: bold 1.3rem/1.5 'IBM Plex Sans KR', sans-serif
+    }
+
+    #archiving {
+        height: 1000px;
+    }
+
+    .archiving_name {
+        top: -10px;
+        left: 10vw;
+        font: bold 5rem sans-serif
+    }
+
+    .github_text {
+        margin-left: 50px;
+    }
+
+    .github_img {
+        width: 210px;
+        height: 210px
+    }
+
+    .github_text>h4,
+    .t_story_text>h4 {
+        font: 300 1.7rem/1.5 'Black Han Sans', sans-serif
+    }
+
+    .github_text>p,
+    .t_story_text>p {
+        font: 400 1.1rem/1.7 'IBM Plex Sans KR', sans-serif
+    }
+
+    .arch_right_box {
+        width: 80vw;
+        height: 400px;
+    }
+
+    .arch_left_box {
+        width: 80vw;
+        height: 400px;
+        animation: 1s both arch_left_box_ani;
+        animation-timeline: view();
+        transform-origin: left
+    }
+
+    @keyframes arch_left_box_ani {
+        0% {
+            opacity: 0;
+            transform: translateX(-300px)
+        }
+
+        100%,
+        30% {
+            opacity: 1;
+            transform: translateX(70px)
+        }
+    }
+
+    .t_story_img {
+        width: 250px;
+        height: 250px;
+        transition: .5s
+    }
+
+    .t_story_text {
+        width: 400px;
+    }
+
+    /* 프로젝트 */
+    #projects {
+        height: 780vh
+    }
+
+    .projects_name {
+        top: -15px;
+        left: 12vw;
+        font: bold 5rem sans-serif
+    }
+
+    .horizontal_scroll_content {
+        margin: 20px 0 0 8vw
+    }
+
+    .about_project {
+        height: 85vh
+    }
+
+    .project_img_wrap,
+    .project_main_img {
+        border-radius: 10px;
+        width: 320px;
+        height: 28vh
+    }
+
+    .about_project .content {
+        margin: 6vh auto;
+        flex-direction: column
+    }
+
+    .project_main_img {
+        transition: .7s
+    }
+
+    .project_text_wrap>h3 {
+        margin-top: 20px;
+        font: 300 2rem/1.2 'Black Han Sans', sans-serif
+    }
+
+    .project_text_wrap>h4 {
+        font: bold 1rem/1.3 'IBM Plex Sans KR', sans-serif
+    }
+
+    .project_text_wrap h4::before {
+        font: 400 1rem/1 'IBM Plex Sans KR', sans-serif
+    }
+
+    .project_text_wrap p {
+        font: 400 0.8rem 'IBM Plex Sans KR', sans-serif
+    }
+
+    .project_link:not(.shallendar_source_code) {
+        font: bold 1.5rem/1.5 'IBM Plex Sans KR', sans-serif
+    }
+
+    .source_code_link>img {
+        width: 90px;
+        height: 90px
+    }
+
+    .demo_code_link>img {
+        width: 90px;
+        height: 100px
+    }
+
+    .readme_button {
+        height: 5vh;
+        margin-top: 10px;
+        font: 500 1rem 'IBM Plex Sans KR', sans-serif
+    }
+
+    .contact_name {
+        left: 17vw;
+        font: bold 5rem sans-serif
+    }
+
+    .contact_img_wrap {
+        left: 20vw;
+        border-radius: 100px
+    }
+
+    .contact_doyi_img {
+        width: 230px;
+        height: 50vh
+    }
+
+    .contact_text_box h3 {
+        font: 300 1.6rem/1.5 'Black Han Sans', sans-serif
+    }
+
+    .contact_text_box p {
+        font: 400 1.1rem/1.5 '나눔고딕', sans-serif;
+    }
+
+    .contact_text_title {
+        margin-bottom: -10px
+    }
+
+    .contact_text_title>img {
+        width: 25px;
+        height: 25px
+    }
+
+    .footer_inner {
+        padding-left: 20px;
+    }
+
+
+}
+
+@media screen and (max-width :650px) {
+
+    .archiving_name,
+    .sub_name {
+        position: static;
+        text-align: center
+    }
+
+    .nav_left_box {
+        width: 100vw;
+        height: 65px;
+        top: 0
+    }
+
+    .nav_tree {
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        left: 15px
+    }
+
+    #main_sub {
+        height: 1100px
+    }
+
+    .sub_box {
+        width: 250px;
+        height: 1000px;
+        top: 0;
+        left: 0
+    }
+
+    @keyframes fromleft {
+        0% {
+            opacity: 0;
+            transform: translateX(-300px)
+        }
+
+        100%,
+        30% {
+            opacity: 1;
+            transform: translateX(0)
+        }
+    }
+
+    .sub_name {
+        font: bold 3.2rem sans-serif
+    }
+
+    .explain_me {
+        left: 0;
+        top: 10%;
+        display: flex;
+        justify-content: center
+    }
+
+    .explain_me>div {
+        width: 270px;
+        height: 270px
+    }
+
+    :is(.img_wrap, .two, .three) {
+        animation: 1s bubble_mobile;
+        animation-timeline: view()
+    }
+
+    .one {
+        animation-delay: 0s
+    }
+
+    .two {
+        animation-delay: .3s
+    }
+
+    .three {
+        animation-delay: .6s
+    }
+
+    @keyframes bubble_mobile {
+        0% {
+            opacity: 0;
+            transform: translateX(0)
+        }
+
+        10%,
+        100% {
+            opacity: 1;
+            transform: translateX(70px)
+        }
+    }
+
+    .explain_me h3 {
+        font: 300 1.8rem 'Black Han Sans', sans-serif;
+        margin-top: -15px
+    }
+
+
+    /* archiving */
+    .archiving_name {
+        top: 10px;
+        font: bold 3.5rem sans-serif
+    }
+
+    .github_text {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .github_img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .t_story_img_wrap {
+        justify-content: center;
+    }
+
+    .t_story_img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .t_story_text {
+        width: 300px;
+        margin: -50px 0px 0px 50px;
+    }
+
+    .contact_text_box h3,
+    .github_text>h4,
+    .t_story_text>h4 {
+        font: 300 1.4rem/1.5 'Black Han Sans', sans-serif
+    }
+
+    .github_text>p,
+    .t_story_text>p {
+        font: 400 1rem/1.5 'IBM Plex Sans KR', sans-serif
+    }
+
+    .arch_left_box {
+        animation: 1s both arch_left_box_ani;
+        animation-timeline: view();
+        transform-origin: left;
+        flex-direction: column-reverse;
+    }
+
+    @keyframes arch_left_box_ani {
+        0% {
+            opacity: 0;
+            transform: translateX(-300px)
+        }
+
+        100%,
+        30% {
+            opacity: 1;
+            transform: translateX(0)
+        }
+    }
+
+    .arch_right_box {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+
+    #projects {
+        height: 430vh
+    }
+
+    .projects_name {
+        top: -70px;
+        left: 10%;
+        transform: translate(-50%, 0);
+        font: bold 3.8rem sans-serif
+    }
+
+    .horizontal_scroll_content {
+        margin: 12vw auto
+    }
+
+    .about_project .content {
+        margin: 5vh auto
+    }
+
+    .project_main_img {
+        width: 230px;
+        height: 150px
+    }
+
+    .project_img_wrap {
+        margin: 0 3.5vw;
+        width: 220px;
+        height: 130px
+    }
+
+    .project_text_wrap>h3 {
+        margin-top: 18px;
+        font: 300 1.7rem 'Black Han Sans', sans-serif
+    }
+
+    .project_text_wrap>h4 {
+        font: bold 0.9rem/1.3 'IBM Plex Sans KR', sans-serif
+    }
+
+
+
+
+    .source_code_link>img {
+        width: 55px;
+        height: 60px
+    }
+
+    .demo_code_link>img {
+        width: 55px;
+        height: 65px
+    }
+
+    .project_link>p {
+        font: 100 0.7rem 'Black Han Sans', sans-serif
+    }
+
+    .readme_button {
+        height: 4vh;
+        font: 500 0.9rem 'IBM Plex Sans KR', sans-serif
+    }
+
+    .contact_name {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font: bold 3.8rem sans-serif
+    }
+
+    .contact_img_wrap {
+        left: 10vw;
+        width: 200px;
+        border-radius: 80px
+    }
+
+    .contact_doyi_img {
+        width: 200px;
+        height: 50vh;
+        border-radius: 80px
+    }
+
+    .contact_text_box {
+        width: 190px
+    }
+
+    .contact_text_box p {
+        font: 400 1rem/1.5 '나눔고딕', sans-serif
+    }
+
+    .contact_text_title>img {
+        width: 20px;
+        height: 20px
+    }
+
+    .footer_Copyright {
+        font: 500 1.1rem 'IBM Plex Sans KR', sans-serif
+    }
+
+    footer img {
+        padding: 0px 5px;
+        width: 25px;
+        height: 25px
+    }
+
+    .footer_inner {
+        padding-left: 0px;
+    }
+
+    .scroll_guide span,
+    .scroll_guide_up span {
+        width: 25px;
+        height: 25px
+    }
+
+
+}

@@ -2,6 +2,7 @@ import "./styles/globals.css";
 import "./styles/globals.scss";
 import "./styles/reset.css";
 import "./styles/page.css";
+import "./styles/media.css";
 import Image from "next/image";
 import me from "/public/me.webp";
 

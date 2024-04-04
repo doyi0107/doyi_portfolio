@@ -3,6 +3,7 @@ import Image from "next/image";
 import github from "/public/github.webp";
 import t_story from "/public/t-story.webp";
 import "./styles/page.css";
+import "./styles/media.css";
 
 export default function Archiving() {
   return (
@@ -10,6 +11,16 @@ export default function Archiving() {
       <section id="archiving">
         <h2 className="archiving_name">Archiving</h2>
         <div className="arch_left_box">
+          <div className="github_text">
+            <h4>Github</h4>
+            <p>💡 그동안 진행했던 프로젝트 소스 코드를 저장했습니다.</p>
+            <p>💡 1일 1커밋을 유지하기 위해 노력했습니다.</p>
+            <p>
+              💡프로젝트를 진행하는 동안 팀원들과 코드 리뷰를 진행하며 부족한 부분들을 용이하게
+              개선하였습니다.
+            </p>
+            <p>💡 자주 쓰는 명령어를 따로 기록해두었습니다.</p>
+          </div>
           <Link
             href="https://github.com/doyi0107"
             className="github_img_wrap"
@@ -17,12 +28,6 @@ export default function Archiving() {
           >
             <Image className="github_img" src={github} alt="github" />
           </Link>
-          <div className="github_text">
-            <h4>Github</h4>
-            <p>💡 그동안 진행했던 프로젝트 소스 코드를 저장했습니다.</p>
-            <p>💡 1일 1커밋을 유지하기 위해 노력했습니다.</p>
-            <p>💡 자주 쓰는 명령어를 따로 기록해두었습니다.</p>
-          </div>
         </div>
         <div className="arch_right_box">
           <Link

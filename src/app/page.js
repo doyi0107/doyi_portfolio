@@ -1,7 +1,8 @@
 "use client";
 import "./styles/page.css";
+import "./styles/media.css";
 import Image from "next/image";
-import APMA from "/public/APMA_img.webp";
+import APMA from "/public/APMA_IMG.png";
 import source_code from "/public/source-code.webp";
 import demo from "/public/demo.webp";
 import talk from "/public/talk.webp";
@@ -132,38 +133,40 @@ export default function Home() {
               <div className="about_project">
                 <div class="content">
                   {/* img_wrap */}
-                  <div className="project_img_wrap Doyi_portfolio_wrap">
-                    <Image
-                      placeholder="blur"
-                      className="project_main_img "
-                      src={Doyi_portfolio_img}
-                      alt="Doyi_portfolio_img"
-                    />
-
-                    <Link
-                      className="source_code_link project_link"
-                      href="https://github.com/doyi0107/doyi_portfolio.git"
-                      target="_blank"
-                    >
+                  <div className="content_left">
+                    <h3>Doyi_portfolio</h3>
+                    <div className="project_img_wrap Doyi_portfolio_wrap">
                       <Image
-                        className="source_code"
-                        src={source_code}
-                        alt="source_code_img"
+                        placeholder="blur"
+                        className="project_main_img"
+                        src={Doyi_portfolio_img}
+                        alt="Doyi_portfolio_img"
                       />
-                      <p>#source code</p>
-                    </Link>
-                    <Link
-                      className="demo_code_link project_link"
-                      onClick={handleLinkClick}
-                      href="#"
-                    >
-                      <Image className="demo" src={demo} alt="demo_img" />
-                      <p>#demo</p>
-                    </Link>
+
+                      <Link
+                        className="source_code_link project_link"
+                        href="https://github.com/doyi0107/doyi_portfolio.git"
+                        target="_blank"
+                      >
+                        <Image
+                          className="source_code"
+                          src={source_code}
+                          alt="source_code_img"
+                        />
+                        <p>#source code</p>
+                      </Link>
+                      <Link
+                        className="demo_code_link project_link"
+                        onClick={handleLinkClick}
+                        href="#"
+                      >
+                        <Image className="demo" src={demo} alt="demo_img" />
+                        <p>#demo</p>
+                      </Link>
+                    </div>
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
-                    <h3>Doyi_portfolio</h3>
                     <h4>프로젝트기간</h4>
                     <p>2023.12(1명)</p>
                     <h4>프론트엔드</h4>
@@ -178,7 +181,8 @@ export default function Home() {
                       사용한 css축소 (mini-css- extract-plugin 패키지 설치)
                       <br />: CSS Minifier 이용해 css 중복 코드 개선
                     </p>
-
+                    {/* <h4>구현 목록</h4> */}
+                    <p></p>
                     <Link
                       href="https://2-doooo-2.tistory.com/135"
                       target="_blank"
@@ -193,42 +197,110 @@ export default function Home() {
 
               <span className="project_line"></span>
 
+              {/* apma */}
+              <div className="about_project">
+                <div className="content">
+                  {/* img_wrap */}
+                  <div className="content_left">
+                    <h3>APMA 프로젝트</h3>
+                    <div className="project_img_wrap">
+                      <Image
+                        placeholder="blur"
+                        className="project_main_img "
+                        src={APMA}
+                        alt="APMA_img"
+                      />
+
+                      <Link
+                        className="source_code_link project_link"
+                        href="https://github.com/APMA-project/APMA-Frontend.git"
+                        target="_blank"
+                      >
+                        <Image
+                          className="source_code"
+                          src={source_code}
+                          alt="source_code_img"
+                        />
+                        <p>#source code</p>
+                      </Link>
+                      <Link
+                        className="demo_code_link project_link"
+                        href="https://apma-project.vercel.app/"
+                        target="_blank"
+                      >
+                        <Image className="demo" src={demo} alt="demo_img" />
+                        <p>#demo</p>
+                      </Link>
+                    </div>
+                  </div>
+                  {/* text_wrap */}
+                  <div className="project_text_wrap">
+                    <h4>프로젝트기간</h4>
+                    <p>2021.08(1명) / 2023.08(3명)</p>
+                    <h4>프론트엔드</h4>
+                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
+                    <h4>백엔드</h4>
+                    <p>JAVA, SPRING, LOCALSTORAGE </p>
+                    <h4>주요 기능</h4>
+                    <p>
+                      → 미술관 전시 소개에 맞는 UI/UX로 디자인
+                      <br />
+                      → CSS를 통해 반응형 웹으로 제작
+                      <br /> → 비동기 처리 방식 jQuery AJAX를 활용해 REST API
+                      호출 → 로그인, 회원 가입 기능
+                    </p>
+
+                    <Link
+                      href="https://2-doooo-2.tistory.com/118"
+                      target="_blank"
+                    >
+                      <button className="readme_button">
+                        <span>📘README</span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <span className="project_line"></span>
+
               {/* javascipt_zip */}
               <div className="about_project">
                 <div className="content">
                   {/* img_wrap */}
-                  <div className="project_img_wrap">
-                    <Image
-                      placeholder="blur"
-                      className="project_main_img Javascipt_zip_img"
-                      src={javascript_zip}
-                      alt="javascript_zip"
-                    />
-
-                    <Link
-                      className="source_code_link project_link"
-                      href="https://github.com/doyi0107/Javascript_zip.git"
-                      target="_blank"
-                    >
+                  <div className="content_left">
+                    <h3>Javascipt_zip</h3>
+                    <div className="project_img_wrap">
                       <Image
-                        className="source_code"
-                        src={source_code}
-                        alt="source_code_img"
+                        placeholder="blur"
+                        className="project_main_img Javascipt_zip_img"
+                        src={javascript_zip}
+                        alt="javascript_zip"
                       />
-                      <p>#source code</p>
-                    </Link>
-                    <Link
-                      className="demo_code_link project_link"
-                      href="https://javascript-zip.netlify.app/"
-                      target="_blank"
-                    >
-                      <Image className="demo" src={demo} alt="demo_img" />
-                      <p>#demo</p>
-                    </Link>
+
+                      <Link
+                        className="source_code_link project_link"
+                        href="https://github.com/doyi0107/Javascript_zip.git"
+                        target="_blank"
+                      >
+                        <Image
+                          className="source_code"
+                          src={source_code}
+                          alt="source_code_img"
+                        />
+                        <p>#source code</p>
+                      </Link>
+                      <Link
+                        className="demo_code_link project_link"
+                        href="https://javascript-zip.netlify.app/"
+                        target="_blank"
+                      >
+                        <Image className="demo" src={demo} alt="demo_img" />
+                        <p>#demo</p>
+                      </Link>
+                    </div>
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
-                    <h3>Javascipt_zip</h3>
                     <h4>프로젝트기간</h4>
                     <p>2023.09 / 2023.12 (1명)</p>
                     <h4>프론트엔드</h4>
@@ -259,106 +331,44 @@ export default function Home() {
               </div>
               <span className="project_line"></span>
 
-              {/* apma */}
-              <div className="about_project">
-                <div className="content">
-                  {/* img_wrap */}
-                  <div className="project_img_wrap">
-                    <Image
-                      placeholder="blur"
-                      className="project_main_img "
-                      src={APMA}
-                      alt="APMA_img"
-                    />
-
-                    <Link
-                      className="source_code_link project_link"
-                      href="https://github.com/APMA-project/APMA-Frontend.git"
-                      target="_blank"
-                    >
-                      <Image
-                        className="source_code"
-                        src={source_code}
-                        alt="source_code_img"
-                      />
-                      <p>#source code</p>
-                    </Link>
-                    <Link
-                      className="demo_code_link project_link"
-                      href="https://apma-project.netlify.app/"
-                      target="_blank"
-                    >
-                      <Image className="demo" src={demo} alt="demo_img" />
-                      <p>#demo</p>
-                    </Link>
-                  </div>
-                  {/* text_wrap */}
-                  <div className="project_text_wrap">
-                    <h3>APMA 프로젝트</h3>
-                    <h4>프로젝트기간</h4>
-                    <p>2021.08(1명) / 2023.08(3명)</p>
-                    <h4>프론트엔드</h4>
-                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
-                    <h4>백엔드</h4>
-                    <p>JAVA, SPRING, LOCALSTORAGE </p>
-                    <h4>주요 기능</h4>
-                    <p>
-                      → 미술관 전시 소개에 맞는 UI/UX로 디자인
-                      <br />
-                      → CSS를 통해 반응형 웹으로 제작
-                      <br /> → 비동기 처리 방식 jQuery AJAX를 활용해 REST API
-                      호출 → 로그인, 회원 가입 기능
-                    </p>
-
-                    <Link
-                      href="https://2-doooo-2.tistory.com/118"
-                      target="_blank"
-                    >
-                      <button className="readme_button">
-                        <span>📘README</span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <span className="project_line"></span>
-
               {/* spakling_story */}
               <div className="about_project">
                 <div class="content">
                   {/* img_wrap */}
-                  <div className="project_img_wrap">
-                    <Image
-                      placeholder="blur"
-                      className="project_main_img spakling_story_img"
-                      src={spakling_story}
-                      alt="spakling_story"
-                    />
-
-                    <Link
-                      className="source_code_link project_link"
-                      href="https://github.com/doyi0107/your_sparkling_story.git"
-                      target="_blank"
-                    >
+                  <div className="content_left">
+                    <h3>sparkling_story</h3>
+                    <div className="project_img_wrap">
                       <Image
-                        className="source_code"
-                        src={source_code}
-                        alt="source_code_img"
+                        placeholder="blur"
+                        className="project_main_img spakling_story_img"
+                        src={spakling_story}
+                        alt="spakling_story"
                       />
-                      <p>#source code</p>
-                    </Link>
-                    <Link
-                      className="demo_code_link project_link"
-                      href="https://your-sparkling-story.vercel.app/"
-                      target="_blank"
-                    >
-                      <Image className="demo" src={demo} alt="demo_img" />
-                      <p>#demo</p>
-                    </Link>
+
+                      <Link
+                        className="source_code_link project_link"
+                        href="https://github.com/doyi0107/your_sparkling_story.git"
+                        target="_blank"
+                      >
+                        <Image
+                          className="source_code"
+                          src={source_code}
+                          alt="source_code_img"
+                        />
+                        <p>#source code</p>
+                      </Link>
+                      <Link
+                        className="demo_code_link project_link"
+                        href="https://your-sparkling-story.vercel.app/"
+                        target="_blank"
+                      >
+                        <Image className="demo" src={demo} alt="demo_img" />
+                        <p>#demo</p>
+                      </Link>
+                    </div>
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
-                    <h3>sparkling_story</h3>
                     <h4>프로젝트기간</h4>
                     <p>2023.03(1명)</p>
                     <h4>프론트엔드</h4>
@@ -389,37 +399,39 @@ export default function Home() {
               <div className="about_project">
                 <div className="content">
                   {/* img_wrap */}
-                  <div className="project_img_wrap">
-                    <Image
-                      className="project_main_img skin_type_img"
-                      src={for_your_skin_type}
-                      alt="for_your_skin_type"
-                    />
-
-                    <Link
-                      className="source_code_link project_link"
-                      href="https://github.com/doyi0107/for_your_skin_type_frontend.git"
-                      target="_blank"
-                    >
+                  <div className="content_left">
+                    <h3>for_your_skin_type</h3>
+                    <div className="project_img_wrap">
                       <Image
-                        className="source_code"
-                        src={source_code}
-                        alt="source_code_img"
+                        className="project_main_img skin_type_img"
+                        src={for_your_skin_type}
+                        alt="for_your_skin_type"
                       />
-                      <p>#source code</p>
-                    </Link>
-                    <Link
-                      className="demo_code_link project_link"
-                      href="https://elated-edison-5e9fe5.netlify.app"
-                      target="_blank"
-                    >
-                      <Image className="demo" src={demo} alt="demo_img" />
-                      <p>#demo</p>
-                    </Link>
+
+                      <Link
+                        className="source_code_link project_link"
+                        href="https://github.com/doyi0107/for_your_skin_type_frontend.git"
+                        target="_blank"
+                      >
+                        <Image
+                          className="source_code"
+                          src={source_code}
+                          alt="source_code_img"
+                        />
+                        <p>#source code</p>
+                      </Link>
+                      <Link
+                        className="demo_code_link project_link"
+                        href="https://elated-edison-5e9fe5.netlify.app"
+                        target="_blank"
+                      >
+                        <Image className="demo" src={demo} alt="demo_img" />
+                        <p>#demo</p>
+                      </Link>
+                    </div>
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
-                    <h3>for_your_skin_type</h3>
                     <h4>프로젝트기간</h4>
                     <p>2022.01~ 02(4명)</p>
                     <h4>프론트엔드</h4>
@@ -451,30 +463,32 @@ export default function Home() {
               <div className="about_project">
                 <div className="content">
                   {/* img_wrap */}
-                  <div className="project_img_wrap">
-                    <Image
-                      placeholder="blur"
-                      className="project_main_img shallender_img"
-                      src={shallender_img}
-                      alt="shallender_img"
-                    />
-
-                    <Link
-                      className="source_code_link project_link shallendar_source_code"
-                      href="https://github.com/doyi0107/mobileprogramming.git"
-                      target="_blank"
-                    >
+                  <div className="content_left">
+                    <h3>shallender</h3>
+                    <div className="project_img_wrap">
                       <Image
-                        className="source_code"
-                        src={source_code}
-                        alt="source_code_img"
+                        placeholder="blur"
+                        className="project_main_img shallender_img"
+                        src={shallender_img}
+                        alt="shallender_img"
                       />
-                      <p>#source code</p>
-                    </Link>
+
+                      <Link
+                        className="source_code_link project_link shallendar_source_code"
+                        href="https://github.com/doyi0107/mobileprogramming.git"
+                        target="_blank"
+                      >
+                        <Image
+                          className="source_code"
+                          src={source_code}
+                          alt="source_code_img"
+                        />
+                        <p>#source code</p>
+                      </Link>
+                    </div>
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
-                    <h3>shallender</h3>
                     <h4>프로젝트기간</h4>
                     <p>2022.09 ~ 2022.12 (5명)</p>
                     <h4>프론트엔드</h4>
