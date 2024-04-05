@@ -181,7 +181,7 @@ export default function Home() {
                       사용한 css축소 (mini-css- extract-plugin 패키지 설치)
                       <br />: CSS Minifier 이용해 css 중복 코드 개선
                     </p>
-                    {/* <h4>구현 목록</h4> */}
+                    <h4>구현 목록</h4>
                     <p></p>
                     <Link
                       href="https://2-doooo-2.tistory.com/135"

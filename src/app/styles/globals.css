@@ -49,11 +49,6 @@ a {
   text-decoration: none;
 }
 
-/* #B39C7A */
-/* main */
-/* rgb(229, 194, 67); */
-/* rgb(164, 211, 63) */
-
 .scroll_top {
   z-index: 99;
   background-color: rgb(229, 194, 67);
@@ -393,7 +388,6 @@ a {
 }
 
 #master-container {
-  /* background-color: #c95845; */
   position: absolute;
   top: 0px;
   height: 100vmin;
