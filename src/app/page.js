@@ -264,6 +264,7 @@ export default function Home() {
                       높임
                       <br /> → 비동기 처리 방식 jQuery AJAX를 활용해 REST API
                       호출 → 로그인, 회원 가입 기능
+                      <br /> → 정규식과 text()를 이용해 비밀번호, 전화번호 형식 확인 가능
                     </p>
 
                     <Link
@@ -392,7 +393,8 @@ export default function Home() {
                   <div className="project_text_wrap">
                     <h4>프로젝트 소개</h4>
                     <p>
-                      react라이브러리가 가지고 있는 props의 장점을 이용한 <br/>crud기능을 바탕으로 웹 사이트 제작
+                      react라이브러리가 가지고 있는 props의 장점을 이용한 <br />
+                      crud기능을 바탕으로 웹 사이트 제작
                       <br />
                     </p>
                     <h4>프로젝트기간</h4>
@@ -404,7 +406,8 @@ export default function Home() {
                       → React를 사용해 props와 state를 이용한 crud기능을
                       바탕으로 제작
                       <br />
-                      → 마우스 이벤트가 발생한 곳의 X 좌표, Y 좌표를 알아내 <br/>
+                      → 마우스 이벤트가 발생한 곳의 X 좌표, Y 좌표를 알아내{" "}
+                      <br />
                       마우스 좌표를 기반으로 커서 위치 업데이트
                       <br />→ window.devicePixelRatio를 이용해 별의 개수를
                       디바이스 픽셀 비율에 맞게 확장
