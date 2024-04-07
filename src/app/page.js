@@ -54,9 +54,12 @@ export default function Home() {
     }
   };
 
+
   useEffect(() => {
     const scrollSection = scrollSectionRef.current;
     const scrollContent = scrollContentRef.current;
+
+
 
     const handleScroll = () => {
       const isScrollAtBottom =
@@ -142,7 +145,6 @@ export default function Home() {
                         src={Doyi_portfolio_img}
                         alt="Doyi_portfolio_img"
                       />
-
                       <Link
                         className="source_code_link project_link"
                         href="https://github.com/doyi0107/doyi_portfolio.git"
@@ -167,8 +169,13 @@ export default function Home() {
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
+                    <h4>프로젝트 소개</h4>
+                    <p>
+                      새로운 프레임워크 Next.js를 이용해 개발을 좋아하는 나를
+                      알리기 위해 만든 포트폴리오
+                    </p>
                     <h4>프로젝트기간</h4>
-                    <p>2023.12(1명)</p>
+                    <p>2023.12 - 2024.01 (1명)</p>
                     <h4>프론트엔드</h4>
                     <p>NEXT.JS, SASS, GSAP, VERCEL</p>
                     <h4>주요 기능</h4>
@@ -180,9 +187,10 @@ export default function Home() {
                       <br />→ Light house Perfomance 100% 향상 <br />: Webpack을
                       사용한 css축소 (mini-css- extract-plugin 패키지 설치)
                       <br />: CSS Minifier 이용해 css 중복 코드 개선
+                      <br /> → 가로 scroll바, 스크롤 유도 가이드,
+                      useRef,useState를 이용한 모달창 기능 구현
                     </p>
-                    <h4>구현 목록</h4>
-                    <p></p>
+
                     <Link
                       href="https://2-doooo-2.tistory.com/135"
                       target="_blank"
@@ -235,17 +243,25 @@ export default function Home() {
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
-                    <h4>프로젝트기간</h4>
+                    <h4>프로젝트 소개</h4>
+                    <p>
+                      html, css, javascript, jquery를 이용해 사용자의 웹
+                      접근성을 고려하며 <br />
+                      만든 미술관 웹 사이트 (계속 업데이트 하며 부족한 부분을
+                      수정 중)
+                    </p>
+                    <h4>프로젝트 기간</h4>
                     <p>2021.08(1명) / 2023.08(3명)</p>
                     <h4>프론트엔드</h4>
-                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX</p>
+                    <p>HTML, CSS, JAVASCRIPT, JQEURY, AJAX, GSAP</p>
                     <h4>백엔드</h4>
                     <p>JAVA, SPRING, LOCALSTORAGE </p>
                     <h4>주요 기능</h4>
                     <p>
-                      → 미술관 전시 소개에 맞는 UI/UX로 디자인
-                      <br />
                       → CSS를 통해 반응형 웹으로 제작
+                      <br />
+                      → GSAP를 이용해 인터렉션을 추가함으로써 디자인적 감각을
+                      높임
                       <br /> → 비동기 처리 방식 jQuery AJAX를 활용해 REST API
                       호출 → 로그인, 회원 가입 기능
                     </p>
@@ -301,6 +317,11 @@ export default function Home() {
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
+                    <h4>프로젝트 소개</h4>
+                    <p>
+                      다양한 자바스크립트 기능을 바탕으로 만든 웹
+                      <br />
+                    </p>
                     <h4>프로젝트기간</h4>
                     <p>2023.09 / 2023.12 (1명)</p>
                     <h4>프론트엔드</h4>
@@ -369,17 +390,24 @@ export default function Home() {
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
+                    <h4>프로젝트 소개</h4>
+                    <p>
+                      react라이브러리가 가지고 있는 props의 장점을 이용한 <br/>crud기능을 바탕으로 웹 사이트 제작
+                      <br />
+                    </p>
                     <h4>프로젝트기간</h4>
                     <p>2023.03(1명)</p>
                     <h4>프론트엔드</h4>
                     <p>REACT,GSAP,VERCEL</p>
                     <h4>주요 기능</h4>
                     <p>
-                      → React 이벤트 헨들러를 통해 CRUD기능을 제작
+                      → React를 사용해 props와 state를 이용한 crud기능을
+                      바탕으로 제작
                       <br />
-                      → useEffect훅을 사용해 DOM요소에 접근, 마우스 좌표를
-                      기반으로 커서 위치 업데이트
-                      <br />→ VERCEL를 통한 배포
+                      → 마우스 이벤트가 발생한 곳의 X 좌표, Y 좌표를 알아내 <br/>
+                      마우스 좌표를 기반으로 커서 위치 업데이트
+                      <br />→ window.devicePixelRatio를 이용해 별의 개수를
+                      디바이스 픽셀 비율에 맞게 확장
                     </p>
 
                     <Link
@@ -432,6 +460,12 @@ export default function Home() {
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
+                    <h4>프로젝트 소개</h4>
+                    <p>
+                      피부 유형을 분석하고 자신에 타입에 맞는 화장품을 추천해
+                      주는 웹사이트
+                      <br />
+                    </p>
                     <h4>프로젝트기간</h4>
                     <p>2022.01~ 02(4명)</p>
                     <h4>프론트엔드</h4>
@@ -441,9 +475,10 @@ export default function Home() {
                     <h4>주요 기능</h4>
                     <p>
                       → 피그마를 통해 사전 디자인
-                      <br /> → 피부 유형을 분석하고 자신에 타입에 맞는 화장품을
-                      추천해 주는 웹사이트
                       <br />→ SASS를 통해 반응형 웹으로 제작
+                      <br /> → mockdata로 스킨 타입 테스트 결과에 맞는 제품
+                      나열하는 기능 구현
+                      <br /> → proxy middleware로 CORS 문제 해결
                     </p>
 
                     <Link

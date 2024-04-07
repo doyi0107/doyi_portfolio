@@ -1,4 +1,5 @@
 import "./styles/globals.css";
+import "./styles/globals_media.css";
 import "./styles/reset.css";
 import "./styles/page.css";
 import "./styles/media.css";

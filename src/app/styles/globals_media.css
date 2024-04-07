@@ -1,35 +1,20 @@
-$beige: rgb(205, 188, 163);
-$yellow-green: #8e9f81;
-$green: #4e5c43;
-$phone: "screen and (max-width : 650px)";
-$tablet: "screen and (max-width : 1200px)";
-$desktop: "screen and (max-width : 1600px)";
-
-.intro_wrapper {
-
-    h1 {
-        text-shadow: -1px -1px 0 $yellow-green, 1px -1px 0 $yellow-green, -1px 1px 0 $yellow-green, 1px 1px 0 $yellow-green;
-
-        &:after {
-            content: attr(data-heading);
-            z-index: 999;
-            overflow: hidden;
-            color: $beige;
-            // transform: translate(0.4vw, 0.3vh);
-            mix-blend-mode: darken;
-            text-shadow: 1px 0px 0px $yellow-green, 0px 1px 0px $green, 2px 1px 0px $yellow-green, 1px 2px 0px $green, 3px 2px 0px $yellow-green, 2px 3px 0px $green, 4px 3px 0px $yellow-green, 3px 4px 0px $green, 5px 4px 0px $yellow-green, 4px 5px 0px $green, 6px 5px 0px $yellow-green, 5px 6px 0px $green, 7px 6px 0px $yellow-green;
-        }
-    }
+/* scss */
+.intro_wrapper h1 {
+    text-shadow: -1px -1px 0 #8e9f81, 1px -1px 0 #8e9f81, -1px 1px 0 #8e9f81, 1px 1px 0 #8e9f81;
 }
 
+.intro_wrapper h1:after {
+    content: attr(data-heading);
+    z-index: 999;
+    overflow: hidden;
+    color: #cdbca3;
+    mix-blend-mode: darken;
+    text-shadow: 1px 0px 0px #8e9f81, 0px 1px 0px #4e5c43, 2px 1px 0px #8e9f81, 1px 2px 0px #4e5c43, 3px 2px 0px #8e9f81, 2px 3px 0px #4e5c43, 4px 3px 0px #8e9f81, 3px 4px 0px #4e5c43, 5px 4px 0px #8e9f81, 4px 5px 0px #4e5c43, 6px 5px 0px #8e9f81, 5px 6px 0px #4e5c43, 7px 6px 0px #8e9f81;
+}
 
-@media #{$desktop} {
-
-
+@media screen and (max-width : 1600px) {
     #master {
-        // background-color: #4e5c43;
-        font: 90 13rem/1.2 'Black Han Sans',
-                sans-serif;
+        font: 90 13rem/1.2 "Black Han Sans", sans-serif;
     }
 
     #master-container {
@@ -39,7 +24,6 @@ $desktop: "screen and (max-width : 1600px)";
     #master-container-scroller {
         height: 200px;
         margin-bottom: 5px;
-        // margin-top: 10px;
     }
 
     #master-container-scroller .master-container-scroller_item {
@@ -49,92 +33,45 @@ $desktop: "screen and (max-width : 1600px)";
     }
 
     @-webkit-keyframes scroll-desktop {
-0.0% {
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px)
-    }
-
-    7% {
-        opacity: 1;
-    }
-
-    10% {
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px)
-    }
-
-    25% {
-        -webkit-transform: translateY(-270px);
-        transform: translateY(-270px)
-    }
-
-    35% {
-        -webkit-transform: translateY(-270px);
-        transform: translateY(-270px)
-    }
-
-    50% {
-        -webkit-transform: translateY(-520px);
-        transform: translateY(-520px)
-    }
-
-    60% {
-        -webkit-transform: translateY(-520px);
-        transform: translateY(-520px)
-    }
-
-    75% {
-        -webkit-transform: translateY(-780px);
-        transform: translateY(-780px)
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(-780px);
-        transform: translateY(-780px);
-    }
-    }
-
-    @keyframes scroll-desktop {
-    0.0% {
+        0.0% {
             -webkit-transform: translateY(0px);
-            transform: translateY(0px)
+            transform: translateY(0px);
         }
-    
+
         7% {
             opacity: 1;
         }
-    
+
         10% {
             -webkit-transform: translateY(0px);
-            transform: translateY(0px)
+            transform: translateY(0px);
         }
-    
+
         25% {
             -webkit-transform: translateY(-270px);
-            transform: translateY(-270px)
+            transform: translateY(-270px);
         }
-    
+
         35% {
             -webkit-transform: translateY(-270px);
-            transform: translateY(-270px)
+            transform: translateY(-270px);
         }
-    
+
         50% {
             -webkit-transform: translateY(-520px);
-            transform: translateY(-520px)
+            transform: translateY(-520px);
         }
-    
+
         60% {
             -webkit-transform: translateY(-520px);
-            transform: translateY(-520px)
+            transform: translateY(-520px);
         }
-    
+
         75% {
             -webkit-transform: translateY(-780px);
-            transform: translateY(-780px)
+            transform: translateY(-780px);
         }
-    
+
         100% {
             opacity: 1;
             -webkit-transform: translateY(-780px);
@@ -142,19 +79,61 @@ $desktop: "screen and (max-width : 1600px)";
         }
     }
 
+    @keyframes scroll-desktop {
+        0.0% {
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+
+        7% {
+            opacity: 1;
+        }
+
+        10% {
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+
+        25% {
+            -webkit-transform: translateY(-270px);
+            transform: translateY(-270px);
+        }
+
+        35% {
+            -webkit-transform: translateY(-270px);
+            transform: translateY(-270px);
+        }
+
+        50% {
+            -webkit-transform: translateY(-520px);
+            transform: translateY(-520px);
+        }
+
+        60% {
+            -webkit-transform: translateY(-520px);
+            transform: translateY(-520px);
+        }
+
+        75% {
+            -webkit-transform: translateY(-780px);
+            transform: translateY(-780px);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: translateY(-780px);
+            transform: translateY(-780px);
+        }
+    }
 }
 
-@media #{$tablet} {
-
-
+@media screen and (max-width : 1200px) {
     .doyi {
         display: none;
-
     }
 
     #master {
-        font: 90 5rem/1.2 'Black Han Sans',
-            sans-serif;
+        font: 90 5rem/1.2 "Black Han Sans", sans-serif;
     }
 
     #master-container {
@@ -164,20 +143,16 @@ $desktop: "screen and (max-width : 1600px)";
         left: 10vw;
     }
 
-
     #master-container-scroller .master-container-scroller_item {
         -webkit-animation: scroll-tablet 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 2.8s 1;
         animation: scroll-tablet 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 2.8s 1;
         animation-fill-mode: forwards;
     }
 
-
     #master-container-scroller {
         height: 100px;
-        // margin-bottom: -0.5px;
         margin-top: 5px;
     }
-
 
     #master-container-scroller .master-container-scroller_item {
         padding-bottom: 0;
@@ -189,7 +164,7 @@ $desktop: "screen and (max-width : 1600px)";
     @-webkit-keyframes scroll-tablet {
         0.0% {
             -webkit-transform: translateY(0px);
-            transform: translateY(0px)
+            transform: translateY(0px);
         }
 
         7% {
@@ -198,7 +173,7 @@ $desktop: "screen and (max-width : 1600px)";
 
         10% {
             -webkit-transform: translateY(0px);
-            transform: translateY(0px)
+            transform: translateY(0px);
         }
 
         25% {
@@ -236,7 +211,7 @@ $desktop: "screen and (max-width : 1600px)";
     @keyframes scroll-tablet {
         0.0% {
             -webkit-transform: translateY(0px);
-            transform: translateY(0px)
+            transform: translateY(0px);
         }
 
         7% {
@@ -245,7 +220,7 @@ $desktop: "screen and (max-width : 1600px)";
 
         10% {
             -webkit-transform: translateY(0px);
-            transform: translateY(0px)
+            transform: translateY(0px);
         }
 
         25% {
@@ -279,17 +254,11 @@ $desktop: "screen and (max-width : 1600px)";
             transform: translateY(-280px);
         }
     }
-
 }
 
-@media #{$phone} {
-
-
-    // master
-
+@media screen and (max-width : 650px) {
     #master {
-        font: 90 3rem/1.2 'Black Han Sans',
-            sans-serif;
+        font: 90 3rem/1.2 "Black Han Sans", sans-serif;
     }
 
     #master-container {
@@ -304,12 +273,10 @@ $desktop: "screen and (max-width : 1600px)";
         animation-fill-mode: forwards;
     }
 
-
     #master-container-scroller {
         height: 50px;
         margin-bottom: 10px;
     }
-
 
     #master-container-scroller .master-container-scroller_item {
         padding-bottom: 0;
@@ -321,7 +288,7 @@ $desktop: "screen and (max-width : 1600px)";
     @-webkit-keyframes scroll-mobile {
         0.0% {
             -webkit-transform: translateY(0px);
-            transform: translateY(0px)
+            transform: translateY(0px);
         }
 
         7% {
@@ -330,7 +297,7 @@ $desktop: "screen and (max-width : 1600px)";
 
         10% {
             -webkit-transform: translateY(0px);
-            transform: translateY(0px)
+            transform: translateY(0px);
         }
 
         25% {
@@ -368,7 +335,7 @@ $desktop: "screen and (max-width : 1600px)";
     @keyframes scroll-mobile {
         0.0% {
             -webkit-transform: translateY(0px);
-            transform: translateY(0px)
+            transform: translateY(0px);
         }
 
         7% {
@@ -377,7 +344,7 @@ $desktop: "screen and (max-width : 1600px)";
 
         10% {
             -webkit-transform: translateY(0px);
-            transform: translateY(0px)
+            transform: translateY(0px);
         }
 
         25% {
@@ -410,7 +377,5 @@ $desktop: "screen and (max-width : 1600px)";
             -webkit-transform: translateY(-170px);
             transform: translateY(-170px);
         }
-
-
     }
 }
