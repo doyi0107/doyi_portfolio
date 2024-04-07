@@ -264,7 +264,8 @@ export default function Home() {
                       높임
                       <br /> → 비동기 처리 방식 jQuery AJAX를 활용해 REST API
                       호출 → 로그인, 회원 가입 기능
-                      <br /> → 정규식과 text()를 이용해 비밀번호, 전화번호 형식 확인 가능
+                      <br /> → 정규식과 text()를 이용해 비밀번호, 전화번호 형식
+                      확인 가능
                     </p>
 
                     <Link
@@ -405,9 +406,8 @@ export default function Home() {
                     <p>
                       → React를 사용해 props와 state를 이용한 crud기능을
                       바탕으로 제작
-                      <br />
-                      → 마우스 이벤트가 발생한 곳의 X 좌표, Y 좌표를 알아내{" "}
-                      <br />
+                      <br />→ 마우스 이벤트가 발생한 곳의 X 좌표, Y 좌표를
+                      알아내 <br />
                       마우스 좌표를 기반으로 커서 위치 업데이트
                       <br />→ window.devicePixelRatio를 이용해 별의 개수를
                       디바이스 픽셀 비율에 맞게 확장
@@ -527,6 +527,11 @@ export default function Home() {
                   </div>
                   {/* text_wrap */}
                   <div className="project_text_wrap">
+                    <h4>프로젝트 소개</h4>
+                    <p>
+                      Kotlin을 활용한 지인들과 일정을 공유하고 약속을 잡는
+                      안드로이드 앱
+                    </p>
                     <h4>프로젝트기간</h4>
                     <p>2022.09 ~ 2022.12 (5명)</p>
                     <h4>프론트엔드</h4>
@@ -535,21 +540,21 @@ export default function Home() {
                     <p>JAVASCRIPT, FIREBASE</p>
                     <h4>주요 기능</h4>
                     <p>
-                      → Kotlin을 활용한 지인들과 일정을 공유하고 약속을 잡는
-                      안드로이드 앱
-                      <br />
                       → Firebase Authentication을 사용하여 사용자 계정을 생성
                       <br /> → AlertDialog를 사용하여 사용자에게 일정 추가를
                       위한 입력 폼을 제공
+                      <br /> → SearchView를 사용하여 사용자가 검색할 때마다
+                      이벤트 처리
+                      <br /> → thread를 통해 HTTP 요청을 보내고 받음
                     </p>
 
                     <Link
                       href="https://drive.google.com/file/d/1DXae0notDrYSHBCdLTAWfFC0tsur-W-u/view?usp=drive_link"
                       target="_blank"
                     >
-                      <button className="readme_button">
+                      {/* <button className="readme_button">
                         <span>📂Open_File</span>
-                      </button>
+                      </button> */}
                     </Link>
                   </div>
                 </div>
