@@ -14,8 +14,8 @@ import birth from "/public/birth.webp";
 import academic from "/public/academic.webp";
 import name from "/public/name.webp";
 import contact_doyi from "/public/contact_doyi.webp";
-import javascript_zip from "/public/javascript_zip_img.webp";
-import spakling_story from "/public/your_spakling_story.webp";
+import play_javascript from "/public/play_javascript_img.png";
+import starting_plant from "/public/starting_plant_img.jpeg";
 import Doyi_portfolio_img from "/public/Doyi_portfolio_img.webp";
 import for_your_skin_type from "/public/for_your_skin_type.webp";
 import shallender_img from "/public/shallender_img.webp";
@@ -205,6 +205,156 @@ export default function Home() {
 
               <span className="project_line"></span>
 
+              {/* starting_plant */}
+              <div className="about_project">
+                <div class="content">
+                  {/* img_wrap */}
+                  <div className="content_left">
+                    <h3>Starting_plant</h3>
+                    <div className="project_img_wrap">
+                      <Image
+                        placeholder="blur"
+                        className="project_main_img starting_plant_img"
+                        src={starting_plant}
+                        alt="starting_plant"
+                      />
+
+                      <Link
+                        className="source_code_link project_link"
+                        href="https://github.com/doyi0107/starting_plant.git"
+                        target="_blank"
+                      >
+                        <Image
+                          className="source_code"
+                          src={source_code}
+                          alt="source_code_img"
+                        />
+                        <p>#source code</p>
+                      </Link>
+                      <Link
+                        className="demo_code_link project_link"
+                        href="https://starting-plant-nu.vercel.app/"
+                        target="_blank"
+                      >
+                        <Image className="demo" src={demo} alt="demo_img" />
+                        <p>#demo</p>
+                      </Link>
+                    </div>
+                  </div>
+                  {/* text_wrap */}
+                  <div className="project_text_wrap">
+                    <h4>프로젝트 소개</h4>
+                    <p>
+                      사용자 설문 조사를 통해 맞춤 식물을 추천해주는 웹 - <br />
+                      식물을 키우고 싶지만 너무 많은 정보들 사이에서 어떤 식물이{" "}
+                      <br />
+                      나에게 맞춤인지 몰라 불편함을 느꼈던 경험을 바탕으로 제작
+                      <br />
+                    </p>
+                    <h4>프로젝트기간</h4>
+                    <p>2024.04 ~ 진행 중</p>
+                    <h4>프론트엔드</h4>
+                    <p>REACT, GSAP, VERCEL</p>
+                    <h4>주요 기능</h4>
+                    <p>
+                      → 사용자 맞춤 식물 추천 시스템 <br />: 동적 API 쿼리 생성,
+                      조건부 렌더링과 SPA 내비게이션
+                      <br />→ 식물 정보 검색 및 결과 제공 <br />
+                      : axios의 인터셉터 기능을 활용하여 로딩 시간을 단축
+                      <br />
+                      : useLocation 훅을 통해 이전 페이지로부터 전달 받은 초기
+                      검색 결과와 검색어를 상태로 관리
+                      <br />→ 백엔드 개발자와 다른 작업 시간대로 API 작업이
+                      완료되지 않은 상황에서 컴포넌트 제작을 완료 <br />
+                      : MSW 기반으로 한 Mock API를 구현함으로써 전체 프로젝트의
+                      개발 시간을 효율적으로 단축
+                    </p>
+
+                    <Link
+                      href="https://2-doooo-2.tistory.com/132"
+                      target="_blank"
+                    >
+                      <button className="readme_button">
+                        <span>📘README</span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <span className="project_line"></span>
+              {/* Play_javascript */}
+              <div className="about_project">
+                <div className="content">
+                  {/* img_wrap */}
+                  <div className="content_left">
+                    <h3>Play_javascript</h3>
+                    <div className="project_img_wrap">
+                      <Image
+                        placeholder="blur"
+                        className="project_main_img Javascipt_zip_img"
+                        src={play_javascript}
+                        alt="play_javascript"
+                      />
+
+                      <Link
+                        className="source_code_link project_link"
+                        href="https://github.com/doyi0107/play_javascript"
+                        target="_blank"
+                      >
+                        <Image
+                          className="source_code"
+                          src={source_code}
+                          alt="source_code_img"
+                        />
+                        <p>#source code</p>
+                      </Link>
+                      <Link
+                        className="demo_code_link project_link"
+                        href="https://play-javascript.netlify.app/"
+                        target="_blank"
+                      >
+                        <Image className="demo" src={demo} alt="demo_img" />
+                        <p>#demo</p>
+                      </Link>
+                    </div>
+                  </div>
+                  {/* text_wrap */}
+                  <div className="project_text_wrap">
+                    <h4>프로젝트 소개</h4>
+                    <p>
+                      다양한 자바스크립트 기능을 바탕으로 만든 웹
+                      <br />
+                    </p>
+                    <h4>프로젝트기간</h4>
+                    <p>2024.04 (1명)</p>
+                    <h4>프론트엔드</h4>
+                    <p>HTML, CSS, JAVASCRIPT, CANVAS</p>
+                    <h4>백엔드</h4>
+                    <p>API</p>
+                    <h4>주요 기능</h4>
+                    <p>
+                      → 로컬 스토리지를 활용한 로그인 및 할 일 목록(to-do list)
+                      기능, <br />
+                      OpenWeatherMap API를 통한 현재 온도 및 날씨 정보 출력
+                      <br />
+                      → 자바스크립트로 구현한 다양한 게임 기능(지뢰 찾기,
+                      브레이크 아웃, 카드 매치 게임 )
+                      <br />→ 다크 모드 가능
+                    </p>
+
+                    <Link
+                      href="https://github.com/doyi0107/play_javascript"
+                      target="_blank"
+                    >
+                      <button className="readme_button">
+                        <span>📘README</span>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <span className="project_line"></span>
+
               {/* apma */}
               <div className="about_project">
                 <div className="content">
@@ -245,10 +395,8 @@ export default function Home() {
                   <div className="project_text_wrap">
                     <h4>프로젝트 소개</h4>
                     <p>
-                      html, css, javascript, jquery를 이용해 사용자의 웹
-                      접근성을 고려하며 <br />
-                      만든 미술관 웹 사이트 (계속 업데이트 하며 부족한 부분을
-                      수정 중)
+                      html, css, javascript, jquery를 이용해 만든 미술관 웹
+                      사이트
                     </p>
                     <h4>프로젝트 기간</h4>
                     <p>2021.08(1명) / 2023.08(3명)</p>
@@ -270,222 +418,6 @@ export default function Home() {
 
                     <Link
                       href="https://2-doooo-2.tistory.com/118"
-                      target="_blank"
-                    >
-                      <button className="readme_button">
-                        <span>📘README</span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <span className="project_line"></span>
-
-              {/* javascipt_zip */}
-              <div className="about_project">
-                <div className="content">
-                  {/* img_wrap */}
-                  <div className="content_left">
-                    <h3>Javascipt_zip</h3>
-                    <div className="project_img_wrap">
-                      <Image
-                        placeholder="blur"
-                        className="project_main_img Javascipt_zip_img"
-                        src={javascript_zip}
-                        alt="javascript_zip"
-                      />
-
-                      <Link
-                        className="source_code_link project_link"
-                        href="https://github.com/doyi0107/Javascript_zip.git"
-                        target="_blank"
-                      >
-                        <Image
-                          className="source_code"
-                          src={source_code}
-                          alt="source_code_img"
-                        />
-                        <p>#source code</p>
-                      </Link>
-                      <Link
-                        className="demo_code_link project_link"
-                        href="https://javascript-zip.netlify.app/"
-                        target="_blank"
-                      >
-                        <Image className="demo" src={demo} alt="demo_img" />
-                        <p>#demo</p>
-                      </Link>
-                    </div>
-                  </div>
-                  {/* text_wrap */}
-                  <div className="project_text_wrap">
-                    <h4>프로젝트 소개</h4>
-                    <p>
-                      다양한 자바스크립트 기능을 바탕으로 만든 웹
-                      <br />
-                    </p>
-                    <h4>프로젝트기간</h4>
-                    <p>2023.09 / 2023.12 (1명)</p>
-                    <h4>프론트엔드</h4>
-                    <p>HTML, CSS, JAVASCRIPT, SVG, GSAP</p>
-                    <h4>백엔드</h4>
-                    <p>API</p>
-                    <h4>주요 기능</h4>
-                    <p>
-                      → OpenWeatherMap API와 fetch()를 이용해 현재 온도와 날씨
-                      데이터 불러오기
-                      <br />
-                      → 다크 모드 기능 <br />: localStorage를 사용하여 사용자의
-                      모드 선택을 저장 <br />
-                      : DOMContentLoaded 이벤트 사용
-                      <br />→ Fisher-Yates 알고리즘을 사용한 카드 매치 게임등
-                    </p>
-
-                    <Link
-                      href="https://2-doooo-2.tistory.com/125"
-                      target="_blank"
-                    >
-                      <button className="readme_button">
-                        <span>📘README</span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <span className="project_line"></span>
-
-              {/* spakling_story */}
-              <div className="about_project">
-                <div class="content">
-                  {/* img_wrap */}
-                  <div className="content_left">
-                    <h3>sparkling_story</h3>
-                    <div className="project_img_wrap">
-                      <Image
-                        placeholder="blur"
-                        className="project_main_img spakling_story_img"
-                        src={spakling_story}
-                        alt="spakling_story"
-                      />
-
-                      <Link
-                        className="source_code_link project_link"
-                        href="https://github.com/doyi0107/your_sparkling_story.git"
-                        target="_blank"
-                      >
-                        <Image
-                          className="source_code"
-                          src={source_code}
-                          alt="source_code_img"
-                        />
-                        <p>#source code</p>
-                      </Link>
-                      <Link
-                        className="demo_code_link project_link"
-                        href="https://your-sparkling-story.vercel.app/"
-                        target="_blank"
-                      >
-                        <Image className="demo" src={demo} alt="demo_img" />
-                        <p>#demo</p>
-                      </Link>
-                    </div>
-                  </div>
-                  {/* text_wrap */}
-                  <div className="project_text_wrap">
-                    <h4>프로젝트 소개</h4>
-                    <p>
-                      react라이브러리가 가지고 있는 props의 장점을 이용한 <br />
-                      crud기능을 바탕으로 웹 사이트 제작
-                      <br />
-                    </p>
-                    <h4>프로젝트기간</h4>
-                    <p>2023.03(1명)</p>
-                    <h4>프론트엔드</h4>
-                    <p>REACT,GSAP,VERCEL</p>
-                    <h4>주요 기능</h4>
-                    <p>
-                      → React를 사용해 props와 state를 이용한 crud기능을
-                      바탕으로 제작
-                      <br />→ 마우스 이벤트가 발생한 곳의 X 좌표, Y 좌표를
-                      알아내 <br />
-                      마우스 좌표를 기반으로 커서 위치 업데이트
-                      <br />→ window.devicePixelRatio를 이용해 별의 개수를
-                      디바이스 픽셀 비율에 맞게 확장
-                    </p>
-
-                    <Link
-                      href="https://2-doooo-2.tistory.com/132"
-                      target="_blank"
-                    >
-                      <button className="readme_button">
-                        <span>📘README</span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              <span className="project_line"></span>
-              {/* 화장품 추천 웹 */}
-              <div className="about_project">
-                <div className="content">
-                  {/* img_wrap */}
-                  <div className="content_left">
-                    <h3>for_your_skin_type</h3>
-                    <div className="project_img_wrap">
-                      <Image
-                        className="project_main_img skin_type_img"
-                        src={for_your_skin_type}
-                        alt="for_your_skin_type"
-                      />
-
-                      <Link
-                        className="source_code_link project_link"
-                        href="https://github.com/doyi0107/for_your_skin_type_frontend.git"
-                        target="_blank"
-                      >
-                        <Image
-                          className="source_code"
-                          src={source_code}
-                          alt="source_code_img"
-                        />
-                        <p>#source code</p>
-                      </Link>
-                      <Link
-                        className="demo_code_link project_link"
-                        href="https://elated-edison-5e9fe5.netlify.app"
-                        target="_blank"
-                      >
-                        <Image className="demo" src={demo} alt="demo_img" />
-                        <p>#demo</p>
-                      </Link>
-                    </div>
-                  </div>
-                  {/* text_wrap */}
-                  <div className="project_text_wrap">
-                    <h4>프로젝트 소개</h4>
-                    <p>
-                      피부 유형을 분석하고 자신에 타입에 맞는 화장품을 추천해
-                      주는 웹사이트
-                      <br />
-                    </p>
-                    <h4>프로젝트기간</h4>
-                    <p>2022.01~ 02(4명)</p>
-                    <h4>프론트엔드</h4>
-                    <p>FIGMA,REACT,SASS</p>
-                    <h4>백엔드</h4>
-                    <p>JAVA,SPRING,MYSQL</p>
-                    <h4>주요 기능</h4>
-                    <p>
-                      → 피그마를 통해 사전 디자인
-                      <br />→ SASS를 통해 반응형 웹으로 제작
-                      <br /> → mockdata로 스킨 타입 테스트 결과에 맞는 제품
-                      나열하는 기능 구현
-                      <br /> → proxy middleware로 CORS 문제 해결
-                    </p>
-
-                    <Link
-                      href="https://2-doooo-2.tistory.com/122"
                       target="_blank"
                     >
                       <button className="readme_button">
