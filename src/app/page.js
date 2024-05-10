@@ -265,13 +265,13 @@ export default function Home() {
                       : useLocation 훅을 통해 이전 페이지로부터 전달 받은 초기
                       검색 결과와 검색어를 상태로 관리
                       <br />→ 백엔드 개발자와 다른 작업 시간대로 API 작업이
-                      완료되지 않은 상황에서 컴포넌트 제작을 완료 <br />
-                      : MSW 기반으로 한 Mock API를 구현함으로써 전체 프로젝트의
-                      개발 시간을 효율적으로 단축
+                      완료되지 않은 상황에서 컴포넌트 제작을 완료 <br />: MSW
+                      기반으로 한 Mock API를 구현함으로써 전체 프로젝트의 개발
+                      시간을 효율적으로 단축
                     </p>
 
                     <Link
-                      href="https://2-doooo-2.tistory.com/132"
+                      href="https://2-doooo-2.tistory.com/170"
                       target="_blank"
                     >
                       <button className="readme_button">
