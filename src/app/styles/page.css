@@ -160,17 +160,13 @@ section {
 }
 
 .img_wrap:hover:after,
-.img_wrap:hover>.sub_text,
-.project_img_wrap:hover:after,
-.project_img_wrap:hover>.project_link {
+.img_wrap:hover>.sub_text {
     display: block
 }
 
 .display_none,
 .img_wrap:after,
 .img_wrap:hover h3,
-.project_img_wrap:after,
-.project_link,
 .sub_text {
     display: none
 }
@@ -185,8 +181,7 @@ section {
     z-index: 10
 }
 
-.img_wrap:hover .sub_img,
-.project_img_wrap:hover .project_main_img {
+.img_wrap:hover .sub_img {
     transform: scale(1.2)
 }
 
@@ -199,12 +194,14 @@ section {
 }
 
 .sub_text {
-    text-align: center;
-    margin: 0 10px;
+    width: 90%;
+    margin: 0 auto;
     color: rgba(255, 255, 255, .8);
-    top: 140px;
     z-index: 20;
-    font: bold 1.5rem/1.5 'IBM Plex Sans KR', sans-serif
+    font: bold 1.5rem/1.5 'IBM Plex Sans KR', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .archiving_name,
@@ -407,25 +404,27 @@ section {
     justify-content: space-around;
 }
 
-.project_img_wrap {
-    display: inline-block;
-    position: relative;
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-    display: flex
+.content_left{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.project_text_wrap{
+    width: 50%;
 }
 
 
-.project_img_wrap:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .7);
-    z-index: 10
+
+.project_img_wrap {
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    height: 300px;
+    overflow: hidden;
+    display: flex
 }
 
 
@@ -437,47 +436,68 @@ section {
     height: 100%;
 }
 
-
-.project_link {
+.project_core_features_detail {
     position: absolute;
-    z-index: 20
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .8);
 }
 
-.shallendar_source_code {
-    color: rgba(255, 255, 255, .8);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+.project_core_features_detail>div{
+    width: 90%;
+    margin: 15px auto;
 }
 
-.source_code_link:not(.shallendar_source_code) {
-    /* position: absolute; */
-    top: 50%;
-    left: 28%;
-    transform: translate(-50%, -50%);
+.project_core_features_detail {
+    display: none;
 }
 
-.demo_code_link {
-    /* position: absolute; */
-    top: 48%;
-    left: 72%;
-    transform: translate(-50%, -50%);
+
+.project_core_features_detail01,
+.project_core_features_detail02,
+.project_core_features_detail03,
+.project_core_features_detail04,
+.project_core_features_detail05,
+.project_core_features_detail06 {
+    display: block;
+    font: bold 1.2rem 'IBM Plex Sans KR',
+        sans-serif;
+    color: #e7e7e7;
 }
 
-.source_code_link>img {
-    width: 10vw;
-    height: 18vh
+
+/* 소스, 데모 */
+.project_link_wrap {
+    position: relative;
+    top: 10px;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
 }
 
-.demo_code_link>img {
-    width: 10vw;
-    height: 20vh
-}
 
 .project_link>p {
     text-align: center;
-    color: #fff !important;
-    font: 100 1.4rem 'Black Han Sans', sans-serif
+    color: #545454 !important;
+    font: bold 1.4rem 'IBM Plex Sans KR',
+        sans-serif;
+    padding-left: 20px;
+}
+
+
+/* 오른쪽 텍스트 웹 */
+.project_title_wrap{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .content h3 {
@@ -489,7 +509,7 @@ section {
 
 .project_text_wrap>h4 {
     color: #545454;
-    font: bold 1.5rem/1.6 'IBM Plex Sans KR', sans-serif;
+    font: bold 1.6rem/1.6 'IBM Plex Sans KR', sans-serif;
     max-width: 30vw;
     margin-top: 8px
 }
@@ -502,8 +522,17 @@ section {
 
 .project_text_wrap p {
     color: #545454;
-    font: 400 1rem 'IBM Plex Sans KR', sans-serif
+    font: 400 1.2rem 'IBM Plex Sans KR', sans-serif
 }
+
+.project_core_feature_chapter {
+    display: flex;
+}
+
+.project_core_features>p:hover {
+    cursor: pointer;
+}
+
 
 .readme_button {
     position: relative;

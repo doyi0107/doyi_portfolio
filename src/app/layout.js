@@ -128,12 +128,12 @@ export default function RootLayout({ children }) {
                     </div>
                     <div className="master-container-scroller_item">
                       <a className="cta-link" href="#">
-                        감각있는
+                        도전하는
                       </a>
                     </div>
                     <div className="master-container-scroller_item">
                       <a className="cta-link" href="#">
-                        한계를 뛰어넘는
+                        꾸준히 나아가는
                       </a>
                     </div>
                     <div className="master-container-scroller_item">

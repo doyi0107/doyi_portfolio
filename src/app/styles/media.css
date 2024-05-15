@@ -1,4 +1,4 @@
-@media screen and (max-width :1600px) {
+@media screen and (max-width :1700px) {
     @keyframes bubble {
         0% {
             opacity: 0;
@@ -15,10 +15,6 @@
     .explain_me>div {
         width: 300px;
         height: 300px
-    }
-
-    .sub_text {
-        top: 100px;
     }
 
     .sub_name {
@@ -44,9 +40,26 @@
         height: 8500px;
     }
 
+    .about_project {
+        margin: 5vw auto;
+    }
+
+
     .project_img_wrap {
         width: 400px;
         height: 250px;
+    }
+    .project_core_features_detail01,
+    .project_core_features_detail02,
+    .project_core_features_detail03 {
+        font-size: 1.1rem;
+    }
+    .project_text_wrap>h4 {
+        font-size: 1.4rem;
+    }
+
+    .project_text_wrap p {
+        font-size: 1.1rem;
     }
 
     .content h3 {

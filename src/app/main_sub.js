@@ -1,6 +1,6 @@
 import Image from "next/image";
 import networking from "/public/networking.webp";
-import design from "/public/design.webp";
+import design from "/public/main_sub_goal.png";
 import watering from "/public/watering.webp";
 import "./styles/page.css";
 import "./styles/media.css";
@@ -22,26 +22,33 @@ export default function Main_sub() {
               alt="networking"
             />
             <h3>#소통하는</h3>
-            <p className="net_exp sub_text">
-              사람들과 의견을 공유하며 하나의 목표를 향해 나아가는 활동을
-              좋아합니다.
-            </p>
+            <div className="net_exp sub_text">
+              <p>
+                사람들과 의견을 공유하며 하나의 목표를 향해 나아가는 활동을
+                좋아합니다.
+              </p>
+            </div>
           </div>
 
           <div className="two img_wrap">
             <Image className="design sub_img" src={design} alt="design" />
-            <h3>#감각있는</h3>
-            <p className="design_exp sub_text">
-              상상한 그림을 디자인하고 제작하는 작업에 큰 성취감을 느낍니다.
-            </p>
+            <h3>#도전하는</h3>
+            <div className="design_exp sub_text">
+              <p>
+                줄이 긴 맛집을 가는 것보다 새로운 맛집을 찾는 것을 선호하며,
+                새로운 아키텍처를 마주하는 것을 즐깁니다.
+              </p>
+            </div>
           </div>
 
           <div className="three img_wrap">
             <Image className="watering sub_img" src={watering} alt="watering" />
             <h3>#성장하는</h3>
-            <p className="watering_exp sub_text">
-              부족한 부분을 채워가기 위해 반복과 복습을 습관처럼 하고 있습니다.
-            </p>
+            <div className="watering_exp sub_text">
+              <p>
+                하루의 소중함을 알고 작은 걸음이라도 꾸준히 나아가는 사람입니다.
+              </p>
+            </div>
           </div>
         </div>
       </section>
