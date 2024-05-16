@@ -65,11 +65,10 @@ export default function Home() {
       const isTop = scrollTop === 0;
 
       if (isScrollAtBottom) {
-        setIsSpecialCase(!isSpecialCase);
+        setIsSpecialCase(true);
       } else if (isTop) {
-        setIsSpecialCase(isSpecialCase);
+        setIsSpecialCase(false);
       }
-
       // scrollSection.offsetTop는 스크롤 섹션의 상단 위치를 나타내는 고정된 값이며,
       //scrolled는 현재 사용자가 스크롤한 위치를 동적으로 나타내는 값입니다.
       const scrolled = window.pageYOffset;
@@ -190,7 +189,7 @@ export default function Home() {
                       <Link
                         className="demo_code_link project_link"
                         onClick={handleLinkClick}
-                        href="#"
+                        href="https://doyi-portfolio.vercel.app/"
                       >
                         <p>#demo</p>
                       </Link>
@@ -222,6 +221,8 @@ export default function Home() {
                       >
                         <p>▷사용자 인터랙션 강화</p>
                       </div>
+                    </div>
+                    <div className="project_core_feature_chapter2project_core_feature_chapter">
                       <div
                         onMouseEnter={() => setHoverFeature("feature3")}
                         onMouseLeave={() => setHoverFeature("")}
@@ -378,6 +379,8 @@ export default function Home() {
                       >
                         <p>▷식물 검색 및 결과 제공</p>
                       </div>
+                    </div>
+                    <div className="project_core_feature_chapter2 project_core_feature_chapter">
                       <div
                         onMouseEnter={() => setHoverFeature("feature3")}
                         onMouseLeave={() => setHoverFeature("")}
@@ -385,26 +388,26 @@ export default function Home() {
                       >
                         <p>▷소셜 로그인 및 마이페이지 생성</p>
                       </div>
-                    </div>
-                    <div className="project_core_feature_chapter2 project_core_feature_chapter">
                       <div
                         onMouseEnter={() => setHoverFeature("feature4")}
                         onMouseLeave={() => setHoverFeature("")}
-                        className="project_core_features04"
+                        className="project_core_features04 project_core_features"
                       >
                         <p>▷Recoil을 활용한 장바구니 기능</p>
                       </div>
+                    </div>
+                    <div className="project_core_feature_chapter3 project_core_feature_chapter">
                       <div
                         onMouseEnter={() => setHoverFeature("feature5")}
                         onMouseLeave={() => setHoverFeature("")}
-                        className="project_core_features05"
+                        className="project_core_features05 project_core_features"
                       >
                         <p>▷MSW 기반으로 한 Mock API</p>
                       </div>
                       <div
                         onMouseEnter={() => setHoverFeature("feature6")}
                         onMouseLeave={() => setHoverFeature("")}
-                        className="project_core_features06"
+                        className="project_core_features06 project_core_features"
                       >
                         <p>▷배포 후 환경 설정</p>
                       </div>
@@ -660,6 +663,8 @@ export default function Home() {
                       >
                         <p>▷비동기 처리 방식 로그인 및 회원 가입</p>
                       </div>
+                    </div>
+                    <div className="project_core_feature_chapter2 project_core_feature_chapter">
                       <div
                         onMouseEnter={() => setHoverFeature("feature3")}
                         onMouseLeave={() => setHoverFeature("")}
@@ -784,7 +789,7 @@ export default function Home() {
                       <div
                         onMouseEnter={() => setHoverFeature("feature4")}
                         onMouseLeave={() => setHoverFeature("")}
-                        className="project_core_features04"
+                        className="project_core_features04 project_core_features"
                       >
                         <p>▷Thread를 활용한 비동기 네트워크 요청 처리</p>
                       </div>
