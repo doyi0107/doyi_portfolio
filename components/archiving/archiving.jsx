@@ -2,16 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 import github from "/public/github.webp";
 import t_story from "/public/t-story.webp";
-import "./styles/page.css";
-import "./styles/media.css";
+import styles from "./archiving.module.css"
+import "@/src/app/styles/media.css";
 
 export default function Archiving() {
   return (
     <>
-      <section id="archiving">
-        <h2 className="archiving_name">Archiving</h2>
-        <div className="arch_left_box">
-          <div className="github_text">
+      <section className={styles.archiving}>
+        <h2 className={styles.archiving_name}>Archiving</h2>
+        <div className={styles.arch_left_box}>
+          <div className={styles.github_text}>
             <h4>Github</h4>
             <p>💡 그동안 진행했던 프로젝트 소스 코드를 저장했습니다.</p>
             <p>💡 1일 1커밋을 유지하기 위해 노력했습니다.</p>
@@ -23,21 +23,21 @@ export default function Archiving() {
           </div>
           <Link
             href="https://github.com/doyi0107"
-            className="github_img_wrap"
+            className={styles.github_img_wrap}
             target="blank"
           >
-            <Image className="github_img" src={github} alt="github" />
+            <Image className={styles.github_img} src={github} alt="github" />
           </Link>
         </div>
-        <div className="arch_right_box">
+        <div className={styles.arch_right_box}>
           <Link
             href="https://2-doooo-2.tistory.com/"
             target="blank"
-            className="t_story_img_wrap"
+            className={styles.t_story_img_wrap}
           >
-            <Image className="t_story_img" src={t_story} alt="t_story" />
+            <Image className={styles.t_story_img} src={t_story} alt="t_story" />
           </Link>
-          <div className="t_story_text">
+          <div className={styles.t_story_text}>
             <h4>T-story</h4>
             <p>💡 프로젝트를 진행하며 습득한 정보를 기록했습니다.</p>
             <p>

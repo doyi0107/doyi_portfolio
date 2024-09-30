@@ -105,6 +105,7 @@ a {
   animation-fill-mode: backwards;
 }
 
+
 /* Link 스타일 적용 알아보기  */
 
 
@@ -117,7 +118,6 @@ a {
 
 .link>div {
   color: #5f6f52;
-  ;
   font: 600 3.3rem 'Smooch Sans',
     sans-serif;
   display: block;
@@ -267,7 +267,6 @@ a {
   right: 10%;
   width: 30px;
   height: 30px;
-  /* margin-left: -12px; */
   border-left: 2.5px solid #d7cbb9;
   border-bottom: 2.5px solid #d7cbb9;
   -webkit-transform: rotate(-45deg);
@@ -1836,6 +1835,7 @@ animation06
 }
 
 @media screen and (max-width : 650px) {
+
   #master {
     font: 90 3rem/1.2 "Black Han Sans", sans-serif;
   }

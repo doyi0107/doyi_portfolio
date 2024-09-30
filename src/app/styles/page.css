@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap);
 
-#archiving,
+
 #main_sub,
 #projects,
 .img_wrap,
@@ -8,8 +8,7 @@ section {
     position: relative
 }
 
-.arch_left_box,
-.arch_right_box,
+
 .explain_me,
 .img_wrap:after,
 .sub_box,
@@ -18,12 +17,11 @@ section {
     position: absolute
 }
 
-.arch_left_box,
 .sub_box {
     border-radius: 0 300px 300px 0
 }
 
-#archiving,
+
 #contact,
 #main_sub,
 #projects {
@@ -73,8 +71,6 @@ section {
     animation-timeline: view()
 }
 
-.arch_left_box,
-.arch_right_box,
 .explain_me>div {
     background-color: rgba(201, 105, 88, .7)
 }
@@ -204,149 +200,12 @@ section {
     transform: translate(-50%, -50%);
 }
 
-.archiving_name,
+
 .projects_name {
     position: absolute;
     color: rgba(255, 255, 255, .7)
 }
 
-.archiving_name {
-    z-index: 9;
-    top: -20px;
-    left: 15%;
-    animation: 1s both fromleft;
-    animation-timeline: view();
-    font: bold 10rem sans-serif
-}
-
-/* 깃허브 박스 */
-
-.arch_left_box {
-    width: 61vw;
-    height: 330px;
-    left: 0;
-    top: 15%;
-    animation: 1s both arch_left_box_ani;
-    animation-timeline: view();
-    transform-origin: left;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.github_img_wrap {
-    /* background-color: #545454; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    margin: 0px 30px;
-}
-
-.github_img {
-    width: 200px;
-    height: 200px;
-    transition: .5s
-}
-
-.github_img:hover {
-    transform: scale(1.1);
-}
-
-.github_text {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 600px;
-    height: 100%;
-}
-
-.github_text>h4,
-.t_story_text>h4 {
-    color: rgba(231, 221, 205, .8);
-    font: 300 2rem/1.5 'Black Han Sans', sans-serif
-}
-
-.github_text>p,
-.t_story_text>p {
-    color: rgba(231, 221, 205, .8);
-    font: 400 1.2rem/1.6 'IBM Plex Sans KR', sans-serif
-}
-
-
-@keyframes arch_left_box_ani {
-    0% {
-        opacity: 0;
-        transform: translateX(-400px)
-    }
-
-    100%,
-    30% {
-        opacity: 1;
-        transform: translateX(0)
-    }
-}
-
-/* 티스토리 박스 */
-.arch_right_box {
-    width: 54vw;
-    height: 330px;
-    right: 0;
-    border-radius: 300px 0 0 300px;
-    bottom: 5%;
-    animation: 1s forwards arch_right_box_ani;
-    animation-timeline: view();
-    /* overflow: hidden; */
-    display: flex;
-    justify-content: space-around;
-}
-
-.t_story_img_wrap {
-    /* background-color: #806044; */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 350px;
-    /* overflow: hidden; */
-    margin: 0 30px;
-}
-
-.t_story_img {
-    width: 250px;
-    height: 250px;
-    transition: .5s
-}
-
-
-.t_story_img:hover {
-    transform: scale(1.1);
-}
-
-.t_story_text {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 800px;
-    height: 100%;
-}
-
-
-
-
-
-@keyframes arch_right_box_ani {
-    0% {
-        opacity: 0;
-        right: -300px
-    }
-
-    100%,
-    30% {
-        opacity: 1;
-        right: 0
-    }
-}
 
 
 /* 프로젝트 */

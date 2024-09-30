@@ -2,10 +2,11 @@
 import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import Link from "next/link";
-import "./styles/modal.css";
+import styles from "./modal.module.css";
+import classNames from "classnames";
 
 export default function Modal() {
-  const [burgerClass, setBurgerClass] = useState("burger-bar unclicked");
+  const [burgerClass, setBurgerClass] = useState("burger_bar unclicked");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   const extraBackgroundRef = useRef(null);
@@ -13,21 +14,21 @@ export default function Modal() {
   const navLinksRef = useRef([]);
   const masterRef = useRef(null);
 
+  // 메뉴창 클릭시
   const updateMenu = () => {
+    masterRef.current.reversed()
+      ? masterRef.current.play()
+      : masterRef.current.reverse();
     if (!isMenuClicked) {
-      setBurgerClass("burger-bar clicked");
-      masterRef.current.reversed()
-        ? masterRef.current.play()
-        : masterRef.current.reverse();
+      setBurgerClass("burger_bar clicked");
     } else {
-      setBurgerClass("burger-bar unclicked");
-      masterRef.current.reversed()
-        ? masterRef.current.play()
-        : masterRef.current.reverse();
+      setBurgerClass("burger_bar unclicked");
     }
     setIsMenuClicked(!isMenuClicked);
   };
 
+
+  // 메뉴창 슬라이드 이벤트
   useEffect(() => {
     const nav = navRef.current;
     const extraBackground = extraBackgroundRef.current;
@@ -75,29 +76,51 @@ export default function Modal() {
       .add(revealMenuItems([navLinks]), "-=0.5");
 
     masterRef.current = master;
-  }, []); // Empty dependency array to run the effect only once on mount
+  }, []);
 
   const handleNavLinkClick = () => {
-    setBurgerClass("burger-bar unclicked");
+    setBurgerClass("burger_bar unclicked");
     setIsMenuClicked(!isMenuClicked);
     masterRef.current.reverse();
   };
 
   return (
     <>
-      <button className="burger-menu" onClick={updateMenu} aria-label="Name">
-        <span className={burgerClass}></span>
-        <span className={burgerClass}></span>
-        <span className={burgerClass}></span>
+      <button
+        className={styles.burger_menu}
+        onClick={updateMenu}
+        aria-label="Name"
+      >
+        <span
+          className={classNames(styles.burger_bar, {
+            [styles.clicked]: isMenuClicked,
+            [styles.unclicked]: !isMenuClicked,
+          })}
+        ></span>
+        <span
+          className={classNames(styles.burger_bar, {
+            [styles.clicked]: isMenuClicked,
+            [styles.unclicked]: !isMenuClicked,
+          })}
+        ></span>
+        <span
+          className={classNames(styles.burger_bar, {
+            [styles.clicked]: isMenuClicked,
+            [styles.unclicked]: !isMenuClicked,
+          })}
+        ></span>
       </button>
 
-      <div className="nav__extra-background" ref={extraBackgroundRef}></div>
-      <nav className="nav" ref={navRef}>
-        <div className="nav__content">
-          <div className="nav__links" ref={navLinksRef}>
+      <div
+        className={styles.nav__extra_background}
+        ref={extraBackgroundRef}
+      ></div>
+      <nav className={styles.nav} ref={navRef}>
+        <div className={styles.nav__content}>
+          <div className={styles.nav__links} ref={navLinksRef}>
             <Link
               href="#intro"
-              className="modal_link"
+              className={styles.modal_link}
               onClick={handleNavLinkClick}
             >
               <div>Home</div>
@@ -105,7 +128,7 @@ export default function Modal() {
 
             <Link
               href="#archiving"
-              className="modal_link"
+              className={styles.modal_link}
               onClick={handleNavLinkClick}
             >
               <div>Archiving</div>
@@ -113,7 +136,7 @@ export default function Modal() {
 
             <Link
               href="#projects"
-              className="modal_link"
+              className={styles.modal_link}
               onClick={handleNavLinkClick}
             >
               <div>Projects</div>
@@ -121,7 +144,7 @@ export default function Modal() {
 
             <Link
               href="#contact"
-              className="modal_link"
+              className={styles.modal_link}
               onClick={handleNavLinkClick}
             >
               <div>Contact</div>

@@ -1,0 +1,326 @@
+.archiving {
+    position: relative;
+    background-color: #b39c7a;
+}
+
+.archiving_name {
+    z-index: 9;
+    top: -20px;
+    left: 15%;
+    animation: 1s both fromleft;
+    animation-timeline: view();
+    font: bold 10rem sans-serif
+}
+
+/* 깃허브 박스 */
+
+.arch_left_box {
+    position: absolute;
+    background-color: rgba(201, 105, 88, .7);
+    border-radius: 0 300px 300px 0;
+    width: 61vw;
+    height: 330px;
+    left: 0;
+    top: 15%;
+    animation: 1s both arch_left_box_ani;
+    animation-timeline: view();
+    transform-origin: left;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.github_img_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 0px 30px;
+}
+
+.github_img {
+    width: 200px;
+    height: 200px;
+    transition: .5s
+}
+
+.github_img:hover {
+    transform: scale(1.1);
+}
+
+.github_text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 600px;
+    height: 100%;
+}
+
+.github_text>h4,
+.t_story_text>h4 {
+    color: rgba(231, 221, 205, .8);
+    font: 300 2rem/1.5 'Black Han Sans', sans-serif
+}
+
+.github_text>p,
+.t_story_text>p {
+    color: rgba(231, 221, 205, .8);
+    font: 400 1.2rem/1.6 'IBM Plex Sans KR', sans-serif
+}
+
+.archiving_name {
+    position: absolute;
+    color: rgba(255, 255, 255, .7)
+}
+
+
+@keyframes arch_left_box_ani {
+    0% {
+        opacity: 0;
+        transform: translateX(-400px)
+    }
+
+    100%,
+    30% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+/* 티스토리 박스 */
+.arch_right_box {
+    position: absolute;
+    width: 54vw;
+    background-color: rgba(201, 105, 88, .7);
+    height: 330px;
+    right: 0;
+    border-radius: 300px 0 0 300px;
+    bottom: 5%;
+    animation: 1s forwards arch_right_box_ani;
+    animation-timeline: view();
+    display: flex;
+    justify-content: space-around;
+}
+
+.t_story_img_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 350px;
+    margin: 0 30px;
+}
+
+.t_story_img {
+    width: 250px;
+    height: 250px;
+    transition: .5s
+}
+
+
+.t_story_img:hover {
+    transform: scale(1.1);
+}
+
+.t_story_text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 800px;
+    height: 100%;
+}
+
+@keyframes arch_right_box_ani {
+    0% {
+        opacity: 0;
+        right: -300px
+    }
+
+    100%,
+    30% {
+        opacity: 1;
+        right: 0
+    }
+}
+
+
+@media screen and (max-width :1700px) {
+    .github_text {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width :1300px) {
+    .github_img {
+        width: 180px;
+        height: 180px
+    }
+
+
+    .github_text>h4,
+    .t_story_text>h4 {
+        font: 300 1.7rem/1.5 'Black Han Sans', sans-serif
+    }
+
+    .github_text>p,
+    .t_story_text>p {
+        font: 400 1rem/2 'IBM Plex Sans KR', sans-serif
+    }
+
+    .arch_left_box {
+        width: 68vw;
+    }
+
+    .t_story_img {
+        width: 230px;
+        height: 230px;
+        transition: .5s
+    }
+
+    .arch_right_box {
+        width: 60vw;
+        right: 0;
+        overflow: hidden
+    }
+
+    .archiving_name {
+        font: bold 8rem sans-serif
+    }
+}
+
+@media screen and (max-width :1000px) {
+    #archiving {
+        height: 1000px;
+    }
+
+    .archiving_name {
+        top: -10px;
+        left: 10vw;
+        font: bold 5rem sans-serif
+    }
+
+    .github_text {
+        margin-left: 50px;
+    }
+
+    .github_img {
+        width: 210px;
+        height: 210px
+    }
+
+    .github_text>h4,
+    .t_story_text>h4 {
+        font: 300 1.7rem/1.5 'Black Han Sans', sans-serif
+    }
+
+    .github_text>p,
+    .t_story_text>p {
+        font: 400 1.1rem/1.7 'IBM Plex Sans KR', sans-serif
+    }
+
+    .arch_right_box {
+        width: 80vw;
+        height: 400px;
+    }
+
+    .arch_left_box {
+        width: 80vw;
+        height: 400px;
+        animation: 1s both arch_left_box_ani;
+        animation-timeline: view();
+        transform-origin: left
+    }
+
+    @keyframes arch_left_box_ani {
+        0% {
+            opacity: 0;
+            transform: translateX(-300px)
+        }
+
+        100%,
+        30% {
+            opacity: 1;
+            transform: translateX(70px)
+        }
+    }
+
+    .t_story_img {
+        width: 250px;
+        height: 250px;
+        transition: .5s
+    }
+
+    .t_story_text {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width :650px) {
+
+    /* archiving */
+    .archiving_name {
+        top: 10px;
+        font: bold 3.5rem sans-serif
+    }
+
+    .github_text {
+        width: 300px;
+        margin-left: 20px;
+    }
+
+    .github_img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .t_story_img_wrap {
+        justify-content: center;
+    }
+
+    .t_story_img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .t_story_text {
+        width: 300px;
+        margin: -50px 0px 0px 50px;
+    }
+
+    .contact_text_box h3,
+    .github_text>h4,
+    .t_story_text>h4 {
+        font: 300 1.4rem/1.5 'Black Han Sans', sans-serif
+    }
+
+    .github_text>p,
+    .t_story_text>p {
+        font: 400 1rem/1.5 'IBM Plex Sans KR', sans-serif
+    }
+
+    .arch_left_box {
+        animation: 1s both arch_left_box_ani;
+        animation-timeline: view();
+        transform-origin: left;
+        flex-direction: column-reverse;
+    }
+
+    @keyframes arch_left_box_ani {
+        0% {
+            opacity: 0;
+            transform: translateX(-300px)
+        }
+
+        100%,
+        30% {
+            opacity: 1;
+            transform: translateX(0)
+        }
+    }
+
+    .arch_right_box {
+        justify-content: center;
+        flex-direction: column;
+    }
+}

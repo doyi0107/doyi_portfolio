@@ -8,7 +8,7 @@ import mail from "/public/email.webp";
 import phone from "/public/phone.webp";
 import instagram from "/public/instagram.webp";
 import home from "/public/home.webp";
-import birth from "/public/birth.webp";
+import birth from "/public/birth.webp"; 
 import academic from "/public/academic.webp";
 import name from "/public/name.webp";
 import contact_doyi from "/public/contact_doyi.webp";
@@ -20,9 +20,9 @@ import nav_tree from "/public/nav_tree.png";
 import Link from "next/link";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
-import Archiving from "./archiving";
-import Main_sub from "./main_sub";
-import Footer from "./footer";
+import Archiving from "@/components/archiving/archiving";
+import Main_sub from "@/components/main_sub";
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
   const [isSpecialCase, setIsSpecialCase] = useState(false);
@@ -69,8 +69,8 @@ export default function Home() {
       } else if (isTop) {
         setIsSpecialCase(false);
       }
-      // scrollSection.offsetTop는 스크롤 섹션의 상단 위치를 나타내는 고정된 값이며,
-      //scrolled는 현재 사용자가 스크롤한 위치를 동적으로 나타내는 값입니다.
+      // scrollSection.offsetTop는 스크롤 섹션의 상단 위치를 나타내는 고정된 값,
+      //scrolled는 현재 사용자가 스크롤한 위치를 동적으로 나타내는 값.
       const scrolled = window.pageYOffset;
       const sectionOffset = Math.abs(scrollSection.offsetTop - scrolled);
       const notReachedBottom = parseInt(
@@ -88,12 +88,10 @@ export default function Home() {
     };
 
     document.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener on component unmount
     return () => {
       document.removeEventListener("scroll", handleScroll);
     };
-  }, []); // Empty dependency array to run the effect only once on mount
+  }, []); 
 
   return (
     <>
