@@ -5,7 +5,7 @@ import "./styles/media.css";
 import Image from "next/image";
 import me from "/public/me.webp";
 
-import Modal from "../../components/modal/modal.jsx";
+import Modal from "../../components/modal/Modal.jsx";
 
 export const metadata = {
   title: "도이스토리",

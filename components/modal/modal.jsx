@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import Link from "next/link";
-import styles from "./modal.module.css";
+import styles from "./Modal.module.css";
 import classNames from "classnames";
 
 export default function Modal() {

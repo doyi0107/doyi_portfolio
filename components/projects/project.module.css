@@ -1,9 +1,11 @@
 /* 프로젝트 */
-#projects {
+.projects {
     height: 10500px;
 }
 
 .projects_name {
+    position: absolute;
+    color: rgba(255, 255, 255, .7);
     top: -50px;
     left: 14vw;
     font: bold 10rem sans-serif
@@ -44,7 +46,7 @@
 
 /* 프로젝트 세부구조 */
 
-.about_project .content {
+.content {
     width: 70vw;
     margin: 0 auto;
     flex: 1;

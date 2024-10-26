@@ -27,6 +27,7 @@ export default function Home() {
     setIsHovered(true);
   };
 
+
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
