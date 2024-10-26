@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import footer_github from "/public/footer_github.webp";
-import footer_t_story from "/public/footer_t_story.webp";
-import talk from "/public/talk.webp";
-import instagram from "/public/instagram.webp";
+import footer_github from "/public/footer/footer_github.webp";
+import footer_t_story from "/public/footer/footer_t_story.webp";
+import talk from "/public/footer/talk.webp";
+import instagram from "/public/contact/instagram.webp";
 import "../../src/app/styles/page.css";
 import "../../src/app/styles/media.css";
 

@@ -1,0 +1,9 @@
+footer {
+    overflow: hidden;
+    position: relative
+}
+
+.footer_Copyright,
+.footer_mail {
+    color: rgba(231, 221, 205, .8)
+}

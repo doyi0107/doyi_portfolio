@@ -100,6 +100,7 @@
     animation-timeline: view();
     display: flex;
     justify-content: space-around;
+    padding-right: 20px;
 }
 
 .t_story_img_wrap {

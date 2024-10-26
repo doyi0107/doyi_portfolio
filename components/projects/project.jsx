@@ -17,11 +17,6 @@ export default function project() {
   const scrollContentRef = useRef(null);
   const [isSpecialCase, setIsSpecialCase] = useState(false);
   const [hoverFeature, setHoverFeature] = useState("");
-  
-
-  const handleLinkClick = () => {
-    window.location.reload();
-  };
 
   useEffect(() => {
     const scrollSection = scrollSectionRef.current;
@@ -66,15 +61,15 @@ export default function project() {
                 <div className={styles.project_title_wrap}>
                   <h3>우행시</h3>
                 </div>
-                <div
-                  className={`${styles.project_img_wrap} ${styles.doyi_portfolio_wrap}`}
-                >
-                  <Image
-                    placeholder="blur"
-                    className={styles.project_main_img}
-                    src={woohangsi}
-                    alt="Doyi_portfolio_img"
-                  />
+                <div className={styles.project_img_wrap}>
+                  <Link href="https://woohangshi.vercel.app/" target="_blank">
+                    <Image
+                      placeholder="blur"
+                      className={styles.project_main_img}
+                      src={woohangsi}
+                      alt="Doyi_portfolio_img"
+                    />
+                  </Link>
                   {/* Hover features */}
                   {hoverFeature === "feature1" && (
                     <div
@@ -83,6 +78,7 @@ export default function project() {
                       <div>
                         ▷Infinite Scroll을 활용해 서버에서 필요한 데이터만
                         요청하여 네트워크 트래픽을 줄이고 성능 최적화 <br />
+                        <br />
                         ▷주간 순위별 1등 교육생에게는 상품권 증정 이벤트 →
                         교육생 참여율 30% 증가
                       </div>
@@ -93,10 +89,11 @@ export default function project() {
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail02}`}
                     >
                       <div>
-                        ▷zustand 라이브러리를 활용한 상태 관리로 과목 선택과
+                        ▷Zustand 라이브러리를 활용한 상태 관리로 과목 선택과
                         편집 기능을 효율적으로 구현
-                        <br /> ▷SWR을 사용해 서버에서 받아온 데이터를 캐싱하여
-                        네트워크 요청을 최소화하고 성능을 개선
+                        <br /> <br />
+                        ▷SWR을 사용해 서버에서 받아온 데이터를 캐싱하여 네트워크
+                        요청을 최소화하고 성능을 개선
                       </div>
                     </div>
                   )}
@@ -107,8 +104,10 @@ export default function project() {
                       <div>
                         ▷랜딩페이지를 통한 웹의 핵심 기능 소개 및 사용자에게
                         직관적이고 몰입감 있는 UI 경험 제공
-                        <br />▷ 직관적인 CTA 버튼을 통해 추가 자료와 정보에
-                        빠르게 접근할 수 있도록 유도( ex)문의하기, 노션보러가기 )
+                        <br /> <br />
+                        ▷직관적인 CTA 버튼을 통해 추가 자료와 정보에 빠르게
+                        접근할 수 있도록 유도 <br />( ex)문의하기, 노션보러가기
+                        )
                       </div>
                     </div>
                   )}
@@ -125,7 +124,6 @@ export default function project() {
 
                   <Link
                     className={`${styles.demo_code_link} ${styles.project_link}`}
-                    onClick={handleLinkClick}
                     href="https://woohangshi.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -194,21 +192,26 @@ export default function project() {
                   <h3>Starting_plant</h3>
                 </div>
                 <div className={styles.project_img_wrap}>
-                  <Image
-                    placeholder="blur"
-                    className={`${styles.project_main_img} ${styles.starting_plant_img}`}
-                    src={starting_plant}
-                    alt="starting_plant"
-                  />
+                  <Link
+                    href="https://starting-plant-nu.vercel.app/"
+                    target="_blank"
+                  >
+                    <Image
+                      placeholder="blur"
+                      className={`${styles.project_main_img} ${styles.starting_plant_img}`}
+                      src={starting_plant}
+                      alt="starting_plant"
+                    />
+                  </Link>
                   {/* Hover features */}
                   {hoverFeature === "feature1" && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
                       <div>
-                        ▷ 사용자의 선호도와 환경을 분석하여 맞춤형 식물을 추천{" "}
-                        <br />▷ React의 상태 관리와 동적 API 쿼리 생성을 통해
-                        사용자 경험을 극대화
+                        ▷ 사용자의 선호도와 환경을 분석하여 맞춤형 식물을 추천
+                        <br /> <br />▷ React의 상태 관리와 동적 API 쿼리 생성을
+                        통해 사용자 경험을 극대화
                       </div>
                     </div>
                   )}
@@ -219,8 +222,9 @@ export default function project() {
                       <div>
                         ▷ axios의 인터셉터 기능을 활용하여 로딩 시간을
                         단축시키고, 에러 핸들링을 통해 사용자에게 명확한
-                        피드백을 제공함 <br />▷ React Router의 useNavigate,
-                        useLocation 훅을 활용하여 검색 기능의 성능과 사용성 향상
+                        피드백을 제공함 <br />
+                        <br />▷ React Router의 useNavigate, useLocation 훅을
+                        활용하여 검색 기능의 성능과 사용성 향상
                       </div>
                     </div>
                   )}
@@ -230,43 +234,51 @@ export default function project() {
                     >
                       <div>
                         ▷ Google OAuth를 통한 소셜 로그인 구현과 useAuth 커스텀
-                        훅을 통한 사용자 정보 관리 <br />▷ 로그인 상태에 따른 UI
-                        변화와 사용자 경험 개선에 초점
+                        훅을 통한 사용자 정보 관리 <br /> <br />▷ 로그인 상태에
+                        따른 UI 변화와 사용자 경험 개선에 초점
                       </div>
                     </div>
                   )}
-                  {/* Add more features here as needed */}
+                  {hoverFeature === "feature4" && (
+                    <div
+                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail04}`}
+                    >
+                      <div>
+                        ▷ 문제 : API 작업이 완료되지 않은 상황에서 컴포넌트
+                        제작을 완료, 테스트 시 API interlocking 과정이 별도로
+                        필요
+                        <br />▷ 해결 : MSW 기반으로 한 Mock API를 구현함으로써
+                        백엔드 API 개발 완료 전에도 프론트엔드 기능 개발 및
+                        테스트를 진행할 수 있게 되어, 전체 프로젝트의 개발
+                        시간을 효율적으로 단축
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div className={styles.project_link_wrap}>
-                  <a
+                  <Link
                     className={`${styles.source_code_link} ${styles.project_link}`}
                     href="https://github.com/doyi0107/starting_plant"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <p>#source code</p>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className={`${styles.demo_code_link} ${styles.project_link}`}
-                    onClick={handleLinkClick}
                     href="https://starting-plant-nu.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <p>#demo</p>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
               {/* text_wrap */}
               <div className={styles.project_text_wrap}>
                 <h4>프로젝트 소개</h4>
-                <p>
-                  사용자 설문 조사를 통해 맞춤 식물을 추천해 주는 웹 - 식물을
-                  키우고 싶지만 <br />
-                  방대한 정보 속에서 어떤 식물이 자신에게 맞는지 몰라 불편함을
-                  느꼈던 경험을 바탕으로 제작
-                </p>
+                <p>사용자 설문 조사를 통해 맞춤 식물을 추천해 주는 웹</p>
                 <h4>프로젝트기간</h4>
                 <p>2024.04</p>
                 <h4>프론트엔드</h4>
@@ -297,16 +309,26 @@ export default function project() {
                     <p>▷ 소셜 로그인</p>
                   </div>
                 </div>
-
-                <a
-                  href="https://2-doooo-2.tistory.com/135"
+                <div
+                  className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
+                >
+                  <div
+                    onMouseEnter={() => setHoverFeature("feature4")}
+                    onMouseLeave={() => setHoverFeature("")}
+                    className={`${styles.project_core_features04} ${styles.project_core_features}`}
+                  >
+                    <p>▷MSW 기반으로 한 Mock API</p>
+                  </div>
+                </div>
+                <Link
+                  href="https://2-doooo-2.tistory.com/170"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <button className={styles.readme_button}>
                     <span>📘README</span>
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -321,12 +343,17 @@ export default function project() {
                   <h3>Play_javascript</h3>
                 </div>
                 <div className={styles.project_img_wrap}>
-                  <Image
-                    placeholder="blur"
-                    className={styles.project_main_img}
-                    src={play_javascript}
-                    alt="play_javascript"
-                  />
+                  <Link
+                    href="https://play-javascript.netlify.app/"
+                    target="_blank"
+                  >
+                    <Image
+                      placeholder="blur"
+                      className={styles.project_main_img}
+                      src={play_javascript}
+                      alt="play_javascript"
+                    />
+                  </Link>
                   {hoverFeature === "feature1" && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
@@ -340,9 +367,6 @@ export default function project() {
                         설계 결정 분석
                         <br /> ▷ 초기 설계 단계에서 모서리 셀이나 경계 셀에서의
                         이웃 지뢰 개수 계산 로직을 충분히 고려하지 않아 발생
-                        <br /> ▷ 경계 조건에 대한 명확한 정의가 필요, 모서리나
-                        가장자리에 위치한 셀은 3개 또는 5개의 이웃만을 가질 수
-                        있음
                       </div>
                     </div>
                   )}
@@ -452,15 +476,6 @@ export default function project() {
                     <p>▷다크 모드 구현</p>
                   </div>
                 </div>
-
-                <Link
-                  href="https://github.com/doyi0107/play_javascript"
-                  target="_blank"
-                >
-                  <button className={styles.readme_button}>
-                    <span>📘README</span>
-                  </button>
-                </Link>
               </div>
             </div>
           </div>
@@ -472,48 +487,47 @@ export default function project() {
               {/* img_wrap */}
               <div className={styles.content_left}>
                 <div className={styles.project_title_wrap}>
-                  <h3>APMA 프로젝트</h3>
+                  <h3>APMA</h3>
                 </div>
                 <div className={styles.project_img_wrap}>
-                  <Image
-                    placeholder="blur"
-                    className={styles.project_main_img}
-                    src={APMA}
-                    alt="APMA_img"
-                  />
+                  <Link href="https://apma-project.vercel.app/" target="_blank">
+                    <Image
+                      placeholder="blur"
+                      className={styles.project_main_img}
+                      src={APMA}
+                      alt="APMA_img"
+                    />
+                  </Link>
                   {hoverFeature === "feature1" && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
                       <div>
-                        ▷프론트엔드와 백엔드 간의 원활한 협업을 위해 세부 사항을
-                        조율 <br />
-                        <br /> ▷ 프로젝트의 방향성을 설정하기 위한 요구 사항
-                        명세서 작성
+                        ▷ 프로젝트의 방향성을 설정하기 위한 요구 사항 명세서
+                        작성
                       </div>
                     </div>
-                  )}{" "}
+                  )}
                   {hoverFeature === "feature2" && (
-                    <div
-                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail02}`}
-                    >
-                      <div>
-                        ▷jQuery AJAX를 활용한 REST API 호출을 통해 페이지 새로
-                        고침 없이도 로그인 및 회원 가입 처리
-                      </div>
-                    </div>
-                  )}{" "}
-                  {hoverFeature === "feature3" && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail03}`}
                     >
                       <div>
-                        ▷ 백엔드로 회원 가입 사용자 데이터 post 요청 시 cors에러
-                        발생 <br />
-                        <br />
-                        ▷프론트에서 ajax 요청 시 withCredentials:true 옵션
-                        추가를 통해 인증 정보 포함, 백엔드에서 url 경로 수정으로
-                        해결
+                        ▷ 백엔드로 사용자 회원 가입 데이터 POST 요청 시 CORS
+                        오류 발생
+                        <br /> <br />▷ 프론트엔드에서 AJAX 요청 시
+                        withCredentials: true 옵션을 추가하여 인증 정보를
+                        포함시키고, 백엔드에서 URL 경로를 수정하여 문제를 해결
+                      </div>
+                    </div>
+                  )}
+                  {hoverFeature === "feature3" && (
+                    <div
+                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail02}`}
+                    >
+                      <div>
+                        ▷jQuery AJAX를 활용한 비동기 REST API 호출로, 페이지
+                        리로드 없이 로그인 및 회원 가입 기능 구현
                       </div>
                     </div>
                   )}
@@ -523,18 +537,22 @@ export default function project() {
                     className={`${styles.source_code_link} ${styles.project_link}`}
                     href="https://github.com/APMA-project/APMA-Frontend.git"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <p>#source code</p>
                   </Link>
+
                   <Link
                     className={`${styles.demo_code_link} ${styles.project_link}`}
                     href="https://apma-project.vercel.app/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <p>#demo</p>
                   </Link>
                 </div>
               </div>
+
               {/* text_wrap */}
               <div className={styles.project_text_wrap}>
                 <h4>프로젝트 소개</h4>
@@ -542,7 +560,7 @@ export default function project() {
                 <h4>프로젝트 기간</h4>
                 <p>2021.08(1명) / 2023.08(3명)</p>
                 <h4>프론트엔드</h4>
-                <p>html, css, javascript, jquery, Ajax, GSAP</p>
+                <p>Html, CSS, Javascript, Jquery, Ajax, GSAP</p>
                 <h4>백엔드</h4>
                 <p>Java, Spring </p>
                 <h4>주요 기능(마우스를 올려주세요)</h4>
@@ -550,31 +568,33 @@ export default function project() {
                   className={`${styles.project_core_feature_chapter1} ${styles.project_core_feature_chapter}`}
                 >
                   <div
-                    onmouseenter={() => setHoverFeature("feature1")}
+                    onMouseEnter={() => setHoverFeature("feature1")}
                     onMouseLeave={() => setHoverFeature("")}
                     className={`${styles.project_core_features01} ${styles.project_core_features}`}
                   >
                     <p>▷요구 사항 분석 및 명세서 작성</p>
                   </div>
                   <div
-                    onmouseenter={() => setHoverFeature("feature2")}
+                    onMouseEnter={() => setHoverFeature("feature2")}
                     onMouseLeave={() => setHoverFeature("")}
                     className={`${styles.project_core_features02} ${styles.project_core_features}`}
-                  >
-                    <p>▷비동기 처리 방식 로그인 및 회원 가입</p>
-                  </div>
-                </div>
-                <div
-                  className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
-                >
-                  <div
-                    onmouseenter={() => setHoverFeature("feature3")}
-                    onMouseLeave={() => setHoverFeature("")}
-                    className={`${styles.project_core_features03} ${styles.project_core_features}`}
                   >
                     <p>▷CORS 에러 해결</p>
                   </div>
                 </div>
+
+                <div
+                  className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
+                >
+                  <div
+                    onMouseEnter={() => setHoverFeature("feature3")}
+                    onMouseLeave={() => setHoverFeature("")}
+                    className={`${styles.project_core_features03} ${styles.project_core_features}`}
+                  >
+                    <p>▷비동기 처리 방식 로그인 및 회원 가입</p>
+                  </div>
+                </div>
+
                 <Link href="https://2-doooo-2.tistory.com/118" target="_blank">
                   <button className={styles.readme_button}>
                     <span>📘README</span>
