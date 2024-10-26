@@ -7,8 +7,7 @@ import "@/src/app/styles/media.css";
 
 export default function Archiving() {
   return (
-    <>
-      <section className={styles.archiving}>
+      <section className={styles.archiving} id="archiving">
         <h2 className={styles.archiving_name}>Archiving</h2>
         <div className={styles.arch_left_box}>
           <div className={styles.github_text}>
@@ -49,6 +48,5 @@ export default function Archiving() {
           </div>
         </div>
       </section>
-    </>
   );
 }
