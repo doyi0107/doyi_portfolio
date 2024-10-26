@@ -6,11 +6,10 @@ import gsap from "gsap";
 import styles from "./Project.module.css";
 import "@/src/app/styles/page.css";
 import "@/src/app/styles/media.css";
-import play_javascript from "/public/project/play_javascript_img.png";
-import starting_plant from "/public/project/starting_plant_img.jpeg";
-import Doyi_portfolio_img from "/public/project/Doyi_portfolio_img.webp";
-import shallender_img from "/public/project/shallender_img.webp";
-import APMA from "/public/project/APMA_IMG.png";
+import play_javascript from "/public/projects/play_javascript_img.png";
+import starting_plant from "/public/projects/starting_plant_img.jpeg";
+import woohangsi from "/public/projects//woohangsi.png";
+import APMA from "/public/projects/APMA_IMG.png";
 import { useEffect, useRef, useState } from "react";
 
 export default function project() {
@@ -18,6 +17,7 @@ export default function project() {
   const scrollContentRef = useRef(null);
   const [isSpecialCase, setIsSpecialCase] = useState(false);
   const [hoverFeature, setHoverFeature] = useState("");
+  
 
   const handleLinkClick = () => {
     window.location.reload();
@@ -58,14 +58,13 @@ export default function project() {
         >
           <h2 className={styles.projects_name}>Projects</h2>
           {/* 프로젝트들 */}
-          {/* Doyi_portfolio */}
+          {/* 우행시 */}
           <div className={styles.about_project}>
-            {/* Doyi_portfolio*/}
             <div className={styles.content}>
               {/* img_wrap */}
               <div className={styles.content_left}>
                 <div className={styles.project_title_wrap}>
-                  <h3>Doyi_portfolio</h3>
+                  <h3>우행시</h3>
                 </div>
                 <div
                   className={`${styles.project_img_wrap} ${styles.doyi_portfolio_wrap}`}
@@ -73,7 +72,7 @@ export default function project() {
                   <Image
                     placeholder="blur"
                     className={styles.project_main_img}
-                    src={Doyi_portfolio_img}
+                    src={woohangsi}
                     alt="Doyi_portfolio_img"
                   />
                   {/* Hover features */}
@@ -82,10 +81,10 @@ export default function project() {
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
                       <div>
-                        ▷ SEO(검색엔진 최적화)를 위한 SSR(서버 사이드 렌더링)을
-                        가능하게 한 Next.js를 이용 <br />→ SSR은 서버에서 미리
-                        웹사이트의 페이지를 렌더링하여 사용자나 검색엔진
-                        크롤러에게 제공
+                        ▷Infinite Scroll을 활용해 서버에서 필요한 데이터만
+                        요청하여 네트워크 트래픽을 줄이고 성능 최적화 <br />
+                        ▷주간 순위별 1등 교육생에게는 상품권 증정 이벤트 →
+                        교육생 참여율 30% 증가
                       </div>
                     </div>
                   )}
@@ -94,13 +93,10 @@ export default function project() {
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail02}`}
                     >
                       <div>
-                        ▷ 가로 스크롤바 : 사용자의 세로 스크롤 위치에 따라
-                        gsap.to 메소드를 사용하여 scrollContent의 x 위치를
-                        동적으로 조정 <br />
-                        <br />▷ 스크롤 유도 가이드 : 스크롤 위치에 따른 상태
-                        관리를 함으로써 사용자가 페이지의 맨 아래에
-                        도달했는지(isScrollAtBottom) 및 페이지의 맨 상단에
-                        있는지(isTop)를 감지
+                        ▷zustand 라이브러리를 활용한 상태 관리로 과목 선택과
+                        편집 기능을 효율적으로 구현
+                        <br /> ▷SWR을 사용해 서버에서 받아온 데이터를 캐싱하여
+                        네트워크 요청을 최소화하고 성능을 개선
                       </div>
                     </div>
                   )}
@@ -109,12 +105,10 @@ export default function project() {
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail03}`}
                     >
                       <div>
-                        ▷ Webpack을 사용한 css 축소 (mini-css-extract-plugin
-                        패키지 설치) <br />
-                        ▷ Coverage 이용해 사용하지 않는 css 코드 삭제 <br />
-                        ▷ CSS Minifier 이용해 css 중복 코드 개선 <br />
-                        ▷ 이미지 파일 AVIF 및 WebP로 교체하기 <br />▷ LightHouse
-                        성능 평가 Performance(0 → 90) 100% 향상
+                        ▷랜딩페이지를 통한 웹의 핵심 기능 소개 및 사용자에게
+                        직관적이고 몰입감 있는 UI 경험 제공
+                        <br />▷ 직관적인 CTA 버튼을 통해 추가 자료와 정보에
+                        빠르게 접근할 수 있도록 유도( ex)문의하기, 노션보러가기 )
                       </div>
                     </div>
                   )}
@@ -122,7 +116,7 @@ export default function project() {
                 <div className={styles.project_link_wrap}>
                   <Link
                     className={`${styles.source_code_link} ${styles.project_link}`}
-                    href="https://github.com/doyi0107/doyi_portfolio.git"
+                    href="https://github.com/woohaengshi/frontend.git"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -132,7 +126,7 @@ export default function project() {
                   <Link
                     className={`${styles.demo_code_link} ${styles.project_link}`}
                     onClick={handleLinkClick}
-                    href="https://doyi-portfolio.vercel.app/"
+                    href="https://woohangshi.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -144,161 +138,17 @@ export default function project() {
               {/* text_wrap */}
               <div className={styles.project_text_wrap}>
                 <h4>프로젝트 소개</h4>
-                <p>열정을 담은 프로젝트들과 개발을 좋아하는 나를 소개하는 웹</p>
-                <h4>프로젝트기간</h4>
-                <p>2023.12 - 2024.01 (1명)</p>
-                <h4>프론트엔드</h4>
-                <p>NEXT.JS, SASS, GSAP, VERCEL</p>
-                <h4>주요 기능(마우스를 올려주세요)</h4>
-                <div
-                  className={`${styles.project_core_feature_chapter1} ${styles.project_core_feature_chapter}`}
-                >
-                  <div
-                    onMouseEnter={() => setHoverFeature("feature1")}
-                    onMouseLeave={() => setHoverFeature("")}
-                    className={`${styles.project_core_features01} ${styles.project_core_features}`}
-                  >
-                    <p>▷ 사용자 웹 접근성 향상</p>
-                  </div>
-                  <div
-                    onMouseEnter={() => setHoverFeature("feature2")}
-                    onMouseLeave={() => setHoverFeature("")}
-                    className={`${styles.project_core_features02} ${styles.project_core_features}`}
-                  >
-                    <p>▷ 사용자 인터랙션 강화</p>
-                  </div>
-                </div>
-
-                <div
-                  className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
-                >
-                  <div
-                    onMouseEnter={() => setHoverFeature("feature3")}
-                    onMouseLeave={() => setHoverFeature("")}
-                    className={`${styles.project_core_features03} ${styles.project_core_features}`}
-                  >
-                    <p>▷ 성능 최적화</p>
-                  </div>
-                </div>
-
-                <Link
-                  href="https://2-doooo-2.tistory.com/135"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className={styles.readme_button}>
-                    <span>📘README</span>
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <span className={styles.project_line}></span>
-          {/* Play_javascript */}
-          <div className={styles.about_project}>
-            <div className={styles.content}>
-              {/* img_wrap */}
-              <div className={styles.content_left}>
-                <div className={styles.project_title_wrap}>
-                  <h3>Play_javascript</h3>
-                </div>
-                <div className={styles.project_img_wrap}>
-                  <Image
-                    placeholder="blur"
-                    className={styles.project_main_img}
-                    src={play_javascript}
-                    alt="play_javascript"
-                  />
-                  {hoverFeature === "feature1" && (
-                    <div
-                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
-                    >
-                      <div>
-                        ▷ 큐(queue)를 사용하여 너비 우선 탐색 알고리즘(BFS)을
-                        구현. 이를 통해 한 셀에서 시작하여 점차적으로 모든
-                        인접한 셀들을 탐색하고 공개
-                        <br />
-                        ▷모서리 셀의 이웃 지뢰 개수 표시 오류 개선 - 아키텍처 및
-                        설계 결정 분석
-                        <br /> ▷ 초기 설계 단계에서 모서리 셀이나 경계 셀에서의
-                        이웃 지뢰 개수 계산 로직을 충분히 고려하지 않아 발생
-                        <br /> ▷ 경계 조건에 대한 명확한 정의가 필요, 모서리나
-                        가장자리에 위치한 셀은 3개 또는 5개의 이웃만을 가질 수
-                        있음
-                      </div>
-                    </div>
-                  )}
-                  {hoverFeature === "feature2" && (
-                    <div
-                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
-                    >
-                      <div>
-                        ▷&lt;canvas&gt; 요소 사용, 캔버스의 2D 그래픽 컨텍스트를
-                        이용해 공, 패들, 블록 등의 요소를 그리는 함수를 작성
-                        <br /> <br /> ▷ 렌더링 최적화 : requestAnimationFrame 를
-                        사용하여 게임의 렌더링을 브라우저의 리페인트 주기에
-                        맞추며, 불필요한 렌더링을 줄이고 애니메이션의 부드러움을
-                        최적화함
-                      </div>
-                    </div>
-                  )}
-                  {hoverFeature === "feature3" && (
-                    <div
-                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
-                    >
-                      <div>
-                        ▷Fisher-Yates 알고리즘을 사용한 카드 셔플링
-                        <br /> <br /> ▷ Fisher-Yates 알고리즘 모든 순열이 등장할
-                        확률이 동일하게 만듦으로써 공정성을 제공, 선형 시간
-                        복잡도(O(n))를 가지고 있어서 배열의 크기와 상관없이
-                        효율성이 좋다는 장점을 가지고 있음
-                      </div>
-                    </div>
-                  )}
-                  {hoverFeature === "feature4" && (
-                    <div
-                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
-                    >
-                      <div>
-                        ▷사용자 경험과 접근성 고려 : 다크 모드와 라이트 모드
-                        간의 전환을 위한 UI/UX 디자인 고려, 사용자가 콘텐츠를
-                        쉽게 구분하고 읽을 수 있도록 함
-                        <br /> <br /> ▷ 사용자가 직접 모드를 전환할 수 있는 옵션
-                        제공 : 명확하고 접근하기 쉬운 토글 버튼 구현
-                      </div>
-                    </div>
-                  )}
-                </div>
-                <div className={styles.project_link_wrap}>
-                  <Link
-                    className={`${styles.source_code_link} ${styles.project_link}`}
-                    href="https://github.com/doyi0107/play_javascript"
-                    target="_blank"
-                  >
-                    <p>#source code</p>
-                  </Link>
-                  <Link
-                    className={`${styles.demo_code_link} ${styles.project_link}`}
-                    href="https://play-javascript.netlify.app/"
-                    target="_blank"
-                  >
-                    <p>#demo</p>
-                  </Link>
-                </div>
-              </div>
-              {/* text_wrap */}
-              <div className={styles.project_text_wrap}>
-                <h4>프로젝트 소개</h4>
                 <p>
-                  다양한 자바스크립트 기능을 바탕으로 만든 웹
-                  <br />
+                  우리 FIS 교육생들이 공부 시간을 측정하고 학습 과목을
+                  기록함으로써 효율적으로 시간 관리를 할 수 있도록 돕기 위해
+                  제작한 웹
                 </p>
-                <h4>프로젝트기간</h4>
-                <p>2024.04 (1명)</p>
+                <h4>프로젝트 기간</h4>
+                <p>2024.08 ~ 2024.10</p>
                 <h4>프론트엔드</h4>
-                <p>HTML, CSS, JAVASCRIPT, CANVAS</p>
+                <p>Next.js,Typescript,Zustand</p>
                 <h4>백엔드</h4>
-                <p>API</p>
+                <p>Spring boot,MYSQL,AWS</p>
                 <h4>주요 기능(마우스를 올려주세요)</h4>
                 <div
                   className={`${styles.project_core_feature_chapter1} ${styles.project_core_feature_chapter}`}
@@ -308,49 +158,34 @@ export default function project() {
                     onMouseLeave={() => setHoverFeature("")}
                     className={`${styles.project_core_features01} ${styles.project_core_features}`}
                   >
-                    <p>▷지뢰 찾기 게임</p>
+                    <p>▷교육생들의 일간, 주간, 월간 별 순위 제공</p>
                   </div>
                   <div
                     onMouseEnter={() => setHoverFeature("feature2")}
                     onMouseLeave={() => setHoverFeature("")}
                     className={`${styles.project_core_features02} ${styles.project_core_features}`}
                   >
-                    <p>▷브레이크 아웃 게임</p>
+                    <p>▷과목 선택 및 편집 기능</p>
                   </div>
+                </div>
+
+                <div
+                  className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
+                >
                   <div
                     onMouseEnter={() => setHoverFeature("feature3")}
                     onMouseLeave={() => setHoverFeature("")}
                     className={`${styles.project_core_features03} ${styles.project_core_features}`}
                   >
-                    <p>▷카드 매치 게임</p>
+                    <p>▷랜딩페이지</p>
                   </div>
                 </div>
-                <div
-                  className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
-                >
-                  <div
-                    onMouseEnter={() => setHoverFeature("feature4")}
-                    onMouseLeave={() => setHoverFeature("")}
-                    className={`${styles.project_core_features04} ${styles.project_core_features}`}
-                  >
-                    <p>▷다크 모드 구현</p>
-                  </div>
-                </div>
-
-                <Link
-                  href="https://github.com/doyi0107/play_javascript"
-                  target="_blank"
-                >
-                  <button className={styles.readme_button}>
-                    <span>📘README</span>
-                  </button>
-                </Link>
               </div>
             </div>
           </div>
           <span className={styles.project_line}></span>
 
-          {/* Starting_plant Project */}
+          {/* Starting_plant*/}
           <div className={styles.about_project}>
             <div className={styles.content}>
               {/* img_wrap */}
@@ -433,9 +268,9 @@ export default function project() {
                   느꼈던 경험을 바탕으로 제작
                 </p>
                 <h4>프로젝트기간</h4>
-                <p>2024.04 ~ 진행 중</p>
+                <p>2024.04</p>
                 <h4>프론트엔드</h4>
-                <p>REACT, GSAP, VERCEL</p>
+                <p>React, Gsap, Vercel</p>
                 <h4>주요 기능(마우스를 올려주세요)</h4>
                 <div
                   className={`${styles.project_core_feature_chapter} ${styles.project_core_feature_chapter1}`}
@@ -579,9 +414,7 @@ export default function project() {
                 <h4>프로젝트기간</h4>
                 <p>2024.04 (1명)</p>
                 <h4>프론트엔드</h4>
-                <p>HTML, CSS, JAVASCRIPT, CANVAS</p>
-                <h4>백엔드</h4>
-                <p>API</p>
+                <p>Html,CSS,Javascript,CANVAS</p>
                 <h4>주요 기능(마우스를 올려주세요)</h4>
                 <div
                   className={`${styles.project_core_feature_chapter1} ${styles.project_core_feature_chapter}`}
@@ -642,7 +475,7 @@ export default function project() {
                   <h3>APMA 프로젝트</h3>
                 </div>
                 <div className={styles.project_img_wrap}>
-                  <image
+                  <Image
                     placeholder="blur"
                     className={styles.project_main_img}
                     src={APMA}
@@ -705,15 +538,13 @@ export default function project() {
               {/* text_wrap */}
               <div className={styles.project_text_wrap}>
                 <h4>프로젝트 소개</h4>
-                <p>
-                  html, css, javascript, jquery를 이용해 만든 미술관 웹 사이트
-                </p>
+                <p>미술관 웹 사이트</p>
                 <h4>프로젝트 기간</h4>
                 <p>2021.08(1명) / 2023.08(3명)</p>
                 <h4>프론트엔드</h4>
-                <p>HTML, CSS, JAVASCRIPT, JQUERY, AJAX, GSAP</p>
+                <p>html, css, javascript, jquery, Ajax, GSAP</p>
                 <h4>백엔드</h4>
-                <p>JAVA, SPRING, LOCALSTORAGE</p>
+                <p>Java, Spring </p>
                 <h4>주요 기능(마우스를 올려주세요)</h4>
                 <div
                   className={`${styles.project_core_feature_chapter1} ${styles.project_core_feature_chapter}`}
@@ -748,135 +579,6 @@ export default function project() {
                   <button className={styles.readme_button}>
                     <span>📘README</span>
                   </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <span className={styles.project_line}></span>
-          {/* shallender */}
-          <div className={styles.about_project}>
-            <div className={styles.content}>
-              {/* img_wrap */}
-              <div className={styles.content_left}>
-                <div className={styles.project_title_wrap}>
-                  <h3>shallender</h3>
-                </div>
-                <div className={styles.project_img_wrap}>
-                  <image
-                    placeholder="blur"
-                    className={styles.project_main_img}
-                    src={shallender_img}
-                    alt="shallender_img"
-                  />
-                  {hoverFeature === "feature1" && (
-                    <div
-                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
-                    >
-                      <div>
-                        ▷Google Firebase의 인증 모듈을 사용하여 사용자 계정을
-                        안전하게 생성하고 관리
-                      </div>
-                    </div>
-                  )}{" "}
-                  {hoverFeature === "feature2" && (
-                    <div
-                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail02}`}
-                    >
-                      <div>
-                        ▷사용자가 효율적으로 일정을 추가할 수 있도록 AlertDialog
-                        기반의 입력 폼을 구현
-                      </div>
-                    </div>
-                  )}{" "}
-                  {hoverFeature === "feature3" && (
-                    <div
-                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail03}`}
-                    >
-                      <div>
-                        ▷사용자가 입력한 검색어를 바탕으로 서버에 요청을 보내고,
-                        받아온 결과를 처리하여 원하는 정보를 신속하게 찾을 수
-                        있도록 구현
-                      </div>
-                    </div>
-                  )}{" "}
-                  {hoverFeature === "feature4" && (
-                    <div
-                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail03}`}
-                    >
-                      <div>
-                        ▷HTTP 요청을 비동기적으로 보내고 받아 처리함으로써 앱의
-                        반응성과 사용자 경험을 향상
-                      </div>
-                    </div>
-                  )}
-                </div>
-                <div className={styles.project_link_wrap}>
-                  <Link
-                    className={`${styles.source_code_link} ${styles.project_link}`}
-                    href="https://github.com/doyi0107/mobileprogramming.git"
-                    target="_blank"
-                  >
-                    <p>#source code</p>
-                  </Link>
-                </div>
-              </div>
-              {/* text_wrap */}
-              <div className={styles.project_text_wrap}>
-                <h4>프로젝트 소개</h4>
-                <p>
-                  Kotlin을 활용한 지인들과 일정을 공유하고 약속을 잡는
-                  안드로이드 앱
-                </p>
-                <h4>프로젝트 기간</h4>
-                <p>2022.09 ~ 2022.12 (5명)</p>
-                <h4>프론트엔드</h4>
-                <p>KOTLIN</p>
-                <h4>백엔드</h4>
-                <p>JAVASCRIPT, FIREBASE</p>
-                <h4>주요 기능(마우스를 올려주세요)</h4>
-                <div
-                  className={`${styles.project_core_feature_chapter1} ${styles.project_core_feature_chapter}`}
-                >
-                  <div
-                    onmouseenter={() => setHoverFeature("feature1")}
-                    onMouseLeave={() => setHoverFeature("")}
-                    className={`${styles.project_core_features01} ${styles.project_core_features}`}
-                  >
-                    <p>▷FirebaseAuth를 통한 사용자 계정을 생성</p>
-                  </div>
-                  <div
-                    onmouseenter={() => setHoverFeature("feature2")}
-                    onMouseLeave={() => setHoverFeature("")}
-                    className={`${styles.project_core_features02} ${styles.project_core_features}`}
-                  >
-                    <p>▷AlertDialog를 이용한 사용자 입력 폼 제공</p>
-                  </div>
-                </div>
-                <div
-                  className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
-                >
-                  <div
-                    onmouseenter={() => setHoverFeature("feature3")}
-                    onMouseLeave={() => setHoverFeature("")}
-                    className={`${styles.project_core_features03} ${styles.project_core_features}`}
-                  >
-                    <p>▷SearchView를 통한 정보 검색 기능</p>
-                  </div>
-                  <div
-                    onmouseenter={() => setHoverFeature("feature4")}
-                    onMouseLeave={() => setHoverFeature("")}
-                    className={`${styles.project_core_features04} ${styles.project_core_features}`}
-                  >
-                    <p>▷Thread를 활용한 비동기 네트워크 요청 처리</p>
-                  </div>
-                </div>
-                <Link
-                  href="https://drive.google.com/file/d/1DXae0notDrYSHBCdLTAWfFC0tsur-W-u/view?usp=drive_link"
-                  target="_blank"
-                >
-                  {/* <button className={styles.readme_button}>
-									<span>📂Open_File</span>
-									</button> */}
                 </Link>
               </div>
             </div>

@@ -32,9 +32,7 @@
     }
 
     /* project */
-    #projects {
-        height: 8500px;
-    }
+
 
     .about_project {
         margin: 5vw auto;
@@ -137,10 +135,6 @@
     .project_img_wrap {
         width: 330px;
         height: 190px;
-    }
-
-    #projects {
-        height: 6800px;
     }
 
     .projects_name {
