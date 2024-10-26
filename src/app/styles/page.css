@@ -2,7 +2,6 @@
 
 
 #main_sub,
-#projects,
 .img_wrap,
 section {
     position: relative
@@ -22,8 +21,7 @@ section {
 
 
 #contact,
-#main_sub,
-#projects {
+#main_sub{
     background-color: #b39c7a
 }
 

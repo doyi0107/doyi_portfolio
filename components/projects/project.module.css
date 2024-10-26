@@ -1,6 +1,8 @@
 /* 프로젝트 */
 .projects {
     height: 10500px;
+    position: relative;
+    background-color: #b39c7a
 }
 
 .projects_name {
@@ -32,7 +34,7 @@
     width: 70vw;
     margin: 7vw auto;
     background-color: rgba(224, 181, 55, .6);
-    border-radius: 200px;
+    border-radius: 130px;
     padding: 0 40px;
     display: flex;
     flex-direction: column
