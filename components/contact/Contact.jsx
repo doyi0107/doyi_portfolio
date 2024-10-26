@@ -13,7 +13,7 @@ import name from "/public/contact/name.webp";
 import contact_doyi from "/public/contact/contact_doyi.webp";
 import { useState } from "react";
 import "@/src/app/styles/media.css";
-import "@/src/app/styles/page.css";
+
 
 export default function Contact() {
   const [isHovered, setIsHovered] = useState(false);

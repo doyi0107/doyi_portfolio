@@ -2,7 +2,7 @@
 .projects {
     height: 6000px;
     position: relative;
-    background-color: #b39c7a
+    background-color: #b39c7a;
 }
 
 .projects_name {
@@ -31,17 +31,17 @@
 .about_project {
     display: inline-block;
     width: 70vw;
-    margin: 7vw auto;
+    margin: 6vw auto;
     background-color: rgba(224, 181, 55, .6);
-    border-radius: 130px;
+    border-radius: 100px;
     padding: 0 40px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .project_line {
     width: 2px;
-    height: 96.5vh;
+    height: 96vh;
     background-color: rgba(255, 227, 142, .6)
 }
 
@@ -55,7 +55,7 @@
 }
 
 .content_left {
-    width: 45%;
+    width: 43%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -69,11 +69,14 @@
     position: relative;
     width: 95%;
     height: 270px;
+   
 }
 
 .project_main_img {
     width: 100%;
     height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 .project_core_features_detail {
@@ -142,7 +145,7 @@
 
 .project_text_wrap h4::before {
     content: "✓";
-    color: #2d82a7;
+    color: #5f6f52;
     font: 400 2rem/1 'IBM Plex Sans KR', sans-serif
 }
 
@@ -166,7 +169,39 @@
     margin-top: 20px;
     background-color: transparent;
     color: #545454;
-    border: 3px solid #2d82a7;
+    border: 3px solid #5f6f52;
     border-radius: 30px;
     font: 500 1.2rem 'IBM Plex Sans KR', sans-serif
+}
+
+.readme_button:hover {
+    cursor: pointer
+}
+
+.readme_button::before {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    content: "";
+    border-radius: 30px;
+    position: absolute;
+    background-color: #a2b395;
+    transition: .3s ease-out
+}
+
+.readme_button:hover::before {
+    opacity: 1
+}
+
+.readme_button>span {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+    transition: .2s;
+    color: #545454
 }

@@ -326,7 +326,7 @@ export default function project() {
                   rel="noopener noreferrer"
                 >
                   <button className={styles.readme_button}>
-                    <span>📘README</span>
+                    <span>📗README</span>
                   </button>
                 </Link>
               </div>
@@ -597,7 +597,7 @@ export default function project() {
 
                 <Link href="https://2-doooo-2.tistory.com/118" target="_blank">
                   <button className={styles.readme_button}>
-                    <span>📘README</span>
+                    <span>📗README</span>
                   </button>
                 </Link>
               </div>

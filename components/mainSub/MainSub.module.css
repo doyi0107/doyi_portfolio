@@ -1,0 +1,159 @@
+.main_sub {
+    position: relative;
+    background-color: #b39c7a;
+    width: 100%;
+    height: 100vh;
+}
+
+.explain_me,
+.img_wrap:after,
+.sub_box,
+.sub_name,
+.sub_text {
+    position: absolute
+}
+
+.sub_box {
+    border-radius: 0 300px 300px 0
+}
+
+.sub_box {
+    width: 500px;
+    height: 100vh;
+    background-color: #829472;
+    top: 0;
+    animation: 1s both fromleft;
+    animation-timeline: view()
+}
+
+
+
+@keyframes fromleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px)
+    }
+
+    100%,
+    30% {
+        opacity: 1;
+        transform: translateX(30px)
+    }
+}
+
+.sub_name {
+    top: 10%;
+    left: 15%;
+    animation: 1s both fromleft;
+    animation-timeline: view();
+    color: rgba(255, 255, 255, .7);
+    font: bold 10rem sans-serif
+}
+
+.explain_me {
+    top: 35%;
+    justify-content: center;
+    display: flex
+}
+
+
+:is(.one, .two, .three) {
+    margin: 1rem 1.5rem;
+    animation: 2s bubble;
+    animation-timeline: view()
+}
+
+.one {
+    animation-delay: 0s
+}
+
+.two {
+    animation-delay: .3s
+}
+
+.three {
+    animation-delay: .6s
+}
+
+@keyframes bubble {
+    0% {
+        opacity: 0;
+        left: 0%;
+        transform: translateX(0%)
+    }
+
+    100%,
+    30% {
+        opacity: 1;
+        left: 50%;
+        transform: translateX(-100%)
+    }
+}
+
+.img_wrap>h3 {
+    text-align: center;
+    color: rgba(205, 188, 163, .8);
+    font: 300 2.3rem 'Black Han Sans', sans-serif
+}
+
+.img_wrap {
+    background-color: rgba(201, 105, 88, .7);
+    opacity: 0;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.img_wrap:hover .sub_img {
+    transform: scale(1.5);
+    transition: transform 0.7s;
+}
+
+.sub_img {
+    transform: scale(1.2);
+    transition: .7s;
+    margin: 60px auto;
+    display: block;
+    width: 130px;
+    height: 130px
+}
+
+.sub_text {
+    width: 85%;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, .8);
+    z-index: 20;
+    font: bold 1.3rem/1.5 'IBM Plex Sans KR', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img_wrap {
+    position: relative;
+    overflow: hidden
+}
+
+.img_wrap:hover:after,
+.img_wrap:hover .sub_text {
+    display: block
+}
+
+.img_wrap:after,
+.img_wrap:hover .title,
+.sub_text {
+    display: none
+}
+
+.img_wrap:after {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 10
+}
+

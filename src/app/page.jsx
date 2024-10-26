@@ -6,8 +6,8 @@ import nav_tree from "/public/nav_tree.png";
 import Link from "next/link";
 import { useState } from "react";
 import Archiving from "@/components/archiving/Archiving";
-import Projects from"@/components/projects/project";
-import Main_sub from "@/components/main_sub";
+import Projects from"@/components/projects/Project";
+import Main_sub from "@/components/mainSub/MainSub";
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/footer/Footer";
 

@@ -6,42 +6,10 @@
 }
 
 .contact {
+    background-color: #b39c7a;
     position: relative;
     overflow: hidden
 }
-
-.readme_button:hover {
-    cursor: pointer
-}
-
-.readme_button::before {
-    top: 0;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    content: "";
-    border-radius: 30px;
-    position: absolute;
-    background-color: rgba(255, 255, 255, .7);
-    transition: .3s ease-out
-}
-
-.readme_button:hover::before {
-    opacity: 1
-}
-
-.readme_button>span {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: inline-block;
-    transition: .2s;
-    color: #545454
-}
-
 
 .contact_name {
     z-index: 1;
@@ -153,4 +121,8 @@
     height: 40px;
     display: block;
     margin: 5px 10px 0 0
+}
+
+.display_none{
+    display: none;
 }
