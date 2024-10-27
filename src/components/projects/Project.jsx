@@ -433,7 +433,7 @@ export default function project() {
               <div className={styles.project_text_wrap}>
                 <h4>프로젝트 소개</h4>
                 <p>
-                  다양한 자바스크립트 기능을 바탕으로 만든 웹
+                  깊이 있는 자바스크립트의 학습을 목표로, <br/>다양한 게임 기능을 구현한 웹
                   <br />
                 </p>
                 <h4>프로젝트기간</h4>

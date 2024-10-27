@@ -24,13 +24,25 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
+      console.log(containerRef.current);
       if (containerRef.current) {
+        
+        
         const { scrollTop, scrollHeight, clientHeight } = containerRef.current;
+           console.log(scrollTop);
+           console.log(scrollHeight);
+           console.log(clientHeight);
         const isScrollAtBottom = scrollTop + clientHeight >= scrollHeight;
         const isTop = scrollTop === 0;
 
-        if (isScrollAtBottom) setIsSpecialCase(true);
-        else if (isTop) setIsSpecialCase(false);
+        // 스크롤이 아래로 내려갔을 때
+        if (isScrollAtBottom && !isSpecialCase) {
+          setIsSpecialCase(true);
+        }
+        // 스크롤이 위로 올라갔을 때
+        else if (isTop && isSpecialCase) {
+          setIsSpecialCase(false);
+        }
       }
     };
     const container = containerRef.current;
@@ -39,7 +51,7 @@ export default function Home() {
     return () => {
       if (container) container.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isSpecialCase]);
 
   return (
     <>
