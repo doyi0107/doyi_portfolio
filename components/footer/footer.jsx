@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Footer.module.css";
-import "../../src/app/styles/page.css";
-import "../../src/app/styles/media.css";
+import "@/src/app/styles/page.css";
+import "@/src/app/styles/media.css";
 
 import footer_github from "/public/footer/footer_github.webp";
 import footer_t_story from "/public/footer/footer_t_story.webp";

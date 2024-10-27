@@ -1,6 +1,6 @@
 import styles from "./Opening.module.css";
-import "../../src/app/styles/page.css";
-import "../../src/app/styles/media.css";
+import "@/src/app/styles/page.css";
+import "@/src/app/styles/media.css";
 import Image from "next/image";
 import me from "/public/me.webp";
 

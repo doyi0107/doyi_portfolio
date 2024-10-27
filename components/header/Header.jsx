@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import nav_tree from "/public/header/nav_tree.png";
 import styles from "./Header.module.css";
-import "../../src/app/styles/page.css";
-import "../../src/app/styles/media.css";
+import "@/src/app/styles/page.css";
+import "@/src/app/styles/media.css";
 
 
 

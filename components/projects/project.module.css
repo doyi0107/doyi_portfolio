@@ -2,7 +2,7 @@
 .projects {
     height: 6000px;
     position: relative;
-    background-color: #b39c7a;
+    background-color: var(--bg-color);
 }
 
 .projects_name {
@@ -145,7 +145,7 @@
 
 .project_text_wrap h4::before {
     content: "✓";
-    color: #5f6f52;
+    color: var(--main-color-4);
     font: 400 2rem/1 'IBM Plex Sans KR', sans-serif
 }
 
@@ -169,7 +169,7 @@
     margin-top: 20px;
     background-color: transparent;
     color: #545454;
-    border: 3px solid #5f6f52;
+    border: 3px solid var(--main-color-4);
     border-radius: 30px;
     font: 500 1.2rem 'IBM Plex Sans KR', sans-serif
 }

@@ -6,7 +6,7 @@
 }
 
 .contact {
-    background-color: #b39c7a;
+    background-color: var(--bg-color);
     position: relative;
     overflow: hidden
 }

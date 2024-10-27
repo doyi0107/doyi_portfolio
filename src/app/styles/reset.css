@@ -129,8 +129,16 @@ table {
     border-spacing: 0;
 }
 
-
-
 img {
     width: 100vw;
+}
+
+/* root */
+:root {
+    --bg-color: #B39C7A;
+
+    --main-color-1: #e0b537;
+    --main-color-2: #c95845;
+    --main-color-3: #2d82a7;
+    --main-color-4: #5f6f52;
 }

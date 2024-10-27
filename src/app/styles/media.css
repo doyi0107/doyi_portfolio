@@ -1,16 +1,18 @@
 @media screen and (max-width :1700px) {
-    @keyframes bubble {
-        0% {
-            opacity: 0;
-            transform: translateX(0)
-        }
+        @keyframes bubble {
+                0% {
+                    opacity: 0;
+                    left: 0%;
+                    transform: translateX(0%)
+                }
 
-        100%,
-        30% {
-            opacity: 1;
-            transform: translateX(300px)
-        }
-    }
+                100%,
+                30% {
+                    opacity: 1;
+                    left: 50%;
+                    transform: translateX(-50%)
+                }
+            }
 
     .explain_me>div {
         width: 300px;
@@ -112,18 +114,20 @@
         animation-delay: .6s
     }
 
-    @keyframes bubble_desktop {
-        0% {
-            opacity: 0;
-            transform: translateX(0)
-        }
+   @keyframes bubble {
+       0% {
+           opacity: 0;
+           left: 0%;
+           transform: translateX(0%)
+       }
 
-        10%,
-        100% {
-            opacity: 1;
-            transform: translateX(150px)
-        }
-    }
+       100%,
+       30% {
+           opacity: 1;
+           left: 50%;
+           transform: translateX(-100%)
+       }
+   }
 
     .explain_me h3 {
         font: 300 1.8rem 'Black Han Sans', sans-serif;

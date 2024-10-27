@@ -1,10 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap);
 
-#intro {
-    background-color: #B39C7A;
-    width: 100vw;
-    height: 100vh;
-}
 
 section {
     position: relative;
@@ -132,7 +127,6 @@ section {
     right: 10%;
     width: 30px;
     height: 30px;
-    /* margin-left: -12px; */
     border-top: 2.5px solid #d7cbb9;
     border-right: 2.5px solid #d7cbb9;
     -webkit-transform: rotate(-45deg);
@@ -160,7 +154,7 @@ section {
     animation-delay: .3s;
 }
 
-/* 상단 진행률 */
+/* 상단 스크롤 진행률 */
 .scroll_top {
     z-index: 99;
     background-color: rgb(229, 194, 67);

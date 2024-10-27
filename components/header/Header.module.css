@@ -56,7 +56,7 @@
 }
 
 .link>div {
-    color: #5f6f52;
+    color: var(--main-color-4);
     font: 600 3.3rem 'Smooch Sans',
         sans-serif;
     display: block;
@@ -83,21 +83,21 @@
 
 .link:nth-child(2)>div:before {
     content: "Archiving";
-    color: #c95845;
+    color: var(--main-color-2);
     transition: 1.5s;
     left: 17.5vw;
 }
 
 .link:nth-child(3)>div:before {
     content: "Projects";
-    color: #2d82a7;
+    color: var(--main-color-3);
     transition: 1.5s;
     left: 35vw;
 }
 
 .link:nth-child(4)>div:before {
     content: "Contact";
-    color: #e0b537;
+    color: var(--main-color-1);
     transition: 1.5s;
     left: 52.5vw;
 }
@@ -116,7 +116,7 @@
     left: 0px;
     z-index: 90;
     position: fixed;
-    background-color: #5f6f52;
+    background-color: var(--main-color-4);
     -webkit-animation: common_ani_opening 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
     animation: common_ani_opening 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
     animation-fill-mode: backwards;
@@ -137,6 +137,6 @@
     position: fixed;
     left: 15px;
     bottom: 50px;
-    color: #B39C7A;
+    color: var(--bg-color);
     font: 1.3rem sans-serif;
 }

@@ -4,7 +4,7 @@ import "./styles/page.css";
 import "./styles/media.css";
 
 
-import Modal from "../../components/modal/Modal.jsx";
+import Modal from "@/components/modal/Modal.jsx";
 
 export const metadata = {
   title: "도이스토리",

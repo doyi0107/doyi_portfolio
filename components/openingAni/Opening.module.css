@@ -1,3 +1,9 @@
+.intro {
+  background-color: var(--bg-color);
+  width: 100vw;
+  height: 100vh;
+}
+
 /* 도이 */
 .doyi {
     z-index: 2;
@@ -110,22 +116,22 @@
 
 .master_container_scroller .master_container_scroller_item:nth-child(1),
 .master_container_scroller .master_container_scroller_item:nth-child(1) a {
-  color: #e0b537
+  color: var(--main-color-1)
 }
 
 .master_container_scroller .master_container_scroller_item:nth-child(2),
 .master_container_scroller .master_container_scroller_item:nth-child(2) a {
-  color: #c95845
+  color: var(--main-color-2)
 }
 
 .master_container_scroller .master_container_scroller_item:nth-child(3),
 .master_container_scroller .master_container_scroller_item:nth-child(3) a {
-  color: #2d82a7
+  color: var(--main-color-3)
 }
 
 .master_container_scroller .master_container_scroller_item:nth-child(4),
 .master_container_scroller .master_container_scroller_item:nth-child(4) a {
-  color: #5f6f52;
+  color: var(--main-color-4);
 }
 
 
@@ -291,28 +297,28 @@ animation01
 }
 
 .animation01 div:nth-child(1) {
-  background-color: #B39C7A;
+  background-color: var(--bg-color);
   animation-delay: 0.4s;
 }
 
 .animation01 div:nth-child(2) {
-  background-color: #e0b537;
+  background-color: var(--main-color-1);
   animation-delay: 0.3s;
 }
 
 .animation01 div:nth-child(3) {
-  background-color: #c95845;
+  background-color: var(--main-color-2);
   animation-delay: 0.2s;
 }
 
 .animation01 div:nth-child(4) {
-  background-color: #2d82a7;
+  background-color: var(--main-color-3);
   ;
   animation-delay: 0.1s;
 }
 
 .animation01 div:nth-child(5) {
-  background-color: #5f6f52;
+  background-color: var(--main-color-4);
 }
 
 @keyframes animation01 {
@@ -942,7 +948,7 @@ green circle
   transform: translate(-50%, -50%);
   width: 34vw;
   height: 34vw;
-  background: #B39C7A;
+  background: var(--bg-color);
   z-index: 1;
 }
 
@@ -988,7 +994,7 @@ navy circle
   transform: translate(-50%, -50%) rotate(-20deg);
   width: 25vw;
   height: 25vw;
-  background: #e0b537;
+  background: var(--main-color-1);
   z-index: 1;
 }
 
@@ -1034,7 +1040,7 @@ yellow circle
   transform: translate(-50%, -50%) rotate(20deg);
   width: 23vw;
   height: 23vw;
-  background: #c95845;
+  background: var(--main-color-2);
   z-index: 1;
 }
 
@@ -1080,7 +1086,7 @@ blue circle
   transform: translate(-50%, -50%) rotate(20deg);
   width: 16vw;
   height: 16vw;
-  background: #2d82a7;
+  background: var(--main-color-3);
   z-index: 1;
 }
 
@@ -1126,7 +1132,7 @@ red circle
   transform: translate(-50%, -50%) rotate(45deg);
   width: 12vw;
   height: 12vw;
-  background: #5f6f52;
+  background: var(--main-color-4);
   z-index: 1;
 }
 
@@ -1222,13 +1228,13 @@ animation06
 }
 
 .rhombus04 {
-  /* background-image: linear-gradient(to bottom, #B39C7A 55%, #5f6f52 45%); */
-  background-color: #B39C7A;
+  /* background-image: linear-gradient(to bottom, var(--bg-color) 55%, var(--main-color-4) 45%); */
+  background-color: var(--bg-color);
   width: 100vw;
   height: 100vh;
 }
 
-/* #B39C7A */
+/* var(--bg-color) */
 
 
 

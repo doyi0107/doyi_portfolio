@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./Modal.module.css";
 import classNames from "classnames";
 
+
 export default function Modal() {
   const [burgerClass, setBurgerClass] = useState("burger_bar unclicked");
   const [isMenuClicked, setIsMenuClicked] = useState(false);

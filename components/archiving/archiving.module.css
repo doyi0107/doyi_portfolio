@@ -1,6 +1,6 @@
 .archiving {
     position: relative;
-    background-color: #b39c7a;
+    background-color: var(--bg-color);
 }
 
 .archiving_name {
