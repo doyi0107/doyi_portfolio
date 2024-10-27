@@ -2,14 +2,13 @@
 신입 프론트엔드 개발자 이도이를 소개하는 웹입니다 :smile:
 
 ## ⏳프로젝트 기간 
-2023.12 ~ 
+2024.01 ~ 
 
 ## 🛠️스킬 스택 
 <div style="display:flex; flex-direction:column; align-items:flex-start;">
     <p><strong>Frontend</strong></p>
     <div>
         <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white">
-        <img src="https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=Sass&logoColor=white"> 
         <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=Vercel&logoColor=white"> 
     </div><br/>
 </div>
@@ -19,7 +18,6 @@
     <p>✅사용자 웹 접근성 향상 → SEO를 위한 SSR을 가능하게 한 Next.js를 이용</p>
     <p>✅사전 디자인 → Figma를 활용하여 사용자 친화적인 UI/UX 설계</p>
     <p>✅사용자 인터랙션 강화 → 스크롤 유도 가이드와 가로 스크롤바를 통해 동적인 사용자 경험 제공 </p>
-    <p>✅반응형 웹 디자인 → Sass와 CSS를 이용하여 다양한 디바이스 호환성 보장 </p>
 </div>
 
 ## 💡담당 역할 및 성능 개선 
