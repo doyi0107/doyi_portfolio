@@ -76,13 +76,11 @@
 
 @keyframes arch_left_box_ani {
     0% {
-        opacity: 0;
         transform: translateX(-400px)
     }
 
     100%,
-    30% {
-        opacity: 1;
+    40% {
         transform: translateX(0)
     }
 }
@@ -133,13 +131,11 @@
 
 @keyframes arch_right_box_ani {
     0% {
-        opacity: 0;
         right: -300px
     }
 
     100%,
-    30% {
-        opacity: 1;
+    50% {
         right: 0
     }
 }
