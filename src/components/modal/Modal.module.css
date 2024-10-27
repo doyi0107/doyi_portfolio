@@ -123,12 +123,12 @@
 .modal_link_menu{
     margin: 0 auto;
     width: fit-content;
-    font: bold 6rem 'Pretendard-Regular';
+    font: bold 5.5rem 'Pretendard-Regular';
     color: var(--sub-color-1);
 }
 
 .modal_link:not(:last-child) {
-    margin-bottom: 5vh
+    margin-bottom: 6vh
 }
 
 .modal_link:first-child>div:hover {

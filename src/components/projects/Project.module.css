@@ -207,4 +207,8 @@
     .projects {
         height: 7500px;
     }
+
+    .project_main_img {
+        height: 320px;
+    }
 }

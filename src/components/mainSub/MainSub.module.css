@@ -86,21 +86,21 @@
     30% {
         opacity: 1;
         left: 50%;
-        transform: translateX(-100%)
+        transform: translateX(-90%)
     }
 }
 
 .img_wrap>h3 {
     text-align: center;
     color: rgba(205, 188, 163, .8);
-    font: 500 2.3rem 'Black Han Sans', sans-serif
+    font: 500 2.2rem 'Black Han Sans', sans-serif
 }
 
 .img_wrap {
     background-color: rgba(201, 105, 88, .7);
     opacity: 0;
-    width: 330px;
-    height: 330px;
+    width: 310px;
+    height: 310px;
     border-radius: 50%;
     display: inline-block;
     margin-top: 50px;
@@ -114,7 +114,7 @@
 .sub_img {
     transform: scale(1.2);
     transition: .7s;
-    margin: 60px auto;
+    margin:50px auto 40px auto;
     display: block;
     width: 130px;
     height: 130px
