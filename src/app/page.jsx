@@ -1,16 +1,17 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import Header from "../components/header/Header";
 import OpeningAni from "../components/openingAni/OpeningAni";
 import Archiving from "../components/archiving/Archiving";
-import Projects from"../components/projects/Project";
+import Projects from "../components/projects/Project";
 import Main_sub from "../components/mainSub/MainSub";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 
 export default function Home() {
   const [isSpecialCase, setIsSpecialCase] = useState(false);
+  const containerRef = useRef(null);
 
   const handleScrollGuideClick = () => {
     if (isSpecialCase) {
@@ -20,6 +21,25 @@ export default function Home() {
       });
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (containerRef.current) {
+        const { scrollTop, scrollHeight, clientHeight } = containerRef.current;
+        const isScrollAtBottom = scrollTop + clientHeight >= scrollHeight;
+        const isTop = scrollTop === 0;
+
+        if (isScrollAtBottom) setIsSpecialCase(true);
+        else if (isTop) setIsSpecialCase(false);
+      }
+    };
+    const container = containerRef.current;
+    container.addEventListener("scroll", handleScroll);
+
+    return () => {
+      if (container) container.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -35,7 +55,7 @@ export default function Home() {
         <span></span>
       </div>
 
-      <div className="container">
+      <div className="container" ref={containerRef}>
         <Main_sub />
         <Archiving />
         <Projects />

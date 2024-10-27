@@ -13,8 +13,7 @@ export default function Footer() {
       <div className={styles.footer_inner}>
         <p className={styles.footer_Copyright}>Copyright © 2024 Leedoyi</p>
         <p className={styles.footer_mail}>
-          꽃을 피울 개발자 이도이가 궁금하다면 메일을 보내주세요 →
-          doyi9917@naver.com
+          next.js,module.css 기반으로 제작된 사이트입니다.
         </p>
 
         <div className={styles.footer_link_wrap}>

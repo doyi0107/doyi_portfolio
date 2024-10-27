@@ -124,7 +124,7 @@ export default function Modal() {
               className={styles.modal_link}
               onClick={handleNavLinkClick}
             >
-              <div>Home</div>
+              <div className={styles.modal_link_menu}>Home</div>
             </Link>
 
             <Link
@@ -132,7 +132,7 @@ export default function Modal() {
               className={styles.modal_link}
               onClick={handleNavLinkClick}
             >
-              <div>Archiving</div>
+              <div className={styles.modal_link_menu}>Archiving</div>
             </Link>
 
             <Link
@@ -140,7 +140,7 @@ export default function Modal() {
               className={styles.modal_link}
               onClick={handleNavLinkClick}
             >
-              <div>Projects</div>
+              <div className={styles.modal_link_menu}>Projects</div>
             </Link>
 
             <Link
@@ -148,7 +148,7 @@ export default function Modal() {
               className={styles.modal_link}
               onClick={handleNavLinkClick}
             >
-              <div>Contact</div>
+              <div className={styles.modal_link_menu}>Contact</div>
             </Link>
           </div>
         </div>

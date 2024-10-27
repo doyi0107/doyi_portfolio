@@ -14,7 +14,6 @@ import { useEffect, useRef, useState } from "react";
 export default function project() {
   const scrollSectionRef = useRef(null);
   const scrollContentRef = useRef(null);
-  const [isSpecialCase, setIsSpecialCase] = useState(false);
   const [hoverFeature, setHoverFeature] = useState("");
 
   useEffect(() => {
@@ -23,12 +22,6 @@ export default function project() {
 
     const handleScroll = () => {
       const scrolled = window.pageYOffset;
-      const isTop = scrolled === 0;
-      const isScrollAtBottom =
-        window.innerHeight + window.scrollY >= document.body.offsetHeight;
-
-      if (isScrollAtBottom) setIsSpecialCase(true);
-      else if (isTop) setIsSpecialCase(false);
 
       const sectionOffset = Math.abs(scrollSection.offsetTop - scrolled);
       const notReachedBottom =
@@ -55,7 +48,6 @@ export default function project() {
           {/* 우행시 */}
           <div className={styles.about_project}>
             <div className={styles.content}>
-              {/* img_wrap */}
               <div className={styles.content_left}>
                 <div className={styles.project_title_wrap}>
                   <h3>우행시</h3>
@@ -75,10 +67,10 @@ export default function project() {
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
                       <div>
-                        ▷Infinite Scroll을 활용해 서버에서 필요한 데이터만
+                        ▷ Infinite Scroll을 활용해 서버에서 필요한 데이터만
                         요청하여 네트워크 트래픽을 줄이고 성능 최적화 <br />
                         <br />
-                        ▷주간 순위별 1등 교육생에게는 상품권 증정 이벤트 →
+                        ▷ 주간 순위별 1등 교육생에게는 상품권 증정 이벤트 →
                         교육생 참여율 30% 증가
                       </div>
                     </div>
@@ -88,10 +80,10 @@ export default function project() {
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail02}`}
                     >
                       <div>
-                        ▷Zustand 라이브러리를 활용한 상태 관리로 과목 선택과
+                        ▷ Zustand 라이브러리를 활용한 상태 관리로 과목 선택과
                         편집 기능을 효율적으로 구현
                         <br /> <br />
-                        ▷SWR을 사용해 서버에서 받아온 데이터를 캐싱하여 네트워크
+                        ▷ SWR을 사용해 서버에서 받아온 데이터를 캐싱하여 네트워크
                         요청을 최소화하고 성능을 개선
                       </div>
                     </div>
@@ -101,10 +93,10 @@ export default function project() {
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail03}`}
                     >
                       <div>
-                        ▷랜딩페이지를 통한 웹의 핵심 기능 소개 및 사용자에게
+                        ▷ 랜딩페이지를 통한 웹의 핵심 기능 소개 및 사용자에게
                         직관적이고 몰입감 있는 UI 경험 제공
                         <br /> <br />
-                        ▷직관적인 CTA 버튼을 통해 추가 자료와 정보에 빠르게
+                        ▷ 직관적인 CTA 버튼을 통해 추가 자료와 정보에 빠르게
                         접근할 수 있도록 유도 <br />( ex)문의하기, 노션보러가기
                         )
                       </div>
@@ -137,8 +129,8 @@ export default function project() {
                 <h4>프로젝트 소개</h4>
                 <p>
                   우리 FIS 교육생들이 공부 시간을 측정하고 학습 과목을
-                  기록함으로써 효율적으로 시간 관리를 할 수 있도록 돕기 위해
-                  제작한 웹
+                  기록함으로써 <br />
+                  효율적으로 시간 관리를 할 수 있도록 돕기 위해 제작한 웹
                 </p>
                 <h4>프로젝트 기간</h4>
                 <p>2024.08 ~ 2024.10</p>
@@ -157,18 +149,18 @@ export default function project() {
                   >
                     <p>▷교육생들의 일간, 주간, 월간 별 순위 제공</p>
                   </div>
-                  <div
-                    onMouseEnter={() => setHoverFeature("feature2")}
-                    onMouseLeave={() => setHoverFeature("")}
-                    className={`${styles.project_core_features02} ${styles.project_core_features}`}
-                  >
-                    <p>▷과목 선택 및 편집 기능</p>
-                  </div>
                 </div>
 
                 <div
                   className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
                 >
+                  <div
+                    onMouseEnter={() => setHoverFeature("feature2")}
+                    onMouseLeave={() => setHoverFeature("")}
+                    className={`${styles.project_core_features02} ${styles.project_core_features}`}
+                  >
+                    <p>▷과목 선택 및 편집 기능&nbsp;</p>
+                  </div>
                   <div
                     onMouseEnter={() => setHoverFeature("feature3")}
                     onMouseLeave={() => setHoverFeature("")}
@@ -246,10 +238,11 @@ export default function project() {
                         ▷ 문제 : API 작업이 완료되지 않은 상황에서 컴포넌트
                         제작을 완료, 테스트 시 API interlocking 과정이 별도로
                         필요
-                        <br /><br />▷ 해결 : MSW 기반으로 한 Mock API를
-                        구현함으로써 백엔드 API 개발 완료 전에도 프론트엔드 기능
-                        개발 및 테스트를 진행할 수 있게 되어, 전체 프로젝트의
-                        개발 시간을 효율적으로 단축
+                        <br />
+                        <br />▷ 해결 : MSW 기반으로 한 Mock API를 구현함으로써
+                        백엔드 API 개발 완료 전에도 프론트엔드 기능 개발 및
+                        테스트를 진행할 수 있게 되어, 전체 프로젝트의 개발
+                        시간을 효율적으로 단축
                       </div>
                     </div>
                   )}
@@ -291,26 +284,26 @@ export default function project() {
                     onMouseLeave={() => setHoverFeature("")}
                     className={`${styles.project_core_features01} ${styles.project_core_features}`}
                   >
-                    <p>▷ 사용자 맞춤 추천</p>
+                    <p>▷사용자 맞춤 추천&nbsp;</p>
                   </div>
                   <div
                     onMouseEnter={() => setHoverFeature("feature2")}
                     onMouseLeave={() => setHoverFeature("")}
                     className={`${styles.project_core_features02} ${styles.project_core_features}`}
                   >
-                    <p>▷ 빠른 응답 및 피드백</p>
-                  </div>
-                  <div
-                    onMouseEnter={() => setHoverFeature("feature3")}
-                    onMouseLeave={() => setHoverFeature("")}
-                    className={`${styles.project_core_features03} ${styles.project_core_features}`}
-                  >
-                    <p>▷ 소셜 로그인</p>
+                    <p>▷빠른 응답 및 피드백</p>
                   </div>
                 </div>
                 <div
                   className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
                 >
+                  <div
+                    onMouseEnter={() => setHoverFeature("feature3")}
+                    onMouseLeave={() => setHoverFeature("")}
+                    className={`${styles.project_core_features03} ${styles.project_core_features}`}
+                  >
+                    <p>▷소셜 로그인&nbsp;</p>
+                  </div>
                   <div
                     onMouseEnter={() => setHoverFeature("feature4")}
                     onMouseLeave={() => setHoverFeature("")}
@@ -388,7 +381,7 @@ export default function project() {
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
                       <div>
-                        ▷Fisher-Yates 알고리즘을 사용한 카드 셔플링
+                        ▷ Fisher-Yates 알고리즘을 사용한 카드 셔플링
                         <br /> <br /> ▷ Fisher-Yates 알고리즘 모든 순열이 등장할
                         확률이 동일하게 만듦으로써 공정성을 제공, 선형 시간
                         복잡도(O(n))를 가지고 있어서 배열의 크기와 상관없이
@@ -401,7 +394,7 @@ export default function project() {
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
                       <div>
-                        ▷사용자 경험과 접근성 고려 : 다크 모드와 라이트 모드
+                        ▷ 사용자 경험과 접근성 고려 : 다크 모드와 라이트 모드
                         간의 전환을 위한 UI/UX 디자인 고려, 사용자가 콘텐츠를
                         쉽게 구분하고 읽을 수 있도록 함
                         <br /> <br /> ▷ 사용자가 직접 모드를 전환할 수 있는 옵션
@@ -447,7 +440,7 @@ export default function project() {
                     onMouseLeave={() => setHoverFeature("")}
                     className={`${styles.project_core_features01} ${styles.project_core_features}`}
                   >
-                    <p>▷지뢰 찾기 게임</p>
+                    <p>▷지뢰 찾기 게임&nbsp;</p>
                   </div>
                   <div
                     onMouseEnter={() => setHoverFeature("feature2")}
@@ -456,17 +449,17 @@ export default function project() {
                   >
                     <p>▷브레이크 아웃 게임</p>
                   </div>
+                </div>
+                <div
+                  className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
+                >
                   <div
                     onMouseEnter={() => setHoverFeature("feature3")}
                     onMouseLeave={() => setHoverFeature("")}
                     className={`${styles.project_core_features03} ${styles.project_core_features}`}
                   >
-                    <p>▷카드 매치 게임</p>
+                    <p>▷카드 매치 게임&nbsp;</p>
                   </div>
-                </div>
-                <div
-                  className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
-                >
                   <div
                     onMouseEnter={() => setHoverFeature("feature4")}
                     onMouseLeave={() => setHoverFeature("")}
@@ -525,7 +518,7 @@ export default function project() {
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail02}`}
                     >
                       <div>
-                        ▷jQuery AJAX를 활용한 비동기 REST API 호출로, 페이지
+                        ▷ jQuery AJAX를 활용한 비동기 REST API 호출로, 페이지
                         리로드 없이 로그인 및 회원 가입 기능 구현
                       </div>
                     </div>
@@ -571,7 +564,7 @@ export default function project() {
                     onMouseLeave={() => setHoverFeature("")}
                     className={`${styles.project_core_features01} ${styles.project_core_features}`}
                   >
-                    <p>▷요구 사항 분석 및 명세서 작성</p>
+                    <p>▷요구 사항 분석 및 명세서 작성&nbsp;</p>
                   </div>
                   <div
                     onMouseEnter={() => setHoverFeature("feature2")}
