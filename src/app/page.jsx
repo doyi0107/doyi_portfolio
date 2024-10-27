@@ -22,7 +22,7 @@ export default function Home() {
       }
     };
 
-
+    // useEffect
     useEffect(() => {
       const handleScroll = () => {
         if (containerRef.current) {
