@@ -169,7 +169,7 @@
         30% {
             opacity: 1;
             left: 50%;
-            transform: translateX(-200%)
+            transform: translateX(-50%)
         }
     }
 }
