@@ -485,12 +485,12 @@ animation04
   z-index: 9999;
 }
 
-.animation04 .line_wrapper {
+.line_wrapper {
   position: absolute;
   opacity: 0;
 }
 
-.animation04 .line {
+.line {
   display: block;
   position: absolute;
   width: 100%;
@@ -739,7 +739,7 @@ line05
 line06
 ===========*/
 
-.animation04 .rotate-135 {
+.animation04 .rotate_135 {
   display: block;
   position: absolute;
   top: -19.5%;
@@ -835,7 +835,7 @@ line07
 line08
 ===========*/
 
-.animation04 .rotate-45 {
+.animation04 .rotate_45 {
   display: block;
   position: absolute;
   top: -49.0%;

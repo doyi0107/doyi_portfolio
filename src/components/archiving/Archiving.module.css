@@ -65,7 +65,7 @@
 .github_text>p,
 .t_story_text>p {
     color: rgba(231, 221, 205, .8);
-    font: 400 1.2rem/1.6 'IBM Plex Sans KR', sans-serif
+    font: 1.2rem/1.6 'Pretendard-Regular';
 }
 
 .archiving_name {
@@ -165,7 +165,7 @@
 
     .github_text>p,
     .t_story_text>p {
-        font: 400 1rem/2 'IBM Plex Sans KR', sans-serif
+        font: 400 1rem/2 'Pretendard-Regular'
     }
 
     .arch_left_box {
@@ -216,7 +216,7 @@
 
     .github_text>p,
     .t_story_text>p {
-        font: 400 1.1rem/1.7 'IBM Plex Sans KR', sans-serif
+        font: 400 1.1rem/1.7 'Pretendard-Regular'
     }
 
     .arch_right_box {
@@ -297,7 +297,7 @@
 
     .github_text>p,
     .t_story_text>p {
-        font: 400 1rem/1.5 'IBM Plex Sans KR', sans-serif
+        font: 400 1rem/1.5 'Pretendard-Regular'
     }
 
     .arch_left_box {

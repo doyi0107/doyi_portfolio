@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import "../styles/reset.css";
 import "../styles/page.css";
-import "../styles/media.css";
 
 import Modal from "../components/modal/Modal.jsx";
 

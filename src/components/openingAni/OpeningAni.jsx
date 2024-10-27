@@ -30,43 +30,43 @@ export default function OpeningAni() {
           </div>
           <div className={styles.animation04}>
             <div className={`${styles.line_wrapper} ${styles.line_wrapper01}`}>
-              <span className={`${styles.line01} ${styles.line}`}></span>
+              <span className={`${styles.line} ${styles.line01}`}></span>
             </div>
             <div className={styles.rotate45}>
               <div
                 className={`${styles.line_wrapper} ${styles.line_wrapper02}`}
               >
-                <span className={`${styles.line02} ${styles.line}`}></span>
+                <span className={`${styles.line} ${styles.line02}`}></span>
               </div>
             </div>
             <div className={`${styles.line_wrapper} ${styles.line_wrapper03}`}>
-              <span className={`${styles.line03} ${styles.line}`}></span>
+              <span className={`${styles.line} ${styles.line03}`}></span>
             </div>
             <div className={styles.rotate135}>
               <div
                 className={`${styles.line_wrapper} ${styles.line_wrapper04}`}
               >
-                <span className={`${styles.line04} ${styles.line}`}></span>
+                <span className={`${styles.line} ${styles.line04}`}></span>
               </div>
             </div>
             <div className={`${styles.line_wrapper} ${styles.line_wrapper05}`}>
-              <span className={`${styles.line05} ${styles.line}`}></span>
+              <span className={`${styles.line} ${styles.line05}`}></span>
             </div>
             <div className={styles.rotate_135}>
               <div
                 className={`${styles.line_wrapper} ${styles.line_wrapper06}`}
               >
-                <span className={`${styles.line06} ${styles.line}`}></span>
+                <span className={`${styles.line} ${styles.line06}`}></span>
               </div>
             </div>
             <div className={`${styles.line_wrapper} ${styles.line_wrapper07}`}>
-              <span className={`${styles.line07} ${styles.line}`}></span>
+              <span className={`${styles.line} ${styles.line07}`}></span>
             </div>
             <div className={styles.rotate_45}>
               <div
                 className={`${styles.line_wrapper} ${styles.line_wrapper08}`}
               >
-                <span className={`${styles.line08} ${styles.line}`}></span>
+                <span className={`${styles.line} ${styles.line08}`}></span>
               </div>
             </div>
           </div>
