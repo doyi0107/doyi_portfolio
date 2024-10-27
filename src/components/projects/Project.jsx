@@ -126,9 +126,10 @@ export default function project() {
               <div className={styles.project_text_wrap}>
                 <h4>프로젝트 소개</h4>
                 <p>
-                  우리 FIS 교육생들이 공부 시간을 측정하고 학습 과목을
-                  기록함으로써 <br />
-                  효율적으로 시간 관리를 할 수 있도록 돕기 위해 제작한 웹
+                  우리 FIS 교육생들이 공부 시간을 측정하고 학습 과목을 <br />
+                  기록함으로써 효율적으로 시간 관리를 할 수 있도록 돕기 위해
+                  <br />
+                  제작한 웹
                 </p>
                 <h4>프로젝트 기간</h4>
                 <p>2024.08 ~ 2024.10</p>
@@ -433,7 +434,8 @@ export default function project() {
               <div className={styles.project_text_wrap}>
                 <h4>프로젝트 소개</h4>
                 <p>
-                  깊이 있는 자바스크립트의 학습을 목표로, <br/>다양한 게임 기능을 구현한 웹
+                  깊이 있는 자바스크립트의 학습을 목표로, <br />
+                  다양한 게임 기능을 구현한 웹
                   <br />
                 </p>
                 <h4>프로젝트기간</h4>

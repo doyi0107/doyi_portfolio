@@ -36,8 +36,8 @@
 .contact_img_wrap {
     z-index: 1;
     display: block;
-    left: 25vw;
-    border-radius: 100px
+    left: 28vw;
+    border-radius: 80px
 }
 
 .contact_img_wrap:hover .contact_doyi_img {
@@ -46,9 +46,9 @@
 }
 
 .contact_doyi_img {
-    width: 300px;
-    height: 55vh;
-    border-radius: 100px;
+    width: 210px;
+    height: auto;
+    border-radius: 80px;
     transition: .7s
 }
 
