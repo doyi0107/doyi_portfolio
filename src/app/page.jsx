@@ -1,10 +1,11 @@
 "use client";
 import "./styles/page.css";
 import "./styles/media.css";
-import Image from "next/image";
-import nav_tree from "/public/nav_tree.png";
 import Link from "next/link";
 import { useState } from "react";
+
+import Header from "@/components/header/Header";
+import OpeningAni from "@/components/openingAni/OpeningAni";
 import Archiving from "@/components/archiving/Archiving";
 import Projects from"@/components/projects/Project";
 import Main_sub from "@/components/mainSub/MainSub";
@@ -25,14 +26,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="nav_left_box">
-        <Link href="#intro">
-          <Image className="nav_tree" src={nav_tree} alt="nav_tree" />
-        </Link>
-        <Link href="#main_sub">
-          <p className="nav_name">DOY.</p>
-        </Link>
-      </div>
+      <Header />
+      <OpeningAni />
       {/* 스크롤 유도 가이드 */}
       <div
         className={`${isSpecialCase ? "scroll_guide_up" : "scroll_guide"}`}
@@ -47,7 +42,7 @@ export default function Home() {
         <Main_sub />
         <Archiving />
         <Projects />
-        <Contact/>
+        <Contact />
         <Footer />
       </div>
     </>

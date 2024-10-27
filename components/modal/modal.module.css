@@ -15,12 +15,12 @@
     top: 40%;
     left: 14px;
     z-index: 999;
-    -webkit-animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
-    animation: doyi_bg 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
+    -webkit-animation: common_ani_opening 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
+    animation: common_ani_opening 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
     animation-fill-mode:backwards;
 }
 
-@keyframes doyi_bg {
+@keyframes common_ani_opening {
     0% {
         opacity: 0;
     }
