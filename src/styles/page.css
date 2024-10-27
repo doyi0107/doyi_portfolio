@@ -47,14 +47,15 @@ section {
     right: 10%;
     width: 30px;
     height: 30px;
-    border-left: 2.5px solid #d7cbb9;
-    border-bottom: 2.5px solid #d7cbb9;
+    border-bottom: 3.5px solid #d7cbb9;
+    border-left: 3.5px solid #d7cbb9;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    -webkit-animation: sdb 2s infinite;
-    animation: sdb 2s infinite;
+    -webkit-animation: blink 2s infinite;
+    animation: blink 2s infinite;
     opacity: 0;
     box-sizing: border-box;
+    border-radius: 2px;
 }
 
 .scroll_guide span:nth-of-type(1) {
@@ -74,9 +75,9 @@ section {
     animation-delay: .3s;
 }
 
-@-webkit-keyframes sdb {
+@-webkit-keyframes blink {
     0% {
-        opacity: 0;
+        opacity: 0.2;
     }
 
     50% {
@@ -84,13 +85,13 @@ section {
     }
 
     100% {
-        opacity: 0;
+        opacity: 0.2;
     }
 }
 
-@keyframes sdb {
+@keyframes blink {
     0% {
-        opacity: 0;
+        opacity: 0.2;
     }
 
     50% {
@@ -98,7 +99,7 @@ section {
     }
 
     100% {
-        opacity: 0;
+        opacity: 0.2;
     }
 }
 
@@ -119,14 +120,15 @@ section {
     right: 10%;
     width: 30px;
     height: 30px;
-    border-top: 2.5px solid #d7cbb9;
-    border-right: 2.5px solid #d7cbb9;
+    border-top: 3.5px solid #d7cbb9;
+    border-right: 3.5px solid #d7cbb9;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    -webkit-animation: sdb 2s infinite;
-    animation: sdb 2s infinite;
+    -webkit-animation: blink 2s infinite;
+    animation: blink 2s infinite;
     opacity: 0;
     box-sizing: border-box;
+    border-radius: 2px;
 }
 
 .scroll_guide_up span:nth-of-type(1) {
