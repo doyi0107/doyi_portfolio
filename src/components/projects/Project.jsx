@@ -69,9 +69,8 @@ export default function project() {
                       <div>
                         ▷ Infinite Scroll을 활용해 서버에서 필요한 데이터만
                         요청하여 네트워크 트래픽을 줄이고 성능 최적화 <br />
-                        <br />
-                        ▷ 주간 순위별 1등 교육생에게는 상품권 증정 이벤트 →
-                        교육생 참여율 30% 증가
+                        <br />▷ 주간 순위별 1등 교육생에게는 상품권 증정 이벤트
+                        → 교육생 참여율 30% 증가
                       </div>
                     </div>
                   )}
@@ -82,9 +81,8 @@ export default function project() {
                       <div>
                         ▷ Zustand 라이브러리를 활용한 상태 관리로 과목 선택과
                         편집 기능을 효율적으로 구현
-                        <br /> <br />
-                        ▷ SWR을 사용해 서버에서 받아온 데이터를 캐싱하여 네트워크
-                        요청을 최소화하고 성능을 개선
+                        <br /> <br />▷ SWR을 사용해 서버에서 받아온 데이터를
+                        캐싱하여 네트워크 요청을 최소화하고 성능을 개선
                       </div>
                     </div>
                   )}
@@ -224,9 +222,12 @@ export default function project() {
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail03}`}
                     >
                       <div>
-                        ▷ Google OAuth를 통한 소셜 로그인 구현과 useAuth 커스텀
-                        훅을 통한 사용자 정보 관리 <br /> <br />▷ 로그인 상태에
-                        따른 UI 변화와 사용자 경험 개선에 초점
+                        ▷useAuth 커스텀 훅을 통해 로그인 상태에 따라 장바구니
+                        기능의 접근 제한을 구현, 비즈니스 로직에 깊이를 더함{" "}
+                        <br /> <br />
+                        ▷Recoil과 useAuth의 용도 차이 이해 <br />: Recoil은
+                        다양한 애플리케이션 데이터 관리에, useAuth는 사용자 인증
+                        데이터 관리에 각각 특화
                       </div>
                     </div>
                   )}
@@ -302,8 +303,15 @@ export default function project() {
                     onMouseLeave={() => setHoverFeature("")}
                     className={`${styles.project_core_features03} ${styles.project_core_features}`}
                   >
-                    <p>▷소셜 로그인&nbsp;</p>
+                    <p>
+                      ▷전역 상태 관리 라이브러리,Recoil을 통해 장바구니 상태
+                      관리&nbsp;
+                    </p>
                   </div>
+                </div>
+                <div
+                  className={`${styles.project_core_feature_chapter3} ${styles.project_core_feature_chapter}`}
+                >
                   <div
                     onMouseEnter={() => setHoverFeature("feature4")}
                     onMouseLeave={() => setHoverFeature("")}
@@ -354,11 +362,12 @@ export default function project() {
                         ▷ 큐(queue)를 사용하여 너비 우선 탐색 알고리즘(BFS)을
                         구현. 이를 통해 한 셀에서 시작하여 점차적으로 모든
                         인접한 셀들을 탐색하고 공개
-                        <br />
+                        <br /> <br />
                         ▷모서리 셀의 이웃 지뢰 개수 표시 오류 개선 - 아키텍처 및
                         설계 결정 분석
-                        <br /> ▷ 초기 설계 단계에서 모서리 셀이나 경계 셀에서의
-                        이웃 지뢰 개수 계산 로직을 충분히 고려하지 않아 발생
+                        <br /> <br /> ▷ 초기 설계 단계에서 모서리 셀이나 경계
+                        셀에서의 이웃 지뢰 개수 계산 로직을 충분히 고려하지 않아
+                        발생
                       </div>
                     </div>
                   )}
