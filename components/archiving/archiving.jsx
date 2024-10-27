@@ -3,7 +3,6 @@ import Image from "next/image";
 import github from "/public/archiving/github.webp";
 import t_story from "/public/archiving/t-story.webp";
 import styles from "./Archiving.module.css"
-import "@/src/app/styles/media.css";
 
 export default function Archiving() {
   return (

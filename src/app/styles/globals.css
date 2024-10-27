@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
 
-/* var(--bg-color) */
 
 body {
   -webkit-animation: body_bg 7s cubic-bezier(0.645, 0.045, 0.355, 1) 1;

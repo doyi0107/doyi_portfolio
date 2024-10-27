@@ -36,11 +36,6 @@ section {
     }
 }
 
-/* 공통 애니메이션 요소 사용*/
-
-
-
-
 /* 스크롤 유도 표시 */
 .scroll_guide {
     -webkit-animation: common_ani_opening 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;

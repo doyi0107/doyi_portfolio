@@ -1,7 +1,7 @@
 "use client";
 import "./styles/page.css";
 import "./styles/media.css";
-import Link from "next/link";
+
 import { useState } from "react";
 
 import Header from "@/components/header/Header";

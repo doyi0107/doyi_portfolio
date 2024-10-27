@@ -2,8 +2,7 @@ import Image from "next/image";
 import quest from "/public/mainSub/quest.png";
 import error from "/public/mainSub/error.png";
 import team from "/public/mainSub/team.png";
-import "@/src/app/styles/page.css";
-import "@/src/app/styles/media.css";
+
 import styles from "./MainSub.module.css"
 
 

@@ -4,8 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import gsap from "gsap";
 import styles from "./Project.module.css";
-import "@/src/app/styles/page.css";
-import "@/src/app/styles/media.css";
+
 import play_javascript from "/public/projects/play_javascript_img.png";
 import starting_plant from "/public/projects/starting_plant_img.jpeg";
 import woohangsi from "/public/projects//woohangsi.png";
@@ -247,10 +246,10 @@ export default function project() {
                         ▷ 문제 : API 작업이 완료되지 않은 상황에서 컴포넌트
                         제작을 완료, 테스트 시 API interlocking 과정이 별도로
                         필요
-                        <br />▷ 해결 : MSW 기반으로 한 Mock API를 구현함으로써
-                        백엔드 API 개발 완료 전에도 프론트엔드 기능 개발 및
-                        테스트를 진행할 수 있게 되어, 전체 프로젝트의 개발
-                        시간을 효율적으로 단축
+                        <br /><br />▷ 해결 : MSW 기반으로 한 Mock API를
+                        구현함으로써 백엔드 API 개발 완료 전에도 프론트엔드 기능
+                        개발 및 테스트를 진행할 수 있게 되어, 전체 프로젝트의
+                        개발 시간을 효율적으로 단축
                       </div>
                     </div>
                   )}
