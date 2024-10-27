@@ -1,16 +1,13 @@
 "use client";
-import "./styles/page.css";
-import "./styles/media.css";
-
 import { useState } from "react";
 
-import Header from "@/components/header/Header";
-import OpeningAni from "@/components/openingAni/OpeningAni";
-import Archiving from "@/components/archiving/Archiving";
-import Projects from"@/components/projects/Project";
-import Main_sub from "@/components/mainSub/MainSub";
-import Contact from "@/components/contact/Contact";
-import Footer from "@/components/footer/Footer";
+import Header from "../components/header/Header";
+import OpeningAni from "../components/openingAni/OpeningAni";
+import Archiving from "../components/archiving/Archiving";
+import Projects from"../components/projects/Project";
+import Main_sub from "../components/mainSub/MainSub";
+import Contact from "../components/contact/Contact";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
   const [isSpecialCase, setIsSpecialCase] = useState(false);

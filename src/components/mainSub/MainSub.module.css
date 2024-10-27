@@ -157,3 +157,20 @@
     z-index: 10
 }
 
+@media (min-width: 1600px) {
+    @keyframes bubble {
+        0% {
+            opacity: 0;
+            left: 0%;
+            transform: translateX(0%)
+        }
+
+        100%,
+        30% {
+            opacity: 1;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+    }
+}
+

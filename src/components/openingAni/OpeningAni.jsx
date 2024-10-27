@@ -1,6 +1,6 @@
 import styles from "./Opening.module.css";
 import Image from "next/image";
-import me from "/public/me.webp";
+import me from "/public/home/me.webp";
 
 export default function OpeningAni() {
   return (
