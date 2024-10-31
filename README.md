@@ -10,15 +10,13 @@
     <div>
         <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white">
         <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=Vercel&logoColor=white"> 
-    </div><br/>
-</div>
+    </div>
 
 ## 💡기능 구현
 * **디자인부터 배포하는 과정까지 100% 본인이 기여한 웹**
 * **사용자 웹 접근성 향상 → SEO를 위한 SSR을 가능하게 한 Next.js를 이용**
 * **사용자 인터랙션 강화 → 스크롤 유도 가이드와 가로 스크롤바를 통해 동적인 사용자 경험 제공**
-<br/>
-
+  
 ## 📌트러블 슈팅
 * **성능 최적화**
   * 문제 : LightHouse 성능 평가에서 Performance0점 
@@ -30,7 +28,6 @@
     * 이미지 파일 AVIF 및 WebP로 교체
     * CSS Minifier 이용해 css 중복 코드 개선
     * Webpack을 사용한 css축소 (mini-css-extract-plugin 패키지 설치)
-<br/>
 
 ## 📌시연영상 
  1. **오프닝 애니메이션** 
