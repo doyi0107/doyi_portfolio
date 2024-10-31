@@ -28,6 +28,7 @@
     * 이미지 파일 AVIF 및 WebP로 교체
     * CSS Minifier 이용해 css 중복 코드 개선
     * Webpack을 사용한 css축소 (mini-css-extract-plugin 패키지 설치)
+    * LightHouse 성능 평가 Performance(0 → 90) 100% 향상 
 
 ## 📌시연영상 
  1. **오프닝 애니메이션** 
