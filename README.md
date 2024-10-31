@@ -35,22 +35,17 @@
 ## 📌시연영상 
  1. **오프닝 애니메이션** 
 <p align="left">
-  <img src="https://github.com/doyi0107/starting_plant/assets/93458143/cf7a5c3f-f104-48c8-a126-e32fe5eccfa8" width="700" height="400">
+  <img src="https://github.com/user-attachments/assets/f48a2d8e-3488-43e2-b581-e21214ee2ba2" width="700" height="380">
 </p>
 
- 2. **지뢰 찾기**
+ 2. **가로 스크롤(프로젝트 컴포넌트) 및 스크롤 유도 기능 구현**
 <p align="left">
-  <img src="https://github.com/doyi0107/starting_plant/assets/93458143/a3edcf28-3d55-4d02-94c5-f8ec2c03fba5" width="700" height="400">
+  <img src="https://github.com/user-attachments/assets/dfeaba6b-c1b2-40c2-8f0a-1e8fc5203d7f" width="700" height="380">
 </p>
 
- 3. **브레이크 아웃**
+ 3. **스크롤 프로그레스 바**
 <p align="left">
-  <img src="https://github.com/doyi0107/starting_plant/assets/93458143/2288541a-0a06-4013-8474-874b55334273" width="700" height="400">
-</p>
-
- 4. **카드매치**
-<p align="left">
-  <img src="https://github.com/doyi0107/starting_plant/assets/93458143/f237d2aa-d9bd-4415-9a6a-f58a88455bc4" width="700" height="400">
+  <img src="https://github.com/user-attachments/assets/4dcc9772-87ef-47ee-9a1f-f6176aebb56b" width="700" height="380">
 </p>
 
 ## 회고록 보러가기 
