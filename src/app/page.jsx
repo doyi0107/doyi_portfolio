@@ -54,22 +54,19 @@ export default function Home() {
       {/* 스크롤 유도 가이드 */}
       <div className="bottom_link">
         <div>
-        <Link
-            href="https://github.com/doyi0107"
-            target="blank"
-          >
+          <Link href="https://github.com/doyi0107" target="blank">
             <Image
               src={github}
               alt="github"
               className="github_img"
               width={24}
               height={24}
-            />    
+            />
           </Link>
         </div>
         <div>
           <Link
-            href="https://statuesque-pincushion-161.notion.site/e537a1ea0dcc4ea5ad317dae06b0bd32?pvs=4"
+            href="https://statuesque-pincushion-161.notion.site/13050ed9c78e8020a24ef0e35629ad30?pvs=4"
             target="blank"
           >
             <Image
@@ -78,7 +75,7 @@ export default function Home() {
               className="notion_img"
               width={24}
               height={24}
-            />    
+            />
           </Link>
         </div>
         <div onClick={handleScrollGuideClick}>
