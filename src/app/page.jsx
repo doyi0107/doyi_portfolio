@@ -66,7 +66,7 @@ export default function Home() {
         </div>
         <div>
           <Link
-            href="https://statuesque-pincushion-161.notion.site/13050ed9c78e8020a24ef0e35629ad30?pvs=4"
+            href="https://statuesque-pincushion-161.notion.site/14050ed9c78e80acbd73d55035eb2ec7"
             target="blank"
           >
             <Image

@@ -14,7 +14,7 @@
     border: none;
     top: 40%;
     left: 14px;
-    z-index: 999;
+    z-index: 1000;
     -webkit-animation: common_ani_opening 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
     animation: common_ani_opening 4.5s cubic-bezier(0.645, 0.045, 0.355, 1) 4s 1;
     animation-fill-mode:backwards;
@@ -42,13 +42,13 @@
     right: 0;
     left: 0;
     height: 0%;
-    z-index: 100
+    z-index: 999;
 }
 
 .burger_menu span {
     position: absolute;
     left: 0;
-    z-index: 999;
+    z-index: 1000;
     display: inline-block;
     height: .25em;
     width: 45px;
