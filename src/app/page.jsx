@@ -91,8 +91,8 @@ export default function Home() {
 
       <div className="container" ref={containerRef}>
         <Main_sub />
-        <Archiving />
         <Projects />
+        <Archiving />
         <Contact />
         <Footer />
       </div>

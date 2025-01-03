@@ -45,6 +45,158 @@ export default function project() {
         >
           <h2 className={styles.projects_name}>Projects</h2>
           {/* 프로젝트들 */}
+          {/* 윗비트래블 */}
+          <div className={styles.about_project}>
+            <div className={styles.content}>
+              <div className={styles.content_left}>
+                <div className={styles.project_title_wrap}>
+                  <h3>윗비트래블</h3>
+                </div>
+                <div className={styles.project_img_wrap}>
+                  <Link
+                    href="https://withbee-travel.vercel.app/"
+                    target="_blank"
+                  >
+                    <Image
+                      className={styles.project_main_img}
+                      src="/projects/mockUp.png"
+                      alt="윗비트래블 목업포스터"
+                      width={500}
+                      height={400}
+                      quality={100}
+                    />
+                  </Link>
+                  {/* Hover features */}
+                  {hoverFeature === "feature1" && (
+                    <div
+                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
+                    >
+                      <div>
+                        ▷ Turborepo 기반 적응형 레이아웃 구현 프로젝트 간 공통
+                        <br />→ 모듈로 패키지화하여 재사용성 극대화
+                        <br />
+                        <br />▷ 공통 컴포넌트 개발 및 storybook 초기 셋팅 <br />
+                        → 개발 중 컴포넌트를 실시간 미리보기 및 테스트
+                        가능하도록 설정
+                        <br />
+                        <br />▷ React-toastify, Framer-motion, Skeleton UI 적용{" "}
+                        <br />
+                        → 사용자 작업 결과(성공/실패 알림)를 즉각적으로
+                        피드백하는 알림 시스템 구축
+                        <br />→ 로딩 중 비어 보이는 화면 대신 로딩 상태를
+                        시각적으로 표시하여 사용자가 더 나은 경험을 할 수 있도록
+                        개선
+                      </div>
+                    </div>
+                  )}
+                  {hoverFeature === "feature2" && (
+                    <div
+                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail02}`}
+                    >
+                      <div>
+                        ▷ 카드 혜택, 여행 생성, 편집, 목록 퍼블리싱 및 API 구현
+                        <br /> <br />▷ 카카오톡 SDK(초대 코드 공유)를 활용한
+                        여행 그룹 참여 기능 구현 <br />
+                        → 카카오 JavaScript SDK를 동적으로 로드하여 초대 코드
+                        공유
+                        <br />
+                        기능을 구현 <br />→ 초대 코드는 여행 그룹 생성 시 자동
+                        생성되며, 클립보드 복사 및 카카오톡 링크 공유를 지원
+                      </div>
+                    </div>
+                  )}
+                  {hoverFeature === "feature3" && (
+                    <div
+                      className={`${styles.project_core_features_detail} ${styles.project_core_features_detail03}`}
+                    >
+                      <div>
+                        ▷ EventSourcePolyfill를 사용하여 서버와의
+                        SSE(Server-Sent Events) 연결을 통해 실시간으로 알림
+                        <br />
+                        → 데이터를 수신 connectSSE 함수를 호출하여 서버의
+                        엔드포인트에 접근하며, 이를 통해 이벤트 스트림을 수신
+                        <br /> <br />▷ 알림 배지를 통한 실시간 상태 전달
+                        <br />→ 새 알림 ID를 Zustand를 이용하여 상태로 관리하며,
+                        기존 알림과 비교하여 새로운 알림만 필터링
+                      </div>
+                    </div>
+                  )}
+                </div>
+                <div className={styles.project_link_wrap}>
+                  <Link
+                    className={`${styles.source_code_link} ${styles.project_link}`}
+                    href="https://github.com/woorifisa-projects-3rd/WithBeeTravel-FE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p>#source code</p>
+                  </Link>
+
+                  <Link
+                    className={`${styles.demo_code_link} ${styles.project_link}`}
+                    href="https://withbee-travel.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p>#demo</p>
+                  </Link>
+                </div>
+              </div>
+
+              {/* text_wrap */}
+              <div className={styles.project_text_wrap}>
+                <h4>프로젝트 소개</h4>
+                <p>
+                  우리FISA에서 진행한 최종 프로젝트로, <br />
+                  뱅킹 기반 서비스(슈퍼앱)를 통한 생활밀착형 서비스 플랫폼을
+                  주제로 개발 진행
+                  <br />- 여행 공동 지출 관리 및 자동 정산 서비스
+                </p>
+                <h4>프로젝트 기간</h4>
+                <p>2024.10 ~ 2024.12</p>
+                <h4>프론트엔드</h4>
+                <p>
+                  Next.js,Typescript,Turborepo,Storybook
+                  <br />
+                  Framer-motion,React-toastify
+                </p>
+                <h4>백엔드</h4>
+                <p>Spring,MYSQL,AWS</p>
+                <h4>주요 기능(마우스를 올려주세요)</h4>
+                <div
+                  className={`${styles.project_core_feature_chapter1} ${styles.project_core_feature_chapter}`}
+                >
+                  <div
+                    onMouseEnter={() => setHoverFeature("feature1")}
+                    onMouseLeave={() => setHoverFeature("")}
+                    className={`${styles.project_core_features01} ${styles.project_core_features}`}
+                  >
+                    <p>▷프론트엔드 공통 컴포넌트 개발 및 storybook 셋팅 </p>
+                  </div>
+                </div>
+
+                <div
+                  className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
+                >
+                  <div
+                    onMouseEnter={() => setHoverFeature("feature2")}
+                    onMouseLeave={() => setHoverFeature("")}
+                    className={`${styles.project_core_features02} ${styles.project_core_features}`}
+                  >
+                    <p>▷여행 생성 및 초대 코드를 통한 가입 &nbsp;</p>
+                  </div>
+                  <div
+                    onMouseEnter={() => setHoverFeature("feature3")}
+                    onMouseLeave={() => setHoverFeature("")}
+                    className={`${styles.project_core_features03} ${styles.project_core_features}`}
+                  >
+                    <p>▷SSE 실시간 알림 기능 </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span className={styles.project_line}></span>
           {/* 우행시 */}
           <div className={styles.about_project}>
             <div className={styles.content}>

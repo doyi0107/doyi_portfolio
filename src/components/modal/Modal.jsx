@@ -128,19 +128,19 @@ export default function Modal() {
             </Link>
 
             <Link
-              href="#archiving"
-              className={styles.modal_link}
-              onClick={handleNavLinkClick}
-            >
-              <div className={styles.modal_link_menu}>Archiving</div>
-            </Link>
-
-            <Link
               href="#projects"
               className={styles.modal_link}
               onClick={handleNavLinkClick}
             >
               <div className={styles.modal_link_menu}>Projects</div>
+            </Link>
+            
+            <Link
+              href="#archiving"
+              className={styles.modal_link}
+              onClick={handleNavLinkClick}
+            >
+              <div className={styles.modal_link_menu}>Archiving</div>
             </Link>
 
             <Link
