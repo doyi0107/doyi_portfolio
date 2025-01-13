@@ -62,7 +62,7 @@ export default function project() {
                       src="/projects/mockUp.png"
                       alt="윗비트래블 목업포스터"
                       width={500}
-                      height={400}
+                      height={350}
                       quality={100}
                     />
                   </Link>

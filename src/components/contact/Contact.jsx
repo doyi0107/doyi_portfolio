@@ -43,7 +43,7 @@ export default function Contact() {
       x: '100%',
       opacity: 0,
       duration: 1.2,
-      delay: 2,
+      delay: 3,
       ease: 'power2.inOut',
     })
       // Then show contact info from left
