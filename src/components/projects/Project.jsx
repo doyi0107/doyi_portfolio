@@ -1,20 +1,20 @@
-"use client";
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import gsap from "gsap";
-import styles from "./Project.module.css";
+'use client';
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import gsap from 'gsap';
+import styles from './Project.module.css';
 
-import play_javascript from "/public/projects/play_javascript_img.png";
-import starting_plant from "/public/projects/starting_plant_img.jpeg";
-import woohangsi from "/public/projects//woohangsi.png";
-import APMA from "/public/projects/APMA_IMG.png";
-import { useEffect, useRef, useState } from "react";
+import play_javascript from '/public/projects/play_javascript_img.png';
+import starting_plant from '/public/projects/starting_plant_img.jpeg';
+import woohangsi from '/public/projects//woohangsi.png';
+import APMA from '/public/projects/APMA_IMG.png';
+import { useEffect, useRef, useState } from 'react';
 
 export default function project() {
   const scrollSectionRef = useRef(null);
   const scrollContentRef = useRef(null);
-  const [hoverFeature, setHoverFeature] = useState("");
+  const [hoverFeature, setHoverFeature] = useState('');
 
   useEffect(() => {
     const scrollSection = scrollSectionRef.current;
@@ -32,8 +32,8 @@ export default function project() {
       }
     };
 
-    document.addEventListener("scroll", handleScroll);
-    return () => document.removeEventListener("scroll", handleScroll);
+    document.addEventListener('scroll', handleScroll);
+    return () => document.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -67,7 +67,7 @@ export default function project() {
                     />
                   </Link>
                   {/* Hover features */}
-                  {hoverFeature === "feature1" && (
+                  {hoverFeature === 'feature1' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
@@ -79,7 +79,7 @@ export default function project() {
                         → 개발 중 컴포넌트를 실시간 미리보기 및 테스트
                         가능하도록 설정
                         <br />
-                        <br />▷ React-toastify, Framer-motion, Skeleton UI 적용{" "}
+                        <br />▷ React-toastify, Framer-motion, Skeleton UI 적용{' '}
                         <br />
                         → 사용자 작업 결과(성공/실패 알림)를 즉각적으로
                         피드백하는 알림 시스템 구축
@@ -89,7 +89,7 @@ export default function project() {
                       </div>
                     </div>
                   )}
-                  {hoverFeature === "feature2" && (
+                  {hoverFeature === 'feature2' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail02}`}
                     >
@@ -105,7 +105,7 @@ export default function project() {
                       </div>
                     </div>
                   )}
-                  {hoverFeature === "feature3" && (
+                  {hoverFeature === 'feature3' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail03}`}
                     >
@@ -167,8 +167,8 @@ export default function project() {
                   className={`${styles.project_core_feature_chapter1} ${styles.project_core_feature_chapter}`}
                 >
                   <div
-                    onMouseEnter={() => setHoverFeature("feature1")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature1')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features01} ${styles.project_core_features}`}
                   >
                     <p>▷프론트엔드 공통 컴포넌트 개발 및 storybook 셋팅 </p>
@@ -179,15 +179,15 @@ export default function project() {
                   className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
                 >
                   <div
-                    onMouseEnter={() => setHoverFeature("feature2")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature2')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features02} ${styles.project_core_features}`}
                   >
                     <p>▷여행 생성 및 초대 코드를 통한 가입 &nbsp;</p>
                   </div>
                   <div
-                    onMouseEnter={() => setHoverFeature("feature3")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature3')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features03} ${styles.project_core_features}`}
                   >
                     <p>▷SSE 실시간 알림 기능 </p>
@@ -214,7 +214,7 @@ export default function project() {
                     />
                   </Link>
                   {/* Hover features */}
-                  {hoverFeature === "feature1" && (
+                  {hoverFeature === 'feature1' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
@@ -226,7 +226,7 @@ export default function project() {
                       </div>
                     </div>
                   )}
-                  {hoverFeature === "feature2" && (
+                  {hoverFeature === 'feature2' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail02}`}
                     >
@@ -238,7 +238,7 @@ export default function project() {
                       </div>
                     </div>
                   )}
-                  {hoverFeature === "feature3" && (
+                  {hoverFeature === 'feature3' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail03}`}
                     >
@@ -294,8 +294,8 @@ export default function project() {
                   className={`${styles.project_core_feature_chapter1} ${styles.project_core_feature_chapter}`}
                 >
                   <div
-                    onMouseEnter={() => setHoverFeature("feature1")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature1')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features01} ${styles.project_core_features}`}
                   >
                     <p>▷교육생들의 일간, 주간, 월간 별 순위 제공</p>
@@ -306,15 +306,15 @@ export default function project() {
                   className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
                 >
                   <div
-                    onMouseEnter={() => setHoverFeature("feature2")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature2')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features02} ${styles.project_core_features}`}
                   >
                     <p>▷과목 선택 및 편집 기능&nbsp;</p>
                   </div>
                   <div
-                    onMouseEnter={() => setHoverFeature("feature3")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature3')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features03} ${styles.project_core_features}`}
                   >
                     <p>▷랜딩페이지</p>
@@ -346,7 +346,7 @@ export default function project() {
                     />
                   </Link>
                   {/* Hover features */}
-                  {hoverFeature === "feature1" && (
+                  {hoverFeature === 'feature1' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
@@ -357,7 +357,7 @@ export default function project() {
                       </div>
                     </div>
                   )}
-                  {hoverFeature === "feature2" && (
+                  {hoverFeature === 'feature2' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail02}`}
                     >
@@ -370,13 +370,13 @@ export default function project() {
                       </div>
                     </div>
                   )}
-                  {hoverFeature === "feature3" && (
+                  {hoverFeature === 'feature3' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail03}`}
                     >
                       <div>
                         ▷useAuth 커스텀 훅을 통해 로그인 상태에 따라 장바구니
-                        기능의 접근 제한을 구현, 비즈니스 로직에 깊이를 더함{" "}
+                        기능의 접근 제한을 구현, 비즈니스 로직에 깊이를 더함{' '}
                         <br /> <br />
                         ▷Recoil과 useAuth의 용도 차이 이해 <br />: Recoil은
                         다양한 애플리케이션 데이터 관리에, useAuth는 사용자 인증
@@ -384,7 +384,7 @@ export default function project() {
                       </div>
                     </div>
                   )}
-                  {hoverFeature === "feature4" && (
+                  {hoverFeature === 'feature4' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail04}`}
                     >
@@ -434,15 +434,15 @@ export default function project() {
                   className={`${styles.project_core_feature_chapter} ${styles.project_core_feature_chapter1}`}
                 >
                   <div
-                    onMouseEnter={() => setHoverFeature("feature1")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature1')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features01} ${styles.project_core_features}`}
                   >
                     <p>▷사용자 맞춤 추천&nbsp;</p>
                   </div>
                   <div
-                    onMouseEnter={() => setHoverFeature("feature2")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature2')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features02} ${styles.project_core_features}`}
                   >
                     <p>▷빠른 응답 및 피드백</p>
@@ -452,8 +452,8 @@ export default function project() {
                   className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
                 >
                   <div
-                    onMouseEnter={() => setHoverFeature("feature3")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature3')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features03} ${styles.project_core_features}`}
                   >
                     <p>
@@ -466,8 +466,8 @@ export default function project() {
                   className={`${styles.project_core_feature_chapter3} ${styles.project_core_feature_chapter}`}
                 >
                   <div
-                    onMouseEnter={() => setHoverFeature("feature4")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature4')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features04} ${styles.project_core_features}`}
                   >
                     <p>▷MSW 기반으로 한 Mock API</p>
@@ -507,7 +507,7 @@ export default function project() {
                       alt="play_javascript"
                     />
                   </Link>
-                  {hoverFeature === "feature1" && (
+                  {hoverFeature === 'feature1' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
@@ -524,7 +524,7 @@ export default function project() {
                       </div>
                     </div>
                   )}
-                  {hoverFeature === "feature2" && (
+                  {hoverFeature === 'feature2' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
@@ -538,7 +538,7 @@ export default function project() {
                       </div>
                     </div>
                   )}
-                  {hoverFeature === "feature3" && (
+                  {hoverFeature === 'feature3' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
@@ -551,7 +551,7 @@ export default function project() {
                       </div>
                     </div>
                   )}
-                  {hoverFeature === "feature4" && (
+                  {hoverFeature === 'feature4' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
@@ -599,15 +599,15 @@ export default function project() {
                   className={`${styles.project_core_feature_chapter1} ${styles.project_core_feature_chapter}`}
                 >
                   <div
-                    onMouseEnter={() => setHoverFeature("feature1")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature1')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features01} ${styles.project_core_features}`}
                   >
                     <p>▷지뢰 찾기 게임&nbsp;</p>
                   </div>
                   <div
-                    onMouseEnter={() => setHoverFeature("feature2")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature2')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features02} ${styles.project_core_features}`}
                   >
                     <p>▷브레이크 아웃 게임</p>
@@ -617,15 +617,15 @@ export default function project() {
                   className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
                 >
                   <div
-                    onMouseEnter={() => setHoverFeature("feature3")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature3')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features03} ${styles.project_core_features}`}
                   >
                     <p>▷카드 매치 게임&nbsp;</p>
                   </div>
                   <div
-                    onMouseEnter={() => setHoverFeature("feature4")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature4')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features04} ${styles.project_core_features}`}
                   >
                     <p>▷다크 모드 구현</p>
@@ -653,7 +653,7 @@ export default function project() {
                       alt="APMA_img"
                     />
                   </Link>
-                  {hoverFeature === "feature1" && (
+                  {hoverFeature === 'feature1' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail01}`}
                     >
@@ -663,7 +663,7 @@ export default function project() {
                       </div>
                     </div>
                   )}
-                  {hoverFeature === "feature2" && (
+                  {hoverFeature === 'feature2' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail03}`}
                     >
@@ -676,7 +676,7 @@ export default function project() {
                       </div>
                     </div>
                   )}
-                  {hoverFeature === "feature3" && (
+                  {hoverFeature === 'feature3' && (
                     <div
                       className={`${styles.project_core_features_detail} ${styles.project_core_features_detail02}`}
                     >
@@ -723,15 +723,15 @@ export default function project() {
                   className={`${styles.project_core_feature_chapter1} ${styles.project_core_feature_chapter}`}
                 >
                   <div
-                    onMouseEnter={() => setHoverFeature("feature1")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature1')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features01} ${styles.project_core_features}`}
                   >
                     <p>▷요구 사항 분석 및 명세서 작성&nbsp;</p>
                   </div>
                   <div
-                    onMouseEnter={() => setHoverFeature("feature2")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature2')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features02} ${styles.project_core_features}`}
                   >
                     <p>▷CORS 에러 해결</p>
@@ -742,8 +742,8 @@ export default function project() {
                   className={`${styles.project_core_feature_chapter2} ${styles.project_core_feature_chapter}`}
                 >
                   <div
-                    onMouseEnter={() => setHoverFeature("feature3")}
-                    onMouseLeave={() => setHoverFeature("")}
+                    onMouseEnter={() => setHoverFeature('feature3')}
+                    onMouseLeave={() => setHoverFeature('')}
                     className={`${styles.project_core_features03} ${styles.project_core_features}`}
                   >
                     <p>▷비동기 처리 방식 로그인 및 회원 가입</p>

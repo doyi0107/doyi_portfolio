@@ -4,6 +4,7 @@ const nextConfig = {
   experimental: {
     windowHistorySupport: true,
   },
+  reactStrictMode: false,
 };
 
 export default nextConfig;

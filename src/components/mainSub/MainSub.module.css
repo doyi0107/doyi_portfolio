@@ -2,19 +2,15 @@
     position: relative;
     background-color: var(--bg-color);
     width: 100%;
-    height: 100vh;
+    height: 170vh;
+    overflow-x: hidden;
 }
 
 .explain_me,
-.img_wrap:after,
 .sub_box,
 .sub_name,
 .sub_text {
-    position: absolute
-}
-
-.sub_box {
-    border-radius: 0 300px 300px 0
+    position: absolute;
 }
 
 .sub_box {
@@ -22,155 +18,110 @@
     height: 100vh;
     background-color: #829472;
     top: 0;
-    animation: 1s both fromleft;
-    animation-timeline: view()
+    border-radius: 0 400px 400px 0;
+
 }
 
-
-
-@keyframes fromleft {
-    0% {
-        opacity: 0;
-        transform: translateX(-300px)
-    }
-
-    100%,
-    30% {
-        opacity: 1;
-        transform: translateX(30px)
-    }
+.sub_box2 {
+    position: absolute;
+    width: 300px;
+    height: 70vh;
+    background-color: #829472;
+    top: 50%;
+    right: 0;
+    border-radius: 400px 0 0 400px;
 }
 
 .sub_name {
-    top: 10%;
+    top: 5%;
     left: 15%;
-    animation: 1s both fromleft;
-    animation-timeline: view();
     color: rgba(255, 255, 255, .7);
-    font: bold 10rem sans-serif
+    font: bold 10rem sans-serif;
+    z-index: 99;
 }
 
 .explain_me {
-    top: 35%;
+    top: 12%;
     justify-content: center;
-    display: flex
-}
-
-
-:is(.one, .two, .three) {
-    margin: 1rem 1.5rem;
-    animation: 2s bubble;
-    animation-timeline: view()
-}
-
-.one {
-    animation-delay: 0s
-}
-
-.two {
-    animation-delay: .3s
-}
-
-.three {
-    animation-delay: .6s
-}
-
-@keyframes bubble {
-    0% {
-        opacity: 0;
-        left: 0%;
-        transform: translateX(0%)
-    }
-
-    100%,
-    30% {
-        opacity: 1;
-        left: 50%;
-        transform: translateX(-90%)
-    }
-}
-
-.img_wrap>h3 {
-    text-align: center;
-    color: rgba(205, 188, 163, .8);
-    font: 500 2.2rem 'Black Han Sans', sans-serif
-}
-
-.img_wrap {
-    background-color: rgba(201, 105, 88, .7);
-    opacity: 0;
-    width: 310px;
-    height: 310px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-top: 50px;
-}
-
-.img_wrap:hover .sub_img {
-    transform: scale(1.5);
-    transition: transform 0.7s;
-}
-
-.sub_img {
-    transform: scale(1.2);
-    transition: .7s;
-    margin:50px auto 40px auto;
-    display: block;
-    width: 130px;
-    height: 130px
-}
-
-.sub_text {
-    width: 85%;
-    margin: 0 auto;
-    color: rgba(255, 255, 255, .8);
-    z-index: 20;
-    font:500 1.5rem/1.5 'Pretendard-Regular';
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .img_wrap {
     position: relative;
-    overflow: hidden
+    background-color: rgba(201, 105, 88, .8);
+    margin-top: 50px;
+    width: 61vw;
+    height: 330px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
-.img_wrap:hover:after,
-.img_wrap:hover .sub_text {
-    display: block
+.one,
+.three {
+    border-radius: 0 300px 300px 0;
 }
 
-.img_wrap:after,
-.img_wrap:hover .title,
-.sub_text {
-    display: none
+.two {
+    z-index: 99;
+    flex-direction: row;
+    border-radius: 300px 0 0 300px;
+    margin-left: auto;
 }
 
-.img_wrap:after {
-    content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .7);
-    z-index: 10
+.sub_img {
+    width: 130px;
+    height: 130px;
 }
 
-@media (min-width: 1600px) {
-    @keyframes bubble {
-        0% {
-            opacity: 0;
-            left: 0%;
-            transform: translateX(0%)
-        }
-
-        100%,
-        30% {
-            opacity: 1;
-            left: 50%;
-            transform: translateX(-50%)
-        }
-    }
+.sub_content {
+    margin: 0px 100px 0px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.sub_content_design {
+    margin: 0px 30px 0px 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    color: rgba(231, 221, 205, .8);
+    font: 500 2.2rem 'Black Han Sans', sans-serif;
+
+}
+
+
+.sub_text,
+.sub_text_right {
+    width: 85%;
+    color: rgba(231, 221, 205, .8);
+    font: 500 1.5rem/1.5 'Pretendard-Regular';
+    position: static;
+    text-align: left;
+    display: block;
+}
+
+.sub_text_left {
+    margin-left: 160px;
+}
+
+.link {
+    color: rgba(231, 221, 205, .8);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.link:hover {
+    color: #4d6636;
+
+}

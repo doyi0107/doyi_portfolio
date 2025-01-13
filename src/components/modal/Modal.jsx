@@ -1,13 +1,12 @@
-"use client";
-import { useState, useEffect, useRef } from "react";
-import gsap from "gsap";
-import Link from "next/link";
-import styles from "./Modal.module.css";
-import classNames from "classnames";
-
+'use client';
+import { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import Link from 'next/link';
+import styles from './Modal.module.css';
+import classNames from 'classnames';
 
 export default function Modal() {
-  const [burgerClass, setBurgerClass] = useState("burger_bar unclicked");
+  const [burgerClass, setBurgerClass] = useState('burger_bar unclicked');
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   const extraBackgroundRef = useRef(null);
@@ -21,13 +20,12 @@ export default function Modal() {
       ? masterRef.current.play()
       : masterRef.current.reverse();
     if (!isMenuClicked) {
-      setBurgerClass("burger_bar clicked");
+      setBurgerClass('burger_bar clicked');
     } else {
-      setBurgerClass("burger_bar unclicked");
+      setBurgerClass('burger_bar unclicked');
     }
     setIsMenuClicked(!isMenuClicked);
   };
-
 
   // 메뉴창 슬라이드 이벤트
   useEffect(() => {
@@ -35,7 +33,7 @@ export default function Modal() {
     const extraBackground = extraBackgroundRef.current;
     const navLinks = navLinksRef.current;
 
-    gsap.set([extraBackground, nav], { height: "0%", skewY: 2 });
+    gsap.set([extraBackground, nav], { height: '0%', skewY: 2 });
     gsap.set([navLinks], { y: -20, autoAlpha: 0 });
 
     const staggerReveal = (nodes) => {
@@ -43,10 +41,10 @@ export default function Modal() {
 
       tl.to(nodes, {
         duration: 1,
-        ease: "power3.inOut",
-        transformOrigin: "top right",
-        height: "100%",
-        minHeight: "100%",
+        ease: 'power3.inOut',
+        transformOrigin: 'top right',
+        height: '100%',
+        minHeight: '100%',
         skewY: 0,
         stagger: {
           amount: 0.1,
@@ -74,13 +72,13 @@ export default function Modal() {
     const master = gsap.timeline({ paused: true, reversed: true });
     master
       .add(staggerReveal([extraBackground, nav]))
-      .add(revealMenuItems([navLinks]), "-=0.5");
+      .add(revealMenuItems([navLinks]), '-=0.5');
 
     masterRef.current = master;
   }, []);
 
   const handleNavLinkClick = () => {
-    setBurgerClass("burger_bar unclicked");
+    setBurgerClass('burger_bar unclicked');
     setIsMenuClicked(!isMenuClicked);
     masterRef.current.reverse();
   };
@@ -134,13 +132,13 @@ export default function Modal() {
             >
               <div className={styles.modal_link_menu}>Projects</div>
             </Link>
-            
+
             <Link
-              href="#archiving"
+              href="#education"
               className={styles.modal_link}
               onClick={handleNavLinkClick}
             >
-              <div className={styles.modal_link_menu}>Archiving</div>
+              <div className={styles.modal_link_menu}>Activity</div>
             </Link>
 
             <Link

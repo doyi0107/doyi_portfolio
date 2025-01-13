@@ -1,11 +1,11 @@
-import Link from "next/link";
-import Image from "next/image";
-import styles from "./Footer.module.css";
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from './Footer.module.css';
 
-import footer_github from "/public/footer/footer_github.webp";
-import footer_t_story from "/public/footer/footer_t_story.webp";
-import talk from "/public/footer/talk.webp";
-import instagram from "/public/contact/instagram.webp";
+import footer_github from '/public/footer/footer_github.webp';
+import footer_t_story from '/public/footer/footer_t_story.webp';
+import talk from '/public/footer/talk.webp';
+import instagram from '/public/contact/instagram.webp';
 
 export default function Footer() {
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
       <div className={styles.footer_inner}>
         <p className={styles.footer_Copyright}>Copyright © 2024 Leedoyi</p>
         <p className={styles.footer_mail}>
-          next.js,module.css 기반으로 제작된 사이트입니다.
+          next.js,module.css 기반으로 제작된 사이트입니다. update 2025.01.13
         </p>
 
         <div className={styles.footer_link_wrap}>

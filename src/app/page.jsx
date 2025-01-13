@@ -1,20 +1,20 @@
-"use client";
-import { useState, useEffect, useRef } from "react";
+'use client';
+import { useState, useEffect, useRef } from 'react';
 
-import Header from "../components/header/Header";
-import OpeningAni from "../components/openingAni/OpeningAni";
-import Archiving from "../components/archiving/Archiving";
-import Projects from "../components/projects/Project";
-import Main_sub from "../components/mainSub/MainSub";
-import Contact from "../components/contact/Contact";
-import Footer from "../components/footer/Footer";
+import Header from '../components/header/Header';
+import OpeningAni from '../components/openingAni/OpeningAni';
+import Education from '../components/education/Education';
+import Projects from '../components/projects/Project';
+import Main_sub from '../components/mainSub/MainSub';
+import Contact from '../components/contact/Contact';
+import Footer from '../components/footer/Footer';
 
-import Link from "next/link";
-import Image from "next/image";
-import arrowBottom from "/public/home/arrowBottom.png";
-import arrowTop from "/public/home/arrowTop.png";
-import notion from "/public/home/notion.png";
-import github from "/public/home/github.png";
+import Link from 'next/link';
+import Image from 'next/image';
+import arrowBottom from '/public/home/arrowBottom.png';
+import arrowTop from '/public/home/arrowTop.png';
+import notion from '/public/home/notion.png';
+import github from '/public/home/github.png';
 
 export default function Home() {
   const [isSpecialCase, setIsSpecialCase] = useState(false);
@@ -24,7 +24,7 @@ export default function Home() {
     if (isSpecialCase) {
       window.scrollTo({
         top: 0,
-        behavior: "smooth",
+        behavior: 'smooth',
       });
     }
   };
@@ -40,10 +40,10 @@ export default function Home() {
       else if (isTop) setIsSpecialCase(false);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -92,7 +92,7 @@ export default function Home() {
       <div className="container" ref={containerRef}>
         <Main_sub />
         <Projects />
-        <Archiving />
+        <Education />
         <Contact />
         <Footer />
       </div>
