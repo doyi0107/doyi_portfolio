@@ -125,3 +125,9 @@
     color: #4d6636;
 
 }
+
+@media (min-width: 1700px) {
+    .main_sub {
+        height: 150vh;
+    }
+}

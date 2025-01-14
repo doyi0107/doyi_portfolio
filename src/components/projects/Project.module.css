@@ -1,16 +1,19 @@
 /* 프로젝트 */
 .projects {
-    height: 10000px;
+    height: 8200px;
     position: relative;
     background-color: var(--bg-color);
+
 }
 
 .projects_name {
     position: absolute;
     color: rgba(255, 255, 255, .7);
-    top: -50px;
+    top: -3vh;
     left: 16vw;
-    font: bold 10rem sans-serif;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: clamp(3rem, 8vw, 10rem);
 }
 
 .horizontal_scroll_wrap {
@@ -29,14 +32,15 @@
 }
 
 .about_project {
-    display: inline-block;
     width: 70vw;
     margin: 6vw auto;
     background-color: rgba(224, 181, 55, .6);
-    border-radius: 100px;
-    padding: 0 40px;
+    border-radius: min(5vw, 100px);
+    padding: clamp(1rem, 2vw, 2.5rem);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .project_line {
@@ -48,35 +52,41 @@
 /* 프로젝트 세부구조 */
 
 .content {
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .content_left {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 50px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: clamp(1rem, 1.5vw, 2rem);
 }
 
 .project_text_wrap {
-    width: 50%;
-    padding-left: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: clamp(1rem, 1.5vw, 2rem);
 }
 
+/* 이미지 스타일링 */
 .project_img_wrap {
     position: relative;
-    margin: 10px 0px;
+    margin: 1rem 0;
+    width: 100%;
+    aspect-ratio: 18/10;
 }
 
 .project_main_img {
-    width: 90%;
-    height: 240px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .project_core_features_detail {
@@ -131,13 +141,18 @@
 
 .content h3 {
     color: #545454;
-    font: 300 3rem/1.2 'Black Han Sans', sans-serif
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
 }
 
 .project_text_wrap>h4 {
     color: #545454;
-    font: bold 1.6rem/1.6 'Pretendard-Regular';
-    margin-top: 15px
+    font-family: 'Pretendard-Regular';
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    line-height: 1.6;
+    margin-top: 1rem;
+    font-weight: bold;
 }
 
 .project_text_wrap h4::before {
@@ -203,12 +218,89 @@
     color: #545454
 }
 
-@media (max-width: 2000px) {
+
+
+
+/* 노트북 */
+@media (max-width: 1700px) {
     .projects {
-        height: 8200px;
+        height: 7000px;
     }
 
     .project_main_img {
         height: 250px;
+    }
+
+    .about_project {
+
+        padding: 0px;
+
+    }
+
+    .content_left {
+
+        padding: clamp(1rem, 1.5vw, 2rem);
+    }
+
+    .project_text_wrap {
+
+        padding: 0px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content_left,
+    .project_text_wrap {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .about_project {
+        width: 90vw;
+        margin: 4vw auto;
+        border-radius: 30px;
+    }
+
+    .project_core_features_detail>div {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects_name {
+        font-size: 2.5rem;
+        left: 5vw;
+    }
+
+    .project_link>p {
+        font-size: 16px;
+    }
+
+    .readme_button {
+        width: 100%;
+    }
+}
+
+/* 크로스 브라우저 호환성 */
+@supports (-webkit-touch-callout: none) {
+
+    /* iOS Safari 전용 스타일 */
+    .horizontal_scroll_content {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@supports (-moz-appearance: none) {
+
+    /* Firefox 전용 스타일 */
+    .project_main_img {
+        aspect-ratio: 16/9;
     }
 }
