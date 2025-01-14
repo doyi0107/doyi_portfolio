@@ -142,14 +142,14 @@
 .content h3 {
     color: #545454;
     font-family: 'Black Han Sans', sans-serif;
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
     line-height: 1.2;
 }
 
 .project_text_wrap>h4 {
     color: #545454;
     font-family: 'Pretendard-Regular';
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
     line-height: 1.6;
     margin-top: 1rem;
     font-weight: bold;
@@ -163,7 +163,7 @@
 
 .project_text_wrap p {
     color: #545454;
-    font: 400 1.2rem 'Pretendard-Regular';
+    font: 400 1.1rem 'Pretendard-Regular';
 }
 
 .project_core_feature_chapter {
