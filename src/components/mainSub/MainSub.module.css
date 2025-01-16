@@ -19,7 +19,6 @@
     background-color: #829472;
     top: 0;
     border-radius: 0 400px 400px 0;
-
 }
 
 .sub_box2 {
@@ -96,9 +95,7 @@
     text-align: center;
     color: rgba(231, 221, 205, .8);
     font: 500 1.8rem 'Black Han Sans', sans-serif;
-
 }
-
 
 .sub_text,
 .sub_text_right {
@@ -123,11 +120,131 @@
 
 .link:hover {
     color: #4d6636;
-
 }
+
 
 @media (min-width: 1700px) {
     .main_sub {
         height: 150vh;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .sub_name {
+        font-size: 6rem;
+        left: 10%;
+    }
+
+    .img_wrap {
+        width: 80vw;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .sub_text_left {
+        margin-left: 80px;
+    }
+
+    .sub_content,
+    .sub_content_design {
+        margin: 0px 50px;
+    }
+
+    .sub_box {
+        width: 300px;
+    }
+
+    .sub_box2 {
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main_sub {
+        height: auto;
+        min-height: 200vh;
+    }
+
+    .sub_name {
+        font-size: 3rem;
+        left: 50%;
+        transform: translateX(-50%) !important;
+        top: 3%;
+        white-space: nowrap;
+    }
+
+    .explain_me {
+        top: 8%;
+    }
+
+    .img_wrap {
+        width: 90vw;
+        flex-direction: column;
+        border-radius: 30px;
+        margin: 30px auto;
+    }
+
+    .two {
+        flex-direction: column;
+    }
+
+    .one,
+    .two,
+    .three {
+        border-radius: 30px;
+    }
+
+    .sub_content,
+    .sub_content_design {
+        margin: 20px 0;
+    }
+
+    .sub_text_left {
+        margin-left: 20px;
+    }
+
+    .sub_text,
+    .sub_text_right {
+        width: 85%;
+        font-size: 1rem;
+        margin: 0 20px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+        margin: 10px 20px;
+    }
+
+    .sub_box {
+        width: 150px;
+        border-radius: 0 200px 200px 0;
+    }
+
+    .sub_box2 {
+        width: 100px;
+        border-radius: 200px 0 0 200px;
+    }
+
+    .sub_img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .sub_name {
+        font-size: 2.5rem;
+    }
+
+    .sub_text,
+    .sub_text_right {
+        font-size: 0.9rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
     }
 }

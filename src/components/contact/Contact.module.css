@@ -2,7 +2,6 @@
     background-color: var(--bg-color);
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -48,7 +47,6 @@
     text-align: center;
     position: absolute;
     opacity: 0;
-
 }
 
 .contact_info_container {
@@ -72,7 +70,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #E4DDCB;
     padding: 1rem;
     transition: all 0.3s ease;
@@ -80,13 +78,13 @@
 
 .mail,
 .phone {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .contact_doyi {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: rgba(231, 221, 205, .8);
     border-radius: 50%;
 }
@@ -94,10 +92,10 @@
 .info_text {
     text-align: center;
     color: #E4DDCB;
-
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
 
     .contact_text1,
     .contact_text2,
@@ -105,11 +103,85 @@
         font-size: 10rem;
     }
 
+    .contact_doyi {
+        width: 180px;
+        height: 180px;
+    }
+
     .info_item {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .contact_text1,
+    .contact_text2,
+    .contact_name {
+        font-size: 5rem;
     }
 
     .contact_info_container {
-        min-width: 280px;
+        flex-direction: column;
+        min-width: auto;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+
+    .contact_doyi {
+        width: 150px;
+        height: 150px;
+    }
+
+    .info_item {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+
+    .mail,
+    .phone {
+        width: 30px;
+        height: 30px;
+    }
+
+    .info_item_wrap {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .contact_text1,
+    .contact_text2,
+    .contact_name {
+        font-size: 3.5rem;
+    }
+
+    .contact_text2 {
+        margin-top: -1rem;
+    }
+
+    .contact_info_container {
+        padding: 1rem;
+    }
+
+    .contact_doyi {
+        width: 120px;
+        height: 120px;
+    }
+
+    .info_item {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .mail,
+    .phone {
+        width: 25px;
+        height: 25px;
     }
 }
