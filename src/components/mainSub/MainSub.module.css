@@ -164,7 +164,7 @@
 @media (max-width: 768px) {
     .main_sub {
         height: auto;
-        min-height: 200vh;
+        min-height: 1400px;
     }
 
     .sub_name {
