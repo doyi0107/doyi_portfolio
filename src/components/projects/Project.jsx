@@ -51,6 +51,16 @@ export default function project() {
               <div className={styles.content_left}>
                 <div className={styles.project_title_wrap}>
                   <h3>윗비트래블</h3>
+                  <Link
+                    className={styles.portfoilo_link}
+                    href="https://statuesque-pincushion-161.notion.site/14050ed9c78e809ea6d1c62a0911dad3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className={styles.portfoilo_text}>
+                      (포트폴리오 보러가기)
+                    </p>
+                  </Link>
                 </div>
                 <div className={styles.project_img_wrap}>
                   <Link
@@ -203,6 +213,16 @@ export default function project() {
               <div className={styles.content_left}>
                 <div className={styles.project_title_wrap}>
                   <h3>우행시</h3>
+                  <Link
+                    className={styles.portfoilo_link}
+                    href="https://statuesque-pincushion-161.notion.site/13050ed9c78e8130ad60c66af05040a0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className={styles.portfoilo_text}>
+                      (포트폴리오 보러가기)
+                    </p>
+                  </Link>
                 </div>
                 <div className={styles.project_img_wrap}>
                   <Link href="https://woohangshi.vercel.app/" target="_blank">
@@ -332,6 +352,16 @@ export default function project() {
               <div className={styles.content_left}>
                 <div className={styles.project_title_wrap}>
                   <h3>Starting_plant</h3>
+                  <Link
+                    className={styles.portfoilo_link}
+                    href="https://statuesque-pincushion-161.notion.site/Starting_Plant-13050ed9c78e809f8d60dbbac41edcbc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className={styles.portfoilo_text}>
+                      (포트폴리오 보러가기)
+                    </p>
+                  </Link>
                 </div>
                 <div className={styles.project_img_wrap}>
                   <Link
@@ -494,6 +524,16 @@ export default function project() {
               <div className={styles.content_left}>
                 <div className={styles.project_title_wrap}>
                   <h3>Play_javascript</h3>
+                  <Link
+                    className={styles.portfoilo_link}
+                    href="https://statuesque-pincushion-161.notion.site/Play_Javascript-13050ed9c78e8016b964f3db55ab6c09"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className={styles.portfoilo_text}>
+                      (포트폴리오 보러가기)
+                    </p>
+                  </Link>
                 </div>
                 <div className={styles.project_img_wrap}>
                   <Link

@@ -81,7 +81,7 @@ export default function Contact() {
           <div className={styles.info_item_wrap}>
             <div className={styles.info_item}>
               <Image className={styles.mail} src={mail} alt="mail" />
-              <span>doyi9917@email.com</span>
+              <span>doyi9917@naver.com</span>
             </div>
             <div className={styles.info_item}>
               <Image className={styles.phone} src={phone} alt="phone" />

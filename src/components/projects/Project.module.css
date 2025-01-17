@@ -87,6 +87,18 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+.project_title_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.portfoilo_text {
+    margin-left: 5px;
+    color: #545454;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .project_core_features_detail {
     position: absolute;
     top: 0;
@@ -133,16 +145,17 @@
     padding-left: 10px;
 }
 
+.content h3 {
+    color: #545454;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    line-height: 1.2;
+}
 
 /* 오른쪽 텍스트 웹 */
 
 
-.content h3 {
-    color: #545454;
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
-    line-height: 1.2;
-}
+
 
 .project_text_wrap>h4 {
     color: #545454;
@@ -278,13 +291,21 @@
         padding: 20px 0px;
     }
 
+    .content {
+        height: 100%;
+    }
+
     .content_left,
     .project_text_wrap {
-        padding: 0rem 1rem 0.5rem 1rem;
+        padding: 0rem 1rem;
     }
 
     .content_left {
         text-align: center;
+    }
+
+    .content h3 {
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
     }
 
     .project_img_wrap {
@@ -293,7 +314,7 @@
     }
 
     .project_main_img {
-        width: 70%;
+        width: 75%;
     }
 
     .projects {
@@ -327,6 +348,34 @@
         font-size: 14px;
     }
 
+    .project_core_features_detail {
+        width: 75%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+    }
+
+    .project_core_features_detail>div {
+        width: 90%;
+        margin: 0px auto;
+        text-align: left;
+        word-break: break-word;
+        white-space: normal;
+        font-size: 12px;
+        padding: 0rem;
+    }
+
+    .project_text_wrap h4::before {
+        font: 400 1.5rem/1 'Pretendard-Regular';
+    }
+
+    .project_title_wrap {
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 480px) {
