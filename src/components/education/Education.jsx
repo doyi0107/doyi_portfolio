@@ -133,7 +133,7 @@ export default function Education() {
         '우리FIS아카데미(클라우드 서비스) - 풀스택 개발자 교육 과정 진행<br/>',
       period: '2024.07 - 2024.12',
       description:
-        '- React,Next.js 프론트엔드 기술 학습<br/>- Java,Spring 백엔드 프레임워크 학습<br/>- Jenkins와 Docker,AWS를 활용한 클라우드 환경 학습',
+        '프론트엔드 프로그래밍 기술<br/>-React와 Next.js 프레임워크를 활용한 현대적인 웹 애플리케이션 개발 방법 학습<br/>-컴포넌트 기반 개발, 상태 관리, 라우팅, API 연동 실습<br/>-CSS 및 UI/UX 디자인 원칙 이해와 반응형 웹 디자인 구현<br/><br/>백엔드 프로그래밍 기술<br/>-Spring 프레임워크를 활용한 RESTful API 개발, 보안, 데이터 처리 및 비즈니스 로직 구현<br/>-데이터베이스 설계 및 SQL 쿼리 작성법 학습<br/><br/>클라우드 네이티브 과정<br/>- Jenkins와 Docker,AWS를 활용한 클라우드 환경 학습',
     },
   ];
 
