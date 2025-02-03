@@ -1,99 +1,112 @@
 'use client';
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import Image from 'next/image';
 import styles from './MainSub.module.css';
-import Link from 'next/link';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import quest from '/public/mainSub/quest.png';
 import error from '/public/mainSub/error.png';
 import team from '/public/mainSub/team.png';
+import Link from 'next/link';
 
-let gsap;
-let ScrollTrigger;
+gsap.registerPlugin(ScrollTrigger);
 
 export default function MainSub() {
-  const [isLoaded, setIsLoaded] = useState(false);
   const subNameRef = useRef(null);
   const oneRef = useRef(null);
   const twoRef = useRef(null);
   const threeRef = useRef(null);
 
-  // GSAP를 동적으로 import
-  useEffect(() => {
-    const loadGsap = async () => {
-      const gsapModule = await import('gsap');
-      const scrollTriggerModule = await import('gsap/ScrollTrigger');
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      // 모든 ref가 존재하는지 확인
+      if (
+        !subNameRef.current ||
+        !oneRef.current ||
+        !twoRef.current ||
+        !threeRef.current
+      ) {
+        return;
+      }
 
-      gsap = gsapModule.gsap;
-      ScrollTrigger = scrollTriggerModule.ScrollTrigger;
-      gsap.registerPlugin(ScrollTrigger);
-
-      setIsLoaded(true);
-    };
-
-    loadGsap();
-  }, []);
-
-  // GSAP 애니메이션 설정
-  useEffect(() => {
-    if (!isLoaded) return;
-
-    const fromLeftElements = [
-      { element: subNameRef.current, delay: 0.1 },
-      { element: oneRef.current, delay: 0.2 },
-      { element: threeRef.current, delay: 0.1 },
-    ];
-
-    const ctx = gsap.context(() => {
       // 왼쪽에서 들어오는 애니메이션
-      fromLeftElements.forEach(({ element, delay }) => {
-        if (!element) return;
+      const fromLeftElements = [
+        {
+          element: subNameRef.current,
+          delay: 0.1,
+        },
+        {
+          element: oneRef.current,
+          delay: 0.2,
+        },
+        {
+          element: threeRef.current,
+          delay: 0.1,
+        },
+      ];
 
-        gsap.set(element, { opacity: 0, x: -800 }); // 초기 상태 설정
-
-        gsap.to(element, {
-          opacity: 1,
-          x: 0,
-          duration: 0.8,
-          delay,
-          ease: 'power2.out',
+      fromLeftElements.forEach((item) => {
+        const tl = gsap.timeline({
           scrollTrigger: {
-            trigger: element,
+            trigger: item.element,
             start: 'top 80%',
             end: 'bottom 20%',
             toggleActions: 'play none none reverse',
+            markers: false,
           },
         });
+
+        tl.fromTo(
+          item.element,
+          {
+            opacity: 0,
+            x: -800,
+          },
+          {
+            opacity: 1,
+            x: 0,
+            duration: 0.8,
+            delay: item.delay,
+            ease: 'power2.out',
+          },
+        );
       });
 
       // 오른쪽에서 들어오는 애니메이션
-      if (twoRef.current) {
-        gsap.set(twoRef.current, { opacity: 0, x: 800 }); // 초기 상태 설정
+      const tlRight = gsap.timeline({
+        scrollTrigger: {
+          trigger: twoRef.current,
+          start: 'top 80%',
+          end: 'bottom 50%',
+          toggleActions: 'play none none reverse',
+          markers: false,
+        },
+      });
 
-        gsap.to(twoRef.current, {
+      tlRight.fromTo(
+        twoRef.current,
+        {
+          opacity: 0,
+          x: 800,
+        },
+        {
           opacity: 1,
           x: 0,
           duration: 0.8,
           ease: 'power2.out',
-          scrollTrigger: {
-            trigger: twoRef.current,
-            start: 'top 80%',
-            end: 'bottom 50%',
-            toggleActions: 'play none none reverse',
-          },
-        });
-      }
+        },
+      );
     });
 
-    // 클린업
     return () => {
       ctx.revert();
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
-  }, [isLoaded]);
+  }, []);
 
   return (
     <div className={styles.main_sub}>
-      <div className={styles.sub_box} />
+      <div className={styles.sub_box}></div>
       <div ref={subNameRef} className={styles.sub_name}>
         WHO IS DOYI
       </div>
@@ -144,7 +157,7 @@ export default function MainSub() {
             </span>
           </div>
         </div>
-        <div className={styles.sub_box2} />
+        <div className={styles.sub_box2}></div>
         <div ref={threeRef} className={`${styles.img_wrap} ${styles.three}`}>
           <div className={styles.sub_content}>
             <Image
