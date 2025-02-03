@@ -2,7 +2,7 @@
     position: relative;
     background-color: var(--bg-color);
     width: 100%;
-    height: 150vh;
+    height: 140vh;
     overflow: hidden;
 }
 
@@ -123,9 +123,9 @@
 }
 
 
-@media (min-width: 1600px) {
+@media (max-width: 1600px) {
     .main_sub {
-        height: 160vh;
+        height: 200vh;
     }
 }
 
