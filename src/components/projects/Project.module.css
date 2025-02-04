@@ -160,7 +160,7 @@
 .project_text_wrap>h4 {
     color: #545454;
     font-family: 'Pretendard-Regular';
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-size: 28px;
     line-height: 1.6;
     margin-top: 1rem;
     font-weight: bold;
@@ -169,12 +169,12 @@
 .project_text_wrap h4::before {
     content: "✓";
     color: var(--main-color-4);
-    font: 400 2rem/1 'Pretendard-Regular';
+    font: 400 35px/1 'Pretendard-Regular';
 }
 
 .project_text_wrap p {
     color: #545454;
-    font: 400 1.1rem 'Pretendard-Regular';
+    font: 400 22px 'Pretendard-Regular';
 }
 
 .project_core_feature_chapter {
@@ -233,7 +233,19 @@
 
 
 /* 노트북 */
-@media (max-width: 1700px) {
+@media (max-width: 1800px) {
+    .project_text_wrap>h4 {
+        font-size: 25px;
+    }
+
+    .project_text_wrap h4::before {
+        font-size: 30px;
+    }
+
+    .project_text_wrap p {
+        font-size: 19px;
+    }
+
     .projects {
         height: calc(2500px + (7000 - 2500) * ((100vw - 480px) / (1700 - 480)));
     }
