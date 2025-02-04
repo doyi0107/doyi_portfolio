@@ -94,14 +94,14 @@
 .title {
     text-align: center;
     color: rgba(231, 221, 205, .8);
-    font: 500 33px/40px 'Black Han Sans', sans-serif;
+    font: 500 36px/40px 'Black Han Sans', sans-serif;
 }
 
 .sub_text,
 .sub_text_right {
     width: 90%;
     color: rgba(231, 221, 205, .8);
-    font: 500 18px/1.5 'Pretendard-Regular';
+    font: 500 21px/1.5 'Pretendard-Regular';
     position: static;
     text-align: left;
     display: block;
@@ -127,7 +127,7 @@
 
 @media (max-width: 1800px) {
     .main_sub {
-        height: 200vh;
+        height: 185vh;
     }
 }
 
