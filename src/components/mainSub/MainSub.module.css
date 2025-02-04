@@ -40,7 +40,7 @@
 }
 
 .explain_me {
-    top: 12%;
+    top: 13%;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@
     position: relative;
     background-color: rgba(201, 105, 88, .8);
     margin-top: 50px;
-    width: 61vw;
+    width: 65vw;
     height: 310px;
     display: flex;
     flex-direction: row-reverse;
@@ -76,7 +76,7 @@
 }
 
 .sub_content {
-    margin: 0px 100px 0px 30px;
+    margin-right: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -84,7 +84,7 @@
 }
 
 .sub_content_design {
-    margin: 0px 30px 0px 100px;
+    margin: 0px 50px 0px 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -94,38 +94,40 @@
 .title {
     text-align: center;
     color: rgba(231, 221, 205, .8);
-    font: 500 1.8rem 'Black Han Sans', sans-serif;
+    font: 500 33px/40px 'Black Han Sans', sans-serif;
 }
 
 .sub_text,
 .sub_text_right {
     width: 90%;
     color: rgba(231, 221, 205, .8);
-    font: 500 1.2rem/1.5 'Pretendard-Regular';
+    font: 500 18px/1.5 'Pretendard-Regular';
     position: static;
     text-align: left;
     display: block;
 }
 
 .sub_text_left {
-    margin-left: 160px;
+    margin-left: 120px;
 }
 
 .link {
-    color: rgba(231, 221, 205, .8);
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: underline;
-    cursor: pointer;
-    transition: 0.1s;
 }
 
-.link:hover {
-    color: #4d6636;
+.highlight {
+    color: rgb(240, 233, 221);
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.1em 0.3em;
+    border-radius: 4px;
+    font-weight: 600;
 }
 
 
 @media (max-width: 1800px) {
     .main_sub {
-        height: 180vh;
+        height: 200vh;
     }
 }
 

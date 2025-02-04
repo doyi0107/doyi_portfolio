@@ -5,7 +5,7 @@ import styles from './MainSub.module.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import quest from '/public/mainSub/quest.png';
-import error from '/public/mainSub/error.png';
+import error from '/public/mainSub/effort.png';
 import team from '/public/mainSub/team.png';
 import Link from 'next/link';
 
@@ -120,13 +120,28 @@ export default function MainSub() {
             />
           </div>
           <div className={styles.sub_text_left}>
-            <span className={styles.title}>#상상력이 풍부한 #재미있는</span>
+            <span className={styles.title}>
+              비전공자인데 왜 개발자가 되고 싶어?
+            </span>
             <span className={styles.sub_text}>
-              💡 제가 상상한 그림이 브라우저를 통해 그려지고, 작은 블록들이 쌓여
-              하나의 완성품을 만들어가는 과정이 재밌습니다.
-              <br />
-              💡사용자와 가장 가까운 접점에서 직접적인 가치를 전달할 수 있다는
-              점에서 큰 보람을 느낍니다.
+              💡전공 수업에서 콩쥐팥쥐를 현대적으로 재해석하며 구비 문학을
+              현대적으로 접근하는 기획을 했습니다. 저희 팀은 콩쥐가 동물들의
+              도움을 받는 대신, 아동 보호 앱을 활용해 위기를 극복하는 스토리를
+              제안했습니다. 이 과정에서{' '}
+              <strong className={styles.highlight}>
+                기획뿐만 아니라 직접 웹 서비스를 개발하면 더 의미 있겠다고 생각
+              </strong>
+              했고, 본격적으로 개발을 배우기 시작했습니다. <br />
+              이후 개발을 학습하며{' '}
+              <strong className={styles.highlight}>
+                제가 상상한 그림이 브라우저를 통해 그려지고, 팀원들과 하나의
+                완성된 서비스를 만드는 과정에서 큰 성취감을 느꼈습니다.
+              </strong>
+              {/* <br />
+              💡제가 상상한 그림이 브라우저를 통해 그려지고, 작은 블록들이 쌓여
+              하나의 완성품을 만들어가는 과정이 재밌습니다. 또한 프론트엔드
+              개발이 사용자와 가장 가까운 접점에서 직접적인 가치를 전달할 수
+              있다는 점에서 큰 보람을 느낍니다. */}
             </span>
           </div>
         </div>
@@ -139,21 +154,31 @@ export default function MainSub() {
             />
           </div>
           <div>
-            <span className={styles.title}>#회고하는 #탐구하는</span>
+            <span className={styles.title}>
+              개발자가 되기 위해 어떤 노력을 하고 있어?
+            </span>
             <span className={styles.sub_text_right}>
               💡React.js, Next.js등과 같은 현대적인 웹 기술에 열정을 가지고
-              있습니다. <br />
-              💡 프로젝트를 진행하며 겪은 에러를 회고하고, 이를
+              학습하고 있습니다 <br />
+              💡 프로젝트를 진행하며 겪은 에러를 회고하고, 이를{' '}
               <Link
                 href="https://2-doooo-2.tistory.com/"
                 className={styles.link}
-                target="blank"
+                target="_blank"
               >
-                기술 블로그
+                <strong className={styles.highlight}>기술 블로그</strong>
               </Link>
-              에 정리하고 있습니다 <br />
-              💡 이에 따라 110개 이상의 게시물을 작성하였으며, 총 누적 조회수는
-              10,000회를 초과하였습니다.
+              에 정리하고 있습니다.현재{' '}
+              <strong className={styles.highlight}>
+                110개 이상의 게시물을 작성, 누적 조회수 10,000회 이상을
+                기록했습니다.
+              </strong>{' '}
+              <br />
+              💡 팀 프로젝트에 참여하며 데이터 기반으로 객관적인 솔루션을
+              도출하는 방법을 익혔습니다. 이를 통해{' '}
+              <strong className={styles.highlight}>
+                실제 사용자 참여율을 127% 향상시킨 경험이 있습니다.
+              </strong>
             </span>
           </div>
         </div>
@@ -167,22 +192,30 @@ export default function MainSub() {
             />
           </div>
           <div className={styles.sub_text_left}>
-            <span className={styles.title}>#함께 성장하는</span>
+            <span className={styles.title}>어떤 개발자가 되고 싶어?</span>
             <span className={styles.sub_text}>
-              💡협업을 통해 서로의 강점을 살리고, 함께 성장합니다.
-              <br /> 💡
+              💡기획력과 기술 역량을 모두 갖춘 개발자가 되어,{' '}
+              <strong className={styles.highlight}>
+                웹 서비스의 방향을 이해하고 함께 더 나은 방향을 고민
+              </strong>
+              하겠습니다.
+              <br /> 💡 저는 동료들과 함께 성장하는 개발자가 되고 싶습니다.이전
+              프로젝트에서도{' '}
               <Link
                 href="https://github.com/woorifisa-projects-3rd/WithBeeTravel-FE/pull/71"
                 className={styles.link}
                 target="blank"
               >
-                코드 리뷰
+                <strong className={styles.highlight}>코드 리뷰</strong>
               </Link>
               를 활발히 진행하며 팀원 간의 피드백을 통해 더 나은 코드를
-              고민합니다.
+              만들어왔습니다
               <br />
-              💡우리fisa에서 진행한 최종 프로젝트에서 클라우드 서비스 반 최종
-              2등, 우수 프로젝트로 선정된 경험이 있습니다.
+              💡앞으로는 풀스택 개발자로서의 역량을 쌓아가며,
+              <strong className={styles.highlight}>
+                사용자의 불편함을 개선하여 사용자의 일상을 수선하는 개발자
+              </strong>
+              로 나아갈 것입니다.
             </span>
           </div>
         </div>
