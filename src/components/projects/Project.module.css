@@ -1,6 +1,6 @@
 /* 프로젝트 */
 .projects {
-    height: 8500px;
+    height: 9000px;
     position: relative;
     background-color: var(--bg-color);
 
@@ -247,7 +247,7 @@
     }
 
     .projects {
-        height: 6700px;
+        height: 6900px;
     }
 
     .project_main_img {

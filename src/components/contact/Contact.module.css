@@ -4,6 +4,9 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
 }
 
 .contact_text_wrap {
