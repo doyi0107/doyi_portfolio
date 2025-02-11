@@ -1,6 +1,6 @@
 /* 프로젝트 */
 .projects {
-    height: 8200px;
+    height: 8500px;
     position: relative;
     background-color: var(--bg-color);
 
@@ -32,7 +32,7 @@
 }
 
 .about_project {
-    width: 70vw;
+    min-width: 70vw;
     margin: 6vw auto;
     background-color: rgba(224, 181, 55, .6);
     border-radius: min(5vw, 100px);
@@ -247,7 +247,7 @@
     }
 
     .projects {
-        height: calc(2500px + (7000 - 2500) * ((100vw - 480px) / (1700 - 480)));
+        height: 6700px;
     }
 
     .project_main_img {

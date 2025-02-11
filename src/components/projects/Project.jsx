@@ -53,7 +53,7 @@ export default function project() {
                   <h3>윗비트래블</h3>
                   <Link
                     className={styles.portfoilo_link}
-                    href="https://statuesque-pincushion-161.notion.site/14050ed9c78e809ea6d1c62a0911dad3"
+                    href="https://iii.ad/afbd15"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -216,7 +216,7 @@ export default function project() {
                   <h3>우행시</h3>
                   <Link
                     className={styles.portfoilo_link}
-                    href="https://statuesque-pincushion-161.notion.site/13050ed9c78e8130ad60c66af05040a0"
+                    href="https://iii.ad/3e7e2b"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -527,7 +527,7 @@ export default function project() {
                   <h3>Play_javascript</h3>
                   <Link
                     className={styles.portfoilo_link}
-                    href="https://statuesque-pincushion-161.notion.site/Play_Javascript-13050ed9c78e8016b964f3db55ab6c09"
+                    href="https://iii.ad/35dc4b"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
