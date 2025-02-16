@@ -46,10 +46,6 @@
   <img src="https://github.com/user-attachments/assets/4dcc9772-87ef-47ee-9a1f-f6176aebb56b" width="700" height="380">
 </p>
 
-## 회고록 보러가기 
- <a href="https://2-doooo-2.tistory.com/135">
-          <img src="https://img.shields.io/badge/Tistory-E74C3C?style=flat-square&logo=tistory&logoColor=white"> 
- </a>
 
 
 
