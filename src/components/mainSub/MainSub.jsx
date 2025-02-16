@@ -29,7 +29,6 @@ export default function MainSub() {
         return;
       }
 
-      // 왼쪽에서 들어오는 애니메이션
       const fromLeftElements = [
         {
           element: subNameRef.current,
